@@ -38,7 +38,7 @@ body{
     width: 20vh;
     background: orangered;
     border-radius: 5px;
-    margin-left: 5vw;
+    
     font-family: 'Raleway', sans-serif;
     display: flex;
     align-items: center;
@@ -51,6 +51,7 @@ body{
 .homebutton:hover{
     height: 12vh;
     width: 22vh;
+    background: rgb(116, 57, 255);
 }
 
 
