@@ -1,0 +1,87 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+body{
+    background: black;
+}
+
+.Top{
+    color: aliceblue;
+    font-size:12.5vw;
+    padding-left: 1vw;
+    margin-left: 2vw;
+        
+}
+
+.myName{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f2851f;
+    
+    border-radius: 5vw;
+    padding: 2vw;
+    margin-right: 10vw;
+    margin-left: 1vw;
+    
+    
+    
+} 
+
+.t1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-left: 1vw;
+    
+    position:absolute;                 
+    bottom:0;                         
+    left:0;
+
+    color: rgb(255, 255, 255);
+    font-size: 4.5vw;
+}
+.section1{
+    background: black;
+}
+.section2{
+    position: relative;
+    background: black;
+    height: 100vh;
+}
+
+.Buttons{
+    height: 10vh;
+    background: #f2851f;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.button{
+    position: relative;
+    
+    margin: 1vw;
+    
+    width: 20vw;
+    background: #f2851f;
+    border-radius: 2vh;
+    transition: all 0.6s;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-justify: distribute;
+}
+
+
+.button:hover{
+    width: 27vw;
+    background: #85e9e9;
+}
