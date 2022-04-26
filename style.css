@@ -55,6 +55,7 @@ body{
 
 .Buttons{
     height: 10vh;
+    width: 100vw;
     background: #f2851f;
     position: relative;
     display: flex;
