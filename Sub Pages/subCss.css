@@ -63,26 +63,27 @@ body{
 }
 
 .boxes{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     justify-content:start;
     align-items: center;
 }
 
 .box{
-
-    height: 80vh;
-    width: 80vw;
+    box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.548);
+    height: 30rem;
+    width: 30rem;
     background: rgb(255, 255, 255);
     border-radius:2vh;
-    margin-top: 20vh;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    transition: all .4s;
+    overflow: hidden;
    
   
 }
 
-.picture{
-
-    vertical-align: middle;
-    width: 60vh;
-    height: 60vh;
-    background: black;
+.box:hover{
+    height: 32rem;
+    width: 32rem;
 }
