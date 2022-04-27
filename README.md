@@ -1,2 +1,2 @@
 # Rhys-josmin
-Rhysjosmin.tk
+[I'm an inline-style link](https://rhysjosmin.tk)
