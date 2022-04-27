@@ -12,7 +12,7 @@ body{
 
 .Top{
     color: aliceblue;
-    font-size:12.5vw;
+    font-size:11vw;
     padding-left: 1vw;
     margin-left: 2vw;
         
@@ -21,7 +21,7 @@ body{
 .myName{
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #f2851f;
+    background:linear-gradient(to right top, #58b5f3,#796bfa);
     
     border-radius: 5vw;
     padding: 2vw;
@@ -56,20 +56,20 @@ body{
 .Buttons{
     height: 10vh;
     width: 100vw;
-    background: #f2851f;
-    position: relative;
+    background: #58b5f3;
+   
     display: flex;
     justify-content: center;
+    align-items: center;
     
 
 }
 .button{
     position: relative;
     
-    margin: 1vw;
-    
+    height: 6vh;
     width: 20vw;
-    background: #f2851f;
+    background: #58b5f3;
     border-radius: 2vh;
     transition: all 0.6s;
     text-align: center;
@@ -78,11 +78,15 @@ body{
     font-weight: bold;
     text-decoration: none;
     color: black;
-    text-justify: distribute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
 }
 
 
 .button:hover{
     width: 27vw;
-    background: #85e9e9;
+    background: #ffffff;
 }
