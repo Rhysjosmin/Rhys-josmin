@@ -145,7 +145,7 @@ function Score(){
         Win.innerHTML=Win.innerHTML+'😔'
         
     }
-    if(Win.innerHTML>50){
+    if(Win.innerHTML>=50){
         Win.style.color='#6a6ae6'
         Win.innerHTML=Win.innerHTML+'🤗'
     }
