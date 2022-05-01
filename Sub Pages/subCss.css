@@ -49,8 +49,8 @@ body{
 }
 
 .homebutton:hover{
-    height: 12vh;
-    width: 22vh;
+    animation-name: Wiggle;
+    animation-duration: 1s;
     background: rgb(116, 57, 255);
 }
 
@@ -89,8 +89,12 @@ body{
 }
 
 .box:hover{
-    height: 30.5rem;
-    width: 30.5rem;
+    animation-name: Wiggle;
+
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+   
+    
     border-radius: 4vh;
     background: linear-gradient(to right top, rgb(188, 119, 235),rgb(255, 201, 176));
 }
@@ -166,4 +170,13 @@ body{
 .button:hover{
     width: 27vw;
     background: #ffffff;
+}
+
+@keyframes Wiggle {
+    0% {transform-origin: center; transform: scale(100%);}
+    50% {transform-origin: center; transform: scale(105%);}
+    75% {transform-origin: center; transform: scale(105%);}
+    100% {transform-origin: center; transform: scale(100%);}
+   
+    
 }
