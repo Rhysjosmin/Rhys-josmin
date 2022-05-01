@@ -28,7 +28,7 @@ function colorText(){
         userChoiceDisplay.style.color='#fc4f05'
     }
 
-    if (userChoice==='scissor'){
+    if (userChoice==='scissors'){
       
         userChoiceDisplay.style.color='yellow'
     }
