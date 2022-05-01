@@ -68,7 +68,7 @@ body{
     position: relative;
     
     height: 6vh;
-    width: 20vw;
+    width: 15vw;
     background: #58b5f3;
     border-radius: 2vh;
     transition: all 0.6s;
@@ -87,6 +87,6 @@ body{
 
 
 .button:hover{
-    width: 27vw;
+    width: 20vw;
     background: #ffffff;
 }

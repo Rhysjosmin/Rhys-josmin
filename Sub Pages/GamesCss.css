@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: 100;
+}
+
+.gameBox{
+    height: 80vh;
+    width: 80vw;
+    background: rgb(32, 32, 32);
+    border-radius: 30px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: rgb(124, 255, 255);
+    font-size: 4em;
+    transition: all .7s;
+    
+}
+.gameBox:hover{
+    color: #d1a1fd;
+    background: rgb(0, 0, 0);
+    height: 81vh;
+    width: 83vw;
+    font-size: 3.8em;
+}
+.games{
+    background: linear-gradient(to right top,#d1a1fd,#7cb3fa);
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
