@@ -3,8 +3,14 @@ const userChoiceDisplay = document.getElementById('user-choice')
 const resultDisplay = document.getElementById('result')
 const possibleChoices = document.querySelectorAll('button')
 const Bg = document.getElementById('text')
-const compPoints =document.getElementById('computer')
-const youPoints =document.getElementById('you')
+var compPoints =document.getElementById('computer')
+var youPoints =document.getElementById('you')
+var Win =document.getElementById('winPercent')
+
+const audio = new Audio('..//Audio/Pop.mp3')
+
+audio.pitch=2
+
 
 let C=0;
 let Y=0;
@@ -19,6 +25,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     colorText()
     generateComputerChoice()
     getResult()
+    audio.play()
     
 }))
 
@@ -81,7 +88,7 @@ function getResult(){
     if(computerChoice==='rock'&& userChoice==='scissors'){
         result="Computer Wins!"
         resultDisplay.style.color='#ff005d'
-        Bg.style.backgroundColor='#69a600'
+        Bg.style.backgroundColor='#BD1616'
         Y=Y
         Score()
         C=C+1
@@ -91,7 +98,7 @@ function getResult(){
     if(computerChoice==='scissors'&& userChoice==='paper'){
         result="Computer Wins!"
         resultDisplay.style.color='#ff005d'
-        Bg.style.backgroundColor='#69a600'
+        Bg.style.backgroundColor='#BD1616'
         Y=Y
         Score()
         C=C+1
@@ -110,7 +117,7 @@ function getResult(){
     if(computerChoice==='paper'&& userChoice==='rock'){
         result="Computer Wins!"
         resultDisplay.style.color='#ff005d'
-        Bg.style.backgroundColor='#69a600'
+        Bg.style.backgroundColor='#BD1616'
         Y=Y
         Score()
         C=C+1
@@ -132,5 +139,16 @@ function getResult(){
 function Score(){
     compPoints.innerHTML=C
     youPoints.innerHTML=Y
+    Win.innerHTML=Math.round((C/(C+Y))*100)
+    if(Win.innerHTML<50){
+        Win.style.color='red'
+        Win.innerHTML=Win.innerHTML+'😔'
+        
+    }
+    if(Win.innerHTML>50){
+        Win.style.color='#6a6ae6'
+        Win.innerHTML=Win.innerHTML+'🤗'
+    }
+    
   
 }

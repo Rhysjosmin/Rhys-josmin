@@ -11,41 +11,47 @@ body{
     
     background-image: radial-gradient(#ff9999 20%, transparent 20%), radial-gradient(#a0f4ff 20%, transparent 20%);
     background-color: #ffffff;
-    background-position: 0 0, 50px 50px;
+    animation-name: bg;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
     background-size: 100px 100px;
     font-family: 'Righteous', cursive;
     
 }
 
 .text{
-    margin-top: 15vh;
-    padding: 10vh;
+    margin-top: 12vh;
+    padding: 8vh;
     border-radius: 30px;
     background-color: #6a6ae6;  
     transition: all .5s ;
+ 
 }
 
 .text:hover{
-    border-radius: 40px;
-    background-color: rgb(110, 119, 240);
-    padding: 10.5vh;
+    border-radius: 50px;
+   
+    
 }
 
 button{
-    border-style: none;
+    border-style:none;
     margin-top: .5rem;
     height: 2rem;
+    
     
     border-radius: 10px;
     background: rgb(78, 229, 240);
     transition: all .4s;
     font-family: 'Righteous', cursive;
+    font-size: 1em;
 }
 
 button:hover{
     height: 2.5rem;
     background: rgb(78, 240, 218) ;
-    border-radius: 3px;
+    border-radius: 7px;
 }
 
 
@@ -62,15 +68,31 @@ button:hover{
     font-weight: bold;
     font-size: 1.4em;
     transition: all .7s;
+    
 }
 
 .homebutton:hover{
+
     height: 12vh;
     width: 22vh;
     background: rgb(116, 57, 255);
 }
 
 .score{
+    padding-top: 1rem;
     font-family: 'Share Tech Mono', monospace;
-  
+}
+
+.buttons{
+    margin-top: 1.2rem;
+    display: grid;
+}
+@keyframes bg{
+    0% {background-position: 0 100px, 50px 0;
+        
+    }
+    
+    100% {background-position: 200px 400px, 150px 300px;
+        
+    }
 }
