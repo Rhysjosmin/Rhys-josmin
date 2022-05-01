@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+    font-family: 'Righteous', cursive;
+    
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: radial-gradient(#ff9999 20%, transparent 20%), radial-gradient(#a0f4ff 20%, transparent 20%);
+    background-color: #ffffff;
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+    
+}
+
+.text{
+    margin-top: 15vh;
+    padding: 10vh;
+    border-radius: 30px;
+    background-color: rgb(106, 106, 230);  
+    transition: all .5s ;
+}
+
+.text:hover{
+    border-radius: 40px;
+    background-color: rgb(110, 119, 240);
+    padding: 10.5vh;
+}
+
+button{
+    border-style: none;
+    margin-top: .5rem;
+    height: 2rem;
+    
+    border-radius: 5px;
+    background: rgb(78, 229, 240);
+    transition: all .4s;
+}
+
+button:hover{
+    height: 2.5rem;
+    background: rgb(78, 240, 218) ;
+}

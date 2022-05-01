@@ -35,13 +35,16 @@ function generateComputerChoice(){
 function getResult(){
     if(computerChoice===userChoice){
         result="It's a Draw!"
+        
     }
 
     if(computerChoice==='rock'&& userChoice==='paper'){
         result="You Win!"
+       
     }
     if(computerChoice==='rock'&& userChoice==='scissors'){
         result="Computer Wins!"
+        
     }
 
     if(computerChoice==='scissors'&& userChoice==='paper'){
