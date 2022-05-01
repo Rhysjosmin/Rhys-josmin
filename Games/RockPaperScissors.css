@@ -1,6 +1,6 @@
 *{
     margin: 0%;
-    font-family: 'Righteous', cursive;
+  
     
 }
 
@@ -13,6 +13,7 @@ body{
     background-color: #ffffff;
     background-position: 0 0, 50px 50px;
     background-size: 100px 100px;
+    font-family: 'Righteous', cursive;
     
 }
 
@@ -20,7 +21,7 @@ body{
     margin-top: 15vh;
     padding: 10vh;
     border-radius: 30px;
-    background-color: rgb(106, 106, 230);  
+    background-color: #6a6ae6;  
     transition: all .5s ;
 }
 
@@ -35,12 +36,41 @@ button{
     margin-top: .5rem;
     height: 2rem;
     
-    border-radius: 5px;
+    border-radius: 10px;
     background: rgb(78, 229, 240);
     transition: all .4s;
+    font-family: 'Righteous', cursive;
 }
 
 button:hover{
     height: 2.5rem;
     background: rgb(78, 240, 218) ;
+    border-radius: 3px;
+}
+
+
+.homebutton{
+    height: 10vh;
+    width: 20vh;
+    background: orangered;
+    border-radius: 5px;
+    margin-left: 0;
+    font-family: 'Righteous', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    transition: all .7s;
+}
+
+.homebutton:hover{
+    height: 12vh;
+    width: 22vh;
+    background: rgb(116, 57, 255);
+}
+
+.score{
+    font-family: 'Share Tech Mono', monospace;
+  
 }
