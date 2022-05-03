@@ -4,6 +4,7 @@
     font-weight: 100;
 }
 
+
 .gameBox{
     
     height: 80vh;
@@ -17,7 +18,8 @@
     justify-content: center;
     align-items: center;
     color: rgb(124, 255, 255);
-    font-size: 4em;
+    font-size: 3em;
+    
     transition: all cubic-bezier(.35,1,.2,.92) 1s;
     
 }
@@ -27,7 +29,7 @@
     background: rgb(0, 0, 0);
     height: 81vh;
     width: 83vw;
-    font-size: 3.8em;
+    font-size: 2em;
     border-radius: 20px;
 }
 .games{
@@ -49,4 +51,30 @@ hr{
     background: black;
     border-radius: 10px;
     list-style: decimal;
+}
+
+.coming_soon{
+    
+    filter: blur(10px);
+}
+
+.homebutton{
+    height: 10vh;
+    width: 20vh;
+    background: orangered;
+    border-radius: 5px;
+    margin-left: 1rem;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    transition: all .7s;
+}
+
+.homebutton:hover{
+    animation-name: Wiggle;
+    animation-duration: 1s;
+    background: rgb(116, 57, 255);
 }

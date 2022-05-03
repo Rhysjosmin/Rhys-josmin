@@ -3,7 +3,7 @@ const className=document.getElementById('className')
 const year=document.getElementById('paperYear')
 const address=document.getElementById('link')
 const box =document.getElementById('pdf')
-const paper_index_url="/Paper_Data/New folder/SubjectIndex.json"
+const paper_index_url="/Paper_Data/SubjectIndex.json"
 const pdfTemplate=document.getElementById('pdf-template')
 
 let Paper_index
