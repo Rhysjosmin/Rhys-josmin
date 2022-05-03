@@ -8,15 +8,15 @@ const pdfTemplate=document.getElementById('pdf-template')
 
 let Paper_index
 async function getData(){
-    const card = pdfTemplate.content
-    console.log(card)
+    
+    
     const response =await fetch(paper_index_url);
 
     const data = await response.json();
-    subject.innerHTML=data.subject
-    className.innerHTML=data.class
-    year.innerHTML=data.year
-    address.href=data.location
+    subject.innerHTML=data[0].subject
+    className.innerHTML=data[0].class
+    year.innerHTML=data[0].year
+    address.href=data[0].location
 
    
 }

@@ -1,9 +1,13 @@
 *{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 body{
     margin-left: 3vw;
+    background: hsl(0, 0%, 10%);
+    padding-bottom: 15vh;
+    padding-top: 2vh;
+    
 }
 .round{
     border-style: solid;
@@ -29,35 +33,46 @@ body{
 }
 
 .pdf{
+    font-size: 1.2em;
     
     margin-top: 5vh;
-    background: bisque;
+    background: #76ddff;
     height: 15rem;
     width: 15rem;
     border-radius: 20px;
     color: black;
-    transition: all .4s;
+    transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1) 10ms;
+    
     
 }
 .pdf:hover{
-    background: linear-gradient(to top, rgb(255, 206, 146),bisque);
-    transform:translateY(-10px);
+    background: #aeebff;
+    transform:translateY(-5px);
+    border-radius: 15x;
+    font-size: 1.15em;
+    
+    
+    
 }
 
 .text{
     padding-top: 20px;
-    padding-left:20px ;
+    padding-left:10px ;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 a{  
     height: 15rem;
     width: 15rem;
     text-decoration: none;
-    background-color: aqua;
+   
 }
 
 .papers{
     display: flex;
     flex-wrap: wrap;
-    gap: 2vh;
+    justify-content: space-between;
+    row-gap: 3vh;
+    padding-right: 2vw;
 }
+
