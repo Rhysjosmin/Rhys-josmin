@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin-left: 3vw;
+}
+.round{
+    border-style: solid;
+    border-color: black;
+    border-radius: 6px;
+    
+    font-size: 1em;
+    padding: .5rem;
+    border-width: 1px;
+    font-weight: 1000;
+    box-shadow: none;
+    
+}
+
+.inputs{
+    margin-top: 5vh;
+    
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1vw;
+    
+
+}
+
+.pdf{
+    
+    margin-top: 5vh;
+    background: bisque;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 20px;
+    color: black;
+    transition: all .4s;
+    
+}
+.pdf:hover{
+    background: linear-gradient(to bottom, rgb(255, 206, 146),bisque);
+    transform:translateY(-10px);
+}
+
+.text{
+    padding-top: 20px;
+    padding-left:20px ;
+}
+
+a{
+    text-decoration: none;
+}
+
+.papers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
