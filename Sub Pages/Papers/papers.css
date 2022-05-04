@@ -36,23 +36,23 @@ body{
     font-size: 1.2em;
     
     margin-top: 5vh;
-    background: #76ddff;
-    height: 15rem;
-    width: 15rem;
+    
+    height: 18rem;
+    width: 18rem;
     border-radius: 20px;
     color: black;
+    filter: blur(0.5px);
     transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1) 10ms;
-    
+    border: 5px black;
     
 }
 .pdf:hover{
-    background: #aeebff;
-    transform:translateY(-5px);
+    filter: brightness(120%) blur(0px);
+    transform:translateY(-10px);
     border-radius: 15x;
-    font-size: 1.15em;
-    
-    
-    
+    font-size: 1.15em;   
+    border-color: #9ecaed;
+    box-shadow: 0 0 5px 2px #1e9aff;
 }
 
 .text{
@@ -62,8 +62,8 @@ body{
 }
 
 a{  
-    height: 15rem;
-    width: 15rem;
+    height: 18rem;
+    width: 18rem;
     text-decoration: none;
    
 }
@@ -73,6 +73,8 @@ a{
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 3vh;
-    padding-right: 2vw;
+    
+    padding-right: 3vw;
 }
+
 
