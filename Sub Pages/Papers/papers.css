@@ -77,4 +77,15 @@ a{
     padding-right: 3vw;
 }
 
-
+.Math{
+    background: #f17086;
+}
+.Physics{
+    background: #bd70f1;
+}
+.Computer{
+    background: #70ccf1;
+}
+.Civil{
+    background: #28a14c;
+}
