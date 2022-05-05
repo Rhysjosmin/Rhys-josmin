@@ -37,34 +37,36 @@ body{
     
     margin-top: 5vh;
     
-    height: 25vw;
-    width: 25vw;
+    height: 22vw;
+    width: 22vw;
     border-radius: 20px;
     color: black;
-    filter: blur(0.5px);
+    
     transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1) 10ms;
     border: 5px black;
     
 }
 .pdf:hover{
-    filter: brightness(120%) blur(0px);
-    transform:translateY(-10px);
+    filter: brightness(125%) blur(0px);
+    transform:translateY(-3vh);
     border-radius: 15x;
     font-size: 1.15em;   
     border-color: #9ecaed;
     box-shadow: 0 0 5px 2px #1e9aff;
 }
 
+
+
 .text{
-    font-size: 2vw;
-    padding-top: 20px;
-    padding-left:10px ;
+    font-size: 3vw;
+    padding-top: 1vw;
+    padding-left: 1vw ;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 a{  
-    height: 25vw;
-    width: 25vw;
+    height: 22vw;
+    width: 22vw;
     text-decoration: none;
    
 }
@@ -78,8 +80,15 @@ a{
     padding-right: 3vw;
 }
 
+
+
+
+
+
+
+
 .Math{
-    background: #f17086;
+    background: #da415a;
 }
 .Physics{
     background: #bd70f1;
@@ -89,4 +98,16 @@ a{
 }
 .Civil{
     background: #28a14c;
+}
+
+.year{
+    color: #000000;
+    border-radius: 8px;
+    padding-bottom: 1vh;
+    transition: all .4s;
+}
+.year:hover{
+    background: whitesmoke;
+    
+    
 }
