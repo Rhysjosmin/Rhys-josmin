@@ -80,7 +80,19 @@ body{
     padding-right: 3vw;
 }
 
-
+.mathPapers{
+    margin-top: 2vh;
+    background: hsl(0, 0%, 15%);
+    border-radius: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 3vw;
+    column-gap: 2vw;
+    padding-bottom: 10vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
 
 
 
