@@ -71,7 +71,7 @@ a{
 .papers{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     row-gap: 3vw;
     
     padding-right: 3vw;
