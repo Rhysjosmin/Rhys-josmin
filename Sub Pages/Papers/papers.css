@@ -72,7 +72,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 3vh;
+    row-gap: 3vw;
     
     padding-right: 3vw;
 }
