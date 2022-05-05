@@ -1,5 +1,5 @@
 :root{
-    --box-size:22vw
+    --box-size:25vw
 }
 
 *{
@@ -86,19 +86,38 @@ body{
 
 .Pdfcontainer{
     margin-top: 2vh;
-    background: hsl(0, 0%, 15%);
+    background: hsl(0, 0%, 18%);
     border-radius: 5vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 3vw;
-    column-gap: 1vw;
+    row-gap: 1vw;
+    
     padding-bottom: 10vh;
     padding-left: 1vw;
     padding-right: 1vw;
 }
 
 
+.homebutton{
+    height: 8vw;
+    width: 15vw;
+    background: orangered;
+    border-radius: 5px;
+    margin-top: 8vh;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2.5vw;
+    transition: all .5s;
+}
+
+.homebutton:hover{
+    width: 18vw;
+    background: rgb(116, 57, 255);
+}
 
 
 
@@ -136,5 +155,5 @@ body{
     background-color: rgb(175, 175, 175);
 }
 .sem2{
-    background-color: rgb(0, 141, 106) 
+    background-color: rgb(28, 133, 107) 
 }
