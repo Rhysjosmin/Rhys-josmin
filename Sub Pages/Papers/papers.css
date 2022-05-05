@@ -42,14 +42,14 @@ body{
     border-radius: 20px;
     color: black;
     
-    transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1) 10ms;
+    transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1) 10ms;
     border: 5px black;
     
 }
 .pdf:hover{
     filter: brightness(125%) blur(0px);
-    transform:translateY(-3vh);
-    border-radius: 15x;
+    transform:translateY(-2vh);
+    border-radius: 10px;
     font-size: 1.15em;   
     border-color: #9ecaed;
     box-shadow: 0 0 5px 2px #1e9aff;
@@ -80,7 +80,7 @@ body{
     padding-right: 3vw;
 }
 
-.mathPapers{
+.Pdfcontainer{
     margin-top: 2vh;
     background: hsl(0, 0%, 15%);
     border-radius: 5vh;
@@ -93,6 +93,8 @@ body{
     padding-left: 3vw;
     padding-right: 3vw;
 }
+
+
 
 
 
