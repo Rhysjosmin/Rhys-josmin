@@ -37,8 +37,8 @@ body{
     
     margin-top: 5vh;
     
-    height: 40vw;
-    width: 40vw;
+    height: 25vw;
+    width: 25vw;
     border-radius: 20px;
     color: black;
     filter: blur(0.5px);
@@ -62,8 +62,8 @@ body{
 }
 
 a{  
-    height: 40vw;
-    width: 40vw;
+    height: 25vw;
+    width: 25vw;
     text-decoration: none;
    
 }
