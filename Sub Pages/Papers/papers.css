@@ -43,7 +43,7 @@ body{
     
     height: var(--box-size);
     width: var(--box-size);
-    border-radius: 20px;
+    border-radius: .9rem;
     color: black;
     
     transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1) 10ms;
@@ -53,7 +53,7 @@ body{
 .pdf:hover{
     filter: brightness(125%) blur(0px);
     transform:translateY(-2vh);
-    border-radius: 10px;
+    border-radius: .3rem;
     font-size: 1.15em;   
     border-color: #9ecaed;
     box-shadow: 0 0 5px 2px #1e9aff;
@@ -87,7 +87,7 @@ body{
 .Pdfcontainer{
     margin-top: 2vh;
     background: hsl(0, 0%, 18%);
-    border-radius: 30px;
+    border-radius: .8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
