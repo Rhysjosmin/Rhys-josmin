@@ -1,5 +1,6 @@
 :root{
     --box-size:25vw
+    
 }
 
 *{
@@ -8,14 +9,14 @@
 }
 body{
     margin-left: 3vw;
-    background: hsl(0, 0%, 10%);
+    background: hsl(0, 0%, 100%);
     padding-bottom: 15vh;
     padding-top: 2vh;
     
 }
 .round{
     border-style: solid;
-    border-color: black;
+    border-color: rgb(0, 0, 0);
     border-radius: 6px;
     
     font-size: 1em;
@@ -86,7 +87,7 @@ body{
 
 .Pdfcontainer{
     margin-top: 2vh;
-    background: hsl(0, 0%, 18%);
+    background: hsl(0, 0%, 80%);
     border-radius: .8rem;
     display: flex;
     flex-wrap: wrap;
