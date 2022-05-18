@@ -9,7 +9,7 @@
         position: fixed;
         background-color: rgb(24, 24, 24);
         max-height: 20vh;
-        min-height: 10vh;
+        padding: 1vh;
         display: flex;
         align-items: center;
         justify-content:safe;
