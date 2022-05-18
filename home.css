@@ -20,17 +20,18 @@
     .navbar-button{
         
         margin-left: .3em;
-        background-color: azure;
+        background-color: rgb(255, 255, 255);
         padding-top: .5vh;
         padding-bottom: .5vh;
         border-radius:.1em;
-        font-size: calc(5vh);
+        
 
         
     }
     .navbar-button-link{
+        font-size: 5vw;
         font-weight: 500;
-        
+        color: rgb(7, 7, 7);
         text-decoration: none;
 
     }
