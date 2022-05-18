@@ -77,14 +77,19 @@
         float: right;
         border-radius: 50%;
         height: 50vw;
-        filter: drop-shadow(#00000046 0px 0px 0px);
+        filter: drop-shadow(#00000046 0vw 0vw 0vw);
         transition: filter 1s, transform 1s;
     }
     .profile:hover{
-        transform: translateY(-30px);
-        filter: drop-shadow(#00000046 0px 20px 6px);
+        perspective: 1px;
+        transform: translateY(-2vw) rotateX(-10deg);
+        filter: drop-shadow(#00000046 0vw 4vw 1.5vw);
     }
-   
+   .end{
+       background-color: #000000;
+       color: aliceblue;
+       font-size: .5em;
+   }
 }
 
 @media(min-width:425px) {
@@ -94,6 +99,7 @@
         font-family: 'Exo', sans-serif;
     }
     .navbar{
+        z-index: 1;
         position: fixed;
         background-color: #0f0f0f;
         max-height: 20vh;
@@ -106,6 +112,7 @@
        
     }
     .navbar-button{
+        
         
         margin-left: .3em;
         background-color: rgb(15, 15, 15);
@@ -147,25 +154,33 @@
     }
     
     .s2{
+        padding-top: 4em;
+        padding-left: 1vw;
         background-color: #272727;
         height: 100vh;
+        font-size: 15em;
+        color: aliceblue;
     }
 
     .profile{
         z-index: 0;
         float: right;
         border-radius: 50%;
-        height: 70vw;
+        height: 45vw;
         transform: translatey(0px);
         filter: drop-shadow(black 0px 10px 10px);
         transition: transform 1s, filter 1.1s;
     }
     .profile:hover{
-        transform: translatey(-20px);
-        filter: drop-shadow(black 0px 50px 10px);
+        transform: translatey(-1em) rotateX(10deg);
+        filter: drop-shadow(#00000075 0px 50px .5em);
     }
 
- 
+    .end{
+        background-color: #000000;
+        color: aliceblue;
+        font-size: 2em;
+    }
    
 }
 
