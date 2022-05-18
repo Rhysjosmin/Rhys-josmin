@@ -6,14 +6,16 @@
         font-family: 'Exo', sans-serif;
     }
     .navbar{
+        position: fixed;
         background-color: rgb(24, 24, 24);
         max-height: 20vh;
-        min-height: 8vh;
+        min-height: 10vh;
         display: flex;
         align-items: center;
         justify-content:safe;
         padding-left: 1vw;
         width:100vw ;
+       
     }
     .navbar-button{
         
@@ -22,7 +24,7 @@
         padding-top: .5vh;
         padding-bottom: .5vh;
         border-radius:.1em;
-        font-size: 5vw;
+        font-size: calc(5vh);
 
         
     }
@@ -33,12 +35,12 @@
 
     }
     .s1{
-        height: 100vh;
+        height: 200vh;
         background-color: rgb(12, 12, 12);
         display: flex;
-        padding-top: 10vh;
+        padding-top: 20vh;
         padding-left: 1vw;
-        font-size: 4.5em;
+        font-size: 20vw;
         color: rgb(125, 226, 43);
     }
  
