@@ -7,7 +7,7 @@
     }
     .navbar{
         position: fixed;
-        background-color: rgb(24, 24, 24);
+        background-color: #7de22b;
         max-height: 20vh;
         padding: 1vh;
         display: flex;
@@ -20,30 +20,45 @@
     .navbar-button{
         
         margin-left: .3em;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(15, 15, 15);
         padding-top: .5vh;
         padding-bottom: .5vh;
-        border-radius:.1em;
-        
+        border-radius:.3em;
+        padding: 1vw;
 
         
     }
     .navbar-button-link{
         font-size: 5vw;
         font-weight: 500;
-        color: rgb(7, 7, 7);
+        color: rgb(255, 255, 255);
         text-decoration: none;
+        
 
     }
+    .sm1{
+        color:rgb(255, 255, 255) ; 
+        font-size: 15vw; 
+        font-weight: 200;
+    }
     .s1{
-        height: 200vh;
+        height: 40vh;
         background-color: rgb(12, 12, 12);
         display: flex;
-        padding-top: 20vh;
+        align-items: flex-start;
+        line-height: 20vw;
+        padding-top: 10vh;
         padding-left: 1vw;
-        font-size: 20vw;
-        color: rgb(125, 226, 43);
+        font-size: 18vw;
+        color: #7de22b;
+        
     }
+    
+    .s2{
+        background-color: rgb(14, 14, 14);
+        height: 100vh;
+    }
+
  
    
 }
