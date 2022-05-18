@@ -26,9 +26,13 @@
         padding-bottom: .5vh;
         border-radius:.3em;
         padding: 1vw;  
+        transition: background-color 1s,color .5s,padding-left .5s,padding-right 1s;
     }
     .navbar-button:hover{
-        background-color: #1d1c1c;
+        background-color: #ffffff;
+        color: #000000;
+        padding-left: 2vw;
+        padding-right: 4vw;
     }
     .navbar-button-link{
         font-size: 5vw;
