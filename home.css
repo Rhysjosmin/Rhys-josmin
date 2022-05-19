@@ -22,7 +22,7 @@
         color: aliceblue;
         font-weight: 900;
         color: rgb(132, 198, 255);
-        font-size: 6vw;
+        font-size: 3vw;
         position: absolute;
         right: 5vw;
     }
@@ -173,7 +173,7 @@
         padding-left: 1vw;
         background-color: #272727;
         min-height: 100vh;
-        font-size: 5em;
+        font-size: 10vw;
         color: aliceblue;
     }
 
@@ -199,5 +199,8 @@
    
 }
 
-
+.long{
+    height: 200vh;
+    background: linear-gradient(to right top, rgb(221, 238, 144),rgb(10, 255, 182));
+}
 
