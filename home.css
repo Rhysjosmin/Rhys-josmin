@@ -159,11 +159,11 @@
         font-weight: 200;
     }
     .sm2{
-        font-size: 18vw;
-        transition: font-size .5s;
+        
+        transition: color .8s;
     }
     .sm2:hover{
-        font-size: 18.5vw;
+        color: #49e2bc;
     }
     .s1{
         
@@ -173,7 +173,7 @@
         line-height: 20vw;
         padding-top: .1em;
         padding-left: 1vw;
-        
+        font-size: 18vw;
         color: #7de22b;
         padding-bottom: 1em;
       
