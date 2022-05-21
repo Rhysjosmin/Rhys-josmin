@@ -106,6 +106,17 @@
         padding: 0%;
         font-family: 'Exo', sans-serif;
     }
+    .name{
+        font-weight: 900;
+        color: rgb(132, 198, 255);
+        font-size: 3vw;
+        position: absolute;
+        right: 5vw;
+        transition: color .4s;
+    }
+    .name:hover{
+        color: rgb(174, 216, 253);
+    }
     .navbar{
         z-index: 1;
         position: fixed;
@@ -119,13 +130,7 @@
         width:100vw ;
        
     }
-    .name{
-        font-weight: 900;
-        color: rgb(132, 198, 255);
-        font-size: 3vw;
-        position: absolute;
-        right: 5vw;
-    }
+   
     .navbar-button{
         
         
@@ -153,6 +158,13 @@
         font-size: 15vw; 
         font-weight: 200;
     }
+    .sm2{
+        font-size: 18vw;
+        transition: font-size .5s;
+    }
+    .sm2:hover{
+        font-size: 18.5vw;
+    }
     .s1{
         
         background-color: rgb(12, 12, 12);
@@ -161,12 +173,14 @@
         line-height: 20vw;
         padding-top: .1em;
         padding-left: 1vw;
-        font-size: 18vw;
+        
         color: #7de22b;
         padding-bottom: 1em;
+      
         
         
     }
+   
     
     .s2{
         padding-top: .2em;
@@ -200,7 +214,7 @@
 }
 
 .long{
-    height: 200vh;
+    height: 100vh;
     background: linear-gradient(to right top, rgb(221, 238, 144),rgb(10, 255, 182));
 }
 
