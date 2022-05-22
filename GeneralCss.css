@@ -1,0 +1,104 @@
+@media(max-width:425px) {
+.navbar{
+    z-index: 1;
+    position: fixed;
+    max-height: 20vh;
+    padding: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content:safe;
+    padding-left: 1vw;
+    width:100vw ;
+   
+}
+.name{
+    font-weight: 900;
+    font-size: 3vw;
+    position: absolute;
+    right: 5vw;
+}
+.navbar-button{
+    margin-left: .3em;
+    padding-top: .5vh;
+    padding-bottom: .5vh;
+    border-radius:.3em;
+    padding: 1vw;  
+    
+}
+
+.navbar-button-link{
+    font-size: 4.4vw;
+    font-weight: 500;
+    text-decoration: none;
+}
+}
+
+
+@media(min-width:425px){
+    .name{
+        font-weight: 900;
+        font-size: 3vw;
+        position: absolute;
+        right: 5vw;
+        
+    }
+   
+    .navbar{
+        z-index: 1;
+        position: fixed;
+        
+        max-height: 20vh;
+        padding: 1vh;
+        display: flex;
+        align-items: center;
+        justify-content:safe;
+        padding-left: 1vw;
+        width:100vw ;
+       
+    }
+   
+    .navbar-button{
+        
+        
+        margin-left: .3em;
+        
+        padding-top: .1vh;
+        padding-bottom: .1vh;
+        border-radius:.3em;
+        padding: 1vw;  
+        
+    }
+ 
+    .navbar-button-link{
+        font-size: 1vw;
+        font-weight: 500;
+        text-decoration: none;
+
+    }
+}
+
+.navbar{
+    background-color: hsl(0, 0%, 8%);
+}
+.navbar-button{
+    background-color: hsl(0, 0%, 6%);
+    transition: background-color .5s,transform .4s;
+
+}
+.navbar-button:hover{
+    background-color: #40e2ff;
+    color: black;
+    transform: scale(105%);
+}
+.navbar-button-link{
+    color: rgb(255, 255, 255);
+}
+
+.name{
+    color: rgb(132, 198, 255);
+    transition: color .4s;
+}
+
+.name:hover{
+    color: rgb(149, 119, 255);
+}

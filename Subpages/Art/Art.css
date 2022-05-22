@@ -3,46 +3,11 @@
     padding: 0%;
     font-family: 'Exo', sans-serif;
 }
-.name{
-    font-weight: 900;
-    color: rgb(132, 198, 255);
-    font-size: 3vw;
-    position: absolute;
-    right: 5vw;
-    transition: color .4s;
-}
-.name:hover{
-    color: rgb(174, 216, 253);
-}
-.navbar{
-    z-index: 1;
-    position: fixed;
-    background-color: #0f0f0f;
-    max-height: 20vh;
-    padding: 1vh;
-    display: flex;
-    align-items: center;
-    justify-content:safe;
-    padding-left: 1vw;
-    width:100vw ;
-   
-}
 
-.navbar-button{
-    
-    
-    margin-left: .3em;
-    background-color: rgb(15, 15, 15);
-    padding-top: .5vh;
-    padding-bottom: .5vh;
-    border-radius:.3em;
-    padding: 1vw;  
-    transition: background-color .5s, transform .3s;
-}
-.navbar-button:hover{
-    background-color: #818181;
-    transform: scale(105%);
-}
+
+
+
+
 
 
 
@@ -79,14 +44,7 @@
         color: aliceblue;
         font-size: 2em;
     }
-    .navbar-button-link{
-        font-size: 2vw;
-        font-weight: 500;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        
-    
-    }
+   
 }
 
 @media(max-width:425px){
@@ -118,12 +76,5 @@
         color: aliceblue;
         font-size: .5em;
     }
-    .navbar-button-link{
-        font-size: 5vw;
-        font-weight: 500;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        
-    
-    }
+   
 }
