@@ -43,18 +43,8 @@
     background-color: #818181;
     transform: scale(105%);
 }
-.navbar-button-link{
-    font-size: 2vw;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    
 
-}
 
-body{
-    cursor: url('/Media/Images/dog.png'), auto;	
-  }
 
 
 
@@ -89,6 +79,14 @@ body{
         color: aliceblue;
         font-size: 2em;
     }
+    .navbar-button-link{
+        font-size: 2vw;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        
+    
+    }
 }
 
 @media(max-width:425px){
@@ -119,5 +117,13 @@ body{
         background-color: #000000;
         color: aliceblue;
         font-size: .5em;
+    }
+    .navbar-button-link{
+        font-size: 5vw;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        
+    
     }
 }
