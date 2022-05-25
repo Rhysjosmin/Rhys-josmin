@@ -8,52 +8,150 @@ body{
     background: linear-gradient(to top right, rgb(26, 113, 245),rgb(85, 246, 252));
 }
 
-.nft-container{
-    padding-top: 15vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2vw;
-    
-}
 
-nft{
-    background: rgb(0, 28, 59);
-    padding: .5vw;
-    border-radius: 1vw;
-    transition: all .5s;
-}
-nft:hover{
-    transform: scale(105%);
-    background: rgb(0, 119, 255);  
-}
-.nft-image{
-    width: 40vh;
-    border-radius: 1vw;
-}
-.nft-info{
-    background: rgb(238, 238, 238);
-    
-    border-radius: 1vw;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    padding-left: 1vw;
-}
+@media(max-width:425px){
+    nft{
+        background: rgb(32, 0, 58);
+        
+        padding: 1vw;
+        border-radius: 3vw;
+        display: flex;
+        gap: 1vw;
+        
+        transition: all .5s;
+    }
+    .nft-image{
+        width: 40vw;
+        border-radius: 3vw;
+    }
+    .nft-container{
+        padding: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
 
-.nft-buy{
-    font-size: 1em;
-    text-decoration: none;
-    color: white;
-    padding: 2vw;
-    background-color: rgb(71, 157, 255);
-    border-radius: 1vw;
-    transform: scale(100%);
-    transition: all .2s;
-}
 
-.nft-buy:hover{
     
-    background-color: rgb(132, 189, 255);
     
+
+
+    .nft-container{
+        padding-top: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5vw;
+       
+    }
+    
+    
+    nft:hover{
+        
+        transform: scale(105%);
+        background: rgb(17, 128, 255);
+         
+    }
+    
+    .nft-info{
+        background: rgb(238, 238, 238);
+        vertical-align: middle;
+        padding: 2vw;
+        border-radius: 3vw;
+       
+    }
+    
+    .nft-buy{
+        font-size: .6em;
+        text-decoration: none;
+        color: white;
+        padding: 2vw;
+        background-color: rgb(71, 157, 255);
+        border-radius:3vw;
+        transform: scale(100%);
+        transition: all .2s;
+    }
+    
+    .nft-buy:hover{
+        transform: scale(110%);
+        background-color: rgb(112, 179, 255);
+        
+    }
+    .Cs{
+        text-align:center;
+        color:aliceblue;
+        padding-top: 8vh;
+        font-size: 10vw;
+    }
+}
+@media(min-width:425px){
+    nft{
+        background: rgb(32, 0, 58);
+        
+        padding: 1vw;
+        border-radius: 1vw;
+        
+        transition: all .5s;
+    }
+    .nft-image{
+        width: 40vh;
+        border-radius: 1vw;
+    }
+
+
+    .nft-container{
+        padding-top: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2vw;
+       
+    }
+    
+    
+    nft:hover{
+        
+        transform: scale(105%);
+        background: rgb(17, 128, 255);
+         
+    }
+    
+    .nft-info{
+        background: rgb(238, 238, 238);
+        
+        border-radius: 1vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        padding-left: 1vw;
+    }
+    
+    .nft-buy{
+        font-size: 1em;
+        text-decoration: none;
+        color: white;
+        padding: 2vw;
+        background-color: rgb(71, 157, 255);
+        border-radius: 1vw;
+        transform: scale(100%);
+        transition: all .2s;
+    }
+    
+    .nft-buy:hover{
+        
+        background-color: rgb(112, 179, 255);
+        
+    }
+    .nft-buy:active{
+        font-size: smaller;
+    }
+    .Cs{
+        text-align:center;
+        color:aliceblue;
+        padding-top: 8vh;
+        font-size: 4em;
+    }
 }
