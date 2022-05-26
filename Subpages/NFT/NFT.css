@@ -25,7 +25,7 @@ body{
         border-radius: 3vw;
     }
     .nft-container{
-        padding: 15vh;
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -51,7 +51,7 @@ body{
     
     nft:hover{
         
-        transform: scale(105%);
+        
         background: rgb(17, 128, 255);
          
     }
@@ -59,24 +59,34 @@ body{
     .nft-info{
         background: rgb(238, 238, 238);
         vertical-align: middle;
-        padding: 2vw;
+        display: flex;
+        
+        align-items:flex-start;
+        flex-wrap: wrap;
+        padding-top: 1vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
         border-radius: 3vw;
-       
+        width: 20vw;
     }
     
     .nft-buy{
-        font-size: .6em;
+        font-size: 3vw;
         text-decoration: none;
         color: white;
         padding: 2vw;
         background-color: rgb(71, 157, 255);
         border-radius:3vw;
-        transform: scale(100%);
+        
         transition: all .2s;
+    }
+    nft .nft-info h3{
+        color: rgb(0, 0, 0);
+        font-size: 3vw;
     }
     
     .nft-buy:hover{
-        transform: scale(110%);
+        
         background-color: rgb(112, 179, 255);
         
     }
@@ -97,7 +107,7 @@ body{
         transition: all .5s;
     }
     .nft-image{
-        width: 40vh;
+        width: 40vw;
         border-radius: 1vw;
     }
 
@@ -119,21 +129,35 @@ body{
         background: rgb(17, 128, 255);
          
     }
+
+    nft .nft-info h3{
+        font-size: 3vw;
+    }
+
+    nft:hover .nft-info h3{
+        transition: color .6s;
+        color: rgb(0, 0, 0);
+    }
     
     .nft-info{
         background: rgb(238, 238, 238);
-        
+        width: 39vw;
         border-radius: 1vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
         padding-left: 1vw;
+        display: grid;
+        gap: 1vh;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        align-items: center;
     }
     
     .nft-buy{
-        font-size: 1em;
+        font-size: 3vw;
         text-decoration: none;
         color: white;
-        padding: 2vw;
+        padding: 1.5vw;
         background-color: rgb(71, 157, 255);
         border-radius: 1vw;
         transform: scale(100%);

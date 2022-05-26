@@ -38,7 +38,7 @@
 @media(min-width:425px){
     .name{
         font-weight: 900;
-        font-size: 3vw;
+        font-size: 2vw;
         position: absolute;
         right: 5vw;
         
@@ -96,6 +96,7 @@
 }
 
 .name{
+    
     color: rgb(132, 198, 255);
     transition: color .4s;
     
