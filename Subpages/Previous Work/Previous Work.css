@@ -1,0 +1,83 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Exo', sans-serif;
+    }
+
+.gorditas{
+    font-family: 'Gorditas', cursive;
+}
+.yellowDuck{
+    
+    padding-left: 1vw;
+    padding-bottom: 30vh;
+    color: aliceblue;
+    padding-top: 20vh;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top ,#50B2F9,rgb(0, 68, 255));
+}
+
+.rhys-duck{
+    
+    margin: 2vh;
+    color: black;
+    background: rgb(255, 255, 255);
+    max-width:40vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2vh;
+
+    border-radius: 1vh;
+    box-shadow: .3vh .3vh .9vh 0vh rgba(0, 0, 0, 0.555);
+    transition: transform .5s, box-shadow .5s;
+}
+.rhys-duck:hover{
+    transform: translateY(-1vh);
+    box-shadow: .3vh 1vh .9vh 0vh rgba(0, 0, 0, 0.555);
+
+}
+.yellowDuck p{
+
+    border-radius: 1vh;
+    padding: 2vh;
+    max-width: 80vh;
+    color: black;
+    background:linear-gradient(to top ,#ffffff,hsl(0, 0%, 90%));
+    box-shadow: .3vh .3vh .9vh 0vh rgba(0, 0, 0, 0.555);
+    transition: transform .5s, box-shadow .5s;
+}
+
+.yellowDuck p:hover{
+    transform: translateY(-1vh);
+    box-shadow: .3vh 1vh .9vh 0vh rgba(0, 0, 0, 0.555);
+
+}
+
+.rhys-duck img{
+    width: 30vh;
+    
+}
+
+.rhys-duck a{
+    border: .4vh solid black;
+    border-radius: 5vh;
+    background: rgb(255, 255, 255);
+    color: black;
+    text-decoration: none;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    transition: .2s;
+}
+
+.rhys-duck a:hover{
+    background: black;
+    color: rgb(255, 255, 255);
+
+}

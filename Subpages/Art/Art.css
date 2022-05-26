@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 5vh;
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(204, 202, 202);
     padding-bottom: 4vw;
     
 }
@@ -36,7 +36,7 @@
 
 @media(min-width:425px){
     body{
-        background: rgb(34, 34, 34);
+        background: rgb(204, 202, 202);
     }
     .image-container{
         display: flex;
@@ -97,3 +97,4 @@
     }
    
 }
+
