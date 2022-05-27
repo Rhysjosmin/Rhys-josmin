@@ -10,17 +10,18 @@ font-family: 'Exo', sans-serif;
     padding-top: 15vh;
     color: rgb(255, 255, 255);
     
+    
 }
 
 .socials img{
     width: 10vw;
-    transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     
 }
 .socials img:hover{
     
     
-    transform: scale(105%);
+    transform: scale(105%) translateY(-5px);
 }
 .socials{
     width: 80%;
