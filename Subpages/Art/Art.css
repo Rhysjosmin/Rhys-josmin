@@ -9,21 +9,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5vh;
+    gap: 1vh;
     background-color: antiquewhite;
     padding-bottom: 4vw;
     
 }
-.video{
-    height: 30vh;
-    width: 60vh;
+.video img{
+    background-color: rgb(0, 0, 0);
+    
+    height: 45vh;
     border-radius: 1.5vh;
-    transition: transform .8s cubic-bezier(0.075, 0.82, 0.165, 1),border-radius .2s,filter .5s ;
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1),border-radius .2s,filter .5s ;
 }
-.video:hover{
-    filter: brightness(120%);
-    border-radius: .5vh;
-    transform: scale(105%);
+.video img:hover{
+    filter: brightness(105%);
+    
+    transform: scale(101%) translateY(-.5vh);
 }
 
 
