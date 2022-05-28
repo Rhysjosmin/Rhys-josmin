@@ -17,11 +17,11 @@
 
 body{
     padding-bottom: 20vh;
-    background: linear-gradient(to top,rgb(32, 7, 255),rgb(255, 60, 0));
+    background: black;
 }
 .picture{
     overflow: hidden;
-    margin-top: -15vh;
+    margin-top: -100px;
     height: 30vw;
     width: 30vw;
     
