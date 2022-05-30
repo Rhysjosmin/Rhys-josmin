@@ -1,7 +1,8 @@
 *{
     padding: 0%;
     margin: 0%;
-    font-family: 'Exo', sans-serif;  
+     
+    font-family:'Courier New', Courier, monospace;
 }
 body{
     display: flex;
@@ -11,29 +12,32 @@ body{
     background: linear-gradient(to top,rgb(169, 169, 255),rgb(252, 190, 252))
 }
 .note {
-    margin-top: 10vw;
-    padding-left:5vw;
-    padding-right:5vw;
+    margin-top: 3vw;
+    max-width: 80%;
     background-color: antiquewhite;
-    padding: 3vh;
-    border-radius: 10px;
-    
-    transition: all .5s;
+    padding: 2vw;
+    border-radius: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+   
 }
 
 p{
     font-size: 3vw;
 }
 img{
-    margin-top: 10vw;
-    margin-bottom: -2vw;
+    margin-top: 3vw;
+    
     width: 70%;
     border-radius: 15px;
     
-    transition: all .2s;
+    transition: all .6s;
 }
-img:hover,.note:hover{
-    transform: scale(1.015);
+img:hover{
+    -webkit-transform:translateY(-1vw);
+    transform: translateY(-1vw);
     
 }
 
@@ -41,13 +45,15 @@ img:hover,.note:hover{
     margin-top: 8vw; 
     
     margin-bottom: 15vh;
+    display: flex;
+    gap: 2vw;
 }
 .bottom-buttons a{
-    
+    font-size: 3vw;
     color: black;
-    padding: 2vh;
+    padding: 1vw;
     background: antiquewhite;
-    border-radius: 10px;
+    border-radius: 1vw;
     text-decoration: none;
     transition: all .5s;
 }
@@ -56,16 +62,29 @@ img:hover,.note:hover{
     color: aliceblue;
 }
 .top{
-    font-family:'Courier New', Courier, monospace;
-font-size: 3vw;
-font-style: italic;
+
+    font-size: 3vw;
+    font-style: italic;
+    gap:3vw;
 }
 
 .duration{
     font-style: normal;
-    font-size: 2vw;
+    font-size: 3vw;
     background: rgb(255, 214, 161);
     color: rgb(0, 0, 0);
     padding: 1vh;
-    border-radius: 8px;
+    border-radius: 1vw;
+    transition: all .2s;
+}
+.duration:hover{
+    background: rgb(253, 203, 138);
+}
+a{
+    text-decoration:none;
+    color:rgb(255, 6, 201);
+    transition: color .15s;
+}
+a:hover{
+    color:rgb(6, 180, 255);
 }
