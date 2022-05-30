@@ -3,10 +3,11 @@
     margin: 0%;
     font-family: 'Exo', sans-serif;
 }
-.reel video{
-    margin-top: 5vh;
-    width: 100vw;
-       
+.reel embed{
+    margin-top:-8vw;
+    height: 100vh;
+    width: 100vh;
+   
     
 }
 .reel{
@@ -22,7 +23,7 @@ body{
 }
 .picture{
     overflow: hidden;
-    margin-top: -10vw;
+    margin-top: -5vw;
     height: 30vw;
     width: 30vw;
     
