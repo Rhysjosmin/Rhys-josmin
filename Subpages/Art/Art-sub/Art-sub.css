@@ -21,6 +21,8 @@ body{
     justify-content: center;
     background: linear-gradient(to top,rgb(169, 169, 255),rgb(252, 190, 252))
 }
+
+
 @media(min-width:425px){
 
 
@@ -34,6 +36,8 @@ body{
     justify-content: center;
     align-items: center;
     gap: 2vw;
+
+    
    
 }
 
@@ -43,16 +47,14 @@ p{
 img{
     margin-top: 3vw;
     
-    width: 70%;
+    width: 90%;
     border-radius: 15px;
     
-    transition: all .6s;
-}
-img:hover{
-    -webkit-transform:translateY(-1vw);
-    transform: translateY(-1vw);
     
+    transition: all .6s;
+
 }
+
 
 .bottom-buttons{
     margin-top: 8vw; 
@@ -75,10 +77,11 @@ img:hover{
     color: aliceblue;
 }
 .top{
-
+    color: rgb(116, 116, 116);
     font-size: 3vw;
     font-style: italic;
     gap:3vw;
+    
 }
 
 .duration{
@@ -89,8 +92,11 @@ img:hover{
     padding: 1vh;
     border-radius: 1vw;
     transition: all .2s;
-}
 
+}
+.duration:hover{
+    background: rgb(255, 205, 141);
+}
 
 
 }
@@ -138,4 +144,16 @@ img:hover{
     background: rgb(0, 0, 0); 
     color: white;
    }
+}
+
+@keyframes bob{
+    0%{transform: translateY(0px) rotateZ(-.01deg);}
+    50%{transform: translateY(-3px) rotateZ(.01deg);}
+    100%{transform: translateY(0px) rotateZ(-.01deg);}
+}
+
+@keyframes bob2{
+    0%{transform: translateY(0px) rotateZ(.01deg) ;}
+    50%{transform: translateY(-3px) rotateZ(-.01deg);}
+    100%{transform: translateY(0px) rotateZ(.01deg);}
 }
