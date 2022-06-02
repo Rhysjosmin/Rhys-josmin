@@ -122,6 +122,7 @@ img{
 }
    .duration{
     background: rgb(255, 214, 161);
+    margin-top:2vw;
     padding: 1vw;
     border-radius: 1vw;
    }
