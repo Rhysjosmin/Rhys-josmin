@@ -244,7 +244,7 @@
   border-radius: 15px;
   -webkit-transition: all .4s;
   transition: all .4s;
-  margin-bottom: 10vw;
+  margin-bottom: 2vw;
 }
 
 .work .moreImg:hover {
@@ -252,6 +252,26 @@
           transform: translate(1vw, -1vw);
   -webkit-box-shadow: -2vw 2vw 0vw 0vw #ff8341;
           box-shadow: -2vw 2vw 0vw 0vw #ff8341;
+}
+
+.work .moreImg2 {
+  text-decoration: none;
+  font-size: 6vw;
+  background: #0095ff;
+  color: black;
+  margin-top: 0vw;
+  padding: 1vw;
+  border-radius: 15px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  margin-bottom: 10vw;
+}
+
+.work .moreImg2:hover {
+  -webkit-transform: translate(1vw, -1vw);
+          transform: translate(1vw, -1vw);
+  -webkit-box-shadow: -2vw 2vw 0vw 0vw #fff200;
+          box-shadow: -2vw 2vw 0vw 0vw #fff200;
 }
 
 .work .space {

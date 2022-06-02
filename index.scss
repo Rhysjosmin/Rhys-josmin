@@ -174,11 +174,27 @@ $shadow:rgb(255, 131, 65);
         padding: 1vw;
         border-radius: 15px;
         transition: all .4s;
-        margin-bottom: 10vw;
+        margin-bottom: 2vw;
         &:hover{
             transform: translate(1vw, -1vw);
             box-shadow: -2vw 2vw 0vw 0vw $shadow;
         }
+    }
+    .moreImg2{
+        text-decoration: none;
+        font-size: 6vw;
+        background: rgb(0, 149, 255);
+        color: black;
+        margin-top: 0vw;
+        padding: 1vw;
+        border-radius: 15px;
+        transition: all .4s;
+        margin-bottom: 10vw;
+        &:hover{
+            transform: translate(1vw, -1vw);
+            box-shadow: -2vw 2vw 0vw 0vw rgb(255, 242, 0);
+        }
+       
     }
     .space{
         
