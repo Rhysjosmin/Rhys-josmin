@@ -20,7 +20,7 @@ $shadow:rgb(255, 131, 65);
         margin-right: 3vw;
         box-shadow: -0vw 0vw 0vw 0vw $shadow;
         transition: box-shadow .6s;
-        z-index: 1;
+        z-in: 1;
         &:hover{
             box-shadow: -10vw 10vw 0vw 0vw $shadow ; 
     
@@ -28,7 +28,7 @@ $shadow:rgb(255, 131, 65);
         }
     }
     h1{
-        z-index: 3;
+        
         margin-left: 5vw;
         color: rgb(255, 255, 255);
         font-size:8vw;
@@ -70,7 +70,7 @@ $shadow:rgb(255, 131, 65);
     
         
         .animated2{
-            z-index: 3;
+            
             margin-right: 5vw;
             margin-left: 5vw;
             border: solid 1vw black;
@@ -181,14 +181,14 @@ $shadow:rgb(255, 131, 65);
         }
     }
     .space{
-        z-index: 4;
+        
        
        
 
         margin-top: 5vw;
     }
     .end{
-        z-index: 4;
+        
         height: .6vw;
         
        

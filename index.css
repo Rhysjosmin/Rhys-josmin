@@ -28,7 +28,7 @@
   transition: -webkit-box-shadow .6s;
   transition: box-shadow .6s;
   transition: box-shadow .6s, -webkit-box-shadow .6s;
-  z-index: 1;
+  z-in: 1;
 }
 
 .hero img:hover {
@@ -37,7 +37,6 @@
 }
 
 .hero h1 {
-  z-index: 3;
   margin-left: 5vw;
   color: white;
   font-size: 8vw;
@@ -89,7 +88,6 @@
 }
 
 .s1 .animated .animated2 {
-  z-index: 3;
   margin-right: 5vw;
   margin-left: 5vw;
   border: solid 1vw black;
@@ -257,12 +255,10 @@
 }
 
 .work .space {
-  z-index: 4;
   margin-top: 5vw;
 }
 
 .work .end {
-  z-index: 4;
   height: .6vw;
   margin-top: 25vw;
 }
