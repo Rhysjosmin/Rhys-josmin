@@ -1,0 +1,198 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Exo', sans-serif;
+    
+}
+$shadow:rgb(255, 131, 65);
+.hero{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vw;
+    max-width: 100vw;
+    background: hsl(21, 100%, 8%);
+    img{
+        height: 40vw;
+        border-radius: 25%;
+        margin-right: 3vw;
+        box-shadow: -0vw 0vw 0vw 0vw $shadow;
+        transition: box-shadow .6s;
+        z-index: 1;
+        &:hover{
+            box-shadow: -10vw 10vw 0vw 0vw $shadow ; 
+    
+          
+        }
+    }
+    h1{
+        z-index: 3;
+        margin-left: 5vw;
+        color: rgb(255, 255, 255);
+        font-size:8vw;
+        transition: all 1s;
+       
+    }
+}
+
+.s1{
+    color: aliceblue;
+   
+    h3{
+        .WD{
+            color: rgb(0, 255, 174);
+        }
+        .CE{
+            color: rgb(0, 255, 0);
+        }
+        .ART{
+            color: rgb(255, 0, 170);
+        }
+    }
+    max-width: 100vw;
+    height: 90vh;
+    display: flex;
+    font-size: 5vw;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    background: $shadow;
+
+    .animated{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        
+    
+        
+        .animated2{
+            z-index: 3;
+            margin-right: 5vw;
+            margin-left: 5vw;
+            border: solid 1vw black;
+            border-radius: 20%;
+            height: 20vw;
+            width: 20vw;
+            background: rgb(0, 255, 229);
+            animation: an1;
+            animation-timing-function: linear;
+            animation-duration: 20s;
+            animation-iteration-count: infinite; 
+            font-size: 4vw;
+            padding: 2vw;
+                   
+            
+        }
+    }
+
+    @keyframes an1{
+        0%{
+            transform: rotate(0deg);
+            filter: hue-rotate(0deg);
+        }
+        50%{
+            filter: hue-rotate(360deg);
+            transform: rotate(180deg);
+        }
+    
+        100%{
+            filter: hue-rotate(0deg);
+            transform: rotate(360deg);
+            
+            
+            
+        }
+    
+    }
+
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    padding: 2vw;
+    background: blanchedalmond;
+    min-height: 100vh;
+    h1{
+        margin-left: 2vw;
+        font-size: 7vw;
+       
+        span{
+            color: rgb(255, 0, 200);
+            animation: glow;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes glow {
+            0%{
+                text-shadow: 0vw 0vw 0vw rgb(255, 255, 255);
+               
+            }
+            50%{
+                color: rgb(255, 255, 255);
+                text-shadow: 0vw 0vw 2vw rgb(255, 0, 200);
+            }
+            100%{
+                text-shadow: 0vw 0vw 0vw rgb(255, 255, 255);
+            }
+            
+        }
+        
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2vw;
+        margin-top: 4vw;
+        img{
+            image-rendering: optimizeSpeed;
+            height: 40vw;
+            
+            border-radius: 5vw;
+            transition: transform .5s;
+            
+            
+            &:hover{
+                transform: translateY(-2vw);
+            }
+        }
+    
+    }
+    .moreImg{
+        text-decoration: none;
+        font-size: 6vw;
+        background: rgb(103, 80, 255);
+        color: black;
+        margin-top: 8vw;
+        padding: 1vw;
+        border-radius: 15px;
+        transition: all .4s;
+        margin-bottom: 10vw;
+        &:hover{
+            transform: translate(1vw, -1vw);
+            box-shadow: -2vw 2vw 0vw 0vw $shadow;
+        }
+    }
+    .space{
+        z-index: 4;
+       
+       
+
+        margin-top: 5vw;
+    }
+    .end{
+        z-index: 4;
+        height: .6vw;
+        
+       
+        margin-top: 25vw;
+
+    }
+}

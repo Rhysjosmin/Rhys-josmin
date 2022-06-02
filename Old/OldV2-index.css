@@ -1,0 +1,49 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Exo', sans-serif;
+}
+.reel video{
+        margin-top: 5vh;
+        width: 100vw;
+}
+.reel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    padding-bottom: 20vh;
+    background: black;
+}
+.picture{
+    overflow: hidden;
+    margin-top: -10vw;
+    height: 30vw;
+    width: 30vw;
+    
+    border-radius: 50%;
+    
+    animation: bob;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    box-shadow: 0vh 0vh 4vh 1vh;
+}
+
+
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20vh;
+    font-size: 10vw;
+    color: white;
+}
+
+@keyframes bob{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-3px) scale(1.01);}
+}
