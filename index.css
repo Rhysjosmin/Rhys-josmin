@@ -28,7 +28,6 @@
   transition: -webkit-box-shadow .6s;
   transition: box-shadow .6s;
   transition: box-shadow .6s, -webkit-box-shadow .6s;
-  z-in: 1;
 }
 
 .hero img:hover {

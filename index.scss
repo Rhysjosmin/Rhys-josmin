@@ -20,7 +20,7 @@ $shadow:rgb(255, 131, 65);
         margin-right: 3vw;
         box-shadow: -0vw 0vw 0vw 0vw $shadow;
         transition: box-shadow .6s;
-        z-in: 1;
+        
         &:hover{
             box-shadow: -10vw 10vw 0vw 0vw $shadow ; 
     
