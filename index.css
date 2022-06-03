@@ -256,8 +256,7 @@
   width: 90vw;
   padding-bottom: 5vw;
   border-radius: 5vw;
-  background: -webkit-gradient(linear, left bottom, left top, from(#181818), to(#1b1b1b));
-  background: linear-gradient(to top, #181818, #1b1b1b);
+  background: #131313;
 }
 
 .work div .skills .software {
@@ -318,6 +317,8 @@
 }
 
 .work div .skills .software .percent {
+  margin-top: -1vw;
+  margin-bottom: 4vw;
   font-family: 'Major Mono Display', monospace;
   font-weight: bold;
   font-size: 4vw;
@@ -328,12 +329,12 @@
   font-size: 6vw;
   background: #6750ff;
   color: black;
-  margin-top: 8vw;
+  margin-top: 4vw;
+  margin-bottom: 10vw;
   padding: 1vw;
   border-radius: 15px;
   -webkit-transition: all .4s;
   transition: all .4s;
-  margin-bottom: 2vw;
 }
 
 .work .moreImg:hover {
@@ -348,12 +349,12 @@
   font-size: 6vw;
   background: #0095ff;
   color: black;
-  margin-top: 0vw;
+  margin-top: -6vw;
   padding: 1vw;
   border-radius: 15px;
   -webkit-transition: all .4s;
   transition: all .4s;
-  margin-bottom: 10vw;
+  margin-bottom: 12vw;
 }
 
 .work .moreImg2:hover {

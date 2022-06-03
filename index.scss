@@ -183,7 +183,7 @@ $shadow:rgb(255, 131, 65);
             width: 90vw;
             padding-bottom: 5vw;
             border-radius: 5vw;
-            background:linear-gradient(to top,rgb(24, 24, 24),rgb(27, 27, 27));
+            background:rgb(19, 19, 19);
             
             .software{
                 text-align: left;
@@ -228,6 +228,8 @@ $shadow:rgb(255, 131, 65);
                     
                 }
                 .percent{
+                    margin-top: -1vw;
+                    margin-bottom: 4vw;
                     font-family: 'Major Mono Display', monospace;
                     font-weight: bold;
                     font-size: 4vw;
@@ -244,11 +246,12 @@ $shadow:rgb(255, 131, 65);
         font-size: 6vw;
         background: rgb(103, 80, 255);
         color: black;
-        margin-top: 8vw;
+        margin-top: 4vw;
+        margin-bottom: 10vw;
         padding: 1vw;
         border-radius: 15px;
         transition: all .4s;
-        margin-bottom: 2vw;
+        
         &:hover{
             transform: translate(1vw, -1vw);
             box-shadow: -2vw 2vw 0vw 0vw $shadow;
@@ -259,11 +262,11 @@ $shadow:rgb(255, 131, 65);
         font-size: 6vw;
         background: rgb(0, 149, 255);
         color: black;
-        margin-top: 0vw;
+        margin-top: -6vw;
         padding: 1vw;
         border-radius: 15px;
         transition: all .4s;
-        margin-bottom: 10vw;
+        margin-bottom: 12vw;
         &:hover{
             transform: translate(1vw, -1vw);
             box-shadow: -2vw 2vw 0vw 0vw rgb(255, 242, 0);
