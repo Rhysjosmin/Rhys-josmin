@@ -231,8 +231,25 @@
 }
 
 .work div img:hover {
-  -webkit-transform: translateY(-2vw);
-          transform: translateY(-2vw);
+  -webkit-transform: translateY(-1vw);
+          transform: translateY(-1vw);
+}
+
+.work div .statuses {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-auto-flow: column;
+}
+
+.work div .statuses .status {
+  width: 45vw;
+  height: auto;
 }
 
 .work div .skills {
@@ -266,14 +283,6 @@
           align-items: center;
   -webkit-box-shadow: 0vh 0vh 5vw #0800ff;
           box-shadow: 0vh 0vh 5vw #0800ff;
-  -webkit-animation: noise;
-          animation: noise;
-  -webkit-animation-duration: .001s;
-          animation-duration: .001s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: .5ms;
-          animation-delay: .5ms;
 }
 
 .work div .skills .software .bd {
@@ -290,14 +299,6 @@
           align-items: center;
   -webkit-box-shadow: 0vh 0vh 5vw #ff9500;
           box-shadow: 0vh 0vh 5vw #ff9500;
-  -webkit-animation: noise;
-          animation: noise;
-  -webkit-animation-duration: .001s;
-          animation-duration: .001s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: 10ms;
-          animation-delay: 10ms;
 }
 
 .work div .skills .software .pp {
@@ -314,34 +315,12 @@
           align-items: center;
   -webkit-box-shadow: 0vh 0vh 5vw #ff00c8;
           box-shadow: 0vh 0vh 5vw #ff00c8;
-  -webkit-animation: noise;
-          animation: noise;
-  -webkit-animation-duration: .001s;
-          animation-duration: .001s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes noise {
-  0%, 90% {
-    -webkit-transform: scaleX(1.001) scaleY(0.999) rotate(-0.1deg);
-            transform: scaleX(1.001) scaleY(0.999) rotate(-0.1deg);
-  }
-  10%, 60% {
-    -webkit-transform: scaleX(0.999) scaleY(1.01) rotate(0.2deg);
-            transform: scaleX(0.999) scaleY(1.01) rotate(0.2deg);
-  }
-}
-
-@keyframes noise {
-  0%, 90% {
-    -webkit-transform: scaleX(1.001) scaleY(0.999) rotate(-0.1deg);
-            transform: scaleX(1.001) scaleY(0.999) rotate(-0.1deg);
-  }
-  10%, 60% {
-    -webkit-transform: scaleX(0.999) scaleY(1.01) rotate(0.2deg);
-            transform: scaleX(0.999) scaleY(1.01) rotate(0.2deg);
-  }
+.work div .skills .software .percent {
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  font-size: 4vw;
 }
 
 .work .moreImg {

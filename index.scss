@@ -161,7 +161,18 @@ $shadow:rgb(255, 131, 65);
             
             
             &:hover{
-                transform: translateY(-2vw);
+                transform: translateY(-1vw);
+            }
+        }
+        .statuses{
+            display:grid;
+            align-items: center;
+            justify-content: center;
+            grid-auto-flow: column;
+            
+            .status{
+                width: 45vw;
+                height: auto;
             }
         }
 
@@ -189,10 +200,7 @@ $shadow:rgb(255, 131, 65);
                     align-items: center;
                     box-shadow: 0vh 0vh 5vw rgb(8, 0, 255);
 
-                    animation: noise;
-                    animation-duration: .001s;
-                    animation-iteration-count: infinite;
-                    animation-delay: .5ms;
+                    
                 }
                 .bd{
                     color: black;
@@ -204,10 +212,7 @@ $shadow:rgb(255, 131, 65);
                     align-items: center;
                     box-shadow: 0vh 0vh 5vw rgb(255, 149, 0);
 
-                    animation: noise;
-                    animation-duration: .001s;
-                    animation-iteration-count: infinite;
-                    animation-delay: 10ms;
+                    
                 }
                 .pp{
                     color: black;
@@ -220,19 +225,15 @@ $shadow:rgb(255, 131, 65);
                     box-shadow: 0vh 0vh 5vw rgb(255, 0, 200);
 
 
-                    animation: noise;
-                    animation-duration: .001s;
-                    animation-iteration-count: infinite;
-                }
-                @keyframes noise {
-                    0%,90%{
-                        transform: scaleX(1.001) scaleY(0.999)rotate(-.1deg);
-                    }
-                    10%,60%{
-                        transform: scaleX(.999) scaleY(1.01)rotate(.2deg);
-                    }
                     
                 }
+                .percent{
+                    font-family: 'Major Mono Display', monospace;
+                    font-weight: bold;
+                    font-size: 4vw;
+                    
+                }
+            
             }
 
         }
