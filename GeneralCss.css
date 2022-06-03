@@ -89,8 +89,7 @@
 .navbar-button:hover{
     background-color: #40e2ff;
     color: black;
-    transform: scale(105%);
-    -webkit-transform: scale(105%);
+    
 }
 .navbar-button-link{
     color: rgb(255, 255, 255);
