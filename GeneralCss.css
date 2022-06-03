@@ -1,6 +1,6 @@
 @media(max-width:425px) {
 .navbar{
-    z-index: 1;
+    z-index: 3;
     position: fixed;
     max-height: 20vh;
     padding: 1vh;
@@ -45,7 +45,7 @@
     }
    
     .navbar{
-        z-index: 1;
+        z-index: 3;
         position: fixed;
         
         max-height: 20vh;

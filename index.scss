@@ -20,6 +20,7 @@ $shadow:rgb(255, 131, 65);
         margin-right: 3vw;
         box-shadow: -0vw 0vw 0vw 0vw $shadow;
         transition: box-shadow .6s;
+        z-index: 1;
         
         &:hover{
             box-shadow: -10vw 10vw 0vw 0vw $shadow ; 
@@ -28,7 +29,7 @@ $shadow:rgb(255, 131, 65);
         }
     }
     h1{
-        
+        z-index:2;
         margin-left: 5vw;
         color: rgb(255, 255, 255);
         font-size:8vw;
@@ -42,13 +43,13 @@ $shadow:rgb(255, 131, 65);
    
     h3{
         .WD{
-            color: rgb(0, 255, 174);
+            color: rgb(0, 0, 0);
         }
         .CE{
-            color: rgb(0, 255, 0);
+            color: rgb(0, 0, 0);
         }
         .ART{
-            color: rgb(255, 0, 170);
+            color: rgb(0, 0, 0);
         }
     }
     max-width: 100vw;
@@ -163,6 +164,78 @@ $shadow:rgb(255, 131, 65);
                 transform: translateY(-2vw);
             }
         }
+
+        .skills{
+               
+            
+                
+            width: 90vw;
+            padding-bottom: 5vw;
+            border-radius: 5vw;
+            background:linear-gradient(to top,rgb(24, 24, 24),rgb(27, 27, 27));
+            
+            .software{
+                text-align: left;
+                justify-content: flex-start;
+                padding-left: 4vw;
+                color: aliceblue;
+                .ae{
+                    color: black;
+                    background: rgb(255, 255, 255);
+                    height: 10vw;
+                    width: 50vw;
+                    border-radius: 2vw;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: 0vh 0vh 5vw rgb(8, 0, 255);
+
+                    animation: noise;
+                    animation-duration: .001s;
+                    animation-iteration-count: infinite;
+                    animation-delay: .5ms;
+                }
+                .bd{
+                    color: black;
+                    background: rgb(255, 255, 255);
+                    height: 10vw;
+                    width: 80vw;
+                    border-radius: 2vw;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: 0vh 0vh 5vw rgb(255, 149, 0);
+
+                    animation: noise;
+                    animation-duration: .001s;
+                    animation-iteration-count: infinite;
+                    animation-delay: 10ms;
+                }
+                .pp{
+                    color: black;
+                    background: rgb(255, 255, 255);
+                    height: 10vw;
+                    width: 50vw;
+                    border-radius: 2vw;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: 0vh 0vh 5vw rgb(255, 0, 200);
+
+
+                    animation: noise;
+                    animation-duration: .001s;
+                    animation-iteration-count: infinite;
+                }
+                @keyframes noise {
+                    0%,90%{
+                        transform: scaleX(1.001) scaleY(0.999)rotate(-.1deg);
+                    }
+                    10%,60%{
+                        transform: scaleX(.999) scaleY(1.01)rotate(.2deg);
+                    }
+                    
+                }
+            }
+
+        }
     
     }
     .moreImg{
@@ -211,4 +284,74 @@ $shadow:rgb(255, 131, 65);
         margin-top: 25vw;
 
     }
+}
+
+
+@media(max-width:425px){
+
+    .s1{
+        height: 40vh;
+        padding-left: 20px;
+    }
+    .work{
+        div{
+            img{
+                width: 80vw;
+                height: auto;
+            }
+            .skills{
+               
+            
+                
+                width: 90vw;
+                padding-bottom: 5vw;
+                border-radius: 5vw;
+                background:linear-gradient(to top,rgb(24, 24, 24),rgb(27, 27, 27));
+                
+                .software{
+                    text-align: left;
+                    justify-content: flex-start;
+                    padding-left: 4vw;
+                    color: aliceblue;
+                    .ae{
+                        color: black;
+                        background: rgb(255, 255, 255);
+                        height: 10vw;
+                        width: 50vw;
+                        border-radius: 2vw;
+                        display: flex;
+                        align-items: center;
+                        box-shadow: 0vh 0vh 5vw rgb(8, 0, 255);
+                    }
+                    .bd{
+                        color: black;
+                        background: rgb(255, 255, 255);
+                        height: 10vw;
+                        width: 70vw;
+                        border-radius: 2vw;
+                        display: flex;
+                        align-items: center;
+                        box-shadow: 0vh 0vh 5vw rgb(255, 149, 0);
+                    }
+                    .pp{
+                        color: black;
+                        background: rgb(255, 255, 255);
+                        height: 10vw;
+                        width: 50vw;
+                        border-radius: 2vw;
+                        display: flex;
+                        align-items: center;
+                        box-shadow: 0vh 0vh 5vw rgb(255, 0, 200);
+                    }
+                }
+
+            }
+
+        }
+        .space{
+            height: 10vh;
+        }
+    }
+
+
 }
