@@ -220,7 +220,7 @@
   margin-top: 4vw;
 }
 
-.work div img {
+.work div .tile {
   image-rendering: optimizeSpeed;
   height: 40vw;
   border-radius: 5vw;
@@ -230,7 +230,7 @@
   transition: transform .5s, -webkit-transform .5s;
 }
 
-.work div img:hover {
+.work div .tile:hover {
   -webkit-transform: translateY(-1vw);
           transform: translateY(-1vw);
 }
