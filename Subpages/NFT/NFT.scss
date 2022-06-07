@@ -1,4 +1,5 @@
 * {
+
 	margin: 0%;
 	padding: 0%;
 	font-family: 'Exo', sans-serif;
@@ -15,12 +16,7 @@ nft {
 	&:hover {
 		transform: translateY(-9px);
 		box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.467);
-		.nft-info {
-			h3 {
-				transition: color .6s;
-				color: rgb(0, 0, 0);
-			}
-		}
+		
 	}
 	.nft-info {
 		h3 {
