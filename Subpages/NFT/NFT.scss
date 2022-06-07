@@ -1,0 +1,106 @@
+* {
+	margin: 0%;
+	padding: 0%;
+	font-family: 'Exo', sans-serif;
+}
+body {
+	min-height: 100vh;
+	background: linear-gradient(to top right, rgb(0, 0, 0),rgb(0, 20, 32));
+}
+nft {
+	padding: .8vh;
+	border-radius: .8vw;
+	box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+	transition: transform .5s, box-shadow .7s;
+	&:hover {
+		transform: translateY(-9px);
+		box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.467);
+		.nft-info {
+			h3 {
+				transition: color .6s;
+				color: rgb(0, 0, 0);
+			}
+		}
+	}
+	.nft-info {
+		h3 {
+			font-size:1em;
+			font-weight: 300;
+		}
+        background: rgb(238, 238, 238);
+	    border-radius: .8vw;
+	    padding-top: 8px;
+	    padding-bottom: 1vw;
+	    padding-left: 15px;
+	    display: grid;
+	    gap: 1vh;
+	    flex-wrap: wrap;
+	    justify-content: flex-start;
+	    align-items: center;
+	}
+}
+.nft-image {
+	margin-bottom: .2vw;
+	height: 42vh;
+	border-radius: .8vw;
+}
+.nft-container {
+	padding-top: 15vh;
+	padding-bottom: 20vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2vw;
+}
+
+.nft-buy {
+	font-size: 1.1em;
+	font-weight: bolder;
+	text-decoration: none;
+    margin-bottom: 10px;
+	color: white;
+	padding: 1vh;
+	width: 35vh;
+	background: linear-gradient(to left,rgb(0, 115, 255),rgb(0, 213, 255));
+	border-radius: .5vw;
+	transition: filter .4s,color .7s;
+	&:hover {
+		filter: brightness(1.5);
+		color: black;
+	}
+}
+.Cs {
+	text-align: center;
+	color: aliceblue;
+	padding-top: 8vh;
+	padding-bottom: 8vw;
+	font-size: 4em;
+}
+.super {
+	filter: opacity(0%);
+	transition: transform 2s, filter 5s, box-shadow 8s;
+	&:hover {
+		filter: opacity(100%);
+		box-shadow: 0px 0px 100px rgb(123, 93, 255);
+	}
+}
+.gold {
+	background: linear-gradient(to right top,rgb(148, 110, 16),rgb(255, 226, 64));
+    .nft-buy{
+        background: linear-gradient(to left,rgb(148, 110, 16),rgb(255, 226, 64));
+    }
+    &:hover{
+        box-shadow: 0px 0px 30px rgba(255, 230, 0, 0.408);
+    }
+}
+.normal {
+	background: linear-gradient(to right top,rgb(0, 183, 255),rgb(255, 80, 214));
+}
+.traits {
+	background: rgb(209, 209, 209);
+	padding: 1vh;
+	border-radius: 5px;
+	color: rgb(159, 4, 255);
+	font-weight: 10;
+}

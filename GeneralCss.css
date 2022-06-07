@@ -111,3 +111,26 @@
 .long{
     height: 100vh;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+    transition: all 1s;
+    
+  }
+  ::-webkit-scrollbar:hover{
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #040404;
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top,rgb(0, 238, 255),rgb(0, 255, 183));
+    border-radius: 2px;
+  }
+  
