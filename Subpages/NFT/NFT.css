@@ -34,12 +34,14 @@ body{
     }
 
 
-    
+    .traits{
+        margin: 4px;
+    }
     
 
 
     .nft-container{
-        padding-top: 15vh;
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -49,25 +51,22 @@ body{
     }
     
     
-    nft:hover{
-        
-        
-        background: rgb(17, 128, 255);
-         
-    }
+   
     
     .nft-info{
         background: rgb(238, 238, 238);
-        vertical-align: middle;
+        
         display: flex;
         
-        align-items:flex-start;
-        flex-wrap: wrap;
-        padding-top: 1vh;
-        padding-left: 1vw;
-        padding-right: 1vw;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        
+        
+        
         border-radius: 3vw;
-        width: 20vw;
+        
     }
     
     .nft-buy{
@@ -77,19 +76,16 @@ body{
         padding: 2vw;
         background-color: rgb(71, 157, 255);
         border-radius:3vw;
-        
+        margin-bottom: 8px;
         transition: all .2s;
     }
     nft .nft-info h3{
         color: rgb(0, 0, 0);
         font-size: 3vw;
+        font-weight: lighter;
     }
     
-    .nft-buy:hover{
-        
-        background-color: rgb(112, 179, 255);
-        
-    }
+
     .Cs{
         text-align:center;
         color:aliceblue;
@@ -120,6 +116,7 @@ body{
 
     .nft-container{
         padding-top: 15vh;
+        padding-bottom: 20vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -140,7 +137,7 @@ body{
 
     nft .nft-info h3{
         font-size: 2vh;
-        font-weight:lighter;
+        font-weight:300;
     }
 
     nft:hover .nft-info h3{
@@ -152,9 +149,9 @@ body{
         background: rgb(238, 238, 238);
         
         border-radius: .8vw;
-        padding-top: 1vw;
+        padding-top: 8px;
         padding-bottom: 1vw;
-        padding-left: 1vw;
+        padding-left: 8px;
         display: grid;
         gap: 1vh;
         flex-wrap: wrap;
@@ -168,9 +165,10 @@ body{
         font-weight: bolder;
         text-decoration: none;
         color: white;
-        padding: 1.5vw;
+        padding: 1vh;
+        width: 30vh;
         background: linear-gradient(to left,rgb(0, 213, 255),rgb(0, 166, 255));
-        border-radius: .8vw;
+        border-radius: .5vw;
        
         transition: filter .4s,color .7s;
     }
@@ -208,4 +206,10 @@ body{
 }
 .normal{
      background: linear-gradient(to right top,rgb(0, 183, 255),rgb(255, 80, 214));
+}
+.traits{
+    background: rgb(209, 209, 209);
+    padding: 1vh;
+    border-radius: 5px;
+
 }
