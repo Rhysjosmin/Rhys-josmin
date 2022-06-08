@@ -15,7 +15,8 @@ nft {
 	transition: transform .5s, box-shadow .7s;
 	@media(min-width:425px){
 		&:hover {
-		
+		transform: none;
+		box-shadow: inherit;
 			
 		}
 	}

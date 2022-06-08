@@ -21,6 +21,15 @@ nft {
   transition: transform .5s, box-shadow .7s, -webkit-transform .5s, -webkit-box-shadow .7s;
 }
 
+@media (min-width: 425px) {
+  nft:hover {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-box-shadow: inherit;
+            box-shadow: inherit;
+  }
+}
+
 @media (max-width: 425px) {
   nft:hover {
     -webkit-transform: translateY(-9px);
