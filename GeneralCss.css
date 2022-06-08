@@ -136,6 +136,7 @@
   
 *{
     image-rendering: optimizeSpeed;
+    
 }
 .end{
    
@@ -145,6 +146,7 @@
     padding-left: .5em !important;
     font-size: .8em !important;
     font-weight: l !important;
+    
    
 }
 .end span{

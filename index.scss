@@ -8,7 +8,7 @@ $shadow:rgb(255, 131, 65);
 }
 
 .hero{
-
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,6 +41,7 @@ $shadow:rgb(255, 131, 65);
 
 
 .work{
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
