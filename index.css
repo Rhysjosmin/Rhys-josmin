@@ -13,7 +13,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vw;
+  height: 120vh;
   max-width: 100vw;
   background: #290e00;
 }
@@ -32,8 +32,8 @@
 }
 
 .hero img:hover {
-  -webkit-box-shadow: -10vw 10vw 0vw 0vw #ff8341;
-          box-shadow: -10vw 10vw 0vw 0vw #ff8341;
+  -webkit-box-shadow: -10vw 10vh 0vw 0vw #ff8341;
+          box-shadow: -10vw 10vh 0vw 0vw #ff8341;
 }
 
 .hero h1 {
@@ -41,113 +41,6 @@
   margin-left: 5vw;
   color: white;
   font-size: 8vw;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.s1 {
-  color: aliceblue;
-  max-width: 100vw;
-  height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 5vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 2vw;
-  background: #ff8341;
-}
-
-.s1 h3 .WD {
-  color: black;
-}
-
-.s1 h3 .CE {
-  color: black;
-}
-
-.s1 h3 .ART {
-  color: black;
-}
-
-.s1 .animated {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50vw;
-}
-
-.s1 .animated .animated2 {
-  margin-right: 5vw;
-  margin-left: 5vw;
-  border: solid 1vw black;
-  border-radius: 20%;
-  height: 20vw;
-  width: 20vw;
-  background: #00ffe5;
-  -webkit-animation: an1;
-          animation: an1;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  font-size: 4vw;
-  padding: 2vw;
-}
-
-@-webkit-keyframes an1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
-  }
-  50% {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  100% {
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes an1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
-  }
-  50% {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  100% {
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 .work {
@@ -162,7 +55,9 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 2vw;
-  background: blanchedalmond;
+  padding-bottom: 4em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ead6ff), to(#1a9e56));
+  background: linear-gradient(to bottom, #ead6ff, #1a9e56);
   min-height: 100vh;
 }
 
@@ -172,39 +67,7 @@
 }
 
 .work h1 span {
-  color: #ff00c8;
-  -webkit-animation: glow;
-          animation: glow;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes glow {
-  0% {
-    text-shadow: 0vw 0vw 0vw white;
-  }
-  50% {
-    color: white;
-    text-shadow: 0vw 0vw 2vw #ff00c8;
-  }
-  100% {
-    text-shadow: 0vw 0vw 0vw white;
-  }
-}
-
-@keyframes glow {
-  0% {
-    text-shadow: 0vw 0vw 0vw white;
-  }
-  50% {
-    color: white;
-    text-shadow: 0vw 0vw 2vw #ff00c8;
-  }
-  100% {
-    text-shadow: 0vw 0vw 0vw white;
-  }
+  color: #8800ff;
 }
 
 .work div {
@@ -217,22 +80,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2vw;
-  margin-top: 4vw;
+  width: 100vw;
 }
 
 .work div .tile {
-  image-rendering: optimizeSpeed;
   height: 40vw;
-  border-radius: 5vw;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
-}
-
-.work div .tile:hover {
-  -webkit-transform: translateY(-1vw);
-          transform: translateY(-1vw);
+  width: auto;
+  border-radius: 20px;
 }
 
 .work div .statuses {
@@ -250,78 +104,6 @@
 .work div .statuses .status {
   width: 45vw;
   height: auto;
-}
-
-.work div .skills {
-  width: 90vw;
-  padding-bottom: 5vw;
-  border-radius: 5vw;
-  background: #131313;
-}
-
-.work div .skills .software {
-  text-align: left;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-left: 4vw;
-  color: aliceblue;
-}
-
-.work div .skills .software .ae {
-  color: black;
-  background: white;
-  height: 10vw;
-  width: 50vw;
-  border-radius: 2vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0vh 0vh 5vw #0800ff;
-          box-shadow: 0vh 0vh 5vw #0800ff;
-}
-
-.work div .skills .software .bd {
-  color: black;
-  background: white;
-  height: 10vw;
-  width: 80vw;
-  border-radius: 2vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0vh 0vh 5vw #ff9500;
-          box-shadow: 0vh 0vh 5vw #ff9500;
-}
-
-.work div .skills .software .pp {
-  color: black;
-  background: white;
-  height: 10vw;
-  width: 50vw;
-  border-radius: 2vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0vh 0vh 5vw #ff00c8;
-          box-shadow: 0vh 0vh 5vw #ff00c8;
-}
-
-.work div .skills .software .percent {
-  margin-top: -1vw;
-  margin-bottom: 4vw;
-  font-family: 'Major Mono Display', monospace;
-  font-weight: bold;
-  font-size: 4vw;
 }
 
 .work .moreImg {
@@ -364,86 +146,12 @@
           box-shadow: -2vw 2vw 0vw 0vw #fff200;
 }
 
-.work .space {
-  margin-top: 5vw;
-}
-
-.work .end {
-  height: .6vw;
-  margin-top: 25vw;
-}
-
-@media (max-width: 425px) {
-  .s1 {
-    height: 40vh;
-    padding-left: 20px;
-  }
-  .work div img {
-    width: 80vw;
-    height: auto;
-  }
-  .work div .skills {
-    width: 90vw;
-    padding-bottom: 5vw;
-    border-radius: 5vw;
-    background: -webkit-gradient(linear, left bottom, left top, from(#181818), to(#1b1b1b));
-    background: linear-gradient(to top, #181818, #1b1b1b);
-  }
-  .work div .skills .software {
-    text-align: left;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding-left: 4vw;
-    color: aliceblue;
-  }
-  .work div .skills .software .ae {
-    color: black;
-    background: white;
-    height: 10vw;
-    width: 50vw;
-    border-radius: 2vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-shadow: 0vh 0vh 5vw #0800ff;
-            box-shadow: 0vh 0vh 5vw #0800ff;
-  }
-  .work div .skills .software .bd {
-    color: black;
-    background: white;
-    height: 10vw;
-    width: 70vw;
-    border-radius: 2vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-shadow: 0vh 0vh 5vw #ff9500;
-            box-shadow: 0vh 0vh 5vw #ff9500;
-  }
-  .work div .skills .software .pp {
-    color: black;
-    background: white;
-    height: 10vw;
-    width: 50vw;
-    border-radius: 2vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-shadow: 0vh 0vh 5vw #ff00c8;
-            box-shadow: 0vh 0vh 5vw #ff00c8;
-  }
-  .work .space {
-    height: 10vh;
-  }
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #000000;
+  height: 3px;
 }
 /*# sourceMappingURL=index.css.map */

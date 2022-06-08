@@ -14,6 +14,7 @@ nft {
 	box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
 	transition: transform .5s, box-shadow .7s;
 	&:hover {
+		
 		transform: translateY(-9px);
 		box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.467);
 		
@@ -87,6 +88,7 @@ nft {
         background: linear-gradient(to left,rgb(148, 110, 16),rgb(255, 226, 64));
     }
     &:hover{
+		
         box-shadow: 0px 0px 30px rgba(255, 230, 0, 0.408);
     }
 }

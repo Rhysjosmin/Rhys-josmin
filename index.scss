@@ -1,17 +1,18 @@
 
+$shadow:rgb(255, 131, 65);
+
 *{
     padding: 0%;
     margin: 0%;
-    font-family: 'Exo', sans-serif;
-    
+    font-family: 'Exo', sans-serif;    
 }
-$shadow:rgb(255, 131, 65);
+
 .hero{
 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100vw;
+    height: 120vh;
     max-width: 100vw;
     background: hsl(21, 100%, 8%);
     img{
@@ -23,127 +24,41 @@ $shadow:rgb(255, 131, 65);
         z-index: 1;
         
         &:hover{
-            box-shadow: -10vw 10vw 0vw 0vw $shadow ; 
+            box-shadow: -10vw 10vh 0vw 0vw $shadow ; 
     
           
+            }
         }
-    }
     h1{
         z-index:2;
         margin-left: 5vw;
         color: rgb(255, 255, 255);
         font-size:8vw;
-        transition: all 1s;
+        
        
     }
 }
 
-.s1{
-    color: aliceblue;
-   
-    h3{
-        .WD{
-            color: rgb(0, 0, 0);
-        }
-        .CE{
-            color: rgb(0, 0, 0);
-        }
-        .ART{
-            color: rgb(0, 0, 0);
-        }
-    }
-    max-width: 100vw;
-    height: 90vh;
-    display: flex;
-    font-size: 5vw;
-    justify-content: center;
-    align-items: center;
-    padding-left: 2vw;
-    background: $shadow;
 
-    .animated{
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50vw;
-        
-    
-        
-        .animated2{
-            
-            margin-right: 5vw;
-            margin-left: 5vw;
-            border: solid 1vw black;
-            border-radius: 20%;
-            height: 20vw;
-            width: 20vw;
-            background: rgb(0, 255, 229);
-            animation: an1;
-            animation-timing-function: linear;
-            animation-duration: 20s;
-            animation-iteration-count: infinite; 
-            font-size: 4vw;
-            padding: 2vw;
-                   
-            
-        }
-    }
-
-    @keyframes an1{
-        0%{
-            transform: rotate(0deg);
-            filter: hue-rotate(0deg);
-        }
-        50%{
-            filter: hue-rotate(360deg);
-            transform: rotate(180deg);
-        }
-    
-        100%{
-            filter: hue-rotate(0deg);
-            transform: rotate(360deg);
-            
-            
-            
-        }
-    
-    }
-
-}
 .work{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    
     padding: 2vw;
-    background: blanchedalmond;
+    padding-bottom: 4em;
+    background: linear-gradient(to bottom,rgb(234, 214, 255),rgb(26, 158, 86));
     min-height: 100vh;
     h1{
         margin-left: 2vw;
         font-size: 7vw;
        
         span{
-            color: rgb(255, 0, 200);
-            animation: glow;
-            animation-duration: 7s;
-            animation-iteration-count: infinite;
+            color: rgb(136, 0, 255);
+            
             
         }
-        @keyframes glow {
-            0%{
-                text-shadow: 0vw 0vw 0vw rgb(255, 255, 255);
-               
-            }
-            50%{
-                color: rgb(255, 255, 255);
-                text-shadow: 0vw 0vw 2vw rgb(255, 0, 200);
-            }
-            100%{
-                text-shadow: 0vw 0vw 0vw rgb(255, 255, 255);
-            }
-            
-        }
+       
         
     }
     div{
@@ -151,18 +66,19 @@ $shadow:rgb(255, 131, 65);
         flex-wrap: wrap;
         justify-content: center;
         gap: 2vw;
-        margin-top: 4vw;
+        
+        width: 100vw;
+        
         .tile{
-            image-rendering: optimizeSpeed;
+            
             height: 40vw;
+            width: auto;
             
-            border-radius: 5vw;
-            transition: transform .5s;
+            border-radius:20px;
+       
             
             
-            &:hover{
-                transform: translateY(-1vw);
-            }
+          
         }
         .statuses{
             display:grid;
@@ -176,69 +92,7 @@ $shadow:rgb(255, 131, 65);
             }
         }
 
-        .skills{
-               
-            
-                
-            width: 90vw;
-            padding-bottom: 5vw;
-            border-radius: 5vw;
-            background:rgb(19, 19, 19);
-            
-            .software{
-                text-align: left;
-                justify-content: flex-start;
-                padding-left: 4vw;
-                color: aliceblue;
-                .ae{
-                    color: black;
-                    background: rgb(255, 255, 255);
-                    height: 10vw;
-                    width: 50vw;
-                    border-radius: 2vw;
-                    display: flex;
-                    align-items: center;
-                    box-shadow: 0vh 0vh 5vw rgb(8, 0, 255);
-
-                    
-                }
-                .bd{
-                    color: black;
-                    background: rgb(255, 255, 255);
-                    height: 10vw;
-                    width: 80vw;
-                    border-radius: 2vw;
-                    display: flex;
-                    align-items: center;
-                    box-shadow: 0vh 0vh 5vw rgb(255, 149, 0);
-
-                    
-                }
-                .pp{
-                    color: black;
-                    background: rgb(255, 255, 255);
-                    height: 10vw;
-                    width: 50vw;
-                    border-radius: 2vw;
-                    display: flex;
-                    align-items: center;
-                    box-shadow: 0vh 0vh 5vw rgb(255, 0, 200);
-
-
-                    
-                }
-                .percent{
-                    margin-top: -1vw;
-                    margin-bottom: 4vw;
-                    font-family: 'Major Mono Display', monospace;
-                    font-weight: bold;
-                    font-size: 4vw;
-                    
-                }
-            
-            }
-
-        }
+       
     
     }
     .moreImg{
@@ -273,89 +127,17 @@ $shadow:rgb(255, 131, 65);
         }
        
     }
-    .space{
-        
-       
-       
-
-        margin-top: 5vw;
-    }
-    .end{
-        
-        height: .6vw;
-        
-       
-        margin-top: 25vw;
-
-    }
+   
 }
 
 
-@media(max-width:425px){
 
-    .s1{
-        height: 40vh;
-        padding-left: 20px;
-    }
-    .work{
-        div{
-            img{
-                width: 80vw;
-                height: auto;
-            }
-            .skills{
-               
-            
-                
-                width: 90vw;
-                padding-bottom: 5vw;
-                border-radius: 5vw;
-                background:linear-gradient(to top,rgb(24, 24, 24),rgb(27, 27, 27));
-                
-                .software{
-                    text-align: left;
-                    justify-content: flex-start;
-                    padding-left: 4vw;
-                    color: aliceblue;
-                    .ae{
-                        color: black;
-                        background: rgb(255, 255, 255);
-                        height: 10vw;
-                        width: 50vw;
-                        border-radius: 2vw;
-                        display: flex;
-                        align-items: center;
-                        box-shadow: 0vh 0vh 5vw rgb(8, 0, 255);
-                    }
-                    .bd{
-                        color: black;
-                        background: rgb(255, 255, 255);
-                        height: 10vw;
-                        width: 70vw;
-                        border-radius: 2vw;
-                        display: flex;
-                        align-items: center;
-                        box-shadow: 0vh 0vh 5vw rgb(255, 149, 0);
-                    }
-                    .pp{
-                        color: black;
-                        background: rgb(255, 255, 255);
-                        height: 10vw;
-                        width: 50vw;
-                        border-radius: 2vw;
-                        display: flex;
-                        align-items: center;
-                        box-shadow: 0vh 0vh 5vw rgb(255, 0, 200);
-                    }
-                }
-
-            }
-
-        }
-        .space{
-            height: 10vh;
-        }
-    }
-
-
-}
+hr {
+    border: 0;
+  
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:#000000;
+    height: 3px;
+  }
