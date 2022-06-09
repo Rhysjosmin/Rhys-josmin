@@ -14,7 +14,7 @@ $shadow:rgb(255, 131, 65);
     align-items: center;
     height: 120vh;
     max-width: 100vw;
-    background: hsl(21, 100%, 8%);
+    background: hsl(191, 98%, 32%);
     img{
         height: 40vw;
         border-radius: 25%;
@@ -51,8 +51,9 @@ $shadow:rgb(255, 131, 65);
     background: linear-gradient(to bottom,rgb(234, 214, 255),rgb(26, 158, 86));
     min-height: 100vh;
     h1{
-        margin-left: 2vw;
+        
         font-size: 7vw;
+        text-align: center;
        
         span{
             color: rgb(136, 0, 255);
@@ -75,7 +76,7 @@ $shadow:rgb(255, 131, 65);
             height: 40vw;
             width: auto;
             
-            border-radius:20px;
+            border-radius:6vw;
        
             
             
@@ -142,3 +143,48 @@ hr {
     background-color:#000000;
     height: 3px;
   }
+@media(max-width:425px) {
+    .hero{
+        flex-direction: column-reverse;
+        justify-content: center;
+     
+        gap: 5vh;
+
+        h1{
+            font-size: 15vw;
+           
+            
+        }
+        
+        img{
+            width: 80vw;
+            height: auto;
+            &:hover{
+                box-shadow: -0vw 0vh 0vw 5vw $shadow !important ; 
+        
+              
+                }
+        }
+    }
+    .statuses{
+        display:flex !important;
+        align-items: center ;
+        justify-content: center;
+            
+            
+        .status{
+            width: 80vw !important;
+         
+        }
+    }
+    h1{
+        text-align: center;
+    }
+    .noMobile{
+        visibility: collapse;
+    }
+    .tile{
+        width:80vw !important;
+        height: auto !important;
+    }
+}

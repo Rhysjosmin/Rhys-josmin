@@ -15,7 +15,7 @@
           align-items: center;
   height: 120vh;
   max-width: 100vw;
-  background: #290e00;
+  background: #0284a2;
 }
 
 .hero img {
@@ -63,8 +63,8 @@
 }
 
 .work h1 {
-  margin-left: 2vw;
   font-size: 7vw;
+  text-align: center;
 }
 
 .work h1 span {
@@ -87,7 +87,7 @@
 .work div .tile {
   height: 40vw;
   width: auto;
-  border-radius: 20px;
+  border-radius: 6vw;
 }
 
 .work div .statuses {
@@ -154,5 +154,53 @@ hr {
   width: 96%;
   background-color: #000000;
   height: 3px;
+}
+
+@media (max-width: 425px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5vh;
+  }
+  .hero h1 {
+    font-size: 15vw;
+  }
+  .hero img {
+    width: 80vw;
+    height: auto;
+  }
+  .hero img:hover {
+    -webkit-box-shadow: 0vw 0vh 0vw 5vw #ff8341 !important;
+            box-shadow: 0vw 0vh 0vw 5vw #ff8341 !important;
+  }
+  .statuses {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .statuses .status {
+    width: 80vw !important;
+  }
+  h1 {
+    text-align: center;
+  }
+  .noMobile {
+    visibility: collapse;
+  }
+  .tile {
+    width: 80vw !important;
+    height: auto !important;
+  }
 }
 /*# sourceMappingURL=index.css.map */
