@@ -16,7 +16,7 @@ $shadow:rgb(255, 131, 65);
     max-width: 100vw;
     background: hsl(191, 98%, 32%);
     img{
-        height: 40vw;
+        height: 35vw;
         border-radius: 25%;
         margin-right: 3vw;
         box-shadow: -0vw 0vw 0vw 0vw $shadow;
@@ -25,7 +25,7 @@ $shadow:rgb(255, 131, 65);
         
         &:hover{
             box-shadow: -10vw 10vh 0vw 0vw $shadow ; 
-    
+            
           
             }
         }
@@ -48,7 +48,7 @@ $shadow:rgb(255, 131, 65);
     
     padding: 2vw;
     padding-bottom: 4em;
-    background: linear-gradient(to bottom,rgb(234, 214, 255),rgb(26, 158, 86));
+    background: linear-gradient(to bottom,rgb(183, 117, 255),rgb(92, 165, 255),rgb(26, 158, 86));
     min-height: 100vh;
     h1{
         
@@ -187,4 +187,13 @@ hr {
         width:80vw !important;
         height: auto !important;
     }
+}
+@media(min-width:425px) {
+    .tile{
+        transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover{
+            transform: translateY(-1.1vw);
+        }
+    }
+    
 }

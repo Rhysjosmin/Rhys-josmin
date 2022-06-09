@@ -19,7 +19,7 @@
 }
 
 .hero img {
-  height: 40vw;
+  height: 35vw;
   border-radius: 25%;
   margin-right: 3vw;
   -webkit-box-shadow: 0vw 0vw 0vw 0vw #ff8341;
@@ -57,8 +57,8 @@
           align-items: center;
   padding: 2vw;
   padding-bottom: 4em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ead6ff), to(#1a9e56));
-  background: linear-gradient(to bottom, #ead6ff, #1a9e56);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b775ff), color-stop(#5ca5ff), to(#1a9e56));
+  background: linear-gradient(to bottom, #b775ff, #5ca5ff, #1a9e56);
   min-height: 100vh;
 }
 
@@ -201,6 +201,19 @@ hr {
   .tile {
     width: 80vw !important;
     height: auto !important;
+  }
+}
+
+@media (min-width: 425px) {
+  .tile {
+    -webkit-transition: -webkit-transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: -webkit-transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .tile:hover {
+    -webkit-transform: translateY(-1.1vw);
+            transform: translateY(-1.1vw);
   }
 }
 /*# sourceMappingURL=index.css.map */
