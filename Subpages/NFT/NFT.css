@@ -30,13 +30,11 @@ nft {
   }
 }
 
-@media (max-width: 425px) {
-  nft:hover {
-    -webkit-transform: translateY(-9px);
-            transform: translateY(-9px);
-    -webkit-box-shadow: 0px 0px 2vw rgba(255, 255, 255, 0.467);
-            box-shadow: 0px 0px 2vw rgba(255, 255, 255, 0.467);
-  }
+nft:hover {
+  -webkit-transform: translateY(-1vh) !important;
+          transform: translateY(-1vh) !important;
+  -webkit-box-shadow: 0px 0px 2vw rgba(255, 255, 255, 0.467);
+          box-shadow: 0px 0px 2vw rgba(255, 255, 255, 0.467);
 }
 
 nft .nft-info {
@@ -47,7 +45,7 @@ nft .nft-info {
   padding-left: 15px;
   display: -ms-grid;
   display: grid;
-  gap: 1vh;
+  gap: 0vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: start;
@@ -59,9 +57,13 @@ nft .nft-info {
 }
 
 nft .nft-info h3 {
-  font-size: 1em;
-  font-weight: 300;
-  visibility: collapse;
+  font-size: 1.1em;
+  font-weight: 600;
+  background: -webkit-gradient(linear, left bottom, right top, from(black), to(#008158));
+  background: linear-gradient(to right top, black, #008158);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nft-image {
