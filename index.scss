@@ -23,10 +23,9 @@ $theme5 :rgb(255, 96, 221);
     align-items: center;
     z-index: 10;
     background: rgb(0, 0, 0);
-    transition: opacity 0.4s ease 3s;
+    transition: opacity 0.4s ease 0s;
     
-  }
-  
+  } 
   .preload-finish {
     opacity: 0;
     pointer-events: none;
@@ -78,8 +77,6 @@ $theme5 :rgb(255, 96, 221);
       opacity: 0;
     }
   }
-  
-
   //loader
 
 *{
@@ -88,9 +85,12 @@ $theme5 :rgb(255, 96, 221);
     margin: 0%;
 }
 
+body{
+  background: linear-gradient(to bottom,rgb(26, 26, 26), rgb(0, 0, 0));
+}
 .Hero{
     height: 100vh;
-    background: rgb(0, 0, 0);
+    
     display: flex;
     align-items: center; 
     justify-content: space-around;  
@@ -103,6 +103,7 @@ $theme5 :rgb(255, 96, 221);
     .name{
         color: $theme1;
         font-size:1.3em;
+        
     }
     .compEngg{
         color: $theme2;
@@ -116,9 +117,28 @@ $theme5 :rgb(255, 96, 221);
     img{
         height: 10em;
         border-radius: 50%;
-        
-
+        box-shadow: .5em .5em 0 .2em rgb(0, 0, 0);
+        transition: all 1s;
+        &:hover{
+          transform: translate(-10px ,-10px);
+          box-shadow: 1em 1em 1em .2em rgb(0, 0, 0);
+        }
     }
+   
     
-    
+}
+.section2{
+  height: 50vh;
+  font-size: 1.3em;
+  padding: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  color: rgb(255, 255, 255);
+}
+.section3{
+  height: 100vh;
 }
