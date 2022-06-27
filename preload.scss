@@ -21,7 +21,7 @@ $theme5 :rgb(255, 96, 221);
     align-items: center;
     z-index: 10;
     background: rgb(0, 0, 0);
-    transition: opacity 0.4s ease 0s;
+    transition: opacity 0.4s ease .2s;
     
   } 
   .preload-finish {
