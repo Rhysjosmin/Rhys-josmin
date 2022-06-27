@@ -5,12 +5,15 @@ window.addEventListener('load',()=>{
 })
 
 var loading=[
-    'Welcome To Rhys\' Website',
-    'Yo!',
-    'Busy Eating',
     'An Apple A Day Makes You An Apple',
     'Chicken is Made out of Chicken',
-    'labadeee labadooo'
+    'labadeee labadooo',
+    'NFTs Were Once Cool',
+    'Chonk Sploby',
+    'Rhys is Going Crazy',
+    'My Money Don\'t Jiggle Jiggle',
+    'The old guy\'s name is Jim'
+
 ]
 
 function newLoad(){
