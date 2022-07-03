@@ -107,7 +107,7 @@ nft .nft-info h3 {
   content: " ETH";
 }
 .nft-buy #price::before {
-  content: "0.1";
+  content: "100";
 }
 
 .super {
