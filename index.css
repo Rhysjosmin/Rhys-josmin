@@ -9,6 +9,13 @@ body {
   background: linear-gradient(to bottom, rgb(26, 26, 26), rgb(0, 0, 0));
 }
 
+#showreel {
+  overflow: hidden;
+}
+#showreel video {
+  width: 100vw;
+}
+
 .Hero {
   height: 100vh;
   display: flex;
@@ -45,7 +52,7 @@ body {
 
 .section2 {
   height: 50vh;
-  font-size: 1.3em;
+  font-size: 2em;
   padding: 2em;
   text-align: center;
   display: flex;
@@ -54,7 +61,37 @@ body {
   align-items: center;
   color: rgb(255, 255, 255);
 }
+.section2 span {
+  color: rgb(181, 255, 138);
+}
 
 .section3 {
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+  gap: 2vh;
+}
+.section3 img {
+  height: 80vh;
+  border-radius: 5vh;
+  -webkit-animation: scroll 18s linear 0s infinite;
+          animation: scroll 18s linear 0s infinite;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-3710px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-3710px);
+  }
 }/*# sourceMappingURL=index.css.map */

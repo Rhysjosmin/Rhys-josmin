@@ -19,6 +19,14 @@ $theme5 :rgb(255, 96, 221);
 body{
   background: linear-gradient(to bottom,rgb(26, 26, 26), rgb(0, 0, 0));
 }
+#showreel{
+  
+  video{
+    
+    width: 100vw;
+  }
+  overflow: hidden;
+}
 .Hero{
     height: 100vh;
     
@@ -60,7 +68,7 @@ body{
 }
 .section2{
   height: 50vh;
-  font-size: 1.3em;
+  font-size: 2em;
   padding: 2em;
   text-align: center;
   display: flex;
@@ -69,7 +77,31 @@ body{
   align-items: center;
  
   color: rgb(255, 255, 255);
+  span{
+    color: $theme3;
+  }
 }
 .section3{
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+  gap: 2vh;
+  
+  img{
+    height: 80vh;
+    border-radius: 5vh;
+   
+    animation: scroll 18s linear 0s infinite;
+    
+  }
+}
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-3710px);
+  }
+  
 }
