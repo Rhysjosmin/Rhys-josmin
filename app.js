@@ -8,7 +8,6 @@ var loading=[
     'An Apple A Day Makes You An Apple',
     'Chicken is Made out of Chicken',
     'labadeee labadooo',
-    'NFTs Were Once Cool',
     'Chonk Sploby',
     'Rhys is Going Crazy',
     'My Money Don\'t Jiggle Jiggle',
@@ -21,3 +20,4 @@ function newLoad(){
     document.getElementById('loadingDisp').innerHTML=loading[randomNumber]
 }
 newLoad();
+
