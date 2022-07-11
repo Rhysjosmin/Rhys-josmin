@@ -10,7 +10,6 @@ var loading=[
     'labadeee labadooo',
     'Chonk Sploby',
     'Rhys is Going Crazy',
-    'My Money Don\'t Jiggle Jiggle',
     'The old guy\'s name is Jim'
 
 ]

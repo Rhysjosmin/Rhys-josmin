@@ -11,7 +11,7 @@
     width:100vw ;
    
 }
-.name{
+.Navname{
     font-weight: 900;
     font-size: 4vw;
     position: absolute;
@@ -36,7 +36,7 @@
 
 
 @media(min-width:425px){
-    .name{
+    .Navname{
         font-weight: 900;
         font-size: 2vw;
         position: absolute;
@@ -95,7 +95,7 @@
     color: rgb(255, 255, 255);
 }
 
-.name{
+.Navname{
     
     color: rgb(132, 198, 255);
     transition: color .4s;
@@ -103,7 +103,7 @@
     
 }
 
-.name:hover{
+.Navname:hover{
     color: rgb(149, 119, 255);
     
 }

@@ -80,28 +80,73 @@ body{
   span{
     color: $theme3;
   }
-}
-.section3{
-  min-height: 100vh;
-  display: flex;
-  overflow: hidden;
-  gap: 2vh;
-  
-  img{
-    height: 80vh;
-    border-radius: 5vh;
-   
-    animation: scroll 18s linear 0s infinite;
-    
+  a{
+    text-decoration: none;
+    color: $theme2;
+    transition: all .3s;
+    &:hover{
+      color: rgb(80, 185, 255);
+    }
   }
 }
 
-@keyframes scroll {
-  0%{
-    transform: translateX(0px);
+
+.contact{
+
+  min-height: 50vw;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4vw;
+  h1{
+    font-size:2em;
+    color: aliceblue;
   }
-  100%{
-    transform: translateX(-3710px);
+  div{
+    background: $theme1;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 1vh;
+    box-shadow: 0vh 0vh 0vh $theme5;
+    transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    &:hover{
+      border-radius: 3vh;
+      transform: translate(-1vh,-1vh);
+      box-shadow: 2vh 2vh 0vh $theme5;
+    }
+  }
+  form{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 2vw;
+    input{
+      width: 60vw;
+      
+      border-radius: 1vh;
+      border: solid .1vh;
+      padding: 1vh;
+      
+    }
+    button{
+    
+      height: 8vh;
+      width: 40vw;
+      border-radius: 1vw;
+      border: solid .1vh;
+      background-color: rgb(252, 158, 231);
+      transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      &:hover{
+        background-color: $theme5;
+      }
+    }
+    
   }
   
 }

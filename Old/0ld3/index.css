@@ -125,7 +125,6 @@ hr {
   .hero img:hover {
     box-shadow: 0vw 0vh 0vw 5vw rgb(255, 131, 65) !important;
   }
-
   .statuses {
     display: flex !important;
     align-items: center;
@@ -134,15 +133,12 @@ hr {
   .statuses .status {
     width: 80vw !important;
   }
-
   h1 {
     text-align: center;
   }
-
   .noMobile {
     visibility: collapse;
   }
-
   .tile {
     width: 80vw !important;
     height: auto !important;

@@ -64,34 +64,67 @@ body {
 .section2 span {
   color: rgb(181, 255, 138);
 }
+.section2 a {
+  text-decoration: none;
+  color: rgb(138, 255, 220);
+  transition: all 0.3s;
+}
+.section2 a:hover {
+  color: rgb(80, 185, 255);
+}
 
-.section3 {
-  min-height: 100vh;
+.contact {
+  min-height: 50vw;
   display: flex;
   overflow: hidden;
-  gap: 2vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4vw;
 }
-.section3 img {
-  height: 80vh;
-  border-radius: 5vh;
-  -webkit-animation: scroll 18s linear 0s infinite;
-          animation: scroll 18s linear 0s infinite;
+.contact h1 {
+  font-size: 2em;
+  color: aliceblue;
 }
-
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-3710px);
-  }
+.contact div {
+  background: rgb(138, 208, 255);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 1vh;
+  box-shadow: 0vh 0vh 0vh rgb(255, 96, 221);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-3710px);
-  }
+.contact div:hover {
+  border-radius: 3vh;
+  transform: translate(-1vh, -1vh);
+  box-shadow: 2vh 2vh 0vh rgb(255, 96, 221);
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding: 2vw;
+}
+.contact form input {
+  width: 60vw;
+  border-radius: 1vh;
+  border: solid 0.1vh;
+  padding: 1vh;
+}
+.contact form button {
+  height: 8vh;
+  width: 40vw;
+  border-radius: 1vw;
+  border: solid 0.1vh;
+  background-color: rgb(252, 158, 231);
+  transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.contact form button:hover {
+  background-color: rgb(255, 96, 221);
 }/*# sourceMappingURL=index.css.map */
