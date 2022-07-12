@@ -127,7 +127,7 @@ nft {
 
 .super {
 	filter: opacity(0%);
-	transition: transform 2s, filter 5s, box-shadow 8s;
+	transition: transform 2s, filter 3s, box-shadow 8s;
 	&:hover {
 		filter: opacity(100%);
 		box-shadow: 0px 0px initial rgb(123, 93, 255);

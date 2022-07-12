@@ -118,14 +118,16 @@
     
 }
 .end{
-   
-    background: #1d1d1d !important;
+    position: fixed;
+    background: #0f0f0f !important;
     color: antiquewhite !important;
-    padding: .2em !important;
-    padding-left: .5em !important;
-    font-size: .8em !important;
+
+   
+    font-size: .6em !important;
     font-weight: l !important;
-    
+    bottom: 0%;
+    width: 100%;
+    overflow: hidden;
    
 }
 .end span{

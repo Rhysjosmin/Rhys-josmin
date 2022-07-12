@@ -80,14 +80,7 @@ body{
   span{
     color: $theme3;
   }
-  a{
-    text-decoration: none;
-    color: $theme2;
-    transition: all .3s;
-    &:hover{
-      color: rgb(80, 185, 255);
-    }
-  }
+  
 }
 
 
@@ -149,4 +142,28 @@ body{
     
   }
   
+}
+
+a{
+  text-decoration: none;
+  color: $theme2;
+  transition: all .3s;
+  &:hover{
+    color: rgb(80, 185, 255);
+  }
+}
+.footer{
+  margin-top: 4vh;
+  display: flex;
+  justify-content: flex-start;
+  padding-left:  1vh;
+  align-items: center;
+  background: hsl(234, 100%, 4%);
+  gap: 1vh;
+  a{
+    font-size: .9em;
+    font-weight: 100;
+
+  }
+  min-height: 6vh;
 }

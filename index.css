@@ -64,14 +64,6 @@ body {
 .section2 span {
   color: rgb(181, 255, 138);
 }
-.section2 a {
-  text-decoration: none;
-  color: rgb(138, 255, 220);
-  transition: all 0.3s;
-}
-.section2 a:hover {
-  color: rgb(80, 185, 255);
-}
 
 .contact {
   min-height: 50vw;
@@ -127,4 +119,28 @@ body {
 }
 .contact form button:hover {
   background-color: rgb(255, 96, 221);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(138, 255, 220);
+  transition: all 0.3s;
+}
+a:hover {
+  color: rgb(80, 185, 255);
+}
+
+.footer {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1vh;
+  align-items: center;
+  background: hsl(234deg, 100%, 4%);
+  gap: 1vh;
+  min-height: 6vh;
+}
+.footer a {
+  font-size: 0.9em;
+  font-weight: 100;
 }/*# sourceMappingURL=index.css.map */

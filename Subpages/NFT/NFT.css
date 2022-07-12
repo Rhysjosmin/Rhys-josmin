@@ -112,7 +112,7 @@ nft .nft-info h3 {
 
 .super {
   filter: opacity(0%);
-  transition: transform 2s, filter 5s, box-shadow 8s;
+  transition: transform 2s, filter 3s, box-shadow 8s;
 }
 .super:hover {
   filter: opacity(100%);
