@@ -54,4 +54,9 @@ header img {
   width: 50vh;
   border-radius: 2vh;
   box-shadow: 0vh 0vh 0vh 0.8vh white;
+  background: linear-gradient(to top right, rgb(0, 0, 0), hsl(0deg, 0%, 2%));
+  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.images img:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
