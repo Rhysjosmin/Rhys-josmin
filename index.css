@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, rgb(26, 26, 26), rgb(0, 0, 0));
+  background: linear-gradient(to bottom, #080808, #011624);
 }
 
 #showreel {
@@ -14,6 +14,20 @@ body {
 }
 #showreel video {
   width: 100vw;
+}
+
+.NAME {
+  height: 100vh;
+  font-size: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.NAME span {
+  color: #D61C4E;
+  font-size: 12vw;
 }
 
 .Hero {
@@ -28,15 +42,15 @@ body {
   color: aliceblue;
 }
 .Hero .Name {
-  color: rgb(138, 208, 255);
+  color: #FEF9A7;
   font-size: 1.3em;
 }
 .Hero .compEngg {
-  color: rgb(138, 255, 220);
+  color: #FAC213;
   font-size: 1.3em;
 }
 .Hero .Art {
-  color: rgb(255, 96, 221);
+  color: #d61c1c;
   font-size: 1.3em;
 }
 .Hero img {
@@ -62,7 +76,7 @@ body {
   color: rgb(255, 255, 255);
 }
 .section2 span {
-  color: rgb(181, 255, 138);
+  color: #F77E21;
 }
 
 .contact {
@@ -79,7 +93,7 @@ body {
   color: aliceblue;
 }
 .contact div {
-  background: rgb(138, 208, 255);
+  background: #FAC213;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -87,13 +101,13 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 1vh;
-  box-shadow: 0vh 0vh 0vh rgb(255, 96, 221);
-  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0vh 0vh 0vh #d61c1c;
+  transition: all 0.8s cubic-bezier(0, 0.2, 0.32, 1.275);
 }
 .contact div:hover {
   border-radius: 3vh;
   transform: translate(-1vh, -1vh);
-  box-shadow: 2vh 2vh 0vh rgb(255, 96, 221);
+  box-shadow: 2vh 2vh 0vh #d61c1c;
 }
 .contact form {
   display: flex;
@@ -114,20 +128,20 @@ body {
   width: 40vw;
   border-radius: 1vw;
   border: solid 0.1vh;
-  background-color: rgb(252, 158, 231);
-  transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #F77E21;
+  transition: background-color 1s cubic-bezier(0, 0.5, 0.6, 1);
 }
 .contact form button:hover {
-  background-color: rgb(255, 96, 221);
+  background-color: #d61c1c;
 }
 
 a {
   text-decoration: none;
-  color: rgb(138, 255, 220);
+  color: #FAC213;
   transition: all 0.3s;
 }
 a:hover {
-  color: rgb(80, 185, 255);
+  color: #72fa13;
 }
 
 .footer {
