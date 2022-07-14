@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="GeneralCss.css">
     <link rel="shortcut icon" href="/Media/icons/Logo Midjournet.svg" type="image/x-icon">
@@ -37,7 +38,7 @@
             Im A <span class="compEngg">Computer Engineer</span> and a <br>
             <span class="Art">3D Artist</span>
         </p>
-        <picture alt="Picture Of Rhys">
+        <picture alt="Picture Of Rhys" onmouseover="close()">
             <source type="image/avif" srcset="/Media/Images/Rhys.avif" type="">
             <source type="image/webp" srcset="/Media/Images/Rhys.webp" type="">
             <source type="image/jpg" srcset="/Media/Images/Rhys.jpg" type="">
@@ -46,30 +47,31 @@
         
     </section>
     <section class="section2">
-        <h1>I Make Awesome <span>Stuff</span></h1>
-        <a href="/Subpages/Art/Art.html">Check It Out</a>
-    </section>
-
-    <section class="contact">
-        <h1>Contact Me</h1>
-        <div>
-          <form action="https://formsubmit.co/rod.rhys20031@gmail.com" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="text" name="message" placeholder="Message" required>
-            <button type="submit">Send</button>
-            </form>  
+        <h1>I Make <span>Awesome</span> Stuff</h1>
+        <section class="work">
+            <div><img src="./Media/Mining-Pass/Pig.png" alt="" srcset="" onclick="enlarge(this)"></div>
+            <div><img src="./Media/Images/MarshmelloManOnRocks.webp" alt="" srcset="" onclick="enlarge(this)"></div>
+            <div><img src="./Media/Images/Marshmellow.webp" alt="" srcset="" onclick="enlarge(this)"></div>
+            <div><img src="./Media/Images/GrootEatingCandy.webp" alt="" srcset="" onclick="enlarge(this)"></div>
+            <div><img src="./Media/Images/Icecream.webp" alt="" srcset="" onclick="enlarge(this)"></div>
+            
+        </section>
+        <div id="imageCont" >
+            <img src="" id="image">
+            <button id="close" onmouseout="close()"></button>
         </div>
         
+       
     </section>
+
+   
     <section class="footer">
     
+        <a href="/Subpages/Contact/contact.html">Contact</a>
         <a href="/Subpages/Resume/Resume.html">Resume</a>
         <a href="https://www.instagram.com/rhysjosmin">Instagram</a>
         <a href="https://www.youtube.com/c/RhysJosmin">Youtube</a>
     
-</section>
+    </section>
 </body>
 </html>

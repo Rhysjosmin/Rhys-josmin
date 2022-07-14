@@ -1,16 +1,10 @@
 
-$theme1 :rgb(138, 208, 255);
-$theme2 :rgb(138, 255, 220);
-$theme3 :rgb(181, 255, 138);
-$theme4 :rgb(243, 255, 138);
-$theme5 :rgb(255, 160, 96);
-$theme5 :rgb(255, 106, 96);
-$theme5 :rgb(255, 96, 221);
+@import'./themes.scss';
 
 .preload {
     height: 100vh;
     width: 100vw;
-    color: $theme1;
+    color: $theme4;
     font-size: 2vw;
     font-weight: 10;
     text-align: center;
@@ -21,7 +15,7 @@ $theme5 :rgb(255, 96, 221);
     align-items: center;
     z-index: 10;
     background: rgb(0, 0, 0);
-    transition: opacity 0.4s ease .2s;
+    transition: opacity 0.4s ease .5s;
     
   } 
   .preload-finish {

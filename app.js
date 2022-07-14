@@ -14,9 +14,32 @@ var loading=[
 
 ]
 
+
+
 function newLoad(){
     var randomNumber=Math.floor(Math.random()*(loading.length));
     document.getElementById('loadingDisp').innerHTML=loading[randomNumber]
+    
 }
 newLoad();
+
+
+function enlarge(source){
+    
+    document.getElementById('imageCont').style.visibility='visible';
+
+    document.getElementById('image').src=source.src;
+    
+   
+}
+
+
+    
+function close(){
+   
+    document.getElementById('imageCont').style.visibility='hidden';
+}
+
+document.getElementById("close").addEventListener("click", close());
+
 

@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Kufam", sans-serif;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background: linear-gradient(to bottom, #080808, #011624);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.contact {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 4vw;
+}
+.contact h1 {
+  font-size: 2em;
+  color: aliceblue;
+}
+.contact div {
+  background: #FAC213;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 1vh;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding: 2vw;
+}
+.contact form input {
+  width: 40vw;
+  border-radius: 1vh;
+  border: solid 0.1vh;
+  padding: 1vh;
+}
+.contact form button {
+  height: 8vh;
+  width: 30vw;
+  border-radius: 1vw;
+  border: solid 0.1vh;
+  background-color: #F77E21;
+  transition: background-color 1s cubic-bezier(0, 0.5, 0.6, 1);
+}
+.contact form button:hover {
+  background-color: #d61c1c;
+}
+
+a {
+  text-decoration: none;
+  color: #FAC213;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #72fa13;
+}
