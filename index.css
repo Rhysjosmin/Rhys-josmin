@@ -17,7 +17,10 @@ body {
 }
 
 .NAME {
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20vh 0vh;
   font-size: 6vw;
   display: flex;
   justify-content: center;
@@ -33,8 +36,8 @@ body {
 }
 
 .Hero {
-  height: 100vh;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   padding-left: 3vw;
@@ -42,6 +45,29 @@ body {
   text-align: left;
   font-size: 3vw;
   color: aliceblue;
+}
+@media (mAX-width: 425px) {
+  .Hero {
+    flex-direction: column-reverse;
+  }
+  .Hero div {
+    flex-direction: column-reverse;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    padding: 2vh 1vh !important;
+  }
+}
+.Hero div {
+  background: #080808;
+  border-radius: 2vh;
+  display: flex;
+  width: 100vw;
+  gap: 2vh;
+  padding: 6vh 0vh;
+  align-items: center;
+  justify-content: center;
+  border: 0.2vh solid white;
 }
 .Hero .Name {
   color: #FEF9A7;
@@ -58,12 +84,12 @@ body {
 .Hero img {
   height: 10em;
   border-radius: 50%;
-  box-shadow: 0.5em 0.5em 0 0.2em rgb(0, 0, 0);
-  transition: all 1s cubic-bezier(0.175, 0.885, 0.3, 1);
+  box-shadow: 2vw 2vw 0 1vw rgb(0, 0, 0);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .Hero img:hover {
   transform: translate(-10px, -10px);
-  box-shadow: 1em 1em 1em 0.2em rgb(0, 0, 0);
+  box-shadow: 4vw 4vw 0px -2vw rgb(0, 0, 0);
 }
 
 .section2 {
@@ -126,10 +152,6 @@ a:hover {
   padding: 0.6vh;
   background: linear-gradient(to right top, #F77E21, #d61c1c);
   border-radius: 4vh;
-  transition: box-shadow 0.5s;
-}
-.work div:hover {
-  box-shadow: 0vh 0vh 4vh 0vh #304add;
 }
 .work img {
   height: 40vh;

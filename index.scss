@@ -23,7 +23,8 @@ body{
   overflow: hidden;
 }
 .NAME{
-  height: 100vh;
+  height:fit-content ;
+  padding: 20vh 0vh;
   font-size: 6vw;
   display: flex;
   justify-content: center;
@@ -38,9 +39,33 @@ body{
   }
 }
 .Hero{
-    height: 100vh;
     
+   
+    
+    @media (mAX-width: 425px)  {
+      flex-direction: column-reverse;
+      
+      div{
+        flex-direction: column-reverse; 
+        width: fit-content !important;
+        padding: 2vh 1vh !important; 
+      }
+      
+
+    }
+    div{
+      background: $theme6;
+      border-radius: 2vh;
+      display: flex;
+      width: 100vw;
+      gap: 2vh;
+      padding: 6vh 0vh;
+      align-items: center;
+      justify-content: center;
+      border: .2vh solid white;
+    }
     display: flex;
+    flex-direction: row;
     align-items: center; 
     justify-content: space-around;  
     padding-left: 3vw;
@@ -66,11 +91,11 @@ body{
     img{
         height: 10em;
         border-radius: 50%;
-        box-shadow: .5em .5em 0 .2em rgb(0, 0, 0);
-        transition: all 1s cubic-bezier(0.175, 0.885, 0.3, 1) ;
+        box-shadow: 2vw 2vw 0 1vw rgb(0, 0, 0);
+        transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1) ;
         &:hover{
           transform: translate(-10px ,-10px);
-          box-shadow: 1em 1em 1em .2em rgb(0, 0, 0);
+          box-shadow: 4vw 4vw 0px -2vw rgb(0, 0, 0);
          
         }
     }
@@ -141,10 +166,7 @@ a{
     background: linear-gradient(to right top,$theme3,$theme5);
     
     border-radius: $radius;
-    transition: box-shadow .5s;
-    &:hover{
-      box-shadow: 0vh 0vh 4vh 0vh $theme51;
-    }
+    
   }
   img{
     height: 40vh;
