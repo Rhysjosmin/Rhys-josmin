@@ -4,6 +4,16 @@
   padding: 0%;
   margin: 0%;
 }
+@media (max-width: 425px) {
+  * {
+    image-rendering: optimizeSpeed;
+  }
+}
+@media (min-width: 425px) {
+  * {
+    image-rendering: optimizeQuality;
+  }
+}
 
 body {
   background: linear-gradient(to bottom, #080808, #011624);
