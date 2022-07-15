@@ -126,11 +126,15 @@ a:hover {
   padding: 0.6vh;
   background: linear-gradient(to right top, #F77E21, #d61c1c);
   border-radius: 4vh;
+  transition: box-shadow 0.5s;
+}
+.work div:hover {
+  box-shadow: 0vh 0vh 4vh 0vh #304add;
 }
 .work img {
   height: 40vh;
   border-radius: 4vh;
-  filter: saturate(0%) contrast(80%) blur(2px);
+  filter: saturate(0%) contrast(80%) blur(1px);
   transition: transform 0.9s cubic-bezier(0.23, 1, 0.32, 1), filter 0.6s;
 }
 .work img:hover {
@@ -143,13 +147,12 @@ a:hover {
   top: 10%;
   min-height: 10vh;
   min-width: 10vw;
-  display: flex;
   padding: 0.8vh;
   flex-direction: row-reverse;
   border-radius: 4vh;
   background: linear-gradient(to right top, #F77E21, #d61c1c);
-  visibility: hidden;
-  box-shadow: 0vh 0vh 10vh 3vh black;
+  display: none;
+  box-shadow: 0vh 0vh 15vh 5vh black;
 }
 #imageCont img {
   max-width: 80vw;
@@ -159,8 +162,8 @@ a:hover {
 }
 
 #close {
-  z-index: 5;
-  position: fixed;
+  z-index: 1;
+  position: absolute;
   width: 8vh;
   height: 8vh;
   transform: translate(2vh, -2vh);
@@ -173,5 +176,5 @@ a:hover {
 #close:hover {
   transform: translate(2vh, -2vh) scale(1.1);
   background: #D61C4E;
-  box-shadow: 0vh 0vh 0vh 1vh white;
+  box-shadow: 0vh 0vh 0vh 1vh rgb(255, 255, 255);
 }

@@ -141,12 +141,15 @@ a{
     background: linear-gradient(to right top,$theme3,$theme5);
     
     border-radius: $radius;
-    
+    transition: box-shadow .5s;
+    &:hover{
+      box-shadow: 0vh 0vh 4vh 0vh $theme51;
+    }
   }
   img{
     height: 40vh;
     border-radius: $radius;
-    filter: saturate(0%) contrast(80%) blur(2px);
+    filter: saturate(0%) contrast(80%) blur(1px);
     transition: transform .9s cubic-bezier(0.23, 1, 0.320, 1),filter .6s;
     &:hover{
      
@@ -163,15 +166,15 @@ a{
   top: 10%;
   min-height: 10vh;
   min-width: 10vw;
-  display: flex;
+ 
   padding: .8vh;
   flex-direction: row-reverse;
   
   border-radius: $radius;
   background: linear-gradient(to right top,$theme3,$theme5);
-  visibility: hidden;
-  box-shadow: 0vh 0vh 10vh 3vh black;
-
+  display: none;
+  box-shadow: 0vh 0vh 15vh 5vh black;
+ 
   img{
     max-width: 80vw;
     max-height: 80vh;
@@ -185,8 +188,8 @@ a{
 
 #close{
   
-  z-index: 5;
-  position: fixed;
+  z-index: 1;
+  position: absolute;
   width: 8vh;
   height: 8vh;
   transform: translate(2vh, -2vh);
@@ -199,7 +202,7 @@ a{
   &:hover{
     transform: translate(2vh, -2vh) scale(1.1);
     background: $theme4;
-    box-shadow: 0vh 0vh 0vh 1vh white;
+    box-shadow: 0vh 0vh 0vh 1vh $theme8;
   }
 
 }
