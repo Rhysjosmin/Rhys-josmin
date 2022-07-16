@@ -168,14 +168,14 @@ a{
   gap: 2vw;
  
   div{
-    
+    padding: .6vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .6vh;
+    
     background: linear-gradient(to right top,$theme3,$theme5);
     
-    border-radius: 2vh;
+    border-radius: $radius;
     transition: transform .3s cubic-bezier(0.23, 1, 0.320, 3),padding .3s cubic-bezier(0.23, 1, 0.320, 2);
     //&:hover{
     //  @media (min-width: 425px){

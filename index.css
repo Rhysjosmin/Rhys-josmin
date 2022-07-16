@@ -159,12 +159,12 @@ a:hover {
   gap: 2vw;
 }
 .work div {
+  padding: 0.6vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.6vh;
   background: linear-gradient(to right top, #F77E21, #d61c1c);
-  border-radius: 2vh;
+  border-radius: 4vh;
   transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 3), padding 0.3s cubic-bezier(0.23, 1, 0.32, 2);
 }
 .work img {
