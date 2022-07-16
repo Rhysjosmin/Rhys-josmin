@@ -152,7 +152,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100vw;
+  max-width: 100vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -164,20 +164,15 @@ a:hover {
   align-items: center;
   padding: 0.6vh;
   background: linear-gradient(to right top, #F77E21, #d61c1c);
-  border-radius: 4vh;
-  transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 2);
-}
-@media (min-width: 425px) {
-  .work div:hover {
-    transform: scale(1.01) translateY(-3%);
-  }
+  border-radius: 2vh;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 3), padding 0.3s cubic-bezier(0.23, 1, 0.32, 2);
 }
 .work img {
   max-width: 80vw;
-  height: 40vh;
-  border-radius: 4vh;
+  max-height: 40vh;
+  border-radius: inherit;
   filter: saturate(0%) contrast(80%) blur(1px);
-  transition: transform 0.9s cubic-bezier(0.23, 1, 0.32, 1), filter 0.5s ease-out;
+  transition: transform 0.9s cubic-bezier(0.23, 1, 0.32, 1), filter 0.2s ease-out;
 }
 .work img:hover {
   filter: saturate(100%) contrast(100%) blur(0px);
