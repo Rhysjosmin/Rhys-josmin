@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 @media (max-width: 425px) {
   .navbar {
     z-index: 3;
@@ -34,6 +35,10 @@
   font-size: 2vw;
   position: absolute;
   right: 5vw;
+  font-family: "Bangers", cursive;
+  font-size: 1.4em;
+  letter-spacing: 0.2vw;
+  text-shadow: 0.05em 0.05em #FAC213;
 }
 
 .navbar {
@@ -83,12 +88,6 @@
 }
 
 .Navname {
-  color: #F77E21;
-  transition: color 0.4s;
-  -webkit-transition: color 0.4s;
-}
-
-.Navname:hover {
   color: #D61C4E;
 }
 

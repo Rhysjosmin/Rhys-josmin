@@ -1,4 +1,6 @@
 @import './themes.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 @media(max-width:425px) {
 .navbar{
     z-index: 3;
@@ -42,6 +44,11 @@
     font-size: 2vw;
     position: absolute;
     right: 5vw;
+    font-family: 'Bangers', cursive;
+    
+    font-size:1.4em;
+    letter-spacing: .2vw;
+    text-shadow: .05em .05em  $theme2 ;
     
 }
 
@@ -101,16 +108,13 @@
 
 .Navname{
     
-    color: $theme3;
-    transition: color .4s;
-    -webkit-transition: color .4s;
+    color: $theme4;
+
+   
     
 }
 
-.Navname:hover{
-    color: $theme4;
-    
-}
+
 
 .long{
     height: 100vh;

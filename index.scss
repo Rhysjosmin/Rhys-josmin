@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import './themes.scss';
-
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 
 *{
@@ -38,10 +38,11 @@ body{
   color: white;
   text-align: center;
   span{
+    font-family: 'Bangers', cursive;
     color: $theme4;
     font-size: 12vw;
-    letter-spacing: -.5vw;
-    text-shadow: 1vw 1vw  $theme7 ;
+    letter-spacing: .5vw;
+    text-shadow: .7vw .7vw  $theme2 ;
   }
 }
 .Hero{
@@ -83,10 +84,14 @@ body{
     color: aliceblue;
     
     .Name{
-        color: $theme1;
-        font-size:1.3em;
-        
+      font-family: 'Bangers', cursive;
+      color: $theme4;
+      font-size:1.4em;
+      letter-spacing: .2vw;
+      text-shadow: .05em .05em  $theme2 ;
     }
+        
+    
     .compEngg{
         color: $theme2;
         font-size:1.3em;
@@ -124,8 +129,12 @@ body{
  
   color: rgb(255, 255, 255);
   span{
-    color: white;
-    text-shadow: 0 0 2vh $theme4;
+    font-family: 'Bangers', cursive;
+    color: $theme4;
+    font-size: 12vw;
+    letter-spacing: .5vw;
+    text-shadow: .7vw .7vw  $theme2 ;
+  
   }
   
 }
