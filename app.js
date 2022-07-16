@@ -42,7 +42,11 @@ function enlarge(source){
 }
 
     
-
+function unmute(){
+    
+    document.getElementById('showreelVid').muted=false;
+   
+}
 
 
 

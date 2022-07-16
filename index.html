@@ -11,14 +11,14 @@
     <title>Home</title>
 </head>
 <body>
-    <!--
+    
        <link rel="stylesheet" href="/preload.css">
     <section class="preload">
         <div class="lds-ripple"><div></div><div></div></div>
         <h2 id="loadingDisp"></h2>
         
     </section>
-    -->
+    
     <script src="/app.js"></script> 
     
     
@@ -31,13 +31,14 @@
     </section>
     <section id="showreel">
         <a href="https://youtu.be/eLVgqN6Bn0I">
-         <video  autoplay muted loop poster="./Media/thumbnails/showreel.png">
+         <video id="showreelVid" autoplay muted loop poster="/Media/thumbnails/showreel.webp">
              <source src="./Media/Videos/ShowReelHQ.mp4" type="">
              <source src="./Media/Videos/ShowreelLQ.mp4" type="">
          
         
         </video>   
         </a>
+        <!--<span onclick="unmute()">unmute</span>-->
         
     </section>
     <section class="NAME"><H1>The Portfolio Of <br><span>Rhys Josmin</span</H1></section>
@@ -49,9 +50,9 @@
             <span class="Art">3D Artist</span>
         </p>
         <picture alt="Picture Of Rhys" onmouseover="close()">
-            <source type="image/avif" srcset="/Media/Images/Rhys.avif" type="">
-            <source type="image/webp" srcset="/Media/Images/Rhys.webp" type="">
-            <source type="image/jpg" srcset="/Media/Images/Rhys.jpg" type="">
+            <source srcset="/Media/Images/Rhys.avif" type="">
+            <source srcset="/Media/Images/Rhys.webp" type="">
+            <source srcset="/Media/Images/Rhys.jpg" type="">
             <img src="/Media/Images/Rhys.avif" alt="Picture Of Rhys">
         </picture> 
         </div>
