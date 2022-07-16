@@ -106,8 +106,8 @@ body {
 
 .section2 {
   min-height: 50vh;
-  font-size: 2em;
-  padding: 2em;
+  font-size: 7vw;
+  padding: 2vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -138,11 +138,12 @@ a:hover {
   padding-left: 1vh;
   align-items: center;
   background: hsl(234deg, 100%, 4%);
-  gap: 1vh;
+  gap: 1vw;
+  max-width: 100vw;
   min-height: 6vh;
 }
 .footer a {
-  font-size: 0.9em;
+  font-size: 1vw;
   font-weight: 100;
 }
 
@@ -164,12 +165,19 @@ a:hover {
   padding: 0.6vh;
   background: linear-gradient(to right top, #F77E21, #d61c1c);
   border-radius: 4vh;
+  transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 2);
+}
+@media (min-width: 425px) {
+  .work div:hover {
+    transform: scale(1.01) translateY(-3%);
+  }
 }
 .work img {
+  max-width: 80vw;
   height: 40vh;
   border-radius: 4vh;
   filter: saturate(0%) contrast(80%) blur(1px);
-  transition: transform 0.9s cubic-bezier(0.23, 1, 0.32, 1), filter 0.6s;
+  transition: transform 0.9s cubic-bezier(0.23, 1, 0.32, 1), filter 0.5s ease-out;
 }
 .work img:hover {
   filter: saturate(100%) contrast(100%) blur(0px);

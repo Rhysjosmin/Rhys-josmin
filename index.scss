@@ -112,8 +112,8 @@ body{
 }
 .section2{
   min-height: 50vh;
-  font-size: 2em;
-  padding: 2em;
+  font-size: 7vw;
+  padding: 2vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -147,9 +147,10 @@ a{
   padding-left:  1vh;
   align-items: center;
   background: hsl(234, 100%, 4%);
-  gap: 1vh;
+  gap: 1vw;
+  max-width: 100vw;
   a{
-    font-size: .9em;
+    font-size: 1vw;
     font-weight: 100;
 
   }
@@ -174,16 +175,23 @@ a{
     background: linear-gradient(to right top,$theme3,$theme5);
     
     border-radius: $radius;
-    
+    transition: transform .2s cubic-bezier(0.23, 1, 0.320, 2);
+    &:hover{
+      @media (min-width: 425px){
+        transform: scale(1.01) translateY(-3%); 
+       }
+    }
   }
   img{
+    max-width: 80vw;
     height: 40vh;
     border-radius: $radius;
     filter: saturate(0%) contrast(80%) blur(1px);
-    transition: transform .9s cubic-bezier(0.23, 1, 0.320, 1),filter .6s;
+    transition: transform .9s cubic-bezier(0.23, 1, 0.320, 1),filter .5s ease-out;
     &:hover{
      
       filter: saturate(100%) contrast(100%) blur(0px);
+      
       
     }
   }
