@@ -5,7 +5,7 @@
 .navbar{
     z-index: 3;
     position: fixed;
-    max-height: 20vh;
+    max-height: 20vh !important;
     padding: 1vh;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@
 }
 .Navname{
     font-weight: 900;
-    font-size: 4vw;
+    font-size: 4vw !important;
     position: absolute;
     right: 5vw;
     
@@ -31,7 +31,7 @@
 }
 
 .navbar-button-link{
-    font-size: 3vw;
+    font-size: 3vw !important;
     font-weight: 500;
     text-decoration: none;
 }
@@ -64,11 +64,18 @@
     justify-content:safe;
     padding-left: 1vw;
     width:100vw ;
-    opacity: 10%;
-    transition: opacity 1s ease ;
-    &:hover{
+    
+    
+    @media(min-width:425px){
+        opacity: 10%;
+        filter: blur(20px);
+        transition: opacity .8s ease-in-out ,filter .4s cubic-bezier(0.68, 0, 0.265, 2);
+       &:hover{
+        filter: blur(0px);
         opacity: 100%;
+    } 
     }
+    
     
     
 }
