@@ -185,25 +185,35 @@ a:hover {
   align-items: center;
   background: linear-gradient(to right top, #F77E21, #d61c1c);
   border-radius: 4vh;
-  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 3), padding 0.3s cubic-bezier(0.23, 1, 0.32, 2), border-radius 0.3s cubic-bezier(0.23, 1, 0.32, 3);
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 3), padding 0.4s cubic-bezier(0.23, 1, 0.32, 2), border-radius 0.4s cubic-bezier(0.23, 1, 0.32, 3), box-shadow 0.4s cubic-bezier(0.23, 1, 0.32, 3);
+}
+@media (max-width: 425px) {
+  .work .workMedia {
+    padding: 0.3vw !important;
+  }
 }
 @media (min-width: 425px) {
   .work .workMedia:hover {
     transform: scale(1.01);
     border-radius: 7vh;
+    box-shadow: 0vh 0vh 10vh black;
   }
 }
 .work img {
-  border-radius: 4vh;
   max-width: 80vw;
   max-height: 80vh;
-  filter: saturate(0%) contrast(80%) blur(2px);
-  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 2) 0.1s, filter 0.2s ease-out, border-radius 0.3s cubic-bezier(0.23, 1, 0.32, 3);
+  border-radius: 4vh;
 }
-.work img:hover {
-  border-radius: 7vh;
-  filter: saturate(100%) contrast(100%) blur(0px);
-  transform: scale(0.955);
+@media (min-width: 425px) {
+  .work img {
+    filter: saturate(0%) contrast(80%) blur(2px);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 2) 0.1s, filter 0.3s ease-out, border-radius 0.4s cubic-bezier(0.23, 1, 0.32, 3);
+  }
+  .work img:hover {
+    border-radius: 7vh;
+    filter: saturate(100%) contrast(100%) blur(0px);
+    transform: scale(0.955);
+  }
 }
 
 #imageCont {

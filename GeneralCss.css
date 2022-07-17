@@ -55,8 +55,8 @@
 }
 @media (min-width: 425px) {
   .navbar {
-    opacity: 10%;
-    filter: blur(20px);
+    opacity: 20%;
+    filter: blur(1px);
     transition: opacity 0.8s ease-in-out, filter 0.4s cubic-bezier(0.68, 0, 0.265, 2);
   }
   .navbar:hover {

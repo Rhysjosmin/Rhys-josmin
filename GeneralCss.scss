@@ -64,11 +64,12 @@
     justify-content:safe;
     padding-left: 1vw;
     width:100vw ;
-    
+   
+   
     
     @media(min-width:425px){
-        opacity: 10%;
-        filter: blur(20px);
+        opacity: 20%;
+        filter: blur(1px);
         transition: opacity .8s ease-in-out ,filter .4s cubic-bezier(0.68, 0, 0.265, 2);
        &:hover{
         filter: blur(0px);

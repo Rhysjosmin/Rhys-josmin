@@ -186,11 +186,12 @@ a{
  picture{
     max-width: 80vw;
     max-height: 80vh;
+   
  }
   .workMedia{
     padding: .6vh;
     @media (max-width: 425px){
-      //padding: .3vh !important;
+      padding: .3vw !important;
     }
    
     display: flex;
@@ -201,29 +202,32 @@ a{
     background: linear-gradient(to right top,$theme3,$theme5);
     
     border-radius: $radius;
-    transition: transform .3s cubic-bezier(0.23, 1, 0.320, 3),padding .3s cubic-bezier(0.23, 1, 0.320, 2),border-radius .3s  cubic-bezier(0.23, 1, 0.320, 3);
+    transition: transform .3s cubic-bezier(0.23, 1, 0.320, 3),padding .4s cubic-bezier(0.23, 1, 0.320, 2),border-radius .4s  cubic-bezier(0.23, 1, 0.320, 3),box-shadow .4s cubic-bezier(0.23, 1, 0.320, 3);
     &:hover{
       @media (min-width: 425px){
         transform: scale(1.01); 
         border-radius: $radius+3vh;
+        box-shadow: 0vh 0vh 10vh black;
        }
     }
   }
   img{
   
-
-    border-radius: $radius;
     max-width: 80vw;
     max-height: 80vh;
+    border-radius: $radius;
     
-    filter: saturate(0%) contrast(80%) blur(2px);
-    transition: transform .3s cubic-bezier(0.23, 1, 0.320, 2) .1s,filter .2s ease-out,border-radius .3s  cubic-bezier(0.23, 1, 0.320, 3) ;
+    @media (min-width: 425px){
+     filter: saturate(0%) contrast(80%) blur(2px);
+    transition: transform .4s cubic-bezier(0.23, 1, 0.320, 2) .1s,filter .3s ease-out,border-radius .4s  cubic-bezier(0.23, 1, 0.320, 3) ;
     &:hover{
       border-radius: $radius+3vh;
       filter: saturate(100%) contrast(100%) blur(0px);
       transform: scale(.955);
       
+    } 
     }
+    
   }
  
 
