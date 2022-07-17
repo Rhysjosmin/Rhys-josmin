@@ -109,6 +109,26 @@ p:hover {
     justify-content: center;
     background: linear-gradient(to top, #50B2F9, rgb(0, 68, 255));
   }
+  .miningPass {
+    padding-left: 0vw;
+    padding-bottom: 30vh;
+    color: aliceblue;
+    padding-top: 20vh;
+    font-size: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .miningPass p {
+    border-radius: 1vh;
+    padding: 1vw;
+    max-width: 85vw;
+    color: black;
+    background: linear-gradient(to top, #ffffff, hsl(0deg, 0%, 90%));
+    box-shadow: 0.3vh 0.3vh 0.9vh 0vh rgba(0, 0, 0, 0.555);
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
   .Gif img {
     width: 50vw;
   }
@@ -137,4 +157,4 @@ p:hover {
     box-shadow: 0.3vh 0.3vh 0.9vh 0vh rgba(0, 0, 0, 0.555);
     transition: transform 0.5s, box-shadow 0.5s;
   }
-}/*# sourceMappingURL=Previous Work.css.map */
+}

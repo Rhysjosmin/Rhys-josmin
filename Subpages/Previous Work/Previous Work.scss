@@ -127,6 +127,29 @@ p{
         justify-content: center;
         background: linear-gradient(to top ,#50B2F9,rgb(0, 68, 255));
     }
+    .miningPass{
+    
+        padding-left: 0vw;
+        padding-bottom: 30vh;
+        color: aliceblue;
+        padding-top: 20vh;
+        font-size: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p{
+
+            border-radius: 1vh;
+            padding: 1vw;
+            max-width: 85vw;
+            color: black;
+            background:linear-gradient(to top ,#ffffff,hsl(0, 0%, 90%));
+            box-shadow: .3vh .3vh .9vh 0vh rgba(0, 0, 0, 0.555);
+            transition: transform .5s, box-shadow .5s;
+        } 
+      
+    }
     
     .Gif img{
         width: 50vw;
