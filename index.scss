@@ -174,49 +174,58 @@ a{
 }
 
 .work{
-  padding-top: 2vh;
+  padding-top: 5vh;
  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+   
   max-width: 100vw;
   height: fit-content;
   gap: 2vw;
- 
-  div{
+ picture{
+    max-width: 80vw;
+    max-height: 80vh;
+ }
+  .workMedia{
     padding: .6vh;
     @media (max-width: 425px){
-      padding: .3vh !important;
+      //padding: .3vh !important;
     }
+   
     display: flex;
     justify-content: center;
     align-items: center;
+   
     
     background: linear-gradient(to right top,$theme3,$theme5);
     
     border-radius: $radius;
-    transition: transform .3s cubic-bezier(0.23, 1, 0.320, 3),padding .3s cubic-bezier(0.23, 1, 0.320, 2);
-    //&:hover{
-    //  @media (min-width: 425px){
-    //    transform: scale(1.01) translateY(-3%); 
-    //    padding: 0vh ;
-    //   }
-    //}
+    transition: transform .3s cubic-bezier(0.23, 1, 0.320, 3),padding .3s cubic-bezier(0.23, 1, 0.320, 2),border-radius .3s  cubic-bezier(0.23, 1, 0.320, 3);
+    &:hover{
+      @media (min-width: 425px){
+        transform: scale(1.01); 
+        border-radius: $radius+3vh;
+       }
+    }
   }
   img{
-    
+  
+
+    border-radius: $radius;
     max-width: 80vw;
-    max-height: 40vh;
-    border-radius: inherit;
-    filter: saturate(0%) contrast(80%) blur(1px);
-    transition: transform .9s cubic-bezier(0.23, 1, 0.320, 1),filter .2s ease-out;
+    max-height: 80vh;
+    
+    filter: saturate(0%) contrast(80%) blur(2px);
+    transition: transform .3s cubic-bezier(0.23, 1, 0.320, 2) .1s,filter .2s ease-out,border-radius .3s  cubic-bezier(0.23, 1, 0.320, 3) ;
     &:hover{
-     
+      border-radius: $radius+3vh;
       filter: saturate(100%) contrast(100%) blur(0px);
-      
+      transform: scale(.955);
       
     }
   }
+ 
 
 }
 
