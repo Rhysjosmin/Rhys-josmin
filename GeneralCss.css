@@ -122,3 +122,14 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.wip {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10vh;
+  font-size: 4vw;
+  font-family: serif;
+}
