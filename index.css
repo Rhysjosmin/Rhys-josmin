@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 * {
-  font-family: "Kufam", sans-serif;
   padding: 0%;
   margin: 0%;
 }
@@ -17,6 +17,7 @@
 }
 
 body {
+  font-family: "Kufam", sans-serif;
   background: linear-gradient(to bottom, #080808, #011624);
 }
 
@@ -38,6 +39,7 @@ body {
   align-items: center;
   color: white;
   text-align: center;
+  font-family: "Dancing Script", cursive !important;
 }
 .NAME span {
   font-family: "Bangers", cursive;
@@ -81,7 +83,8 @@ body {
   padding: 6vh 0vh;
   align-items: center;
   justify-content: center;
-  border: 0.2vh solid white;
+  border: 0.2vh solid rgb(255, 255, 255);
+  box-shadow: 0vh 0vh 2vh 0.1vh #F77E21;
 }
 .Hero .Name {
   font-family: "Bangers", cursive;
@@ -198,6 +201,11 @@ a:hover {
     border-radius: 7vh;
     box-shadow: 0vh 0vh 10vh black;
   }
+  .work .workMedia:hover img {
+    border-radius: 7vh;
+    filter: saturate(100%) contrast(100%) blur(0px);
+    transform: scale(0.955);
+  }
 }
 .work img {
   max-width: 80vw;
@@ -208,11 +216,6 @@ a:hover {
   .work img {
     filter: saturate(0%) contrast(80%) blur(2px);
     transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 2) 0.1s, filter 0.3s ease-out, border-radius 0.4s cubic-bezier(0.23, 1, 0.32, 3);
-  }
-  .work img:hover {
-    border-radius: 7vh;
-    filter: saturate(100%) contrast(100%) blur(0px);
-    transform: scale(0.955);
   }
 }
 

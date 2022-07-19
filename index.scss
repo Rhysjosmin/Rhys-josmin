@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 @import './themes.scss';
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 
 *{
-    font-family: 'Kufam', sans-serif;
+    
     padding: 0%;
     margin: 0%;
     @media (max-width: 425px){
@@ -17,6 +17,7 @@
 }
 
 body{
+  font-family: 'Kufam', sans-serif;
   background: linear-gradient(to bottom,$theme6,$theme7);
 }
 
@@ -37,6 +38,7 @@ body{
   align-items: center;
   color: white;
   text-align: center;
+  font-family: 'Dancing Script', cursive !important;
   span{
     font-family: 'Bangers', cursive;
     color: $theme4;
@@ -71,7 +73,8 @@ body{
       padding: 6vh 0vh;
       align-items: center;
       justify-content: center;
-      border: .2vh solid white;
+      border: .2vh solid rgb(255, 255, 255);
+      box-shadow: 0vh 0vh 2vh .1vh $theme3;
     }
     display: flex;
     flex-direction: row;
@@ -208,6 +211,11 @@ a{
         transform: scale(1.01); 
         border-radius: $radius+3vh;
         box-shadow: 0vh 0vh 10vh black;
+          img{
+            border-radius: $radius+3vh;
+            filter: saturate(100%) contrast(100%) blur(0px);
+            transform: scale(.955);
+          }
        }
     }
   }
@@ -218,14 +226,8 @@ a{
     border-radius: $radius;
     
     @media (min-width: 425px){
-     filter: saturate(0%) contrast(80%) blur(2px);
-    transition: transform .4s cubic-bezier(0.23, 1, 0.320, 2) .1s,filter .3s ease-out,border-radius .4s  cubic-bezier(0.23, 1, 0.320, 3) ;
-    &:hover{
-      border-radius: $radius+3vh;
-      filter: saturate(100%) contrast(100%) blur(0px);
-      transform: scale(.955);
-      
-    } 
+      filter: saturate(0%) contrast(80%) blur(2px);
+      transition: transform .4s cubic-bezier(0.23, 1, 0.320, 2) .1s,filter .3s ease-out,border-radius .4s  cubic-bezier(0.23, 1, 0.320, 3) ;
     }
     
   }
