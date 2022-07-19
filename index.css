@@ -113,7 +113,7 @@ body {
 }
 
 .section2 {
-  min-height: 50vh;
+  min-height: 30vh;
   font-size: 7vw;
   padding: 2vw;
   text-align: center;
@@ -122,6 +122,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 20vw;
+  padding-top: 20vw;
   overflow: hidden;
   color: rgb(255, 255, 255);
 }
@@ -215,7 +216,7 @@ a:hover {
 @media (min-width: 425px) {
   .work img {
     filter: saturate(0%) contrast(80%) blur(2px);
-    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 2) 0.1s, filter 0.3s ease-out, border-radius 0.4s cubic-bezier(0.23, 1, 0.32, 3);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 2) 0.05s, filter 0.3s ease-out, border-radius 0.4s cubic-bezier(0.23, 1, 0.32, 3);
   }
 }
 
