@@ -303,4 +303,32 @@ a{
 
 }
 
+#switch{
+
+  height: 20vw;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  #CONTAIN  {
+    background: $theme4;
+    width: 30vw;
+    height: 15vw;
+    border-radius: 7.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+  .option{
+    background: rgb(0, 0, 0);
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 5vw;
+
+  }
+}
+
 

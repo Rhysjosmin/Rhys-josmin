@@ -276,3 +276,29 @@ a:hover {
   background: #D61C4E;
   box-shadow: 0vh 0vh 0vh 1vh rgb(255, 255, 255);
 }
+
+#switch {
+  height: 20vw;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+#switch #CONTAIN {
+  background: #D61C4E;
+  width: 30vw;
+  height: 15vw;
+  border-radius: 7.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+#switch .option {
+  background: rgb(0, 0, 0);
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 5vw;
+}
