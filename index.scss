@@ -195,7 +195,15 @@ a{
   .workMedia{
     padding: .6vh;
     @media (max-width: 425px){
-      padding: .3vw !important;
+      picture{
+        max-width: 60vw !important;
+        max-height: 80vh !important;
+        img{
+          max-width: 60vw !important;
+          max-height: 80vh !important;
+        }
+     }
+      padding: .3rem !important;
     }
    
     display: flex;
@@ -239,17 +247,23 @@ a{
 #imageCont{
   z-index: 3;
   position: fixed;
-  top: 10%;
-  min-height: 10vh;
-  min-width: 10vw;
- 
-  padding: .8vh;
-  flex-direction: row-reverse;
-  
-  border-radius: $radius;
-  background: linear-gradient(to right top,$theme3,$theme5);
+  top: 0%;
+  height: 100vh;
+  width: 100vw;
   display: none;
-  box-shadow: 0vh 0vh 15vh 5vh black;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s;
+  backdrop-filter: blur(10px) saturate(0);
+  div{
+    padding: .8vh;
+    flex-direction: row-reverse;
+    
+    border-radius: $radius;
+    background: linear-gradient(to right top,$theme3,$theme5);
+    
+    box-shadow: 0vh 0vh 15vh 5vh black;
+  }
  
   img{
     max-width: 80vw;
@@ -268,7 +282,7 @@ a{
   position: absolute;
   width: 8vh;
   height: 8vh;
-  transform: translate(2vh, -2vh);
+  transform: translate(-4vh, -4vh);
   border-style: none;
   box-shadow: 0vh 0vh 0vh .5vh $theme8;
   
@@ -276,7 +290,7 @@ a{
   border-radius: 50%;
   transition: transform .2s cubic-bezier(0.175, 0.885, 0.32, 2),box-shadow .3s  cubic-bezier(0.175, 0.885, 0.32, 3) 0s;
   &:hover{
-    transform: translate(2vh, -2vh) scale(1.1);
+    transform: translate(-4vh, -4vh) scale(1.1);
     background: $theme4;
     box-shadow: 0vh 0vh 0vh 1vh $theme8;
   }
