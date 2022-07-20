@@ -67,6 +67,7 @@ body{
     div{
       background: $theme6;
       border-radius: 2vh;
+     // min-height: 10vh;
       display: flex;
       width: 100vw;
       gap: 2vh;
@@ -75,6 +76,10 @@ body{
       justify-content: center;
       border: .2vh solid rgb(255, 255, 255);
       box-shadow: 0vh 0vh 2vh .1vh $theme3;
+      /*&:hover{
+      transition: all .8s;
+        min-height: 100Vh;
+      }*/
     }
     display: flex;
     flex-direction: row;
@@ -245,6 +250,7 @@ a{
 }
 
 #imageCont{
+
   z-index: 3;
   position: fixed;
   top: 0%;

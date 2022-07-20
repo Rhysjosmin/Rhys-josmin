@@ -85,6 +85,10 @@ body {
   justify-content: center;
   border: 0.2vh solid rgb(255, 255, 255);
   box-shadow: 0vh 0vh 2vh 0.1vh #F77E21;
+  /*&:hover{
+  transition: all .8s;
+    min-height: 100Vh;
+  }*/
 }
 .Hero .Name {
   font-family: "Bangers", cursive;
