@@ -36,7 +36,7 @@ img {
   gap: 15%;
 }
 #MAIN h1 {
-  font-size: 8vh;
+  font-size: 6vw;
 }
 #MAIN section {
   width: 80vw;
@@ -46,7 +46,7 @@ img {
   gap: 2vw;
 }
 #MAIN section a {
-  font-size: 6vh;
+  font-size: 3vw;
   text-decoration: none;
   color: aliceblue;
   background: linear-gradient(to top left, #F77E21, #D61C4E);
@@ -109,5 +109,5 @@ img {
   }
 }
 #username {
-  color: #d61c1c;
+  color: #D61C4E;
 }
