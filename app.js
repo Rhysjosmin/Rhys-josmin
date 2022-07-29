@@ -10,7 +10,8 @@ var loading=[
     'labadeee labadooo',
     'Chonk Sploby',
     'Rhys is Going Crazy',
-    'The old guy\'s name is Jim'
+    'The old guy\'s name is Jim',
+    'some random phrase'
 
 ];
 

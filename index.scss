@@ -1,334 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 @import './themes.scss';
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-
-
 *{
-    
-    padding: 0%;
     margin: 0%;
-    @media (max-width: 425px){
-      image-rendering: optimizeSpeed;
-    }
-    @media (min-width: 425px){
-      image-rendering: optimizeQuality;
-    }
+    font-family: monospace;    
 }
-
 body{
-  font-family: 'Kufam', sans-serif;
-  background: linear-gradient(to bottom,$theme6,$theme7);
-}
-
-#showreel{
-  
-  video{
-    
-    width: 100vw;
-  }
-  overflow: hidden;
-}
-.NAME{
-  height:fit-content ;
-  padding: 20vh 0vh;
-  font-size: 6vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  font-family: 'Dancing Script', cursive !important;
-  span{
-    font-family: 'Bangers', cursive;
-    color: $theme4;
-    font-size: 12vw;
-    letter-spacing: .5vw;
-    text-shadow: .7vw .7vw  $theme2 ;
-  }
-}
-.Hero{
-    
-   
-    
-    @media (mAX-width: 425px)  {
-      flex-direction: column-reverse;
-      
-      div{
-        flex-direction: column-reverse; 
-        width: fit-content !important;
-        padding: 2vh 1vh !important;
-        text-align: center; 
-        gap: 4vh;
-      }
-      
-
-    }
-    div{
-      background: $theme6;
-      border-radius: 2vh;
-     // min-height: 10vh;
-      display: flex;
-      width: 100vw;
-      gap: 2vh;
-      padding: 6vh 0vh;
-      align-items: center;
-      justify-content: center;
-      border: .2vh solid rgb(255, 255, 255);
-      box-shadow: 0vh 0vh 2vh .1vh $theme3;
-      /*&:hover{
-      transition: all .8s;
-        min-height: 100Vh;
-      }*/
-    }
     display: flex;
-    flex-direction: row;
-    align-items: center; 
-    justify-content: space-around;  
-    padding-left: 3vw;
-    padding-right: 3vw;
-    text-align: left;
-    font-size: 3vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+img{
+    position: fixed;
+    height: 150vh;
+    transform: translateX(-50%);
+    filter: blur(20px);
+    
+}
+#MAIN{
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
     color: aliceblue;
-    
-    .Name{
-      font-family: 'Bangers', cursive;
-      color: $theme4;
-      font-size:1.4em;
-      letter-spacing: .2vw;
-      text-shadow: .05em .05em  $theme2 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    h1{
+        font-size: 8vh;
     }
-        
-    
-    .compEngg{
-        color: $theme2;
-        font-size:1.3em;
-    }
-    .Art{
-        color: $theme5;
-        font-size:1.3em;
-    }
-
-    img{
-        height: 10em;
-        border-radius: 50%;
-        box-shadow: 2vw 2vw 0 1vw rgb(0, 0, 0);
-        transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1) ;
-        &:hover{
-          transform: translate(-10px ,-10px);
-          box-shadow: 4vw 4vw 0px -2vw rgb(0, 0, 0);
-         
+    section{
+  
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        a{
+            font-size: 6vh;
+            text-decoration: none;
+            color: aliceblue;
+            background: linear-gradient(to top left,$theme3,$theme4);
+            padding: 2vh 3vh;
+            border-radius: 2vh;
+            transition: transform .3s cubic-bezier(0.23, 1, 0.320, 3);
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
-   
-    
-}
-.section2{
-  min-height: 30vh;
-  font-size: 7vw;
-  padding: 2vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20vw;
-  padding-top: 20vw;
-  overflow: hidden;
- 
-  color: rgb(255, 255, 255);
-  span{
-    font-family: 'Bangers', cursive;
-    color: $theme4;
-    font-size: 12vw;
-    letter-spacing: .5vw;
-    text-shadow: .7vw .7vw  $theme2 ;
-  
-  }
-  
 }
 
 
 
-a{
-  text-decoration: none;
-  color: $theme2;
-  transition: all .3s;
-  &:hover{
-    color: adjust-hue($color: $theme2, $degrees: 50);
-  }
+#Under{
+animation: blink 2s cubic-bezier(1, 0, 1, 1) 0s infinite ;
 }
-.footer{
-  margin-top: 4vh;
-  display: flex;
-  justify-content: flex-start;
-  padding-left:  1vh;
-  align-items: center;
-  background: hsl(234, 100%, 4%);
-  gap: 1vw;
-  max-width: 100vw;
-  min-height: 6vh;
-  a{
-    font-size: 1em;
-    font-weight: 100;
-    @media (max-width: 425px) {
-      font-size: .2em;
-      gap: 4vw;
-      margin-top: 4vh;
-      max-height: 1vh !important;
+@keyframes blink {
+    0%{
+        opacity: 0%;
+        display: none;
     }
-  }
-  
-
-}
-
-.work{
-  padding-top: 5vh;
- 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-   
-  max-width: 100vw;
-  height: fit-content;
-  gap: 2vw;
- picture{
-    max-width: 80vw;
-    max-height: 80vh;
-   
- }
-  .workMedia{
-    padding: .6vh;
-    @media (max-width: 425px){
-      picture{
-        max-width: 60vw !important;
-        max-height: 80vh !important;
-        img{
-          max-width: 60vw !important;
-          max-height: 80vh !important;
-        }
-     }
-      padding: .3rem !important;
+    50%{
+        opacity: 100%;
+        display: block;
     }
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    
-    background: linear-gradient(to right top,$theme3,$theme5);
-    
-    border-radius: $radius;
-    transition: transform .3s cubic-bezier(0.23, 1, 0.320, 3),padding .4s cubic-bezier(0.23, 1, 0.320, 2),border-radius .4s  cubic-bezier(0.23, 1, 0.320, 3),box-shadow .4s cubic-bezier(0.23, 1, 0.320, 3);
-    &:hover{
-      @media (min-width: 425px){
-        transform: scale(1.01); 
-        border-radius: $radius+3vh;
-        box-shadow: 0vh 0vh 10vh black;
-          img{
-            border-radius: $radius+3vh;
-            filter: saturate(100%) contrast(100%) blur(0px);
-            transform: scale(.955);
-          }
-       }
+    100%{
+        opacity: 0%;
+        display: none;
     }
-  }
-  img{
-  
-    max-width: 80vw;
-    max-height: 80vh;
-    border-radius: $radius;
-    
-    @media (min-width: 425px){
-      filter: saturate(0%) contrast(80%) blur(2px);
-      transition: transform .4s cubic-bezier(0.23, 1, 0.320, 2) .05s,filter .3s ease-out,border-radius .4s  cubic-bezier(0.23, 1, 0.320, 3) ;
-    }
-    
-  }
- 
-
 }
-
-#imageCont{
-
-  z-index: 3;
-  position: fixed;
-  top: 0%;
-  height: 100vh;
-  width: 100vw;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  transition: all .4s;
-  backdrop-filter: blur(10px) saturate(0);
-  div{
-    padding: .8vh;
-    flex-direction: row-reverse;
-    
-    border-radius: $radius;
-    background: linear-gradient(to right top,$theme3,$theme5);
-    
-    box-shadow: 0vh 0vh 15vh 5vh black;
-  }
- 
-  img{
-    max-width: 80vw;
-    max-height: 80vh;
-    border-radius: $radius;
-    image-rendering: optimizeQuality;
-    
-  }
- 
-  
-}
-
-#close{
-  
-  z-index: 1;
-  position: absolute;
-  width: 8vh;
-  height: 8vh;
-  transform: translate(-4vh, -4vh);
-  border-style: none;
-  box-shadow: 0vh 0vh 0vh .5vh $theme8;
-  
-  background: $theme4;
-  border-radius: 50%;
-  transition: transform .2s cubic-bezier(0.175, 0.885, 0.32, 2),box-shadow .3s  cubic-bezier(0.175, 0.885, 0.32, 3) 0s;
-  &:hover{
-    transform: translate(-4vh, -4vh) scale(1.1);
-    background: $theme4;
-    box-shadow: 0vh 0vh 0vh 1vh $theme8;
-  }
-
-}
-
-#switch{
-
-  height: 20vw;
-  width: 100%;
-  display: grid;
-  place-items: center;
-  #CONTAIN  {
-    background: $theme4;
-    width: 30vw;
-    height: 15vw;
-    border-radius: 7.5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
-  }
-  .option{
-    background: rgb(0, 0, 0);
-    width: 12vw;
-    height: 12vw;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-size: 5vw;
-
-  }
-}
-
-
