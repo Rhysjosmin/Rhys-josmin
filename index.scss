@@ -1,7 +1,7 @@
 @import './themes.scss';
-*{
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500&display=swap');*{
     margin: 0%;
-    font-family: monospace;    
+    font-family: 'MuseoModerno', cursive; 
 }
 body{
     display: flex;
@@ -11,10 +11,13 @@ body{
     background-color: black;
 }
 img{
+    filter: blur(30px);
+    
     position: fixed;
     height: 150vh;
     transform: translateX(-50%);
-    filter: blur(20px);
+    
+    animation: BG 50s ease-in-out 0s infinite ;
     
 }
 #MAIN{
@@ -47,7 +50,7 @@ img{
             background: linear-gradient(to top left,$theme3,$theme4);
             padding: 2vh 3vh;
             border-radius: 2vh;
-            transition: transform .3s cubic-bezier(0.23, 1, 0.320, 3);
+            transition: transform .3s cubic-bezier(0.23, 1, 0.320, 1.5);
             &:hover{
                 transform: scale(1.1);
             }
@@ -58,7 +61,7 @@ img{
 
 
 #Under{
-animation: blink 2s cubic-bezier(1, 0, 1, 1) 0s infinite ;
+animation: blink 1.3s steps(1) 0s infinite ;
 }
 @keyframes blink {
     0%{
@@ -73,4 +76,17 @@ animation: blink 2s cubic-bezier(1, 0, 1, 1) 0s infinite ;
         opacity: 0%;
         display: none;
     }
+}
+
+@keyframes BG {
+    0%, 100%{
+       
+        transform: scale(1.1) translateX(-50%);
+    }
+    50%{
+        
+        transform:scale(1.5) translateX(-40%);
+    }
+  
+    
 }

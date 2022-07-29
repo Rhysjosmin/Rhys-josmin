@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500&display=swap");
 * {
   margin: 0%;
-  font-family: monospace;
+  font-family: "MuseoModerno", cursive;
 }
 
 body {
@@ -12,10 +13,12 @@ body {
 }
 
 img {
+  filter: blur(30px);
   position: fixed;
   height: 150vh;
   transform: translateX(-50%);
-  filter: blur(20px);
+  -webkit-animation: BG 50s ease-in-out 0s infinite;
+          animation: BG 50s ease-in-out 0s infinite;
 }
 
 #MAIN {
@@ -49,15 +52,15 @@ img {
   background: linear-gradient(to top left, #F77E21, #D61C4E);
   padding: 2vh 3vh;
   border-radius: 2vh;
-  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 3);
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1.5);
 }
 #MAIN section a:hover {
   transform: scale(1.1);
 }
 
 #Under {
-  -webkit-animation: blink 2s cubic-bezier(1, 0, 1, 1) 0s infinite;
-          animation: blink 2s cubic-bezier(1, 0, 1, 1) 0s infinite;
+  -webkit-animation: blink 1.3s steps(1) 0s infinite;
+          animation: blink 1.3s steps(1) 0s infinite;
 }
 
 @-webkit-keyframes blink {
@@ -87,5 +90,21 @@ img {
   100% {
     opacity: 0%;
     display: none;
+  }
+}
+@-webkit-keyframes BG {
+  0%, 100% {
+    transform: scale(1.1) translateX(-50%);
+  }
+  50% {
+    transform: scale(1.5) translateX(-40%);
+  }
+}
+@keyframes BG {
+  0%, 100% {
+    transform: scale(1.1) translateX(-50%);
+  }
+  50% {
+    transform: scale(1.5) translateX(-40%);
   }
 }
