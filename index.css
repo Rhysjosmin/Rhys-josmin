@@ -108,3 +108,6 @@ img {
     transform: scale(1.5) translateX(-40%);
   }
 }
+#username {
+  color: #d61c1c;
+}
