@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('/themes.scss');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+//$theme1 :rgb(138, 208, 255);
+$theme1 :#FEF9A7;
+
+//$theme2 :rgb(138, 255, 220);
+$theme2 :#FAC213;
+
+//$theme3 :rgb(181, 255, 138);
+$theme3 :#F77E21;
+
+//$theme4 :rgb(243, 255, 138);
+$theme4 :#D61C4E;
+
+//$theme5 :rgb(255, 160, 96);
+$theme5 :#d61c1c;
+
+$theme51 :#304add;
+
+
+$theme6 :#080808;
+$theme7 :#011624;
+$theme8 :rgb(255, 255, 255);
+
+$radius:4vh;
+
+
+*{
+    font-family: 'kufam', sans-serif;
+    margin: 0;
+}
+body{
+    background: linear-gradient(to bottom,rgb(28, 28, 28),rgb(20, 20, 20));
+}
+
+#body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.blog-container{
+    padding: 5%;
+    color: white;
+    border-radius: $radius;
+    
+    background: rgb(0, 0, 0);
+    width: max(80vh,60vw);
+
+    img{
+        height: 25vh;
+        border-radius: 1vw;
+    }
+    .top{
+        font-size: medium;
+    }
+    .bottom{
+        display: flex;
+    }
+}
