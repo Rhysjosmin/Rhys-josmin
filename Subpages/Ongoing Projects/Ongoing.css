@@ -8,9 +8,10 @@
   position: fixed;
   z-index: -1;
   width: 100%;
-  height: 100vh;
+  height: 10000vh;
   background-image: url(/Media/Images/Graph3.png);
-  background-size: 200px;
+  background-size: 300px;
+  background-position: 10vw 10vh;
   transition: filter 1s;
 }
 @media (prefers-color-scheme: dark) {
