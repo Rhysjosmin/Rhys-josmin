@@ -83,6 +83,7 @@
   background: #0D0D0D;
 }
 .project .name {
+  white-space: nowrap;
   font-size: 5vw;
 }
 .project .text {
