@@ -71,7 +71,6 @@
 }
 
 .project {
-  resize: both;
   box-shadow: 1vw 1vw #ff00a6;
   font-family: "MuseoModerno", cursive;
   color: white;
@@ -84,11 +83,11 @@
 }
 .project .name {
   white-space: nowrap;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 .project .text {
-  font-weight: 400;
-  font-size: 3vw;
+  font-weight: 200;
+  font-size: 2vw;
 }
 .project img {
   -o-object-fit: scale-down;

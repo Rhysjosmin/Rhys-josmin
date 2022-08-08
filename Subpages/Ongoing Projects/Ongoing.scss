@@ -70,7 +70,7 @@
 
 
 .project{
-    resize:both;
+    
     
     box-shadow: 1vw 1vw #ff00a6;
     font-family: 'MuseoModerno', cursive;
@@ -85,12 +85,13 @@
     background: #0D0D0D;
     .name{
         white-space:nowrap;
-        font-size: 5vw;
+        font-size: 4vw;
+   
     }
     .text{
-        font-weight: 400;
+        font-weight: 200;
     
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
         
