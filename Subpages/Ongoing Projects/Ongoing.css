@@ -161,7 +161,7 @@ body {
   }
 }
 #cursor {
-  transition: transform 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
   position: absolute;
   z-index: 100;
   display: flex;
@@ -180,7 +180,7 @@ body {
 }
 
 #cursor2 {
-  transition: transform 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
   position: absolute;
   z-index: 100;
   display: flex;

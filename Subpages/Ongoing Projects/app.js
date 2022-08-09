@@ -14,6 +14,7 @@ function parallax(distance){
 window.addEventListener("scroll",function(){
     parallax(window.scrollY);
     
+    
 });
 
 const cursor=document.getElementById("cursor")
@@ -22,9 +23,10 @@ const cursor2=document.getElementById("cursor2")
 document.addEventListener('mousemove', (event) => {
     x=event.clientX
     y=event.clientY
-    xAcc=event.movementX
-    parallax(window.scrollY);
     
+
+    parallax(window.scrollY);
+
 	
 });
 
