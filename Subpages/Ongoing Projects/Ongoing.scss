@@ -14,9 +14,10 @@
 
     background-size: 300px;
     background-position: 10vw 10vh;
-    opacity: 10%;
+    opacity: 50%;
     transition: filter 1s ;
     @media (prefers-color-scheme: dark){
+        opacity: 10%;
         filter: invert(100%);
    }
     
@@ -88,7 +89,7 @@ body{
 
 .project{
     
-    
+   
     box-shadow: 1vw 1vw #ff00a6;
     font-family: 'MuseoModerno', cursive;
     color: white;
