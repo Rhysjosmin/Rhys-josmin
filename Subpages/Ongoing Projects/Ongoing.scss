@@ -176,6 +176,23 @@ body{
 
     height: 24vw;
     background: #0D0D0D;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 2vw;
+    padding-left: 1vw;
+    padding-bottom: 1vw;
+    font-family: 'MuseoModerno', cursive;
+
+    a{
+        transition: color .5s, text-shadow .5s;
+        text-decoration: none;
+        color: rgb(0, 255, 240);
+        &:hover{
+            text-shadow: 0vh 0vh 1vh rgb(0, 255, 240);
+            color: #ffffff;
+        }
+
+    }
 }
 
 @keyframes blink {
