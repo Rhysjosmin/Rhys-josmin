@@ -207,7 +207,9 @@ body{
         border: .2vw solid rgb(239, 239, 239);
     }
   
-    
+    @media (max-width:375px) {
+        opacity: 0;
+    }
 }
 #cursor2{
         
@@ -224,5 +226,8 @@ body{
     pointer-events: none;
     @media (prefers-color-scheme: dark){
         border: .2vw solid rgb(239, 239, 239);
+    }
+    @media (max-width:375px) {
+        opacity: 0;
     }
 }

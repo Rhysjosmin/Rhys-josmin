@@ -193,6 +193,11 @@ body {
     border: 0.2vw solid rgb(239, 239, 239);
   }
 }
+@media (max-width: 375px) {
+  #cursor {
+    opacity: 0;
+  }
+}
 
 #cursor2 {
   transition: transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -210,5 +215,10 @@ body {
 @media (prefers-color-scheme: dark) {
   #cursor2 {
     border: 0.2vw solid rgb(239, 239, 239);
+  }
+}
+@media (max-width: 375px) {
+  #cursor2 {
+    opacity: 0;
   }
 }
