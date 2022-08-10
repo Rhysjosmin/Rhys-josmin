@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 * {
   margin: 0%;
   cursor: none;
@@ -124,12 +125,26 @@ body {
 }
 .project .links a {
   text-decoration: none;
-  color: #00FFF0;
+  color: rgb(0, 255, 240);
   transition: color 0.5s, text-shadow 0.5s;
 }
 .project .links a:hover {
-  text-shadow: 0vh 0vh 1vh #00FFF0;
+  text-shadow: 0vh 0vh 1vh rgb(0, 255, 240);
   color: #ffffff;
+}
+.project .links a:hover::after {
+  filter: invert(1);
+  transform: translate(0.5vw, -0.5vw);
+}
+.project .links a::after {
+  transition: transform 0.2s, filter 0.1s;
+  display: inline-flex;
+  content: "";
+  background-size: 1vw 1vw;
+  height: 1vw;
+  width: 1vw;
+  filter: invert(94%) sepia(34%) saturate(2139%) hue-rotate(92deg) brightness(101%) contrast(110%);
+  background-image: url(/Media/Images/LinkArrow.svg);
 }
 .project .TextContainer {
   display: grid;
