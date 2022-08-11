@@ -334,12 +334,12 @@ a{
 .sound{
   transform: scale(1.5);
   position: absolute;
-  color: rgb(255, 0, 119);
+  color: rgb(255, 255, 255);
 
 padding: 2vw;
-  top: 10%;
+  top: 40vw;
   left: 2%;
-  opacity: 20%;
+  opacity: 60%;
   transition: opacity .5s,text-shadow .5s;
   &:hover{
     color: rgb(255, 255, 255);
