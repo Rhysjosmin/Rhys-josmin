@@ -62,15 +62,23 @@ body {
 }
 
 .l {
-  align-self: flex-start;
-  transform: translateX(40px);
+  align-self: center;
 }
 
 .r {
-  align-self: flex-end;
-  transform: translateX(-40px);
+  align-self: center;
 }
 
+@media (min-width: 375px) {
+  .l {
+    align-self: flex-start;
+    transform: translateX(40px);
+  }
+  .r {
+    align-self: flex-end;
+    transform: translateX(-40px);
+  }
+}
 .activity {
   font-weight: 300;
   font-size: 2vw;
@@ -101,6 +109,23 @@ body {
   grid-template-columns: 2fr 1fr;
   gap: 1vw;
   background: #0D0D0D;
+}
+@media (max-width: 375px) {
+  .project {
+    width: 80vw;
+    height: 60vw;
+  }
+  .project img {
+    height: 60vw !important;
+    width: 22vw !important;
+    image-rendering: optimizeSpeed;
+  }
+  .project .text {
+    font-size: 3.5vw !important;
+  }
+  .project .name {
+    font-size: 5vw !important;
+  }
 }
 .project .name {
   white-space: nowrap;

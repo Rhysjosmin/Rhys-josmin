@@ -64,14 +64,25 @@ body{
     justify-content: center;
    }
 .l{
-    align-self: flex-start;
-    transform: translateX(40px);
+    align-self: center;
+    
 }
 .r{
-    align-self: flex-end;
-    transform: translateX(-40px);
-}
+    align-self: center;
+  
+}  
 
+@media (min-width:375px) {
+   
+    .l{
+        align-self: flex-start;
+        transform: translateX(40px);
+    }
+    .r{
+        align-self: flex-end;
+        transform: translateX(-40px);
+    } 
+}
 
 .activity{
     font-weight: 300;
@@ -101,6 +112,21 @@ body{
     
     width: 60vw;
     height: 40vw;
+    @media (max-width:375px) {
+        width: 80vw;
+        height: 60vw;
+       img{
+        height: 60vw !important;
+        width: 22vw !important; 
+        image-rendering: optimizeSpeed;
+       }
+       .text{
+        font-size: 3.5vw !important;
+       }
+       .name{
+            font-size: 5vw !important;
+       }
+    }
     padding: 2vw;
     display:grid;
     grid-template-columns: 2fr 1fr ;
