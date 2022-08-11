@@ -302,3 +302,23 @@ a:hover {
   place-items: center;
   font-size: 5vw;
 }
+
+.sound {
+  transform: scale(1.5);
+  position: absolute;
+  color: rgb(255, 0, 119);
+  padding: 2vw;
+  top: 10%;
+  left: 2%;
+  opacity: 20%;
+  transition: opacity 0.5s, text-shadow 0.5s;
+}
+.sound:hover {
+  color: rgb(255, 255, 255);
+  opacity: 100%;
+  text-shadow: 0vh 0vh 1vw rgb(255, 0, 119);
+}
+
+#mute {
+  display: none;
+}
