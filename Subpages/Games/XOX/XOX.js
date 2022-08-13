@@ -1,11 +1,12 @@
 player='X'
 color='rgb(225, 65, 180)'
-const winner=document.getElementById('winner')
+const winner=document.getElementById('winner');
 const tile=document.getElementsByClassName("tile");
 win=''
 var audio = new Audio('./1.flac');
 var win = new Audio('./2.wav');
 f=0;
+const bar=document.getElementById('bar');
 function assign(id){
     
     if(tile[id].innerHTML==""){
@@ -35,6 +36,8 @@ function assign(id){
         if(tile[0+(3*x)].innerHTML===tile[1+(3*x)].innerHTML && tile[0+(3*x)].innerHTML===tile[2+(3*x)].innerHTML && tile[0+(3*x)].innerHTML!=''){
                 fill(tile[0+(3*x)].innerHTML);
                 winner.innerText=tile[0+(3*x)].innerHTML+' Won';
+            
+                bar.style.transform=`translateY(${pos}vh)`
             }
             if(tile[0+x].innerHTML===tile[3+x].innerHTML && tile[0+x].innerHTML===tile[6+x].innerHTML && tile[0+x].innerHTML!=''){
                 fill(tile[0+x].innerHTML);
@@ -59,8 +62,8 @@ function assign(id){
 function fill(w){
     y=0
         while(y<9){
-            tile[y].innerHTML=w
-            tile[y].style.background='rgb(255, 102, 0)'
+           
+            
             tile[y].style.transform= `scale(1.1)`;
             y++;
         }
@@ -80,6 +83,5 @@ function reset(){
             winner.innerText='XOX'
         }
 }
-
 
 
