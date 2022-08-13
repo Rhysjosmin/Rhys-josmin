@@ -21,14 +21,17 @@ body {
   border-radius: min(3vw, 3vh);
   width: min(80vw, 80vh);
   height: min(80vw, 80vh);
-  background: rgb(34, 34, 34);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 }
 
 h1 {
-  font-size: min(10vw, 10vh);
+  display: flex;
+  align-items: auto;
+  justify-content: center;
+  width: 100VW;
+  font-size: min(5vw, 5vh);
 }
 
 .tile {
@@ -48,6 +51,7 @@ h1 {
 }
 
 h3 {
+  overflow: hidden;
   font-size: 4vw;
   cursor: pointer;
 }

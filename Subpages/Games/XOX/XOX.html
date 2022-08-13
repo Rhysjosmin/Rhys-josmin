@@ -8,8 +8,11 @@
     <title>XOX</title>
 </head>
 <body>
+   
+
     <h1 id="winner">XOX</h1>
-    <section>
+    <section class="horizontal">
+    
         <section class="container">
             
             <div class="tile" onclick="assign(0)"></div>        
@@ -22,83 +25,11 @@
             <div class="tile" onclick="assign(7)"></div>        
             <div class="tile" onclick="assign(8)"></div>        
         
-        </section>   
+        </section>  
+        
     </section>
     <h3 onclick="reset()">Reset↻</h3>
+    <script src="./XOX.js"></script>
 </body>
 </html>
 
-<script>
-    player='X'
-    color='rgb(225, 65, 180)'
-    const winner=document.getElementById('winner')
-    const tile=document.getElementsByClassName("tile");
-    win=''
-    function assign(id){
-        console.log(win)
-        if(tile[id].innerHTML==""){
-             //Assigning Values
-
-
-           tile[id].innerHTML=player
-           tile[id].style.background=color
-           tile[id].style.transform= `scale(1.1)`;
-            if(player==='X'){
-                player='O'
-                color='lime'
-            }else{
-                player='X'
-                color='rgb(225, 65, 180)'
-            }
-
-            //Checking For Win
-                
-           
-        }
-        x=0
-        while(x<3){
-            
-            
-            if(tile[0+(3*x)].innerHTML===tile[1+(3*x)].innerHTML && tile[0+(3*x)].innerHTML===tile[2+(3*x)].innerHTML && tile[0+(3*x)].innerHTML!=''){
-                   fill(tile[0+(3*x)].innerHTML);
-                    winner.innerText=tile[0+(3*x)].innerHTML+' Won';
-                }
-                if(tile[0+x].innerHTML===tile[3+x].innerHTML && tile[0+x].innerHTML===tile[6+x].innerHTML && tile[0+x].innerHTML!=''){
-                    fill(tile[0+x].innerHTML);
-                    winner.innerText=tile[0+x].innerHTML+' Won'
-                }
-                if(tile[0].innerHTML===tile[4].innerHTML && tile[0].innerHTML===tile[8].innerHTML && tile[0].innerHTML!=''){
-                    fill(tile[0].innerHTML);
-                    winner.innerText=tile[0].innerHTML+' Won'
-                }
-                if(tile[2].innerHTML===tile[4].innerHTML && tile[2].innerHTML===tile[6].innerHTML && tile[2].innerHTML!=''){
-                    fill(tile[2].innerHTML);
-                    winner.innerText=tile[2].innerHTML+' Won'
-                }
-                
-            x++;
-        }
-     
-   
-    }
-    function fill(w){
-        y=0
-            while(y<9){
-                tile[y].innerHTML=w
-                tile[y].style.background='rgb(255, 102, 0)'
-                tile[y].style.transform= `scale(1.1)`;
-                y++;
-            }
-    }
-    
-    function reset(){
-        y=0
-            while(y<9){
-                tile[y].innerHTML=''
-                tile[y].style.background='rgb(59, 121, 255)'
-                tile[y].style.transform= `scale(1)`;
-                y++;
-                winner.innerText='XOX'
-            }
-    }
-</script>
