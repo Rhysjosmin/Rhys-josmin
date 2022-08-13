@@ -5,7 +5,6 @@ const tile=document.getElementsByClassName("tile");
 win=''
 var audio = new Audio('./1.flac');
 var win = new Audio('./2.wav');
-f=0;
 const bar=document.getElementById('bar');
 function assign(id){
     
@@ -55,9 +54,7 @@ function assign(id){
         x++;
     }
     
-    if(f>20){
-        reset()
-    }
+   
 }
 function fill(w){
     y=0
@@ -68,13 +65,13 @@ function fill(w){
             y++;
         }
         win.play();
-        f++;
+        
 }
 
 
 function reset(){
     y=0
-    f=0
+    
         while(y<9){
             tile[y].innerHTML=''
             tile[y].style.background='rgb(59, 121, 255)'
