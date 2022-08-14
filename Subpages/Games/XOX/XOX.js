@@ -6,6 +6,10 @@ win=''
 var audio = new Audio('./1.flac');
 var win = new Audio('./2.wav');
 const bar=document.getElementById('bar');
+
+
+
+
 function assign(id){
     
     if(tile[id].innerHTML==""){

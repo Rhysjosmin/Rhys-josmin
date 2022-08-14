@@ -13,6 +13,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+  
 }
 
 .container{
@@ -23,6 +25,7 @@ body{
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
  align-items: center;
+ 
 
 }
 h1{
@@ -33,6 +36,8 @@ h1{
 }
 
 .tile{
+    
+    
     
     border-radius: inherit;
     color: rgb(255, 255, 255);
