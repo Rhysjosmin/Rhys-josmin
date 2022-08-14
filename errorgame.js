@@ -18,17 +18,17 @@ initialize()
 function initialize(){
     t.style.transform=`translateY(-8vw)`;
     bottom.style.transform=`translateY(8vw)`;
-    player.style.transform=`scale(70%) translateY(min(8vw,8vh))`;
+    player.style.transform=`scale(70%) translateY(min(-10vw,-10vh))`;
     floor.style.width='80vw'
     player.textContent="☹️"
-    setTimeout(down,1000);
+    setTimeout(up,500);
     setTimeout(game,1500);
     } 
     
 
-function down(){
+function up(){
     player.textContent="😊"
-    player.style.transform=`scale(70%) translateY(min(-10vw,-10vh))`;   
+    player.style.transform=`scale(70%) translateY(min(8vw,8vh))`;   
 }
 
 
