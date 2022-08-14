@@ -11,10 +11,10 @@
     <div id="player" style="font-size: min(15vw,15vh);">☹️</div>
     <div id="floor"></div>
     <section id="bottom">
-        <h3 >Oops The page You're looking for does not exist <br>
+        <h3 style="font-weight: 500;">Oops The page You're looking for does not exist <br>
             Rhys Sends his condolences</h3>
             
-        <a href="./index.html"><br><br>Go Back Home↩️</a> 
+        <a href="./index.html"><br>Go Back Home↩️</a> 
     </section>
     
     
@@ -46,7 +46,15 @@
        font-size: min(3vw,3vh);
     }
     #top,#bottom,#player{
-        transition: transform 1s; 
+        transition:  transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    }
+    #floor{
+        width: 0vw;
+        height: 2vh;
+        border-radius: min(100vh,100vw);
+        background: #22171b;
+        transition:  width .5s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+        
     }
 
 </style>
