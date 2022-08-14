@@ -20,14 +20,14 @@ function initialize(){
     bottom.style.transform=`translateY(8vw)`;
     player.style.transform=`scale(70%) translateY(min(-10vw,-10vh))`;
     floor.style.width='80vw'
-    player.textContent="☹️"
+    player.textContent="😊"
     setTimeout(up,500);
     setTimeout(game,1500);
     } 
     
 
 function up(){
-    player.textContent="😊"
+    player.textContent="☹️"
     player.style.transform=`scale(70%) translateY(min(8vw,8vh))`;   
 }
 
