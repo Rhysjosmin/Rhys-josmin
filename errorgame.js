@@ -3,6 +3,7 @@ const bottom=document.getElementById('bottom');
 const player=document.getElementById('player');
 const floor=document.getElementById('floor');
 const GameArea=document.getElementById('game');
+const Gamestate=document.getElementById('Gamestate');
 
 let playerPosition=0
 var end=0;
@@ -37,16 +38,14 @@ function control(e){
     if(e.keyCode===32){
         playerPosition=0
         jumping=false
-        let timerId=setInterval(function(){
-            if(!jumping && playerPosition<60){
-                
-                playerPosition++
-                player.style.transform=`scale(70%)  translateY(${-playerPosition}px)`   
-                         
-            }
+         
+        playerPosition=50
+        player.style.transform=`scale(70%)  translateY(${-playerPosition}px)`   
+                    
             
             
-        },15)
+            
+       
     } 
 }
 
@@ -70,7 +69,9 @@ function MakeEnemies(){
         Enemyposition-=1;
         Enemy.style.left=Enemyposition+'vw'
         console.log(playerPosition)
-        
+        if(Enemyposition<50 && playerPosition>40){ 
+            Gamestate.textContent='💀'
+        }
     },20);
     setTimeout(MakeEnemies,randomNum)
 }
