@@ -5,12 +5,12 @@ const floor=document.getElementById('floor');
 const GameArea=document.getElementById('game');
 const Gamestate=document.getElementById('Gamestate');
 
+
 let playerPosition=0
 var end=0;
 var ypos=0;
 window.addEventListener('touchstart', function() {
     initialize()
-
     playerPosition=0
     
          
@@ -52,7 +52,7 @@ function control(e){
          
         playerPosition=80
         player.style.transform=`scale(70%)  translateY(${-playerPosition}px)`   
-                    
+                  
             
             
             
