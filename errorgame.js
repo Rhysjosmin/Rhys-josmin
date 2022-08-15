@@ -10,6 +10,15 @@ var end=0;
 var ypos=0;
 window.addEventListener('touchstart', function() {
     initialize()
+
+    playerPosition=0
+    
+         
+        playerPosition=80
+        player.style.transform=`scale(70%)  translateY(${-playerPosition}px)`  
+    
+         
+    
   });
 
 document.addEventListener('keyup', event => {
@@ -25,6 +34,8 @@ function initialize(){
     player.textContent="😊 "
     setTimeout(down ,500);
     setTimeout(game,1500);
+    
+
  
     }  
     
@@ -37,9 +48,9 @@ function down (){
 function control(e){
     if(e.keyCode===32){
         playerPosition=0
-        jumping=false
+    
          
-        playerPosition=50
+        playerPosition=80
         player.style.transform=`scale(70%)  translateY(${-playerPosition}px)`   
                     
             
@@ -54,25 +65,39 @@ document.addEventListener('keyup',control)
 
 
 function MakeEnemies(){
-    let Enemyposition=82;
-    let randomNum=Math.random()*4000
-    const Enemy =document.createElement('div');
-    Enemy.classList.add('enemy');
-    GameArea.appendChild(Enemy)
-    Enemy.style.left=Enemyposition+'vw'
-    Enemy.textContent='🤡'
-    let timerId=setInterval(function(){
-        if(Enemyposition<12){ 
-            clearInterval(timerId)
-            GameArea.removeChild(Enemy )
-        }
-        Enemyposition-=1;
+    
+      let Enemyposition=82;
+        let randomNum=(Math.random()*4000)+400
+        const Enemy =document.createElement('div');
+        Enemy.classList.add('enemy');
+        GameArea.appendChild(Enemy)
         Enemy.style.left=Enemyposition+'vw'
-        console.log(playerPosition)
-        if(Enemyposition<50 && playerPosition>40){ 
-            Gamestate.textContent='💀'
-        }
-    },20);
+        Enemy.textContent='🤡'
+        let timerId=setInterval(function(){
+            if(Enemyposition<12){ 
+                clearInterval(timerId)
+                GameArea.removeChild(Enemy )
+            }
+            Enemyposition-=1;
+            Enemy.style.left=Enemyposition+'vw'
+
+            var style = window.getComputedStyle(player);
+            var matrix = new WebKitCSSMatrix(style.transform);
+            console.log();
+
+            
+            
+            if(matrix.m42>15 && Enemyposition==50){
+                Gamestate.textContent='💀'
+                end=true
+            }
+
+
+
+        },20);   
+        
+   
     setTimeout(MakeEnemies,randomNum)
 }
-MakeEnemies()
+
+ MakeEnemies()
