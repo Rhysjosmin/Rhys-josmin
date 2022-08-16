@@ -7,19 +7,19 @@ const Gamestate=document.getElementById('Gamestate');
 
 
 let playerPosition=0
-var end=0;
+var end=false;
 var ypos=0;
+let ran=0
+let  SCORE=404
+
+let score=document.getElementById('score')
+
 window.addEventListener('touchstart', function() {
     initialize()
     playerPosition=0
-    
-         
         playerPosition=80
         player.style.transform=`scale(70%)  translateY(${-playerPosition}px)`  
-    
-         
-    
-  });
+    });
 
 document.addEventListener('keyup', event => {
 if (event.code === 'Space') {
@@ -29,13 +29,32 @@ initialize()
 function initialize(){
     t.style.transform=`translateY(-6vw)`;
     bottom.style.transform=`translateY(6vw)`;
-    //player.style.transform=`scale(70%) translateY(min(-15vw,-15vh))`;
+   
     floor.style.width='80vw'
     player.textContent="😊 "
     setTimeout(down ,500);
-    setTimeout(game,1500);
     
+    if(ran!=1){
+        setTimeout(initscore,600) 
+        MakeEnemies()
+        ran=1
+        let scoreincriment =setInterval(function(){
+            prevscore=parseInt(localStorage.getItem('score'))
+            SCORE+=1
+            if(SCORE>prevscore){
+                score.textContent=SCORE
+            }else{
+                score.textContent=SCORE+'|'+`${prevscore}`
+            }
+            
+            if(end===true){
+                clearInterval(scoreincriment)
 
+                localStorage.setItem('score',Math.max(SCORE,prevscore))
+            }
+        },50) 
+    }
+    
  
     }  
     
@@ -89,15 +108,26 @@ function MakeEnemies(){
             
             if(matrix.m42>15 && Enemyposition==50){
                 Gamestate.textContent='💀'
-                end=true
+                end=true 
             }
 
 
 
         },20);   
         
-   
+   if(end!=true){
     setTimeout(MakeEnemies,randomNum)
+   }
+    
 }
 
- MakeEnemies()
+
+
+function initscore(){
+    
+    while(SCORE>0){
+        SCORE--
+        score.textContent=SCORE
+    }
+}
+
