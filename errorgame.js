@@ -4,7 +4,7 @@ const player=document.getElementById('player');
 const floor=document.getElementById('floor');
 const GameArea=document.getElementById('game');
 const Gamestate=document.getElementById('Gamestate');
-
+const ti =document.getElementById('title')
 
 let playerPosition=0
 var end=false;
@@ -43,9 +43,11 @@ function initialize(){
             SCORE+=1
             if(SCORE>prevscore){
                 score.textContent=SCORE
+                
             }else{
                 score.textContent=SCORE+'|'+`${prevscore}`
             }
+            ti.textContent=SCORE
             
             if(end===true){
                 clearInterval(scoreincriment)
@@ -130,4 +132,5 @@ function initscore(){
         score.textContent=SCORE
     }
 }
+
 
