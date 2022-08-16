@@ -68,12 +68,12 @@ function down (){
 
 function control(e){
     if(e.keyCode===32){
-        playerPosition=0
-    
-         
-        playerPosition=80
-        player.style.transform=`scale(70%)  translateY(${-playerPosition}px)`   
-                  
+        
+            playerPosition=0
+            playerPosition=80
+            player.style.transform=`scale(70%)  translateY(${-playerPosition}px)`     
+        
+       
             
             
             
