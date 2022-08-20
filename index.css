@@ -18,6 +18,9 @@ body {
 }
 
 #graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   z-index: -1;
   width: 100%;
@@ -30,6 +33,11 @@ body {
   #graph {
     filter: invert(100%);
   }
+}
+#graph video {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  filter: invert(1);
 }
 
 #MAIN {
@@ -52,6 +60,9 @@ body {
 }
 #MAIN h1 {
   font-size: 6vw;
+  background: #000000;
+  padding: 1vw;
+  filter: invert(1);
 }
 #MAIN section {
   width: 80vw;

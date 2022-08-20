@@ -1,8 +1,8 @@
 window.addEventListener('load',()=>{
-    const preload=document.querySelector('.preload');
-    preload.classList.add('preload-finish');
+    Loaded()
     
 });
+
 
 var loading=[
     'An Apple A Day Makes You An Apple',
@@ -16,14 +16,20 @@ var loading=[
 ];
 
 
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+function Loaded(){
+    const preload=document.querySelector('.preload');
+    preload.classList.add('preload-finish');
 }
 
+
 function newLoad(){
-    var randomNumber=Math.floor(Math.random()*(loading.length));      
-    document.getElementById('loadingDisp').innerHTML=loading[randomNumber];
+    var randomNumber=Math.floor(Math.random()*(loading.length)); 
+        document.getElementById('loadingDisp').innerHTML=loading[randomNumber];
+    setInterval(function(){
+        var randomNumber=Math.floor(Math.random()*(loading.length)); 
+        document.getElementById('loadingDisp').innerHTML=loading[randomNumber];
+    },3000)     
+    
 }
 newLoad();
 function enlarge(source){
