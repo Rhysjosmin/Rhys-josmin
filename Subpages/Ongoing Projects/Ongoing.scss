@@ -123,10 +123,10 @@ body{
         width: 22vw !important; 
         image-rendering: optimizeSpeed;
        }
-       .text{
+       #text{
         font-size: 3.5vw !important;
        }
-       .name{
+       #name{
             font-size: 5vw !important;
        }
     }
@@ -136,12 +136,12 @@ body{
     gap: 1vw;
 
     background: #0D0D0D;
-    .name{
+    #name{
         white-space:nowrap;
         font-size: 4vw;
    
     }
-    .text{
+    #text{
         font-weight: 200;
      
         font-size: 2vw;
@@ -192,6 +192,8 @@ body{
         
     }
     .TextContainer{
+        max-height: 40vw;
+        
         display: grid;
         grid-template-rows: 1fr 2fr 1fr;
   

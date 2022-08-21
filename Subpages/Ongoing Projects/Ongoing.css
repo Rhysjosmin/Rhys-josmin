@@ -124,18 +124,18 @@ body {
     width: 22vw !important;
     image-rendering: optimizeSpeed;
   }
-  .project .text {
+  .project #text {
     font-size: 3.5vw !important;
   }
-  .project .name {
+  .project #name {
     font-size: 5vw !important;
   }
 }
-.project .name {
+.project #name {
   white-space: nowrap;
   font-size: 4vw;
 }
-.project .text {
+.project #text {
   font-weight: 200;
   font-size: 2vw;
 }
@@ -176,6 +176,7 @@ body {
   background-image: url(/Media/Images/LinkArrow.svg);
 }
 .project .TextContainer {
+  max-height: 40vw;
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
 }

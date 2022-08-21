@@ -1,14 +1,115 @@
 {
     "Projects" : [
+   
         {
+            "Activity":"active",
             "Name":"Chonk",
-            "Description":"A Botanersdao",
-            "Image":"./Media/Images/Troll.jpg",
-            "Github":"github.com",
-            "Youtube":"yousdb.com",
-            "Instagram":"instahad.com",
-            "Artstation":"iartstartion.com",
-            "Read More":"Readme.md"
+            "Description":"A Sweet Character that was kidnapped by Rhys and is now working for him..",
+            "Image":"/Media/Images/Troll.jpg", 
+
+            "LinkA":"",
+            "LinkAText":"Github ",
+
+            "LinkB":"https://www.youtube.com/channel/UCnwqr7XClpVmDAgmPR8TdrQ",
+            "LinkBText":"Youtube ",
+
+            "LinkC":"",
+            "LinkCText":"Read "
+        },
+        {
+            "Activity":"active",
+            "Name":"NeuralTrader",
+            "Description":"A Neural Network Trained To Detect the best times to buy or sell stocks or other exchanges",
+            "Image":"/Media/Images/Stocks.jpg", 
+
+            "LinkA":"https://github.com/Rhys-011003/NeuralTrader",
+            "LinkAText":"Github ",
+
+            "LinkB":"",
+            "LinkBText":"Youtube ",
+
+            "LinkC":"",
+            "LinkCText":"Read "
+        },
+        {
+            "Activity":"active",
+            "Name":"Eugene",
+            "Description":"An old man that likes to walk and wear different costumes",
+            "Image":"/Media/gif/Nft2.webp", 
+
+            "LinkA":"/Subpages/NFT/NFT.html",
+            "LinkAText":"Website ",
+
+            "LinkB":"",
+            "LinkBText":"Play ",
+
+            "LinkC":"",
+            "LinkCText":"Read "
+        },
+        {
+            "Activity":"inactive",
+            "Name":"TicTacToe",
+            "Description":"Its Tic Tac Toe,what else do you need to know?",
+            "Image":"/Media/Images/XOX.jpg", 
+
+            "LinkA":"https://github.com/Rhys-011003/Rhys-josmin/tree/main/Subpages/Games/XOX",
+            "LinkAText":"Github ",
+
+            "LinkB":"/Subpages/Games/XOX/XOX.html",
+            "LinkBText":"Play ",
+
+            "LinkC":"",
+            "LinkCText":"Read "
+        },
+      
+
+        {
+            "Activity":"inactive",
+            "Name":"YellowDuck",
+            "Description":"A Yellow Duck created by some awesome kids to give back to under-funded and under-developed communities to spark growth.",
+            "Image":"/Media/gif/Rhys.gif", 
+
+            "LinkA":"https://yellowduck.webflow.io",
+            "LinkAText":"Website ",
+
+            "LinkB":"https://www.youtube.com/channel/UCnwIBCqz0ej6QnHEwWTu5AA",
+            "LinkBText":"Youtube ",
+
+            "LinkC":"",
+            "LinkCText":"Read "
+        },
+
+        {
+            "Activity":"inactive",
+            "Name":"MiningPass",
+            "Description":"Mining Pass was supposed to be the best Minecraft nft out there,however it never saw the light of day",
+            "Image":"/Media/Mining-Pass/Rat.gif", 
+
+            "LinkA":"",
+            "LinkAText":"Website ",
+
+            "LinkB":"",
+            "LinkBText":"Youtube ",
+
+            "LinkC":"",
+            "LinkCText":"Read "
+        },
+
+        {
+            "Activity":"inactive",
+            "Name":"Marshmallow",
+            "Description":"A Sweet Character that was created by Rhys and is now eaten.",
+            "Image":"/Media/Images/MarshmelloManStand.jpg", 
+
+            "LinkA":"",
+            "LinkAText":"Website ",
+
+            "LinkB":"",
+            "LinkBText":"Youtube ",
+
+            "LinkC":"",
+            "LinkCText":"Read "
         }
+        
     ]
 }

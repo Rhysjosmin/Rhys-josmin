@@ -18,6 +18,102 @@ function parallax(distance){
 
 
 
+async function loadProject(){
+    const {default:project}= await import('./Projects.json',{
+        assert:{
+            type:"json"
+        }
+    })
+    AddProject(project)
+}
+
+loadProject()
+
+function AddProject(project){
+    
+
+    
+
+    const template=document.getElementById('PROJECT')
+    const container=document.getElementById('main')
+    
+
+   
+    for(var i=0;i<1000;i++)
+ {
+
+    let Name=project.Projects[i].Name
+    let Description=project.Projects[i].Description
+    let Activity=project.Projects[i].Activity
+    let Image=project.Projects[i].Image
+
+    let LinkA=project.Projects[i].LinkA
+    let LinkAText=project.Projects[i].LinkAText
+
+    let LinkB=project.Projects[i].LinkB
+    let LinkBText=project.Projects[i].LinkBText
+
+    let LinkC=project.Projects[i].LinkC
+    let LinkCText=project.Projects[i].LinkCText
+
+
+  
+
+
+    content = template.content.cloneNode(true) // the true is for deep cloning
+    if(i%2==1){
+        content.getElementById('p').classList.add('l')
+    }else{
+        content.getElementById('p').classList.add('r')
+    }
+    content.getElementById('name').textContent=Name
+    content.getElementById('text').textContent=Description
+   content.getElementById('activity').classList.add(Activity)
+   content.getElementById('image').src=Image
+
+
+
+   if(LinkA!=""){
+       content.getElementById('LinkA').href=LinkA
+        content.getElementById('LinkA').innerText=LinkAText
+        content.getElementById('LinkA').style.display='block'
+   }else{
+
+       content.getElementById('LinkA').style.display='none'
+   }
+  
+   if(LinkB!=""){
+    content.getElementById('LinkB').href=LinkB
+     content.getElementById('LinkB').innerText=LinkBText
+     content.getElementById('LinkB').style.display='block'
+}else{
+
+    content.getElementById('LinkB').style.display='none'
+}
+
+   
+if(LinkC!=""){
+    content.getElementById('LinkC').href=LinkC
+     content.getElementById('LinkC').innerText=LinkCText
+     content.getElementById('LinkC').style.display='block'
+}else{
+
+    content.getElementById('LinkC').style.display='none'
+}
+   
+   
+  
+
+   
+
+
+    container.appendChild(content)
+
+    
+ }
+ 
+}
+
 
 
 
