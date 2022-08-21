@@ -60,9 +60,7 @@ body {
 }
 #MAIN h1 {
   font-size: 6vw;
-  background: #000000;
   padding: 1vw;
-  filter: invert(1);
 }
 #MAIN section {
   width: 80vw;
