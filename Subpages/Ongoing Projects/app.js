@@ -19,7 +19,7 @@ function parallax(distance){
 
 
 async function loadProject(){
-    const {default:project}= await import('./Projects.json',{
+    const {default:project}= await import('./projects.json',{
         assert:{
             type:"json"
         }
