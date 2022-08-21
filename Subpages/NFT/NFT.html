@@ -23,131 +23,32 @@
         <div class="Navname">RhysJosmin</div>
     </section>
 
-    <link rel="stylesheet" href="/preload.css">
+     <!-- <link rel="stylesheet" href="/preload.css">
     <section class="preload">
         <div class="lds-ripple"><div></div><div></div></div>
         <h2 id="loadingDisp"></h2>
         <h4 onclick="Loaded()" style="color:white; padding: 2vw;cursor: pointer; font-weight: 10;font-family: 'Silkscreen', cursive;text-shadow: 0vh 0vh .4vw rgb(0, 255, 208); " >Click Me If Your Internet is Horrible</h4>
         
     </section>
-    <script src="/app.js"></script>
-<h1 class="wip">🚧Work In Progress🚧</h1>
-  <section class="nft-container">
-
-
-
-         <nft class="gold">
-            <video class="nft-image" src="/Media/Videos/nft/PinKJammies.mp4" autoplay loop muted onContextMenu="return false;"></video>
-            <div class="nft-info">
-                <a href="https://opensea.io/RhysJosmin" class="nft-buy">BUY<span id="price"></span></a>
-                
-                <h3>Gucci Dad </h3> <br>
-                    <div class="traits">
-                        Outfit: Checkered Pajamas <br>
-                        Eyewear: Warm Orange<br>
-                        Background: Hot Pink
-                    </div>
-                
-            </div>     
-        </nft>
-
-        <nft class="gold">
-            <video class="nft-image" src="/Media/Videos/nft/Naked.mp4" autoplay loop muted onContextMenu="return false;"></video>
-            <div class="nft-info">
-                <a href="https://rarible.com/token/0xc9154424b823b10579895ccbe442d41b9abd96ed:112325822094244266297974309365360023086978333395789899196957242730534712377346" class="nft-buy">BUY<span id="price"></span></a>
-                
-                <h3>Naked Son</h3><br>
-                    <div class="traits">
-                        Outfit: Naked<br>
-                        Eyewear: Aviators<br>
-                        Background: Green<br>
-                        
-
-                    </div>
-                    
-                
-            </div>     
-        </nft>
-
-        <nft class="normal">
-            <video class="nft-image" src="/Media/Videos/nft/Funny Face.mp4" autoplay loop muted onContextMenu="return false;"></video>
-            <div class="nft-info">
-                <a href="https://opensea.io/RhysJosmin" class="nft-buy">BUY<span id="price"></span></a>
-                
-                <h3>Hawaii Grandad </h3> <br>
-                    <div class="traits">
-                        Outfit: Hawaii <br>
-                        Eyewear: Anime<br>
-                        Background: White
-                    </div>
-                
-            </div>     
-        </nft>   
-        
-        <nft class="normal">
-            <video class="nft-image" src="/Media/Videos/nft/CarbonFiberblack.mp4" autoplay loop muted onContextMenu="return false;"></video>
-            <div class="nft-info">
-                <a href="https://opensea.io/RhysJosmin" class="nft-buy">BUY<span id="price"></span></a>
-                
-                <h3>Black Suits Need To Shine </h3> <br>
-                    <div class="traits">
-                        Outfit: carbon Fiber <br>
-                        Eyewear: Cool Transparent<br>
-                        Background: Green
-                    </div>
-                
-            </div>     
-        </nft> 
-
-        <nft class="normal">
-            <video class="nft-image" src="/Media/Videos/nft/WB_NINJA_HEADPHONES.mp4" autoplay loop muted onContextMenu="return false;"></video>
-            <div class="nft-info">
-                <a href="https://opensea.io/RhysJosmin" class="nft-buy">BUY<span id="price"></span></a>
-                
-                <h3>Im Not A Robber  </h3><br>
-                    <div class="traits">
-                        Outfit: Ninja <br>
-                        Eyewear: Ski Mask<br>
-                        Background: White
-                    </div>
-                    
-                
-            </div>     
-        </nft> 
-
-        
-
-        <nft class="normal">
-            <video class="nft-image" src="/Media/Videos/nft/LaserEyes.mp4" autoplay loop muted onContextMenu="return false;"></video>
-            <div class="nft-info">
-                <a href="https://opensea.io/RhysJosmin" class="nft-buy">BUY<span id="price"></span></a>
-                
-                <h3>Lasers For Barbeque </h3><br>
-                    <div class="traits">
-                        Outfit: Ninja <br>
-                        Eyewear: Ski Mask<br>
-                        Background: White
-                    </div>
-                    
-                
-            </div>     
-        </nft> 
-
-        
-
-       
-      
-
-             
-
-    
-        
-      
-
-     
-     
-
-    </section>
+  <script src="/app.js"></script>-->
+  <template id="NFT">
+    <nft id="N">
+        <video class="nft-image" id="Vid" autoplay loop muted onContextMenu="return false;"></video>
+        <div class="nft-info">
+            <a id="nft-buy">BUY<span id="price"></span></a>
+            
+            <h3 id="Name"></h3><br>
+                <div  id="traits" >
+                    <span id="Outfit"></span><br>
+                    <span id="Eyewear"></span><br>
+                    <span id="Background"></span>
+                </div>
+            
+        </div>     
+    </nft>
+  </template>
+  <section id="nft-container">
+  </section>
    
     
     <section class="end">
@@ -156,12 +57,10 @@
     
 
 </section>
-<Script>
-    var normal=document.getElementsByClassName('hi')
-    console.log(normal.length)
-</Script>
+
 </body>
 
+<script src="./Nft.js" defer></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -57,7 +57,7 @@ nft .nft-info h3 {
   border-radius: inherit;
 }
 
-.nft-container {
+#nft-container {
   padding-top: 15vh;
   padding-bottom: 20vh;
   display: flex;
@@ -67,12 +67,12 @@ nft .nft-info h3 {
   gap: 2vw;
 }
 @media (max-width: 425px) {
-  .nft-container {
+  #nft-container {
     gap: 10vw;
   }
 }
 
-.nft-buy {
+#nft-buy {
   font-size: 1.1em;
   font-weight: bolder;
   text-decoration: none;
@@ -84,20 +84,17 @@ nft .nft-info h3 {
   border-radius: inherit;
   transition: filter 0.4s, color 0.7s;
 }
-.nft-buy:hover {
+#nft-buy:hover {
   filter: brightness(1.5);
   color: black;
 }
-.nft-buy #price {
+#nft-buy #price {
   margin-left: 60%;
   font-weight: lighter;
   font-size: 0.6em;
 }
-.nft-buy #price::after {
+#nft-buy #price::after {
   content: " ETH";
-}
-.nft-buy #price::before {
-  content: "N/A";
 }
 
 .super {
@@ -112,7 +109,7 @@ nft .nft-info h3 {
 .gold {
   background: linear-gradient(to right top, rgb(148, 110, 16), rgb(255, 226, 64));
 }
-.gold .nft-buy {
+.gold #nft-buy {
   background: linear-gradient(to left, rgb(148, 110, 16), rgb(255, 226, 64));
 }
 .gold:hover {
@@ -123,10 +120,22 @@ nft .nft-info h3 {
   background: linear-gradient(to right top, rgb(0, 183, 255), rgb(255, 80, 214));
 }
 
-.traits {
+#traits {
   background: rgb(209, 209, 209);
   padding: 1vh;
   border-radius: inherit;
   color: rgb(159, 4, 255);
   font-weight: 10;
+}
+
+#Outfit::before {
+  content: "Outfit : ";
+}
+
+#Eyewear::before {
+  content: "Eyewear : ";
+}
+
+#Background::before {
+  content: "Background : ";
 }
