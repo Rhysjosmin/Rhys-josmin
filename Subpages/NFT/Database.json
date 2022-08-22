@@ -35,7 +35,7 @@
                 "Background": "White"
             },
             "Price":0.3,
-            "Tier":"gold",
+            "Tier":"normal",
             "Img":"/Media/Videos/nft/Funny Face.mp4",
             "Link":"https://opensea.io/RhysJosmin"
 
@@ -49,7 +49,7 @@
                 "Background": "Green"
             },
             "Price":0.2,
-            "Tier":"gold",
+            "Tier":"normal",
             "Img":"/Media/Videos/nft/CarbonFiberblack.mp4",
             "Link":"https://opensea.io/RhysJosmin"
 
@@ -63,7 +63,7 @@
                 "Background": "White"
             },
             "Price":1,
-            "Tier":"gold",
+            "Tier":"normal",
             "Img":"/Media/Videos/nft/WB_NINJA_HEADPHONES.mp4",
             "Link":"https://opensea.io/RhysJosmin"
 
