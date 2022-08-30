@@ -39,11 +39,18 @@ body{
 .contact{
     display: flex;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
    
     flex-direction: column;
     gap: 4vw;
     h1{
       font-size:2em;
+      color: aliceblue;
+    }
+    h3{
+      font-size:1em;
+      font-weight: 100;
       color: aliceblue;
     }
     div{
