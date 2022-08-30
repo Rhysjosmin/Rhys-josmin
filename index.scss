@@ -54,7 +54,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15%;
+    gap: 5%;
     h1{
         font-size: 6vw;
         
@@ -62,27 +62,29 @@ body{
       
        
     }
-    section{
-  
-        width: 80vw;
+    #buttons{
+       
+        width:100vw;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2vw;
         a{
-            font-size: 3vw;
+           font-size: 3vw;
             text-decoration: none;
             color: aliceblue;
             background: linear-gradient(to top left,$theme3,$theme4);
-            padding: 2vh 3vh;
-            border-radius: 2vh;
-            transition: transform .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            padding: 1vh 3vh;
+            border-radius: 1vw;
+            transition: filter .4s;
             &:hover{
-                transform: scale(1.1);
+                filter: brightness(150%);
             }
+            
         }
     }
 }
+
 
 
 
