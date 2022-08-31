@@ -89,14 +89,15 @@ body {
 }
 
 .active {
-  color: #ff0000;
+  color: #ffffff;
+  text-shadow: 0vh 0vh 1vw #4400ff;
 }
 .active::after {
   content: " Active";
 }
 
 .inactive {
-  color: #00ff59;
+  color: #7ee1fa;
 }
 .inactive::after {
   content: " Complete";
@@ -146,7 +147,7 @@ body {
   width: 22vw;
 }
 .project .links {
-  font-size: 1.5vw;
+  font-size: 2vw;
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -169,9 +170,9 @@ body {
   transition: transform 0.2s, filter 0.1s;
   display: inline-flex;
   content: "";
-  background-size: 1vw 1vw;
-  height: 1vw;
-  width: 1vw;
+  background-size: 2vw 2vw;
+  height: 2vw;
+  width: 2vw;
   filter: invert(94%) sepia(34%) saturate(2139%) hue-rotate(92deg) brightness(101%) contrast(110%);
   background-image: url(/Media/Images/LinkArrow.svg);
 }
