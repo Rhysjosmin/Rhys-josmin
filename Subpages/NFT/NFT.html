@@ -24,22 +24,23 @@
         <div class="Navname">RhysJosmin</div>
     </section>
 
-      <link rel="stylesheet" href="/preload.css">
+     <!-- <link rel="stylesheet" href="/preload.css">
     <section class="preload">
         <div class="lds-ripple"><div></div><div></div></div>
         <h2 id="loadingDisp"></h2>
         <h4 onclick="Loaded()" style="color:white; padding: 2vw;cursor: pointer; font-weight: 10;font-family: 'Silkscreen', cursive;text-shadow: 0vh 0vh .4vw rgb(0, 255, 208); " >Click Me If Your Internet is Horrible</h4>
         
     </section>
-  <script src="/app.js"></script>
+  <script src="/app.js"></script>-->
+  
   <section id="Options"></section>
   <template id="NFT">
-    <nft id="N">
+    <nft id="N" ondblclick="like(this)">
         <video class="nft-image" id="Vid" autoplay loop muted onContextMenu="return false;"></video>
         <div class="nft-info">
             <a id="nft-buy">BUY<span id="price"></span></a>
             
-            <h3 id="Name"></h3><br>
+            <h3 id="Name" class="NAME"><i></i></h3><br>
                 <div  id="traits" >
                     <span id="Outfit"></span><br>
                     <span id="Eyewear"></span><br>
@@ -52,10 +53,11 @@
   <section id="nft-container">
   </section>
    
-    
+   
 
 </body>
 
+<script src="./like.js"></script>
 <script src="./Nft.js" defer></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">

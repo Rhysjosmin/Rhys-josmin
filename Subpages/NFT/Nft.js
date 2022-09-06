@@ -50,5 +50,7 @@ function AddNft(NFT){
 
     container.appendChild(content)
  }
+
  
 }
+

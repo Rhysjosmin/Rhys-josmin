@@ -5,6 +5,7 @@
 	
 }
 body {
+	min-height: 100vh;
 	font-family: 'Exo', sans-serif;
 	background: linear-gradient(to top right, rgb(0, 0, 0),rgb(0, 20, 32));
 }
@@ -38,16 +39,13 @@ nft {
 			justify-content: left;
 			font-size:1.1em;
 			font-weight: 600;
-			background: linear-gradient(to right top,rgb(0, 0, 0),rgb(0, 129, 88));
-			-webkit-background-clip: text;
-			background-clip: text;
-			-webkit-text-fill-color: transparent;
+			
 		
 				
 			
 			
 		}
-		
+	
         background: rgb(238, 238, 238);
 	    border-radius: inherit;
 	    padding-top: 8px;
@@ -60,6 +58,7 @@ nft {
 	    align-items: center;
 	}
 }
+
 .nft-image {
 	margin-bottom: .2vw;
 	height: 42vh;
@@ -145,3 +144,34 @@ nft {
 #Background::before{
 	content: "Background : ";
 }
+
+
+	
+	.liked{
+		
+		&::after{
+			display: inline-flex;
+			content: '';
+			background-size: 1em 1em;
+			height: 1em;
+			width: 1em;
+			background-image: url(/Media/icons/Heart.svg);
+			transform: translate(.4em,0.1em);
+			transition: .3s;
+	}
+	}
+	.disliked{
+		&::after{
+			display: inline-flex;
+			content: '';
+			background-size: 1em 1em;
+			height: 1em;
+			width: 1em;
+			background-image: url(/Media/icons/HeartEmpty.svg);
+			transform: translate(.4em,0.1em);
+			transition: .3s;
+		}
+	
+	
+	}
+
