@@ -6,6 +6,29 @@
   cursor: none;
 }
 
+nav {
+  z-index: 10;
+  font-family: "MuseoModerno", cursive;
+  font-weight: 1000;
+  background: #0D0D0D;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  padding: max(1vw, 1vh);
+  gap: min(1vw, 1vh);
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  background: #45bfd4;
+  padding: min(1vw, 1vh);
+  border-radius: min(2vw, 2vh);
+  transition: all 0.3s;
+}
+nav a:hover {
+  background: #45d4a2;
+}
+
 #graph {
   transform: translateY(-100px);
   position: fixed;
@@ -14,7 +37,7 @@
   height: 10000vh;
   background-size: 300px;
   background-position: 10vw 10vh;
-  opacity: 50%;
+  opacity: 10%;
   transition: filter 1s;
 }
 @media (min-width: 375px) {
@@ -24,13 +47,13 @@
 }
 @media (prefers-color-scheme: dark) {
   #graph {
-    opacity: 10%;
+    opacity: 8%;
     filter: invert(100%);
   }
 }
 
 body {
-  transition: background-color 1s;
+  transition: background-color 1s, transform 10s;
 }
 @media (prefers-color-scheme: dark) {
   body {
@@ -52,6 +75,7 @@ body {
 #top H1 {
   background: #0D0D0D;
   padding: 5vw;
+  border-radius: 2vw;
 }
 #top span {
   -webkit-animation: blink 2s infinite;
@@ -104,7 +128,8 @@ body {
 }
 
 .project {
-  box-shadow: 1vw 1vw #ff00a6;
+  border-radius: 2vw;
+  box-shadow: 1vw 1vw #45bfd4;
   font-family: "MuseoModerno", cursive;
   color: white;
   width: 60vw;
@@ -141,10 +166,12 @@ body {
   font-size: 2vw;
 }
 .project img {
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 40vw;
-  width: 22vw;
+  max-width: 22vw;
+  border-radius: inherit;
+  box-shadow: 0.6vw 0.6vw 0.4vw rgb(0, 0, 0);
 }
 .project .links {
   font-size: 2vw;
@@ -222,16 +249,15 @@ body {
   }
 }
 #cursor {
-  transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
   position: absolute;
   z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
-  width: 80px;
+  height: 8px;
+  width: 8px;
   border-radius: 50%;
-  border: 0.2vw solid rgb(0, 0, 0);
+  background: white;
   pointer-events: none;
 }
 @media (prefers-color-scheme: dark) {
@@ -241,30 +267,6 @@ body {
 }
 @media (max-width: 375px) {
   #cursor {
-    opacity: 0;
-  }
-}
-
-#cursor2 {
-  transition: transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  position: absolute;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  border: 0.2vw solid rgb(0, 0, 0);
-  pointer-events: none;
-}
-@media (prefers-color-scheme: dark) {
-  #cursor2 {
-    border: 0.2vw solid rgb(239, 239, 239);
-  }
-}
-@media (max-width: 375px) {
-  #cursor2 {
     opacity: 0;
   }
 }

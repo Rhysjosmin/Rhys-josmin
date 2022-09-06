@@ -20,7 +20,7 @@
             "Activity":"active",
             "Name":"NeuralTrader",
             "Description":"A Neural Network Trained To Detect the best times to buy or sell stocks or other exchanges",
-            "Image":"/Media/Images/Stocks.jpg", 
+            "Image":"/Media/Images/TradingBot.jpg", 
 
             "LinkA":"https://github.com/Rhys-011003/NeuralTrader",
             "LinkAText":"Github ",
@@ -46,21 +46,7 @@
             "LinkC":"",
             "LinkCText":"Read "
         },
-        {
-            "Activity":"active",
-            "Name":"ICECREAMM",
-            "Description":"I Want Some Icecream",
-            "Image":"/Media/Images/Icecream.jpg", 
-
-            "LinkA":"https://twitter.com/deathlessDAO",
-            "LinkAText":"Twitter ",
-
-            "LinkB":"",
-            "LinkBText":"Youtube ",
-
-            "LinkC":"",
-            "LinkCText":"Read "
-        },
+       
         {
             "Activity":"active",
             "Name":"Eugene",
@@ -117,6 +103,21 @@
 
             "LinkA":"",
             "LinkAText":"Website ",
+
+            "LinkB":"",
+            "LinkBText":"Youtube ",
+
+            "LinkC":"",
+            "LinkCText":"Read "
+        },
+        {
+            "Activity":"inactive",
+            "Name":"ICECREAMM",
+            "Description":"I Want Some Icecream",
+            "Image":"/Media/Images/Icecream.jpg", 
+
+            "LinkA":"https://twitter.com/deathlessDAO",
+            "LinkAText":"Twitter ",
 
             "LinkB":"",
             "LinkBText":"Youtube ",

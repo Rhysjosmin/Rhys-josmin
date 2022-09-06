@@ -3,6 +3,8 @@ const cursor2=document.getElementById("cursor2")
 document.addEventListener('mousemove', (event) => {
     x=event.clientX
     y=event.clientY
+    acc=event.c
+    cursor.style.transform=`translateX(${x-4}px) translateY(${y+(window.scrollY)-4}px)`
     parallax(window.scrollY);
 });
 window.addEventListener("scroll",function(){
@@ -10,9 +12,8 @@ window.addEventListener("scroll",function(){
 });
 function parallax(distance){
     const item = document.getElementById('graph')
-    item.style.transform=`translateY(${(distance*-.1)-100}px)`
-    cursor.style.transform=`translateX(${x-40}px) translateY(${y+(window.scrollY)-40}px)`
-    cursor2.style.transform=`translateX(${x-30}px) translateY(${y+(window.scrollY)-30}px)`
+    item.style.transform=`translateY(${(distance*-.05)-100}px)`
+    cursor.style.transform=`translateX(${x-4}px) translateY(${y+(window.scrollY)-4}px)`
 }
 
 
