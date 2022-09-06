@@ -57,7 +57,7 @@ function AddProject(project){
     let LinkC=project.Projects[i].LinkC
     let LinkCText=project.Projects[i].LinkCText
 
-
+    
   
 
 
@@ -71,7 +71,7 @@ function AddProject(project){
     content.getElementById('text').textContent=Description
    content.getElementById('activity').classList.add(Activity)
    content.getElementById('image').src=Image
-
+   content.getElementById('NoOfLikes').innerText=Math.floor(Math.random()*100)
 
 
    if(LinkA!=""){

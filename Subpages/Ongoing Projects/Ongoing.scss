@@ -33,7 +33,7 @@ nav{
     }
 }
 #graph{
-    //transition: transform 1s;
+    
     transform: translateY(-100px);
     position: fixed;
     z-index: -1;
@@ -47,7 +47,7 @@ nav{
     background-size: 300px;
     background-position: 10vw 10vh;
     opacity: 10%;
-    transition: filter 1s ;
+    transition: filter 1s,transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     @media (prefers-color-scheme: dark){
         opacity: 8%;
         filter: invert(100%);
