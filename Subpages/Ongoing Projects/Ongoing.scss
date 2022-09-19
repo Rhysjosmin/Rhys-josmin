@@ -8,6 +8,11 @@ $themea:#45bfd4;
     
     margin: 0%;
     cursor: none;
+    &::selection{
+        background:rgb(56, 255, 96);
+        color: #000000;
+        
+    }
 }
 nav{
     z-index: 10;

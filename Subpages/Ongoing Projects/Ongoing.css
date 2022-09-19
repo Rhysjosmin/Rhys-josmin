@@ -5,6 +5,14 @@
   margin: 0%;
   cursor: none;
 }
+*::-moz-selection {
+  background: rgb(56, 255, 96);
+  color: #000000;
+}
+*::selection {
+  background: rgb(56, 255, 96);
+  color: #000000;
+}
 
 nav {
   z-index: 10;
