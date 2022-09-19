@@ -5,7 +5,7 @@
             "Activity":"active",
             "Name":"Chonk",
             "Description":"A Sweet Character that was kidnapped by Rhys and is now working for him..",
-            "Image":"./Media/Images/Troll.jpg", 
+            "Image":"/Media/Images/Troll.jpg", 
 
             "LinkA":"",
             "LinkAText":"Github ",
@@ -20,7 +20,7 @@
             "Activity":"active",
             "Name":"NeuralTrader",
             "Description":"A Neural Network Trained To Detect the best times to buy or sell stocks or other exchanges",
-            "Image":"./Media/Images/TradingBot.jpg", 
+            "Image":"/Media/Images/TradingBot.jpg", 
 
             "LinkA":"https://github.com/Rhys-011003/NeuralTrader",
             "LinkAText":"Github ",
@@ -33,9 +33,24 @@
         },
         {
             "Activity":"active",
+            "Name":"Idea",
+            "Description":"Blah Blahhh Blahhh",
+            "Image":"/Media/Idea Competition/1.png",
+
+            "LinkA":"/Media/Idea Competition/IdeaCompetitionPlanter.blend",
+            "LinkAText":".blend File ",
+
+            "LinkB":"",
+            "LinkBText":"Youtube ",
+
+            "LinkC":"",
+            "LinkCText":"Read "
+        },
+        {
+            "Activity":"active",
             "Name":"DeathlessDao",
             "Description":"The decentralized biomarker discovery platform for users to understand their true biological age.",
-            "Image":"./Media/Images/Deathless.png", 
+            "Image":"/Media/Images/Deathless.png", 
 
             "LinkA":"https://twitter.com/deathlessDAO",
             "LinkAText":"Twitter ",
@@ -51,7 +66,7 @@
             "Activity":"active",
             "Name":"Eugene",
             "Description":"An old man that likes to walk and wear different costumes",
-            "Image":"./Media/gif/Nft2.webp", 
+            "Image":"/Media/gif/Nft2.webp", 
 
             "LinkA":"/Subpages/NFT/NFT.html",
             "LinkAText":"Website ",
@@ -66,7 +81,7 @@
             "Activity":"inactive",
             "Name":"TicTacToe",
             "Description":"Its Tic Tac Toe,what else do you need to know?",
-            "Image":"./Media/Images/XOX.jpg", 
+            "Image":"/Media/Images/XOX.jpg", 
 
             "LinkA":"https://github.com/Rhys-011003/Rhys-josmin/tree/main/Subpages/Games/XOX",
             "LinkAText":"Github ",
