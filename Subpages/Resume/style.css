@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Lexend", sans-serif;
+}
+
+:root {
+  --accent: rgb(98, 1, 255);
+  --link: rgb(39, 1, 255);
+}
+
+#resumeItems {
+  display: grid;
+  gap: 1vh;
+  width: 50vw;
+}
+
+@media print {
+  #resumeItems {
+    display: grid;
+    gap: 1vh;
+    width: auto !important;
+  }
+}
+a {
+  text-decoration: none;
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+#item {
+  font-size: 0.9em;
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 2vh;
+}
+#item #title {
+  font-weight: 600;
+  font-size: 1.6em;
+  padding: 10px;
+}
+#item #content {
+  padding: 10px;
+}
+#item #content .hightlight {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.hightlight {
+  color: var(--accent);
+}
+
+hr {
+  border: 0.1emvh solid black;
+}/*# sourceMappingURL=style.css.map */
