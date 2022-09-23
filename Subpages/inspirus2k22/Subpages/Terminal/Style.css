@@ -81,6 +81,11 @@ input:focus {
   }
 }
 .logo {
-  font-size: 1em;
+  font-size: 1.2vw;
+  word-wrap: none;
+}
+
+#rr {
+  font-size: 1.4vw;
   word-wrap: none;
 }
