@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: 'Transformers';
+    src: url('/Media/fonts/Transformers\ Movie.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root{
+    
+    --clr-base:255, 255, 255;
+    --clr-text:1, 1, 1;
+    --clr-accent:0, 0, 255;
+    --clr-next:48, 89, 254;
+    --clr-link:0, 0, 255;
+   
+    --weight:400;
+    --thickness:.34vh;
+    --radius:2vw;
+}
+.dark{
+    --clr-base:1, 1, 1;
+    --clr-text:255, 255, 255;
+    --clr-accent:48, 89, 254;
+    --clr-next:255, 230, 0;
+    --clr-link:0, 0, 255;
+
+}
+.yellow{
+    --clr-base:255, 230, 0;
+    --clr-text:2, 2, 2;
+    --clr-accent:1, 1, 1;
+    --clr-next:255, 255, 255;
+    --clr-link:0, 0, 255;
+
+ 
+}
+
+*{
+    cursor: none !important;
+    margin: 0%;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+body{
+    
+    transition: all .4s;
+    overflow-x: hidden;
+   
+   max-width: 100vw;
+    background: rgba(var(--clr-base),1);
+    z-index: 200;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgba(var(--clr-text), 1);
+    
+}
+#card-container{
+
+    z-index: inherit;
+    opacity: 1;
+    max-width: 100vw;
+    //height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    gap: 5vw;
+    flex-direction: column;
+  
+
+}
+.card{
+
+    z-index: inherit;
+    
+    
+    padding: min(4vw,4vh);
+    border: var(--thickness) solid rgba(var(--clr-text),0.4) ;
+    border-radius:var(--radius);
+    display: flex;
+    flex-direction: column;
+  
+    gap: 2vw;
+   
+    width: 70%;
+    backdrop-filter: blur(6px);
+    box-shadow: 1vh 1vh 4vh  var(--clr-text);
+    background: rgba(var(--clr-base),01);
+
+    h1{
+        
+        font-family: 'MuseoModerno', cursive;
+        font-size: min(8vw,8vh);
+    }
+    p{
+        font-weight: var(--weight);
+        color: var(--clr-text);
+        font-size: max(1.8vw,1.8vh);
+    }
+    img{
+        position:absolute;
+        right: -25vh;
+        width: 300px;
+        top: -15vh;
+        border-radius: 200vw;
+        z-index: -1;
+    }
+    #buttons{
+        display: flex;
+
+        height: min(8vw,8vw);
+        justify-content: space-between;
+        align-items: flex-end;
+       
+    }
+    a{
+        text-align: center;
+        text-decoration: none;
+        color: var(--clr-text);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;
+        font-family: 'MuseoModerno', cursive;
+        font-size: 2vw;
+        border: var(--thickness) solid rgba(var(--clr-text), .4);
+        border-radius: var(--radius);
+        width: 48%;
+        height: 60%;
+        background: #00000000;
+        transition: background-color .5s,color .2s;
+        &:hover{
+            color: rgba(var(--clr-base),1);
+            background: rgba(var(--clr-accent),1);
+            
+        }
+       
+    }
+}
+
+#hero{
+    position: relative;
+
+    color: var(--clr-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    h1{
+        span{
+            font-size: 10vw;
+            font-family: 'Transformers';
+            color: rgba(var(--clr-accent),1);
+        }
+        font-family: 'MuseoModerno', cursive;
+        font-size: 8vw;
+    }
+
+}
+
+#timeline{
+    
+    
+    padding-top: 2vw;
+    h1{
+    
+        font-size: 6vw;
+    }
+    
+}
+
+#nav{
+    position: relative;
+    gap: 1vw;
+    padding: -.1vw;
+    display: flex;
+    height: min(8vw,8vh);
+    align-items: center;
+    justify-content: flex-end;
+    a{
+        text-align: center;
+        text-decoration: none;
+        color: var(--clr-text);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;
+        font-family: 'MuseoModerno', cursive;
+        font-size: min(2vw,2vh);
+        //border: min(.3vh,.3vw) solid rgba(var(--clr-text), .4);
+        border-radius: var(--radius);
+     
+        padding-left: 3%;
+        padding-right: 1%;
+     height: 80%;
+
+        transition: background-color .5s,color .2s;
+        &:hover{
+            color: rgba(var(--clr-next),1);
+            //background: rgba(var(--clr-accent),.6);
+           
+            
+        }
+        
+    }
+    i{
+   
+     
+        font-size: min(4vw,4vh);
+        padding: 1vw;
+        transition: color .5s;
+        &:hover{
+            color: rgba(var(--clr-next),1);
+        
+           
+            
+        }
+       
+    }
+  
+}
+
+#footer{
+    margin-top: 10vw;
+    background: rgba(var(--clr-base),01);
+    position: relative;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+
+#cursor {
+    position: relative;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    position: absolute;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: var(--thickness) solid rgba(var(--clr-text), 1);
+  
+    pointer-events: none;
+  }
