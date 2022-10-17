@@ -31,21 +31,7 @@
             "LinkC":"",
             "LinkCText":"Read "
         },
-        {
-            "Activity":"active",
-            "Name":"Idea",
-            "Description":"Blah Blahhh Blahhh",
-            "Image":"/Media/Idea Competition/1.png",
-
-            "LinkA":"/Media/Idea Competition/IdeaCompetitionPlanter.blend",
-            "LinkAText":".blend File ",
-
-            "LinkB":"",
-            "LinkBText":"Youtube ",
-
-            "LinkC":"",
-            "LinkCText":"Read "
-        },
+    
         {
             "Activity":"active",
             "Name":"DeathlessDao",
