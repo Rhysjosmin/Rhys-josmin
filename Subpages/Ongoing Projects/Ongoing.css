@@ -13,28 +13,33 @@
   background: rgb(56, 255, 96);
   color: #000000;
 }
+* ::-webkit-scrollbar {
+  display: none;
+}
 
 nav {
   z-index: 10;
   font-family: "MuseoModerno", cursive;
   font-weight: 1000;
-  background: #0D0D0D;
   position: fixed;
   width: 100vw;
   display: flex;
-  padding: max(1vw, 1vh);
-  gap: min(1vw, 1vh);
+  justify-content: flex-end;
+  height: 3.5rem;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 nav a {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 1, "opsz" 48;
+  display: flex;
+  align-items: center;
   color: white;
   text-decoration: none;
-  background: #45bfd4;
-  padding: min(1vw, 1vh);
-  border-radius: min(2vw, 2vh);
+  padding: 1rem;
   transition: all 0.3s;
 }
 nav a:hover {
-  background: #45d4a2;
+  font-variation-settings: "FILL" 1, "wght" 4000, "GRAD" 0, "opsz" 48 !important;
 }
 
 #graph {
@@ -277,4 +282,4 @@ body {
   #cursor {
     opacity: 0;
   }
-}/*# sourceMappingURL=Ongoing.css.map */
+}
