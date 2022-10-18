@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 * {
   margin: 0%;
 }
@@ -16,6 +18,9 @@
 
 :root {
   --accent:#FFF971;
+  --accent2:#22ff00;
+  --accent3:#ff71ee;
+  --bg: #111111;
 }
 
 body {
@@ -23,9 +28,14 @@ body {
 }
 
 nav {
+  z-index: 3;
+  width: 99vw;
+  position: fixed;
   font-size: 1.5rem;
   color: var(--accent);
-  padding: 0.5rem;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  padding: 0.5vw;
   font-family: "Cinzel", serif;
   display: flex;
   align-items: center;
@@ -38,20 +48,41 @@ nav ul {
   display: flex;
 }
 nav a {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
   text-decoration: none;
   color: inherit;
   transition: color 0.1s;
 }
 nav a :hover {
   color: white;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 nav li {
   list-style: none;
 }
 
+a, img {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
+}
+
+@media (max-width: 500px) {
+  #hero {
+    text-align: center;
+    justify-content: center !important;
+    flex-direction: column-reverse;
+  }
+  #hero div {
+    justify-content: center;
+  }
+}
 #hero {
+  font-family: "Titillium Web", sans-serif;
+  margin: auto;
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -62,28 +93,90 @@ nav li {
   gap: 2rem;
   color: white;
 }
+#hero #lhero #name {
+  color: var(--accent);
+  font-family: "Cinzel", serif;
+}
+#hero #lhero #dev {
+  color: var(--accent2);
+  font-family: "ubuntu-mono", monospace;
+}
+#hero #lhero #artist {
+  color: var(--accent3);
+  font-family: "Fredoka One", cursive;
+}
 #hero #lhero p {
   font-size: min(3rem, 5vw);
+  white-space: nowrap;
+}
+#hero #lhero div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 #hero #lhero a {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  -moz-user-select: none;
-       user-select: none; /* Standard syntax */
-  font-size: min(1rem, 2vw);
+  border-radius: 0.5rem;
+  font-size: min(1.5rem, 2.8vw);
   border: 0.01px solid white;
   padding: 0.6rem;
-  border-radius: 0.1rem;
   text-decoration: none;
   color: aliceblue;
   transition: color, background-color;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 #hero #lhero a:hover {
-  color: #111111;
+  color: var(--bg);
   background: #FFF971;
 }
 #hero #rhero img {
   border-radius: 0.5rem;
-  height: min(70vh, 60vw);
+  height: min(60vh, 60vw);
+  transition: 0.2s;
+}
+#hero #rhero img:hover {
+  rotate: 3deg;
+}
+
+#showreel {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+#showreel video {
+  position: relative;
+  border-radius: 0.5rem;
+  width: 70vw;
+}
+#showreel h1 {
+  font-family: "Cinzel", serif;
+  position: relative;
+  text-align: end;
+  color: var(--accent);
+  font-size: 4vw;
+}
+
+@media (min-width: 500px) {
+  #showreel {
+    padding-bottom: 2rem;
+  }
+  #showreel video {
+    left: 8vh;
+  }
+  #showreel h1 {
+    left: -8vh;
+  }
+}
+@media (max-width: 500px) {
+  #showreel {
+    align-items: center !important;
+    flex-direction: column-reverse;
+    justify-content: center !important;
+  }
+  #showreel h1 {
+    font-size: 8vw;
+    text-align: center !important;
+  }
+  #showreel video {
+    width: 90vw;
+  }
 }

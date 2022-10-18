@@ -22,13 +22,13 @@
     </nav>
     <section id="hero">
         <div id="lhero">
-            <p>Hi I'm Rhys Josmin<br>
-                I'm a Developer<br>
-                a 3D Artist<br>
+            <p>Hi I'm <span id="name">Rhys Josmin</span><br>
+                I'm a <SPAN id="dev">Developer</SPAN><br>
+                a 3D <span id="artist">Artist</span><br>
                 And a Human Being</p>
             <div>
                 <a href="">Talk To Me</a>
-                <a href="">Resume</a>
+                <a href="./Subpages/Resume/Resume2.0.html">Resume</a>
             </div>
         </div>
         <div id="rhero">
@@ -36,15 +36,31 @@
         </div>
       
     </section>
+    <section id="showreel">
+        <video src="./Media/Videos/ShowReelHQ.mp4" muted autoplay loop oncontextmenu="sound(this)" onclick="toggleplay(this)" id="showreel"></video>
+        <h1>VFX<br>Showreel</h1>
+    </section>
 </body>
 
-<style>
-    .material-symbols-outlined {
-      font-variation-settings:
-      'FILL' 1,
-      'wght' 400,
-      'GRAD' 0,
-      'opsz' 48
+<script>
+   const noRightClick =document.getElementById('showreel') 
+   noRightClick.addEventListener("contextmenu", e => e.preventDefault());
+
+    function sound(a){
+        
+        var vol=0
+
+    a.muted = !a.muted;
+    a.volume=.2
+   
     }
-    </style>
+    function toggleplay(a){
+
+        if (a.paused)
+   a.play(); 
+ else 
+   a.pause();
+}
+           
+</script>
 </html>
