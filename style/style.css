@@ -17,14 +17,14 @@
 }
 
 :root {
-  --accent:#FFF971;
-  --accent2:#22ff00;
+  --accent:#9fe46e;
+  --accent2:#01fff7;
   --accent3:#ff71ee;
-  --bg: #111111;
+  --bg: #010101;
 }
 
 body {
-  background: #111111;
+  background: var(--bg);
 }
 
 nav {
@@ -48,14 +48,17 @@ nav ul {
   display: flex;
 }
 nav a {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 1, "opsz" 48;
   text-decoration: none;
   color: inherit;
-  transition: color 0.1s;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-nav a :hover {
+nav a:hover {
   color: white;
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-variation-settings: "FILL" 1, "wght" 4000, "GRAD" 0, "opsz" 48 !important;
 }
 nav li {
   list-style: none;
@@ -126,18 +129,21 @@ a, img {
 }
 #hero #lhero a:hover {
   color: var(--bg);
-  background: #FFF971;
+  background: var(--accent);
 }
 #hero #rhero img {
   border-radius: 0.5rem;
   height: min(60vh, 60vw);
   transition: 0.2s;
+  rotate: 3deg;
 }
 #hero #rhero img:hover {
-  rotate: 3deg;
+  scale: 1.05;
+  rotate: 0deg;
 }
 
 #showreel {
+  margin-bottom: 4rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -155,10 +161,7 @@ a, img {
   font-size: 4vw;
 }
 
-@media (min-width: 500px) {
-  #showreel {
-    padding-bottom: 2rem;
-  }
+@media (min-width: 501px) {
   #showreel video {
     left: 8vh;
   }
@@ -179,4 +182,12 @@ a, img {
   #showreel video {
     width: 90vw;
   }
+}
+.project {
+  border-radius: 2vw;
+  box-shadow: 1vw 1vw var(--accent);
+}
+
+#top H1 {
+  background: var(--accent);
 }

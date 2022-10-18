@@ -15,14 +15,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 :root{
-    --accent:#FFF971;
-    --accent2:#22ff00;
+    --accent:#9fe46e;
+    --accent2:#01fff7;
     --accent3:#ff71ee;
-    --bg: #111111;
+    --bg: #010101;
     
 }
 body{
-    background: #111111;
+    background: var(--bg);
 }
 
 nav{
@@ -49,18 +49,25 @@ padding: .5vw;
         font-variation-settings:
         'FILL' 0,
         'wght' 400,
-        'GRAD' 0,
+        'GRAD' 1,
         'opsz' 48;
+        
         text-decoration: none;
         color:inherit;
-        transition: color .1s;
-        :hover{
+        transition: all .2s;
+
+
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+
+        &:hover{
             color: white;
-            font-variation-settings:
-            'FILL' 1,
-            'wght' 400,
+            font-variation-settings:  'FILL' 1,
+            'wght' 4000,
             'GRAD' 0,
-            'opsz' 48;
+            'opsz' 48 !important;
         }
     }
     li{
@@ -139,7 +146,7 @@ a,img{
         transition-duration: .2s;
         &:hover{
 color: var(--bg);
-            background: #FFF971;
+            background:var(--accent);
         }
     }
     }
@@ -148,9 +155,10 @@ color: var(--bg);
             border-radius: .5rem;
             height: min(60vh, 60vw);
             transition: .2s;
-          
+            rotate: 3deg;
             &:hover{
-                rotate: 3deg;
+                scale: 1.05;
+                rotate: 0deg;
                 
             }
         }
@@ -158,7 +166,8 @@ color: var(--bg);
 }
 
     #showreel{
-
+            margin-bottom: 4rem;
+        
         display: flex;
         align-items: flex-end;
         justify-content: space-around;
@@ -180,9 +189,9 @@ color: var(--bg);
      }
 
 
-@media (min-width:500px) {
+@media (min-width:501px) {
     #showreel{
-  padding-bottom: 2rem;
+
      video{
          left: 8vh;
      }
@@ -210,3 +219,17 @@ color: var(--bg);
 
 }
 }
+
+.project{
+    
+    border-radius: 2vw;
+     box-shadow: 1vw 1vw var(--accent);
+    
+    }
+
+    #top{
+        H1{
+      
+         background: var(--accent);
+        }
+    }
