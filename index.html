@@ -47,7 +47,7 @@
    noRightClick.addEventListener("contextmenu", e => e.preventDefault());
 
     function sound(a){
-        
+        window.navigator.vibrate(200);
         var vol=0
 
     a.muted = !a.muted;
@@ -55,6 +55,7 @@
    
     }
     function toggleplay(a){
+      
 
         if (a.paused)
    a.play(); 
