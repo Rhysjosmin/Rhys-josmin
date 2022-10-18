@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;900&display=swap");
+* {
+  margin: 0%;
+}
+* ::-webkit-scrollbar {
+  display: none;
+}
+* ::-moz-selection {
+  background: #22c0c0;
+  color: rgb(0, 30, 30);
+}
+* ::selection {
+  background: #22c0c0;
+  color: rgb(0, 30, 30);
+}
+
+:root {
+  --accent:#FFF971;
+}
+
+body {
+  background: #111111;
+}
+
+nav {
+  font-size: 1.5rem;
+  color: var(--accent);
+  padding: 0.5rem;
+  font-family: "Cinzel", serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.1s;
+}
+nav a :hover {
+  color: white;
+}
+nav li {
+  list-style: none;
+}
+
+#hero {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#hero #lhero {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+}
+#hero #lhero p {
+  font-size: min(3rem, 5vw);
+}
+#hero #lhero a {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
+  font-size: min(1rem, 2vw);
+  border: 0.01px solid white;
+  padding: 0.6rem;
+  border-radius: 0.1rem;
+  text-decoration: none;
+  color: aliceblue;
+  transition: color, background-color;
+  transition-duration: 0.3s;
+}
+#hero #lhero a:hover {
+  color: #111111;
+  background: #FFF971;
+}
+#hero #rhero img {
+  border-radius: 0.5rem;
+  height: min(70vh, 60vw);
+}
