@@ -21,6 +21,7 @@
   --accent2:#01fff7;
   --accent3:#ff71ee;
   --bg: #010101;
+  --radius:.5rem;
 }
 
 body {
@@ -118,7 +119,7 @@ a, img {
   gap: 1rem;
 }
 #hero #lhero a {
-  border-radius: 0.5rem;
+  border-radius: var(--radius);
   font-size: min(1.5rem, 2.8vw);
   border: 0.01px solid white;
   padding: 0.6rem;
@@ -132,7 +133,7 @@ a, img {
   background: var(--accent);
 }
 #hero #rhero img {
-  border-radius: 0.5rem;
+  border-radius: var(--radius);
   height: min(60vh, 60vw);
   transition: 0.2s;
   rotate: 3deg;
@@ -150,7 +151,7 @@ a, img {
 }
 #showreel video {
   position: relative;
-  border-radius: 0.5rem;
+  border-radius: var(--radius);
   width: 70vw;
 }
 #showreel h1 {
@@ -190,4 +191,69 @@ a, img {
 
 #top H1 {
   background: var(--accent);
+}
+
+#contact {
+  display: none;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+  position: fixed;
+  background: rgba(1, 1, 1, 0.2039215686);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+#contact #card {
+  z-index: 100;
+  position: absolute;
+  border-radius: var(--radius);
+  background: rgb(18, 18, 18) !important;
+  -webkit-backdrop-filter: blur(1000px);
+          backdrop-filter: blur(1000px);
+  width: 45rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 0.5rem;
+}
+#contact #card #message, #contact #card button, #contact #card input {
+  color: aliceblue;
+  -webkit-backdrop-filter: blur(1000px);
+          backdrop-filter: blur(1000px);
+  background: rgba(0, 0, 0, 0.8);
+  border-style: none;
+  border-radius: var(--radius);
+  transition: 500ms;
+}
+#contact #card #message:hover, #contact #card button:hover, #contact #card input:hover {
+  background: rgba(8, 8, 8, 0.9);
+}
+#contact #card #message {
+  resize: none;
+  height: 90%;
+}
+#contact #card button {
+  font-weight: bold;
+  height: 10%;
+}
+#contact #card button:hover {
+  background: var(--accent);
+  color: #010101;
+}
+#contact #card div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact #card div input {
+  height: 1.5rem;
+  width: 49.2%;
+}
+#contact #card div input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px var(--accent) inset;
+  background-color: transparent;
 }

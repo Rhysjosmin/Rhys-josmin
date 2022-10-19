@@ -16,7 +16,7 @@
             <li><a href=""><span class="material-symbols-outlined">home</span></a></li>
             <li><a href="./Subpages/NFT/NFT.html"><span class="material-symbols-outlined">brush</span></a></li>
             <li><a href="./Subpages/Ongoing Projects/Ongoing.html"><span class="material-symbols-outlined">folder</span></a></li>
-            <li><a href=""><span class="material-symbols-outlined">call</span></a></li>
+            <li onclick="contact()"><a><span class="material-symbols-outlined">call</span></a></li>
             
         </ul>
     </nav>
@@ -27,7 +27,7 @@
                 a 3D <span id="artist">Artist</span><br>
                 And a Human Being</p>
             <div>
-                <a href="">Talk To Me</a>
+                <a onclick="contact()">Talk To Me</a>
                 <a href="./Subpages/Resume/Resume2.0.html">Resume</a>
             </div>
         </div>
@@ -40,8 +40,23 @@
         <video src="./Media/Videos/ShowReelHQ.mp4" muted autoplay loop oncontextmenu="sound(this)" onclick="toggleplay(this)" id="showreel"></video>
         <h1>VFX<br>Showreel</h1>
     </section>
-</body>
 
+    <section id="contact" onmouseover="">
+<div id="card">
+    <div>
+        <input type="text" name="" id="" placeholder=" Name">
+        <input type="email" name="" id=""  placeholder=" Email">
+    </div>
+   
+    <textarea name="" id="message" cols="30" rows="10" placeholder=" Message"></textarea>
+    <button>
+        Submit
+    </button>
+
+</div>
+    </section>
+</body>
+<script src="./script/contact.js"></script>
 <script>
    const noRightClick =document.getElementById('showreel') 
    noRightClick.addEventListener("contextmenu", e => e.preventDefault());
