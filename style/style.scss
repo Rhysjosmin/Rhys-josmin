@@ -247,7 +247,13 @@ border-radius: 2vw;
     background: #01010134;
     backdrop-filter: blur(8px);
     #card{
+        :nth-child(4){
+            //EXIT
+            &:hover{
 
+                background: #ce3c5e;
+            }
+        }
         z-index: 100;
 
         position: absolute;
@@ -259,8 +265,8 @@ border-radius: 2vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
- gap:.2rem;
- padding:.5rem;
+        gap:.2rem;
+        padding:.5rem;
 
        #message,button,input{
         color: aliceblue;
@@ -307,3 +313,33 @@ border-radius: 2vw;
 
 }
 
+@media (max-width:500px) {
+    #contact {
+
+        div{
+            gap: 1%;
+        }
+        background: #010101;
+    #card{
+   
+        position: absolute;
+       
+        top: 80px;
+        background: none !important;
+     width: 95vw;
+    } 
+    
+    #message,button,input{
+        color: rgb(0, 0, 0) !important;
+    
+        background: rgb(255, 255, 255) !important;
+        border-style: none;
+        border-radius: 5px !important;
+        transition: 500ms;
+       
+        &:hover{
+            background: rgb(179, 231, 245) !important;; 
+        }
+       }
+}
+ }

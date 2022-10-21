@@ -219,6 +219,9 @@ a, img {
   gap: 0.2rem;
   padding: 0.5rem;
 }
+#contact #card :nth-child(4):hover {
+  background: #ce3c5e;
+}
 #contact #card #message, #contact #card button, #contact #card input {
   color: aliceblue;
   -webkit-backdrop-filter: blur(1000px);
@@ -256,4 +259,29 @@ a, img {
 #contact #card div input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px var(--accent) inset;
   background-color: transparent;
+}
+
+@media (max-width: 500px) {
+  #contact {
+    background: #010101;
+  }
+  #contact div {
+    gap: 1%;
+  }
+  #contact #card {
+    position: absolute;
+    top: 80px;
+    background: none !important;
+    width: 95vw;
+  }
+  #contact #message, #contact button, #contact input {
+    color: rgb(0, 0, 0) !important;
+    background: rgb(255, 255, 255) !important;
+    border-style: none;
+    border-radius: 5px !important;
+    transition: 500ms;
+  }
+  #contact #message:hover, #contact button:hover, #contact input:hover {
+    background: rgb(179, 231, 245) !important;
+  }
 }
