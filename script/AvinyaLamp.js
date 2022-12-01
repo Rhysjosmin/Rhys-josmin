@@ -15,7 +15,8 @@ let SUBCAT=''
 
 
 window.onload = (event) => {
-   s.src=loc+SUBCAT+'/Start.mp4';
+//    s.src=loc+SUBCAT+'/Start.mp4';
+   s.src='https://rhys-011003.github.io/Rhys-josmin/Media/Videos/ShowReelHQ.mp4';
    v.load();
    v.play();
    v.loop = false;
