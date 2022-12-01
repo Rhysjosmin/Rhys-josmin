@@ -1,5 +1,5 @@
 const mn= document.getElementById('mn');
-mn.style.display='none'
+// mn.style.display='none'
 
 
          
