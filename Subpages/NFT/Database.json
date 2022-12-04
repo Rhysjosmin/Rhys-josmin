@@ -9,7 +9,7 @@
             },
             "Price":0.4,
             "Tier":"gold",
-            "Img":"/Media/Videos/nft/PinKJammies.mp4",
+            "Img":"../../Media/Videos/nft/PinKJammies.mp4",
             "Link":"https://opensea.io/RhysJosmin"
         },
 
@@ -22,7 +22,7 @@
             },
             "Price":0.2,
             "Tier":"normal",
-            "Img":"/Media/Videos/nft/Naked.mp4",
+            "Img":"../../Media/Videos/nft/Naked.mp4",
             "Link":"https://rarible.com/token/0xc9154424b823b10579895ccbe442d41b9abd96ed:112325822094244266297974309365360023086978333395789899196957242730534712377346"
 
         },
@@ -36,7 +36,7 @@
             },
             "Price":0.3,
             "Tier":"normal",
-            "Img":"/Media/Videos/nft/Funny Face.mp4",
+            "Img":"../../Media/Videos/nft/Funny Face.mp4",
             "Link":"https://opensea.io/RhysJosmin"
 
         },
@@ -50,7 +50,7 @@
             },
             "Price":0.2,
             "Tier":"normal",
-            "Img":"/Media/Videos/nft/CarbonFiberblack.mp4",
+            "Img":"../../Media/Videos/nft/CarbonFiberblack.mp4",
             "Link":"https://opensea.io/RhysJosmin"
 
         },
@@ -64,7 +64,7 @@
             },
             "Price":1,
             "Tier":"normal",
-            "Img":"/Media/Videos/nft/WB_NINJA_HEADPHONES.mp4",
+            "Img":"../../Media/Videos/nft/WB_NINJA_HEADPHONES.mp4",
             "Link":"https://opensea.io/RhysJosmin"
 
         },
@@ -78,7 +78,7 @@
             },
             "Price":1.2,
             "Tier":"gold",
-            "Img":"/Media/Videos/nft/LaserEyes.mp4",
+            "Img":"../../Media/Videos/nft/LaserEyes.mp4",
             "Link":"https://opensea.io/RhysJosmin"
 
         }
