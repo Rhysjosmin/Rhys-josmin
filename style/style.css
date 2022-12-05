@@ -183,6 +183,22 @@ a, img {
   font-size: 4vw;
 }
 
+#Preloader {
+  transition: 400ms 1s;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+}
+#Preloader video {
+  height: 100vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (min-width: 600px) {
   #showreel video {
     left: 8vh;
