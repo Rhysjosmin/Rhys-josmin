@@ -96,7 +96,7 @@ a,img{
         user-select: none; /* Standard syntax */
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     #hero{
       padding-top: 4rem !important;
        text-align: center;
@@ -219,7 +219,7 @@ color: var(--bg);
      }
 
 
-@media (min-width:501px) {
+@media (min-width:600px) {
     #showreel{
 
      video{
@@ -231,7 +231,7 @@ color: var(--bg);
      } 
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     #showreel{
        
   
@@ -342,7 +342,7 @@ border-radius: 2vw;
 
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     #contact {
 
         div{
