@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/Gizmo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <title>Home</title>
 </head>
 <body>
+<div id="BodyBackground"></div>
     <nav><div>
         Rhysjosmin
     </div>
@@ -36,7 +38,8 @@
             </div>
         </div>
         <div id="rhero">
-            <img src="./Media/Images/Rhys.webp" alt="">
+            <img id='ProfilePic' src="./Media/Images/RhysVector3.png" alt="" onmouseenter="">
+ 
         </div>
       
     </section>
@@ -63,6 +66,15 @@
 </body>
 <script src="./script/contact.js"></script>
 <script>
+    // setInterval(ChangeProfilePic,500)
+    function ChangeProfilePic(){
+        const ProfilePic =document.getElementById('ProfilePic')
+ 
+            ProfilePic.src='./Media/Images/RhysVector.png'
+
+            ProfilePic.src='./Media/Images/Rhys.webp'
+        
+    }
    const noRightClick =document.getElementById('showreel') 
    noRightClick.addEventListener("contextmenu", e => e.preventDefault());
 

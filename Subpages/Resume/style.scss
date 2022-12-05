@@ -5,12 +5,13 @@
 }
 :root{
     --accent: rgb(98, 1, 255);
+    --accent2: rgb(1, 103, 255);
     --link: rgb(39, 1, 255);
 }
 #resumeItems{
     display: grid;
     gap: 1vh;
-    width: max(50vw);
+    width: max(80vw);
 }
 @media print {
     #resumeItems{
@@ -40,8 +41,9 @@ a{
 
 }
     #content{
+        font-size: .9em;
         .hightlight{
-            font-size: 1.2em;
+            font-size: 1.3em;
             font-weight: 400;
         }
         padding: 10px;
@@ -55,4 +57,18 @@ a{
 }
 hr{
     border: .1emvh solid black;
+}
+
+.jobLink{
+    text-decoration: none;
+    &:hover{
+        color: var(--accent2);
+    }
+}
+
+.DateAndPlace{
+    // font-style: italic;
+    font-size: 1em;
+    font-weight: 400;
+    color: rgb(38, 5, 130);
 }

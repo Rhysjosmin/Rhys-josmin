@@ -5,13 +5,14 @@
 
 :root {
   --accent: rgb(98, 1, 255);
+  --accent2: rgb(1, 103, 255);
   --link: rgb(39, 1, 255);
 }
 
 #resumeItems {
   display: grid;
   gap: 1vh;
-  width: 50vw;
+  width: 80vw;
 }
 
 @media print {
@@ -40,10 +41,11 @@ a {
   padding: 10px;
 }
 #item #content {
+  font-size: 0.9em;
   padding: 10px;
 }
 #item #content .hightlight {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 400;
 }
 
@@ -53,4 +55,17 @@ a {
 
 hr {
   border: 0.1emvh solid black;
+}
+
+.jobLink {
+  text-decoration: none;
+}
+.jobLink:hover {
+  color: var(--accent2);
+}
+
+.DateAndPlace {
+  font-size: 1em;
+  font-weight: 400;
+  color: rgb(38, 5, 130);
 }
