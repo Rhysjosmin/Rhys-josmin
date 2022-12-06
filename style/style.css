@@ -111,7 +111,7 @@ a, img {
 #Gallery img {
   scroll-snap-align: center;
   border-radius: var(--radius);
-  height: min(70vh, 80vw);
+  height: min(70vh, 70vw);
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 1/1;
