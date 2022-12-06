@@ -113,12 +113,14 @@ a,img{
             // position: absolute;
             border-radius:var(--radius);
             height: 80vw !important; 
-            width: 80vw;
-            transition: .2s;
-            rotate: 0deg !important;
+            width: 80vw !important;
+     
+
+            background-size: 80vw !important;
             &:hover{
-                scale: 1 !important;
-                rotate: 0deg;
+                background-size: 160vw !important;
+             
+                
                 
             }
         }
@@ -183,7 +185,8 @@ color: var(--bg);
     #rhero{
 
         #ProfilePic{
-            overflow: hidden;
+ 
+            overflow: auto;
             background-image: url(../Media/Images/RhysVectorBG.png);
             background-position: 50% 60%;
             border-radius:var(--radius);
