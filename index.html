@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/Gizmo.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,9 @@
     <title>Home</title>
 </head>
 <body>
-    <div id="Preloader"><video src="./Media/Videos/Rhys0001-0060.mp4" muted loop autoplay></video></div>
+    <!-- <div id="Preloader">
+
+    </div> -->
 <div id="BodyBackground"></div>
     <nav><div>
         Rhysjosmin
@@ -39,7 +42,9 @@
             </div>
         </div>
         <div id="rhero">
-            <img id='ProfilePic' src="./Media/Images/RhysVector3.png" alt="" onmouseenter="">
+            <lottie-player id='ProfilePic' src="./Media/lotte/RhysVector 2.json" background=""  speed=".8"   loop  autoplay></lottie-player>
+
+            <!-- <img id='ProfilePic' src="./Media/Images/RhysVector3.png" draggable="false" alt="" onmouseenter=""> -->
  
         </div>
       
@@ -65,8 +70,12 @@
 </div>
     </section>
 </body>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 <script src="./script/contact.js"></script>
-<script src="./script/loader.js"></script>
+<!-- <script src="./script/loader.js"></script> -->
+<script src="./script/Drag.js"></script>
+
 <script>
     // setInterval(ChangeProfilePic,500)
     function ChangeProfilePic(){
