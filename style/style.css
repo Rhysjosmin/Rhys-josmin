@@ -25,7 +25,7 @@
 }
 
 #BodyBackground {
-  opacity: 5%;
+  opacity: 7%;
   z-index: -1;
   position: fixed;
   width: 100vw;
@@ -94,6 +94,7 @@ a, img {
     border-radius: var(--radius);
     height: 80vw !important;
     width: 80vw !important;
+    background-size: 80vw !important;
   }
   #rhero #ProfilePic:hover {
     background-size: 160vw !important;
@@ -105,11 +106,9 @@ a, img {
   gap: 1rem;
   padding: 2rem;
   overflow: scroll;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 #Gallery img, #Gallery video {
-  scroll-snap-align: center;
   border-radius: var(--radius);
   height: min(70vh, 70vw);
   -o-object-fit: cover;
