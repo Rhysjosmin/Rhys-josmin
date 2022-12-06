@@ -133,7 +133,7 @@ a,img{
     padding: 2rem;
     overflow: scroll;
     scroll-snap-type: x  mandatory;
-    img{
+    img,video{
         scroll-snap-align: center;
         border-radius: var(--radius);
         height: min(70vh,70vw);

@@ -108,7 +108,7 @@ a, img {
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
 }
-#Gallery img {
+#Gallery img, #Gallery video {
   scroll-snap-align: center;
   border-radius: var(--radius);
   height: min(70vh, 70vw);
