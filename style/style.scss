@@ -20,7 +20,7 @@
     --accent2:#01fff7;
     --accent3:#ff71ee;
     --bg: hsl(162, 100%, .1%);
-    --radius:.5rem;
+    --radius:1rem;
 }
 #BodyBackground{
     opacity: 5%;
@@ -183,17 +183,18 @@ color: var(--bg);
     #rhero{
 
         #ProfilePic{
+            overflow: hidden;
             background-image: url(../Media/Images/RhysVectorBG.png);
-            background-position: center;
+            background-position: 50% 60%;
             border-radius:var(--radius);
-            height: min(60vh, 60vw);
-            width:  min(60vh, 60vw);
-            transition: background-size 1s cubic-bezier(0.175, 0.885, 0.32, 1.01),scale .3s;
+            height: min(50vh, 50vw);
+            width:  min(50vh, 50vw);
+            transition: background-size .4s,scale .3s;
             // rotate: 3deg;
-            background-size: 400px;
+            background-size: min(50vh, 50vw);
             &:hover{
-                background-size: 3000px;
-                background-position: center;
+                background-size: min(80vh, 80vw);
+                background-position: 50% 60%;
                 //  scale: 0.95;
                 rotate: 0deg;
                 
