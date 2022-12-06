@@ -136,7 +136,7 @@ a,img{
     img{
         scroll-snap-align: center;
         border-radius: var(--radius);
-        height: 70vh;
+        height: min(70vh,80vw);
     
         object-fit: cover;
         
