@@ -21,7 +21,7 @@
   --accent2:#01fff7;
   --accent3:#ff71ee;
   --bg: hsl(162, 100%, .1%);
-  --radius:1rem;
+  --radius:.4rem;
 }
 
 #BodyBackground {
