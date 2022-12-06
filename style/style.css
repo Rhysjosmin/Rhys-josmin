@@ -105,10 +105,11 @@ a, img {
   gap: 1rem;
   padding: 2rem;
   overflow: scroll;
-  scroll-behavior: smooth;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 #Gallery img {
-  scroll-snap-align: left;
+  scroll-snap-align: center;
   border-radius: var(--radius);
   height: 70vh;
   -o-object-fit: cover;

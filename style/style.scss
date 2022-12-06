@@ -132,9 +132,9 @@ a,img{
     gap: 1rem;
     padding: 2rem;
     overflow: scroll;
-    scroll-behavior: smooth;
+    scroll-snap-type: x  mandatory;
     img{
-        scroll-snap-align: left;
+        scroll-snap-align: center;
         border-radius: var(--radius);
         height: 70vh;
     
