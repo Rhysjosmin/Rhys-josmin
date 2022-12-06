@@ -37,4 +37,14 @@ var move=0 //0 if The image is not following the mouse
 //         }
 // }
 
-
+// window.onscroll = e =>{
+//     // ProfilePic.style.backgroundSize='10vw'
+//     ProfilePic.animate(
+//         {
+//             backgroundSize: `${((window.scrollY/document.body.scrollHeight)*1)+70}%`
+//         },{
+//             duration:1000,fill:"forwards"
+//         }
+//     );
+//     console.log(window.scrollY/document.body.scrollHeight)
+// }

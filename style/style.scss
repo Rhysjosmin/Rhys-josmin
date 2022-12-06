@@ -116,7 +116,7 @@ a,img{
             width: 80vw !important;
      
 
-            background-size: 80vw !important;
+            // background-size: 80vw !important;
             &:hover{
                 background-size: 160vw !important;
              
@@ -126,7 +126,23 @@ a,img{
         }
     }
 }
-
+#Gallery{
+    min-height: 100vh;
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    img{
+        scroll-snap-align: left;
+        border-radius: var(--radius);
+        height: 70vh;
+    
+        object-fit: cover;
+        
+        aspect-ratio: 1/1;
+    }
+}
 #hero{
     font-family: 'Titillium Web', sans-serif;
     margin: auto;
