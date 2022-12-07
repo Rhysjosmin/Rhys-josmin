@@ -16,7 +16,7 @@
             "LinkCText":"Read "
         },
         {
-            "Activity":"active",
+            "Activity":"inactive",
             "Name":"Inspirus Website",
             "Description":"The Official Website for Inspirus, The Most anticipated event of Don Bosco College Of Engineering",
             "Image":"../../Media/Images/InspirusTerminal.png", 
@@ -46,7 +46,7 @@
             "LinkCText":"Read "
         },
         {
-            "Activity":"active",
+            "Activity":"inactive",
             "Name":"NeuralTrader",
             "Description":"A Neural Network Trained To Detect the best times to buy or sell stocks or other exchanges",
             "Image":"../../Media/Images/TradingBot.jpg", 
