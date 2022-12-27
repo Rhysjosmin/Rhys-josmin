@@ -1,125 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/Gizmo.css">
+<!-- Home page -->
+<h1>Welcome to {artistName}'s website</h1>
+<p>{artistName} is a {artistGenre} artist who creates {artistMedium} pieces.</p>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    <!-- <div id="Preloader">
+<!-- About page -->
+<h1>About {artistName}</h1>
+<p>{artistName} is a {artistLocation}-based artist with a passion for {artistInfluences}. They have been creating art for {artistExperience} years and are known for their {artistStyle} style.</p>
 
-    </div> -->
-<div id="BodyBackground"></div>
-    <nav><div>
-        Rhysjosmin
-    </div>
-        <ul>
-            <li><a href=""><span class="material-symbols-outlined" style=" color: white;
-                font-variation-settings:  'FILL' 1,
-                'wght' 4000,
-                'GRAD' 0,
-                'opsz' 48 !important;">home</span></a></li>
-            <li><a href="./Subpages/Ongoing Projects/Ongoing.html"><span class="material-symbols-outlined">folder</span></a></li>
-            <li><a href="./Subpages/NFT/NFT.html"><span class="material-symbols-outlined">currency_bitcoin</span></a></li>
-            <!-- <li onclick="contact()"><a><span class="material-symbols-outlined">call</span></a></li> -->
-            
-        </ul>
-    </nav>
-    <section id="hero">
-        <div id="lhero">
-            <p>Hi I'm <span id="name">Rhys Josmin</span><br>
-                I'm a <SPAN id="dev">Developer</SPAN><br>
-                a 3D <span id="artist">Artist</span><br>
-                And a Human Being</p>
-            <div>
-                <a onclick="contact()">Talk To Me</a>
-                <a href="./Subpages/Resume/Resume2.0.html">Resume</a>
-            </div>
-        </div>
-        <div id="rhero">
-            <!-- <lottie-player id='ProfilePic' src="./Media/lotte/RhysVector 2.json" background=""  speed=".8" autoplay></lottie-player> -->
-
-            <img id='ProfilePic' src="./Media/Images/Rhys.webp" draggable="false" alt="" onmouseenter="">
- 
-        </div>
-      
-    </section>
-
-    <!-- <section id="Gallery">
-        <img src="./Media/Images/BlueRobot.jpg" alt="">
-        <img src="./Media/Images/Deathless.png" alt="">
-        <img src="./Media/Images/TheodoreDarkSide.jpg" alt="">
-        <img src="./Media/Images/Icecream.jpg" alt="">
-        <img src="./Media/Images/pink.jpg" alt="">
-        <video src="./Media/Videos/portal.mp4" autoplay muted loop></video>
-    </section> -->
-    <section id="showreel">
-        <video src="./Media/Videos/ShowReelHQ.mp4" muted autoplay loop oncontextmenu="sound(this)" onclick="toggleplay(this)" id="showreel"></video>
-        <h1>VFX<br>Showreel</h1>
-    </section>
-
-    <section id="contact" >
-<div id="card">
-    <div>
-        <input type="text" name="" id="" placeholder=" Name">
-        <input type="email" name="" id=""  placeholder=" Email">
-    </div>
-   
-    <textarea name="" id="message" cols="30" rows="10" placeholder=" Message"></textarea>
-    <button>
-        Submit
-    </button>
-    <button onclick="decontact()">Exit</button>
-
+<!-- Portfolio page -->
+<h1>{artistName}'s Portfolio</h1>
+<h2>{category1}</h2>
+<div>
+  <img src={piece1Image} alt={piece1Title}>
+  <h3>{piece1Title}</h3>
+  <p>{piece1Description}</p>
 </div>
-    </section>
-</body>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<h2>{category2}</h2>
+<div>
+  <img src={piece2Image} alt={piece2Title}>
+  <h3>{piece2Title}</h3>
+  <p>{piece2Description}</p>
+</div>
 
-<script src="./script/contact.js"></script>
-<!-- <script src="./script/loader.js"></script> -->
-<script src="./script/Drag.js"></script>
+<!-- Contact page -->
+<h1>Contact {artistName}</h1>
+<p>You can reach {artistName} at <a href="mailto:{artistEmail}">{artistEmail}</a> or through their social media accounts:</p>
+<ul>
+  <li><a href={artistInstagram}>Instagram</a></li>
+  <li><a href={artistFacebook}>Facebook</a></li>
+  <li><a href={artistTwitter}>Twitter</a></li>
+</ul>
+<form on:submit|preventDefault={sendMessage}>
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message"></textarea><br>
+  <input type="submit" value="Send">
+</form>
+
+<!-- Blog or news page -->
+<h1>{artistName}'s Blog</h1>
+<h2>{post1Title}</h2>
+<p>{post1Date}</p>
+<p>{post1Content}</p>
+<h2>{post2Title}</h2>
+<p>{post2Date}</p>
+<p>{post2Content}</p>
 
 <script>
-    // setInterval(ChangeProfilePic,500)
-    function ChangeProfilePic(){
-        const ProfilePic =document.getElementById('ProfilePic')
- 
-            ProfilePic.src='./Media/Images/RhysVector.png'
+    // Home page
+const artistName = "Vincent van Gogh";
+const artistGenre = "Impressionist";
+const artistMedium = "oil paintings";
 
-            ProfilePic.src='./Media/Images/Rhys.webp'
-        
-    }
-   const noRightClick =document.getElementById('showreel') 
-   noRightClick.addEventListener("contextmenu", e => e.preventDefault());
+document.querySelector("h1").textContent = `Welcome to ${artistName}'s website`;
+document.querySelector("p").textContent = `${artistName} is a ${artistGenre} artist who creates ${artistMedium} pieces.`;
 
-    function sound(a){
-        window.navigator.vibrate(200);
-        var vol=0
+// Portfolio page
+const portfolio = [
+  {
+    category: "Landscapes",
+    pieces: [
+      {
+        title: "The Starry Night",
+        image: "starry_night.jpg",
+        description: "One of van Gogh's most famous paintings, The Starry Night depicts the view from his window at the Saint-Paul-de-Mausole asylum in Saint Rémy de Provence."
+      },
+      {
+        title: "Irises",
+        image: "irises.jpg",
+        description: "Irises is a colorful painting of irises in a garden, painted during van Gogh's stay at the Saint-Paul-de-Mausole asylum."
+      }
+    ]
+  },
+  {
+    category: "Portraits",
+    pieces: [
+      {
+        title: "Self-Portrait with Straw Hat",
+        image: "self_portrait_with_straw_hat.jpg",
+        description: "This self-portrait shows van Gogh with a straw hat, which he often wore while painting outdoors."
+      },
+      {
+        title: "Portrait of Dr. Gachet",
+        image: "portrait_of_dr_gachet.jpg",
+        description: "This portrait of van Gogh's friend and physician, Dr. Paul Gachet, is one of the artist's most famous works."
+      }
+    ]
+  }
+];
 
-    a.muted = !a.muted;
-    a.volume=.2
-   
-    }
-    function toggleplay(a){
-      
+let portfolioHTML = "";
 
-        if (a.paused){
-            a.play(); 
-            a.muted = !a.muted;
-    a.volume=.2
-        }
-   
-    else {
-        a.pause();
-    }
-    
-}
-           
+portfolio.forEach(category => {
+  portfolioHTML += `<h2>${category.category}</h2>`;
+  category.pieces.forEach(piece => {
+    portfolioHTML += `
+      <div>
+        <img src="${piece.image}" alt="${piece.title}">
+        <h3>${piece.title}</h3>
+        <p>${piece.description}</p>
+      </div>
+    `;
+  });
+});
+
+document.querySelector("#portfolio").innerHTML = portfolioHTML;
+
+// Contact page
+const form = document.querySelector("form");
+form.addEventListener("submit", event => {
+  event.preventDefault();
+  const name = form.elements.name.value;
+  const email = form.elements.email.value;
+  const message = form.elements.message.value;
+  alert(`Thank you for your message, ${name}! We will be in touch shortly.`);
+});
+
+// Blog or news page
+const posts = [
+  {
+    title: "The Importance of Self-Portraiture",
+    date: "May 1, 2021",
+    content: "In this post, we will explore the role of self-portraiture in van Gogh's oeuvre and
+
 </script>
-</html>
+
+
+<style>
+    body {
+  background-color: #FFF8E1; /* Pale yellow color similar to van Gogh's Starry Night */
+  color: #1B1B1B; /* Dark color for text */
+  font-family: sans-serif;
+}
+
+h1, h2, h3 {
+  color: #FFA07A; /* Light orange color */
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+a {
+  color: #FFA07A; /* Light orange color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF7F50; /* Darker orange color */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #FFA07A; /* Light orange color */
+  border-radius: 5px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+label, input[type="submit"] {
+  display: block;
+  margin: 20px 0;
+}
+
+label {
+  font-size: 16px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #FFA07A; /* Light orange color */
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #FFA07A; /* Light orange color */
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #FF7F50; /* Darker orange color */
+}
+
+</style>

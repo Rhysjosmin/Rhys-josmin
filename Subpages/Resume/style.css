@@ -7,6 +7,7 @@
   --accent: rgb(98, 1, 255);
   --accent2: rgb(1, 103, 255);
   --link: rgb(39, 1, 255);
+  --link0: rgb(0, 154, 185);
 }
 
 #resumeItems {
@@ -25,7 +26,8 @@
 a {
   text-decoration: none;
   text-decoration: underline;
-  color: var(--accent);
+  color: var(--link0);
+  transition: 0.4s;
 }
 
 #item {
