@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="Images/clock.png" type="image/x-icon">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="An Simple Pomodoro timer to keep you focused and motivated. Customize your timer and choose from a variety of backgrounds.">
@@ -31,9 +32,9 @@
     <img src="Images/1.jpg" alt="" id="bg" onclick="changeImg()">
     <main>
         <div id="Options">
-            <button onclick="setTime(25)">Study</button>
-            <button onclick="setTime(5)">Short-Break</button>
-            <button onclick="setTime(10)">Long-Break</button>
+            <button class="button selectedButton" onclick="setTime(25,this)">Study</button>
+            <button class="button" onclick="setTime(5,this)">Short-Break</button>
+            <button class="button" onclick="setTime(10,this)">Long-Break</button>
         </div>
         <div id="TimeWrapper"><div id="Time"></div></div>
         

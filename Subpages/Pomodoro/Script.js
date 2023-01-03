@@ -9,6 +9,9 @@ seconds=00
 time=+minutes+":"+'0'+seconds;
 Clock.innerText=time;
 TitleClock.innerText=time;
+var Alarm = new Audio('audio/Alarm.mp3');
+var BackgroundAudio= new Audio('audio/BackgroundAudio.mp3')
+
 function CountDown(){
     ClockID=setInterval(()=>{
         if(minutes<10){
@@ -37,6 +40,10 @@ function CountDown(){
         }
         if(minutes<0){
             clearInterval(ClockID)
+            BackgroundAudio.pause();
+            Alarm.play();
+            Alarm.loop();
+
         }
         seconds--;
 
@@ -44,8 +51,14 @@ function CountDown(){
     },1000)
 }
 
-function setTime(time){
-    
+function setTime(time,button){
+    BackgroundAudio.pause()
+    const buttons = document.querySelectorAll('.button');
+
+    buttons.forEach(b => {
+      b.classList.remove('selectedButton');
+    });
+   button.classList.add('selectedButton')
 
 while(minutes!=time){
     if(minutes>time){
@@ -76,11 +89,14 @@ Clock.style.color=DisabledColor
 Clock.addEventListener('click',()=>{
     if(Paused){
         Clock.style.color='white'
+        BackgroundAudio.play()
+        BackgroundAudio.volume=.3
         CountDown();
         Paused=false;
         
         
     }else{
+        BackgroundAudio.pause()
         Clock.style.color=DisabledColor
         
         clearInterval(ClockID)

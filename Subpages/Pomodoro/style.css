@@ -60,6 +60,11 @@ main {
   color: black;
 }
 
+.selectedButton {
+  background: white !important;
+  color: black !important;
+}
+
 #Time {
   pointer-events: all;
   transition: 0.3s;
