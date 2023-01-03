@@ -65,6 +65,11 @@ main {
   color: black !important;
 }
 
+.mutedButton {
+  background: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
 #Time {
   pointer-events: all;
   transition: 0.3s;
@@ -109,4 +114,26 @@ nav {
     align-items: center !important;
     justify-content: center;
   }
+}
+#SecondaryOptions {
+  pointer-events: all;
+  display: flex;
+  justify-content: space-between;
+}
+#SecondaryOptions button {
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(226, 226, 226, 0.674);
+  background: transparent;
+  transition: 0.3s;
+}
+#SecondaryOptions button:hover {
+  background: white;
+  color: black;
 }

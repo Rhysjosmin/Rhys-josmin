@@ -65,6 +65,10 @@ main{
     background: white !important;
     color: black !important;
 }
+.mutedButton{
+    background: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+}
 #Time{
     
     pointer-events: all;
@@ -114,3 +118,35 @@ color: white !important;
      justify-content: center;
 }
 }
+
+
+
+#SecondaryOptions{
+    pointer-events: all;
+    // background: red;
+    display: flex;
+    justify-content: space-between;
+    button{
+        backdrop-filter: blur(3px);
+        font-size: 1rem;
+        font-weight: 600;
+        color: white;
+        width: 8rem;
+        height: 2.5rem;
+        border-radius: 1.25rem;
+        border: 1px solid rgba(226, 226, 226, 0.674);
+        background: transparent;
+        transition: .3s;
+        &:hover{
+            background: white;
+            color: black;
+        }
+    }  
+}
+
+	
+
+	
+
+
+

@@ -5,12 +5,14 @@ Paused=true;
 DisabledColor='rgba(255, 255, 255, 0.4)'
 Clock.style.color=DisabledColor
 minutes=25
+prev=25
 seconds=00
 time=+minutes+":"+'0'+seconds;
 Clock.innerText=time;
 TitleClock.innerText=time;
 var Alarm = new Audio('audio/Alarm.mp3');
 var BackgroundAudio= new Audio('audio/BackgroundAudio.mp3')
+volume=0.03
 
 function CountDown(){
     ClockID=setInterval(()=>{
@@ -52,6 +54,7 @@ function CountDown(){
 }
 
 function setTime(time,button){
+    prev=time;
     BackgroundAudio.pause()
     const buttons = document.querySelectorAll('.button');
 
@@ -90,7 +93,7 @@ Clock.addEventListener('click',()=>{
     if(Paused){
         Clock.style.color='white'
         BackgroundAudio.play()
-        BackgroundAudio.volume=.3
+        BackgroundAudio.volume=volume
         CountDown();
         Paused=false;
         
@@ -106,6 +109,7 @@ Clock.addEventListener('click',()=>{
 id=1;
 
 function changeImg(){
+   
     if(id>4){
         id=1
     }
@@ -113,3 +117,39 @@ function changeImg(){
     Image.src='Images/'+id+'.jpg'
 
 }
+
+function muteBG(button){
+    
+   
+   if(volume==0){
+    button.classList.remove('selectedButton')
+    volume=0.03
+    BackgroundAudio.volume=volume
+
+   }else{
+    button.classList.add('selectedButton')
+    volume=0
+    BackgroundAudio.volume=volume
+   }
+
+}
+
+function reset(){
+
+
+
+    minutes=prev;
+    seconds=0
+    time=+minutes+":"+'0'+seconds;
+    Clock.innerText=time;
+    TitleClock.innerText=time;
+    BackgroundAudio.pause()
+    Clock.style.color=DisabledColor
+    
+    clearInterval(ClockID)
+    Paused=true;
+}
+
+
+
+
