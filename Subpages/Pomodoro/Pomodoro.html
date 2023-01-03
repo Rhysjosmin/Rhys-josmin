@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="An Simple Pomodoro timer to keep you focused and motivated. Customize your timer and choose from a variety of backgrounds.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titleTimer">Timer</title>
+    <link rel="stylesheet" href="../../style/style.css">
+</head>
+<body>
+    <nav><div>
+        Rhysjosmin
+    </div>
+        <ul>
+            <li><a href="../../index.html"><span class="material-symbols-outlined">home</span></a></li>
+            <li><a href="../Ongoing Projects/Ongoing.html"><span class="material-symbols-outlined" >folder</span></a></li>
+            <li><a href="../NFT/NFT.html"><span class="material-symbols-outlined">currency_bitcoin</span></a></li>
+            <li><a href="../Pomodoro/Pomodoro.html"><span class="material-symbols-outlined" style=" color: white;
+                font-variation-settings:  'FILL' 1,
+                'wght' 4000,
+                'GRAD' 0,
+                'opsz' 48 !important;">timer</span></a></li>
+
+            <!-- <li><a href=""><span class="material-symbols-outlined">call</span></a></li> -->
+            
+        </ul>
+    </nav>
+    <img src="Images/1.jpg" alt="" id="bg" onclick="changeImg()">
+    <main>
+        <div id="Options">
+            <button onclick="setTime(25)">Study</button>
+            <button onclick="setTime(5)">Short-Break</button>
+            <button onclick="setTime(10)">Long-Break</button>
+        </div>
+        <div id="TimeWrapper"><div id="Time"></div></div>
+        
+    </main>
+    
+</body>
+<script src="Script.js"></script>
+</html>

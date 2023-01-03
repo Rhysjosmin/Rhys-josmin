@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+
+*{
+    margin: 0%;
+    padding: 0;
+   
+    font-family: 'MuseoModerno', cursive;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+#bg{
+    position: fixed;
+    z-index: 0;
+width: 100vw;
+object-fit: cover;
+height: 100vh;
+}
+body{
+    overflow: hidden;
+}
+
+main{ 
+    overflow: hidden;
+
+    z-index: 1;
+    position: relative;
+    pointer-events: none;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+
+}
+
+#Options{
+    pointer-events: all;
+    // background: red;
+    display: flex;
+    justify-content: space-between;
+    button{
+        backdrop-filter: blur(3px);
+        font-size: 1rem;
+        font-weight: 600;
+        color: white;
+        width: 8rem;
+        height: 2.5rem;
+        border-radius: 1.25rem;
+        border: 1px solid rgba(226, 226, 226, 0.674);
+        background: transparent;
+        transition: .3s;
+        &:hover{
+            background: white;
+            color: black;
+        }
+    }
+}
+#Time{
+    
+    pointer-events: all;
+  transition: .3s;
+    font-size: 8rem;
+    color: white;
+    font-weight:1000;
+    cursor: pointer;
+    &:hover{
+        color: rgb(255, 255, 255) !important;
+    }
+}
+
+#TimeWrapper{
+    width: 25rem;
+    // background: red;
+    display: grid;
+    place-content: center;
+}
+nav{
+color: white !important;
+    background: linear-gradient(to bottom,black,rgba(0, 0, 0, 0.01));
+}
+
+@media (max-width:400px) {
+ #TimeWrapper{
+    width: 80vw !important;
+    // background: red;
+    #Time{
+
+        font-size: 26vw !important;
+    }
+  
+ }
+ #Options{
+    width: 80vw;
+    button{
+        width: 25vw !important;
+        height: 10vw !important;
+        font-size: 3.5vw !important;
+    }
+ }
+ main{
+     display: flex !important;
+     flex-direction: column;
+     align-items: center !important;
+     justify-content: center;
+}
+}
