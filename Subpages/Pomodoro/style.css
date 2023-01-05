@@ -65,16 +65,9 @@ main {
   color: black !important;
 }
 
-.mutedButton {
-  background: rgb(0, 0, 0) !important;
-  color: rgb(255, 255, 255) !important;
-}
-
 #Time {
   pointer-events: all;
   transition: 0.3s;
-  font-size: 8rem;
-  color: white;
   font-weight: 1000;
   cursor: pointer;
 }
@@ -83,8 +76,11 @@ main {
 }
 
 #TimeWrapper {
+  font-size: 8rem !important;
+  color: white !important;
   width: 25rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   place-content: center;
 }
 
