@@ -8,7 +8,7 @@ let CamX=0;
 let CamY=0;
 let CamZ=0;
 let i=0;
-let speed=0.5;
+let speed=0.2;
 
 function rad(degrees)
 {
@@ -83,10 +83,10 @@ function init(){
 }
 
 function animate(){
-    Math.clz32()
+
     i+=speed;
     requestAnimationFrame(animate);
-    pad.rotation.y+=0.01;
+    pad.rotation.y+=speed/20;
     pad.children[0].position.y=Math.sin(1.8+i/20)/100;
     pad.children[1].position.y=.25+Math.sin(2+i/20)/15;
     pad.children[2].position.y=.25+Math.sin(2.2+i/20)/15;
