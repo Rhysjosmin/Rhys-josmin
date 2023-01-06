@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#View {
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scene, canvas {
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.249);
+  border-radius: 8px;
+  width: 80vh;
+  height: 80vh;
+  background: white;
+}
