@@ -8,12 +8,16 @@ let CamX=0;
 let CamY=0;
 let CamZ=0;
 let i=0;
+let speed=0.5;
 
 function rad(degrees)
 {
   var pi = Math.PI;
   return degrees * (pi/180);
 }
+
+
+
 
 
 function init(){
@@ -31,11 +35,20 @@ function init(){
 
     scene.add( gridHelper );
 
-
+    scene.background = new THREE.CubeTextureLoader()
+    .setPath( './CubeMap/' )
+    .load( [
+      'px.png',
+      'nx.png',
+      'py.png',
+      'ny.png',
+      'pz.png',
+      'nz.png'
+    ] );
 
     //Camera Setup
   camera= new THREE.PerspectiveCamera(fov,aspect,near,far)
-    camera.position.set(1,0.8,0);
+    camera.position.set(.8,1.5,0);
     camera.rotation.set(rad(0),rad(90),rad(0))
 
     const ambient =new THREE.AmbientLight(0x404040,1);
@@ -52,13 +65,13 @@ function init(){
     container.appendChild(renderer.domElement);
 
     const controls = new THREE.OrbitControls( camera, renderer.domElement );
-    
+
 
 
 
     //load model
     let loader =new THREE.GLTFLoader();
-    loader.load("/Pages/Kenisha/Pad.gltf",function(gltf){
+    loader.load("./Pad.gltf",function(gltf){
         scene.add(gltf.scene);
         pad= gltf.scene;
         renderer.render(scene,camera);
@@ -71,7 +84,7 @@ function init(){
 
 function animate(){
     Math.clz32()
-    i+=.5;
+    i+=speed;
     requestAnimationFrame(animate);
     pad.rotation.y+=0.01;
     pad.children[0].position.y=Math.sin(1.8+i/20)/100;
@@ -84,6 +97,8 @@ function animate(){
 }
 
 init();
+
+
 
 
 
