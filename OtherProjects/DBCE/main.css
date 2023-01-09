@@ -1,0 +1,104 @@
+#gallery {
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  width: 100vw;
+  display: flex;
+  justify-content: start;
+}
+#gallery #galleryImg {
+  z-index: 10;
+  position: relative;
+  width: 97.7vw;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.61), rgba(255, 255, 255, 0));
+          mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.61), rgba(255, 255, 255, 0));
+}
+
+#Incharge {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+#history {
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  font-weight: 200;
+  color: white;
+  font-size: 1rem;
+}
+#history img {
+  margin: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  float: left;
+}
+#history p {
+  padding: 0.7rem;
+}
+
+#inchargePeople {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#inchargePeople .person {
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  position: relative;
+  width: 35rem;
+  height: 48%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#inchargePeople .person img {
+  width: 160px;
+  image-rendering: optimizeQuality;
+  margin-right: 2.5%;
+}
+#inchargePeople .person div {
+  color: white;
+  position: relative;
+  align-self: flex-start;
+  left: 0;
+}
+#inchargePeople .person div h2 {
+  font-weight: 100;
+  padding-right: 10px;
+}
+
+#quickActions {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#quickActions .action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  aspect-ratio: 1/1;
+  width: 9rem;
+  height: 9rem;
+  color: white;
+  text-align: center;
+  transition: 0.2s;
+}
+#quickActions .action span {
+  font-size: 4rem;
+}
+#quickActions .action h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+#quickActions .action:hover {
+  border-radius: 1.5rem;
+  color: rgb(0, 0, 0);
+  background: white;
+}

@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+/* Mechanic Visitor Counter Version 3.0 Default styles*/
+#mvcwid{
+	background-color:none;
+	width:100%;
+	padding:10px;
+}
+#mvccount{
+	padding:10px;
+}
+#mvccount img{
+	margin-right:5px;
+}
+#mvctable{
+	padding:10px;
+}
+#mvctable table tr td{
+	width:100%;
+}
+#mvcip{
+	padding:10px;
+	border-top:1px dashed #bcbcb0; 
+}
+#mvcserver{
+	padding:10px;
+	border-top:1px dashed #bcbcb0;
+}
+#mvccredit{
+	padding:10px;
+	border-top:1px dashed #bcbcb0;
+}
