@@ -1,0 +1,19 @@
+#News {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+}
+#News div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+#News div .newsItem {
+  aspect-ratio: 1/1;
+  width: 97%;
+  height: 26vw;
+  border: 1px solid white;
+}
