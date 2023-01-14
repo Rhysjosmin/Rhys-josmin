@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
+        "pretrained",
         "toggleplay"
     ],
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "python.analysis.typeCheckingMode": "off"
 }
