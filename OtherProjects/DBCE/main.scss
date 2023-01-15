@@ -34,9 +34,9 @@
 }
 
 #history {
-  border: 1px solid rgba(255, 255, 255, 0.466);
-  font-weight: 200;
-  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.466);
+  font-weight: 300;
+  color: var(--text);
 
   // border-radius: 5px;
 
@@ -64,7 +64,7 @@
 
   .person {
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.466);
+    border: 1px solid rgba(0, 0, 0, 0.466);
     // border-radius: 5px;
     position: relative;
     width: 100%;
@@ -82,7 +82,8 @@
       margin-right: 2.5%;
     }
     div {
-      color: white;
+
+      color:var(--text);
       position: relative;
       align-self: flex-start;
       left: 0;
@@ -109,11 +110,11 @@
     justify-content: center;
     gap: 1rem;
     padding: 0.7rem;
-    border: 1px solid rgba(255, 255, 255, 0.466);
+    border: 1px solid rgba(56, 56, 56, 0.466);
     aspect-ratio: 1/1;
     width: 7rem;
     height: 7rem;
-    color: white;
+    color:var(--text);
     span {
       // font-weight: 10;
       font-size: 4rem;
@@ -135,7 +136,7 @@
 #externalEdu {
   padding: 1rem;
   width: 90vw;
-  color: white;
+  color:var(--text);
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -146,7 +147,7 @@
     width: 14rem;
     height: 12rem;
     text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.466);
+    border: 1px solid rgba(34, 34, 34, 0.466);
 
     span {
       font-size: 5rem;
@@ -158,7 +159,7 @@
     transition: 0.2s;
     &:hover {
       border-radius: 1.5rem;
-      color: rgb(0, 0, 0);
+      color:var(--textHover);
       background: rgb(255, 230, 183);
     }
   }
@@ -169,18 +170,18 @@
 
   transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
     height 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-//   opacity: 1 !important;
-//   height: 71vh !important;
+  opacity: 0;
+  height: 0vh ;
   border-radius: 3px;
   position: absolute;
   z-index: 1;
   left: 50%;
-  transform: translateX(-39%);
-  top: 95%;
+  transform: translateX(-39%) translateY(2%);
+  top: 100%;
   width: 80vw;
   // backdrop-filter: blur(20px);
-  background: linear-gradient(hsla(0, 0%, 5%), hsl(0, 0%, 4%));
-  box-shadow: 1rem 1rem 3rem 1rem rgba(0, 0, 0, 0.63);
+  background: var(--accentMain);
+  box-shadow: 1rem 1rem 3rem 1rem rgba(0, 0, 0, 0.1);
   display: flex;
   gap: 1%;
   div {
@@ -188,6 +189,7 @@
     width: 33%;
  
     ul {
+        text-align: end;
         h2{
             font-weight: 900;
             font-size: 2em;
@@ -196,12 +198,13 @@
         a{
             font-size: 1.5em;
             font-weight: 200;
-color: azure;
+            color:var(--text);
             text-decoration: none;
             transition: padding .1s,.2s;
             &:hover{
+                // border-radius: 10px 0 0 10px;
                 background: white;
-                padding-right: 2em;
+                padding-left: 2em;
                 color: black;
             }
         }
