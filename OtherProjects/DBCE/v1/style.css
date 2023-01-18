@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0%;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+image {
+  image-rendering: optimizeQuality;
+}
+
+#bgGraph {
+  --line: rgba(255, 255, 255, 0.02);
+  z-index: -200;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: #000000;
+  background-size: 2rem 2rem;
+  background-image: linear-gradient(to right, var(--line) 1px, transparent 1px), linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+  --accentMain: #ffffff;
+  --accentMain2: #0069ff;
+  --text: black;
+  --textHover: black;
+  --accent2: #144272;
+  --accent3: #205295;
+  --accent4: #2c74b3;
+  --background: hsl(0, 0%, 2%);
+  --accentHover: #ffffff;
+  --accentHoverText: #000000;
+}
+
+.sty0 {
+  --accentMain: #ffffff;
+  --accentMain2: #042977;
+  --accentMain2: #0069ff;
+  --accent2: #144272;
+  --accent3: #205295;
+  --accent4: #2c74b3;
+  --background: hsl(0, 0%, 2%);
+  --accentHover: #ffffff;
+  --accentHoverText: #000000;
+}
+
+#top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#top .material-symbols-outlined {
+  color: white;
+}
+#top #topA {
+  background: var(--accentMain2);
+  padding: 1rem;
+  position: relative;
+  display: flex;
+}
+#top #topA form {
+  --radius: 0px;
+  align-self: flex-end;
+  display: flex;
+}
+#top #topA form input,
+#top #topA form button {
+  font-weight: 500;
+  padding: 4px;
+  border: none;
+}
+#top #topA form input {
+  transition: 0.2s;
+  width: 10rem;
+  background: white;
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+#top #topA form button {
+  width: 2rem;
+  display: flex;
+  justify-content: end;
+  color: #ffffff;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: rgb(0, 0, 0);
+  transition: 0.2s;
+}
+#top #topA form button:hover {
+  background: rgb(0, 47, 255);
+  color: rgb(255, 255, 255);
+}
+#top #topA #topImg {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.8rem;
+}
+#top #topA #topImg #navImgText {
+  color: white;
+}
+#top #topA #topImg #navImgText h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+#top #topA #topImg #navImgText h1 span {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+#top #topA #topImg img {
+  aspect-ratio: 1/1;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+#top nav {
+  height: 3rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#top nav ul {
+  align-items: center;
+  justify-content: end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+#top nav li {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  list-style: none;
+}
+#top nav li .active {
+  color: var(--accentHoverText);
+  background: var(--accentMain2);
+}
+#top nav li a {
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  padding: 6px;
+  text-decoration: none;
+  color: var(--text);
+  transition: 0.2s;
+}
+#top nav li a:not(.active):hover {
+  color: var(--accentHoverText);
+  background: var(--accentMain2);
+}
