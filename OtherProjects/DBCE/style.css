@@ -2,3 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --accent: #112d4e;
+  --accent2: #3f72af;
+  --base2: #dbe2ef;
+  --base: #4f0496;
+  --text: black;
+}
