@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blogStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Blog</title>
+</head>
+<body>
+    <section id="Hero">
+        <a id="Back" href="../Notes-For-the-future.html" onclick="Expand(this)"><span class="material-symbols-outlined" style="font-size: .8em; text-align: center;">arrow_back_ios
+            </span>Back</a>
+        <h1>How To Flask<span>by Rhys Josmin</span></h1>
+        <img src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <div class="grad"></div>
+    </section>
+    <section id="content">
+        Are you tired of boring old web frameworks that just don't quite cut it? Well, have no fear, Flask is here! Flask is a micro web framework that is taking the Python community by storm. It's lightweight, easy to use, and oh so versatile.
+
+But before we dive into the nitty-gritty of Flask, let's talk about why you should choose Flask over the competition.
+
+First of all, Flask is like the little black dress of web frameworks. It's simple, yet elegant. It doesn't come with a bunch of frills and extras that you'll never use. Instead, it gives you just the basics, so you can add your own personal touch.
+
+Secondly, Flask is like a chameleon. It can adapt to any situation. Need a quick and dirty web app? Flask can handle that. Want to build a complex web application? Flask can do that too! It's the ultimate web framework for any occasion.
+
+Now that you're convinced that Flask is the way to go, let's get started.
+
+Step 1: Installation
+Just like any good relationship, the first step is to install Flask. You can do this by running "pip install flask" in your command line. It's that easy!
+
+Step 2: Creating a new Python file
+Think of this step like building a house. Your app.py file is the foundation of your web application. So, go ahead and create a new file in your project directory and name it app.py.
+
+Step 3: Importing Flask
+This step is like bringing in the furniture for your new house. You need to import Flask to use it in your application. Just add the following line at the top of your app.py file: "from flask import Flask".
+
+Step 4: Creating a Flask instance
+This step is like decorating your new house. Now that you have Flask imported, you need to create an instance of the Flask class. You can give it any name, but commonly it is named "app".
+
+<code onclick="copyCode(this)">app = Flask(__name__)
+</code>
+
+Step 5: Adding a route
+Routes are like the rooms in your house. A route is a way to map URLs to Python functions. To create a route, you will need to use the <span class="Highlight">@app.route</span> decorator, followed by the URL.
+
+<code onclick="copyCode(this)">@app.route('/')
+def home():
+    return 'Hello, Flask!' 
+</code>
+
+Step 6: Running the application
+This is the final step! You've built your house, decorated it, and now it's time to move in. To run the application, add the following line of code at the bottom of your app.py file.
+
+<code onclick="copyCode(this)">if __name__ == '__main__':
+    app.run(debug=True)
+</code>
+And there you have it! You've successfully built your first Flask web application. Now go forth and create something amazing! And remember, if at any point you feel lost, just think of your web application as a house. Happy building!
+    </section>
+</body>
+<script src="./copycode.js"></script>
+</html>

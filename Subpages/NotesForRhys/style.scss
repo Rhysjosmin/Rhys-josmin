@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    animation: fadeIn 1s;
+    background-color: #111111;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+#Hero{
+  
+    min-height: 120dvh;
+    color: aliceblue;
+    h1{
+        padding: 1rem;
+font-weight: 900;
+font-size: 8em;
+    }
+    ul{
+        font-size: 1.2em;
+        // background: red;
+        padding: 2.3rem;
+    }
+    h4{
+
+    }
+    li{
+        text-indent: 2rem;
+    }
+}
+::-webkit-scrollbar{
+    background: #111111;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #FFF971;
+}
+#Content{
+    // min-height: 100dvh;
+    background-color: #FFF971;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+}
+#ContentBox{
+    --size:12rem;
+
+    display: grid;
+    // grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    .blog{
+        border-radius: 10px;
+        border: solid 1px rgba(255, 255, 255, 1);
+        box-shadow: 0 0 .8rem .1rem rgba(0, 0, 0, 0.589);
+        width: var(--size);
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: #0B0B0B;
+        img{
+           
+            width: var(--size);
+            height: var(--size);
+            object-fit: cover;
+            transition: .1s;
+        }
+        h2{
+            margin: 10px;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            font-size: .9em;
+        }
+        transition: .2s;
+        overflow: hidden;
+        &:hover{
+            scale: 1.04;
+            img{
+                scale: 1.02;
+            }
+        }
+    }
+}
+
+#MailingList{
+    min-height: 120dvh;
+    display: grid;
+    place-items: center;
+    #MailingCard{
+        box-sizing: border-box;
+        padding: 2rem;
+   
+        width: 50rem;
+        background: #070707;
+     
+        h2{
+        color: white;
+        font-size: 2.3em;
+        }
+        form{
+            margin-top: 2em;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            #Name,#Email,#Button{
+                width: 100%;
+                height: 4em;
+                border: none
+            }
+            #Name,#Email{
+                background-color: hsl(0, 0%, 2%);
+                border-radius: 2em;
+                text-indent: 1rem;
+                outline: 1px solid rgba(53, 53, 53, 0.425);
+                color: white;
+            }
+            #NotARobot{
+                
+                box-sizing: border-box;
+                margin-top: 1em;
+                background-color: #000000;
+                height: 4em;
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                padding: 1rem;
+                gap: 1em;
+                
+                input{
+                    
+                    box-sizing: border-box;
+                    width: 10%;
+                    padding: 1rem;
+                }
+                h2{
+                    font-weight: 200;
+                    font-size: .9em;
+                }
+            }
+            #Button{
+                font-weight: 900;
+                font-size: 1.2em;
+                margin-top: 1em;
+                background-color: #FFF971;
+                transition: .2s;
+                &:hover{
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+#footer{
+    color: white;
+    margin: .2rem;
+    font-weight: 100;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section id="Hero">
+        <h1>Notes For Future Rhys</h1>
+        <ul>
+            <h4>Hey Rhys, this is past Rhys helping you remember stuff you knew,</h4>
+            <li>Stuff No 1: You’re not actually adopted , i think.</li>
+            <li>Stuff No 2: Your bank pin is the last 4 digits of pi.</li>
+            <li>Stuff No 3: you have no clue what you wanted to write for this point.</li>
+            <li>Stuff No 4: Oh! And Your Birthday is on the 1st of October [ETA: <span id="Birthday"></span> seconds].</li>
+        </ul>
+
+    </section>
+    <section id="Content">
+    <section id="ContentBox">
+        <a href="" class="blog">
+            <img src="https://images.pexels.com/photos/7095036/pexels-photo-7095036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2>How To Get A Life</h2>
+        </a>
+        <a href="" class="blog">
+            <img src="https://images.pexels.com/photos/1611001/pexels-photo-1611001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2>How To Get A Life</h2>
+        </a>
+        <a href="" class="blog">
+            <img src="https://images.pexels.com/photos/1731660/pexels-photo-1731660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2>How To Get A Life</h2>
+        </a>
+     
+        <a href="" class="blog">
+            <img src="https://images.pexels.com/photos/8347501/pexels-photo-8347501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2>How To Get A Life</h2>
+        </a>
+        <a href="./Subpages/How-to-flask.html" class="blog">
+            <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2>How To Flask</h2>
+        </a>
+        <a href="" class="blog">
+            <img src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2>How To Get A Life</h2>
+        </a>
+    </section>
+</section>
+    <section id="MailingList">
+        <div id="MailingCard">
+            <h2>Lemme Nag You Every once in a while</h2>
+            <form action="" method="post">
+              <input type="text" name="" id="Name" placeholder="Your Nickname">
+            <input type="email" name="" id="Email" placeholder="Your Email Thingy">
+            <div id="NotARobot">
+                <input type="radio" name="" id="">
+                <h2>Please provide proof of your humor.</h2>
+            </div>
+            <input type="submit" value="Join The Cult  :)" id="Button">   
+            </form>
+           
+        </div>
+    </section>
+    <section id="footer">
+        @RhysJosmin All Rights Reserved
+    </section>
+   <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+   <script>
+    const Birthday=document.getElementById('Birthday');
+  
+        
+       
+    setInterval(t,1000)
+    function t(){
+        var t1 = new Date();
+    if(t1.getMonth>11){
+        var t2 = new Date(t1.getFullYear(0)+1, 9,01);
+        
+    }else{
+        var t2 = new Date(t1.getFullYear(0), 9,01);
+
+    }
+        var dif = t1.getTime() - t2.getTime();
+
+var Seconds_from_T1_to_T2 = dif / 1000;
+var Seconds_Between_Dates = Math.round(Math.abs(Seconds_from_T1_to_T2));
+   
+        Birthday.textContent= Seconds_Between_Dates
+    }
+    
+   </script>
+</body>
+</html>
