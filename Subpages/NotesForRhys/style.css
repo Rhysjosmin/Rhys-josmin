@@ -6,6 +6,7 @@
 }
 
 body {
+  overflow-x: hidden;
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
   background-color: #111111;
@@ -64,10 +65,15 @@ body {
 #ContentBox {
   --size:12rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
 #ContentBox .blog {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   border-radius: 10px;
   border: solid 1px rgb(255, 255, 255);
   box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.589);
@@ -82,16 +88,22 @@ body {
   overflow: hidden;
 }
 #ContentBox .blog img {
+  top: 0;
+  position: relative;
   width: var(--size);
   height: var(--size);
   -o-object-fit: cover;
      object-fit: cover;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 #ContentBox .blog h2 {
+  transition: 0.3s;
   margin: 10px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5ch;
   text-align: center;
   font-size: 0.9em;
 }
@@ -99,6 +111,7 @@ body {
   scale: 1.04;
 }
 #ContentBox .blog:hover img {
+  top: -10px;
   scale: 1.02;
 }
 
@@ -108,6 +121,7 @@ body {
   place-items: center;
 }
 #MailingList #MailingCard {
+  border-radius: 4px;
   box-sizing: border-box;
   padding: 2rem;
   width: 50rem;
@@ -167,8 +181,30 @@ body {
   background-color: white;
 }
 
+.unHighlight {
+  font-weight: lighter;
+  color: rgb(189, 189, 189);
+}
+
+.Highlight {
+  color: #FFF971;
+}
+
 #footer {
   color: white;
   margin: 0.2rem;
   font-weight: 100;
+}
+
+.sticker {
+  pointer-events: none;
+  transition: 0.2s;
+  opacity: 1;
+  mix-blend-mode: difference;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  width: 5rem;
+  height: 5rem;
+  transform: translate(-2.5rem, -2.5rem);
 }

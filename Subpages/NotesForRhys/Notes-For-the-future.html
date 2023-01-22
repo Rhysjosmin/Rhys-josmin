@@ -6,59 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Subpages/PopupAlert.css">
     
 </head>
 <body>
     <section id="Hero">
         <h1>Notes For Future Rhys</h1>
         <ul>
-            <h4>Hey Rhys, this is past Rhys helping you remember stuff you knew,</h4>
+            <h4>Hi Future Rhys !, this is past Rhys helping you remember stuff you knew,or at least you think you did</h4>
             <li>Stuff No 1: You’re not actually adopted , i think.</li>
             <li>Stuff No 2: Your bank pin is the last 4 digits of pi.</li>
             <li>Stuff No 3: you have no clue what you wanted to write for this point.</li>
-            <li>Stuff No 4: Oh! And Your Birthday is on the 1st of October [ETA: <span id="Birthday"></span> seconds].</li>
+            <li>Stuff No 4: Oh! And Your Birthday is on the 1st of October [ETA: <span id="Birthday" class="Highlight"></span> seconds].</li>
         </ul>
 
     </section>
     <section id="Content">
     <section id="ContentBox">
-        <a href="" class="blog">
-            <img src="https://images.pexels.com/photos/7095036/pexels-photo-7095036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h2>How To Get A Life</h2>
+        <a  href="" class="blog" draggable="false">
+            <img draggable="false" src="https://images.pexels.com/photos/7095036/pexels-photo-7095036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2>Cello Pointers</h2>
         </a>
-        <a href="" class="blog">
-            <img src="https://images.pexels.com/photos/1611001/pexels-photo-1611001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h2>How To Get A Life</h2>
+        <a href="" class="blog" draggable="false">
+            <img draggable="false" src="https://images.pexels.com/photos/1611001/pexels-photo-1611001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2>Process Your Audio</h2>
         </a>
-        <a href="" class="blog">
-            <img src="https://images.pexels.com/photos/1731660/pexels-photo-1731660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h2>How To Get A Life</h2>
+        <a href="" class="blog" draggable="false">
+            <img draggable="false" src="https://media0.giphy.com/media/lp8Wn883PXlf8TLaVs/giphy.gif?cid=ecf05e47k7tn0nyjdzziqfcx63qid2hcy0fxqt77zs00e8om&rid=giphy.gif&ct=g" alt="">
+            <h2>How To Talk To People</h2>
         </a>
      
-        <a href="" class="blog">
-            <img src="https://images.pexels.com/photos/8347501/pexels-photo-8347501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h2>How To Get A Life</h2>
+     
+        <a href="./Subpages/How-to-flask.html" class="blog" draggable="false">
+            <img draggable="false" src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2>How To <span class="Highlight"> Flask   </span> <span class="unHighlight">[in Python]</span></h2>
         </a>
-        <a href="./Subpages/How-to-flask.html" class="blog">
-            <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h2>How To Flask</h2>
-        </a>
-        <a href="" class="blog">
-            <img src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h2>How To Get A Life</h2>
-        </a>
+     
     </section>
 </section>
     <section id="MailingList">
         <div id="MailingCard">
-            <h2>Lemme Nag You Every once in a while</h2>
+            <h2>FBI! Give Me Your Email 🔫 </h2>
             <form action="" method="post">
-              <input type="text" name="" id="Name" placeholder="Your Nickname">
+              <input type="text" name="" id="Name" placeholder="Name">
             <input type="email" name="" id="Email" placeholder="Your Email Thingy">
-            <div id="NotARobot">
+            <!-- <div id="NotARobot">
                 <input type="radio" name="" id="">
                 <h2>Please provide proof of your humor.</h2>
-            </div>
+            </div> -->
             <input type="submit" value="Join The Cult  :)" id="Button">   
             </form>
            
@@ -67,7 +62,7 @@
     <section id="footer">
         @RhysJosmin All Rights Reserved
     </section>
-   <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+  
    <script>
     const Birthday=document.getElementById('Birthday');
   
@@ -91,6 +86,97 @@ var Seconds_Between_Dates = Math.round(Math.abs(Seconds_from_T1_to_T2));
         Birthday.textContent= Seconds_Between_Dates
     }
     
+   </script>
+   <script src="./Subpages/PopupAlert.js"></script>
+   <script src="./sticker.js"></script>
+   <script >
+    const Time=Math.random()*4000
+    setTimeout(()=>{
+        
+PopupAlert("Try Clicking The Screen")
+    },Time)
+   </script>
+   <script>
+    const Name =document.getElementById('Name')
+    NameRec=[
+        'Name',
+        'Name',
+        'Name',
+        'Name',
+        'Name',
+        'Nam',
+        'Na',
+        'Na',
+        'N',
+        'A',
+        'A',
+        'Aw',
+        'Aw',
+        'Awe',
+        'Awes',
+        'Aweso',
+        'Aweso',
+        'Awesom',
+        'Awesom',
+        'Awesom',
+        'Awesom',
+        'Awesome',
+        'Awesome',
+        'Awesome p',
+        'Awesome pe',
+        'Awesome peR',
+        'Awesome peR',
+        'Awesome peR',
+        'Awesome pe',
+        'Awesome pe',
+        'Awesome p',
+        'Awesome ',
+        'Awesome P',
+        'Awesome Pe',
+        'Awesome Per',
+        'Awesome Per',
+        'Awesome Pers',
+        'Awesome Perso',
+        'Awesome Person',
+        'Awesome Person',
+        'Awesome Person',
+        'Awesome Person',
+        'Awesome Person',
+        'Awesome Person',
+        'Awesome Person',
+        'Awesome Person',
+        'Awesome Perso',
+        'Awesome Pers',
+        'Awesome Per',
+        'Awesome Pe',
+        'Awesome Pe',
+        'Awesome P',
+        'Awesome ',
+        'Awesome',
+        'Awesom',
+        'Aweso',
+        'Aweso',
+        'Awes',
+        'Awe',
+        'Aw',
+        'A',
+        '',
+        '',
+        'N',
+        'Na',
+        'Nam',
+        'Name',
+    ]
+    let index=0
+    Name.addEventListener('focus',()=>{setInterval(()=>{
+
+        Name.placeholder=NameRec[index]
+        index++
+        if(index>=NameRec.length){
+            index=0
+        }
+        
+    },100)})
    </script>
 </body>
 </html>

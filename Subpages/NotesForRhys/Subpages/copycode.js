@@ -7,6 +7,73 @@ setTimeout(()=>{
 PopupAlert("Copied " );
 
 }
+const textResponses = [
+    "Great to see you again!",
+    "It's always a pleasure to see you.",
+    "Welcome back!",
+    "I've been waiting for you.",
+    "Glad you're here!",
+    "It's like you never left.",
+    "I'm so excited to see you again!",
+    "I've been thinking about you.",
+    "I'm so happy you're back!",
+    
+   
+    "I'm glad you're here.",
+    "So good to see you!"
+]
+const emojis = [
+    "😃",
+    "😊",
+    "😎",
+    "😜",
+    "😄",
+    "😍",
+    "😎",
+    "😘",
+    "😃",
+    "😊",
+    "😄",
+    "🤗",
+    "😃",
+    "😊",
+    "😎",
+    "(*￣3￣)╭",
+    "o(￣┰￣*)ゞ",
+    "(*^ω^*)",
+    "(o^▽^o)",
+    "（＾Ｕ＾）",
+    "(✿◠‿◠)",
+    "╰(✿˙ᴗ˙✿)╯",
+    "( ͡° ͜ʖ ͡°)",
+    "(✿◠‿◠)ﾉ",
+    "( ͡° ͜ʖ ͡°)"
+]
+
+
+    var randomIndex = Math.floor(Math.random() * textResponses.length);
+    var text=textResponses[randomIndex]
+    randomIndex = Math.floor(Math.random() * emojis.length);
+    var emoji=emojis[randomIndex]
+ 
+
+
+
+setTimeout(()=>{
+
+    let utterance = new SpeechSynthesisUtterance("Hi Rhys");
+    speechSynthesis.speak(utterance);
+
+    PopupAlert("Hi Rhys " );
+},500)
+
+setTimeout(()=>{
+    let utterance = new SpeechSynthesisUtterance(text);
+    speechSynthesis.speak(utterance);
+    PopupAlert(text+' '+emoji );
+
+},3000)
+
 
 function truncate(str, n){
     return (str.length > n) ? str.slice(0, n-1) + '....':str;
@@ -18,23 +85,8 @@ function Expand(element){
    element.innerText='‎ '
    element.style.backgroundColor=`#111111`
     element.style.transform=`scale(10000%)`
+    // element.
    
 }
 
-function PopupAlert(Text){
-    const popup=document.createElement('div')
-    popup.className='Popup'
-    popup.textContent=Text
 
-    document.body.append(popup)
-    setTimeout(()=>{
-        popup.style.bottom=`1rem`
-    },50)
-    setTimeout(()=>{
-        popup.style.bottom=`-4rem`
-    },2000)
-    setTimeout(()=>{
-        popup.remove()
-    },2500)
-    
-}

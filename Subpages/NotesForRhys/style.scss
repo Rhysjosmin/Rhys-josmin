@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
+    overflow-x: hidden;
     animation: fadeIn 1s;
     background-color: #111111;
 }
@@ -55,10 +56,13 @@ font-size: 8em;
 
     display: grid;
     // grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
 
     .blog{
+      position: relative;
+      
+        user-select: none;
         border-radius: 10px;
         border: solid 1px rgba(255, 255, 255, 1);
         box-shadow: 0 0 .8rem .1rem rgba(0, 0, 0, 0.589);
@@ -70,24 +74,33 @@ font-size: 8em;
         color: rgb(255, 255, 255);
         background-color: #0B0B0B;
         img{
-           
+            top: 0;
+           position: relative;
             width: var(--size);
             height: var(--size);
             object-fit: cover;
-            transition: .1s;
+            transition: .2s;
         }
         h2{
+           
+       
+            transition: .3s;
             margin: 10px;
-            display: grid;
-            place-items: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: .5ch;
             text-align: center;
             font-size: .9em;
         }
         transition: .2s;
         overflow: hidden;
         &:hover{
+           
             scale: 1.04;
             img{
+                top: -10px;
                 scale: 1.02;
             }
         }
@@ -95,10 +108,12 @@ font-size: 8em;
 }
 
 #MailingList{
+  
     min-height: 120dvh;
     display: grid;
     place-items: center;
     #MailingCard{
+        border-radius: 4px;
         box-sizing: border-box;
         padding: 2rem;
    
@@ -163,8 +178,28 @@ font-size: 8em;
         }
     }
 }
+.unHighlight{
+    font-weight:lighter;
+    color: rgb(189, 189, 189);
+   
+}
+.Highlight{
+    // display: inline-block;
+    color: #FFF971;
+}
 #footer{
     color: white;
     margin: .2rem;
     font-weight: 100;
+}
+.sticker{
+    pointer-events: none;
+    transition:  .2s;
+    opacity: 1;
+    mix-blend-mode: difference;
+    object-fit: cover;
+    z-index: 0;
+    width: 5rem;
+    height:  5rem;
+    transform: translate(-2.5rem,-2.5rem);
 }
