@@ -53,7 +53,7 @@ const Endings=[
     "Olive, I'll Live",
     "Hi Rhys 👋",
     "Go Practice the cello",
-    "I'd Tell you to study, but don't cause neither am i",
+    "I'd Tell you to study, but don't, cause neither am i",
 
 ]
 
