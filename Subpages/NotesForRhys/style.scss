@@ -30,9 +30,9 @@ font-size: 8em;
         // background: red;
         padding: 2.3rem;
     }
-    h4{
+    // h4{
 
-    }
+    // }
     li{
         text-indent: 2rem;
     }
@@ -45,18 +45,19 @@ font-size: 8em;
     background-color: #FFF971;
 }
 #Content{
+    // width: 100%;
     // min-height: 100dvh;
     background-color: #FFF971;
-    padding: 10rem;
+    padding: 5vw;
     display: flex;
     justify-content: center;
 }
 #ContentBox{
     --size:12rem;
-
-    display: grid;
+    justify-content: center;
+    display: flex;
     // grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
     gap: 1rem;
 
     .blog{
@@ -108,7 +109,8 @@ font-size: 8em;
 }
 
 #MailingList{
-  
+  width: 100%;
+
     min-height: 120dvh;
     display: grid;
     place-items: center;
@@ -117,7 +119,7 @@ font-size: 8em;
         box-sizing: border-box;
         padding: 2rem;
    
-        width: 50rem;
+        width: min(80vw,50rem);
         background: #070707;
      
         h2{
