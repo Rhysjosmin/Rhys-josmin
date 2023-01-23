@@ -1,4 +1,4 @@
-document.addEventListener("click", (e) => {
+document.addEventListener("dblclick", (e) => {
     console.log(e)
     // if(e.srcElement | e.srcElement.pa
 
@@ -7,7 +7,11 @@ document.addEventListener("click", (e) => {
 
 });
 
-
+const Time=Math.random()*4000
+setTimeout(()=>{
+    
+PopupAlert("Try Double Clicking The Screen")
+},Time)
 
 function addSticker(x,y){
 const sticker=document.createElement('img')

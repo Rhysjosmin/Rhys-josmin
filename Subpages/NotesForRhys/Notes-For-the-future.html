@@ -48,8 +48,8 @@
         <div id="MailingCard">
             <h2>FBI! Give Me Your Email 🔫 </h2>
             <form action="" method="post">
-              <input type="text" name="" id="Name" placeholder="Name">
-            <input type="email" name="" id="Email" placeholder="Your Email Thingy">
+              <input type="text" name="" id="Name" placeholder="Name" autocomplete="off">
+            <input type="email" name="" id="Email" placeholder="Your Email Thingy" autocomplete="off">
             <!-- <div id="NotARobot">
                 <input type="radio" name="" id="">
                 <h2>Please provide proof of your humor.</h2>
@@ -89,13 +89,7 @@ var Seconds_Between_Dates = Math.round(Math.abs(Seconds_from_T1_to_T2));
    </script>
    <script src="./Subpages/PopupAlert.js"></script>
    <script src="./sticker.js"></script>
-   <script >
-    const Time=Math.random()*4000
-    setTimeout(()=>{
-        
-PopupAlert("Try Clicking The Screen")
-    },Time)
-   </script>
+
    <script>
     const Name =document.getElementById('Name')
     NameRec=[

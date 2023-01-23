@@ -17,8 +17,6 @@ const textResponses = [
     "I'm so excited to see you again!",
     "I've been thinking about you.",
     "I'm so happy you're back!",
-    
-   
     "I'm glad you're here.",
     "So good to see you!"
 ]
@@ -50,26 +48,37 @@ const emojis = [
     "( ͡° ͜ʖ ͡°)"
 ]
 
+const Endings=[
+    "Food is Good",
+    "Olive, I'll Live",
+    "Hi Rhys 👋",
+    "Go Practice the cello",
+    "I'd Tell you to study, but don't cause neither am i",
+
+]
 
     var randomIndex = Math.floor(Math.random() * textResponses.length);
     var text=textResponses[randomIndex]
     randomIndex = Math.floor(Math.random() * emojis.length);
     var emoji=emojis[randomIndex]
- 
+
+    randomIndex = Math.floor(Math.random() * Endings.length);
+    
+    document.getElementById('FooterQuote').textContent=Endings[randomIndex]
 
 
 
 setTimeout(()=>{
 
-    let utterance = new SpeechSynthesisUtterance("Hi Rhys");
-    speechSynthesis.speak(utterance);
+    // let utterance = new SpeechSynthesisUtterance("Hi Rhys");
+    // speechSynthesis.speak(utterance);
 
     PopupAlert("Hi Rhys " );
 },500)
 
 setTimeout(()=>{
-    let utterance = new SpeechSynthesisUtterance(text);
-    speechSynthesis.speak(utterance);
+    // let utterance = new SpeechSynthesisUtterance(text);
+    // speechSynthesis.speak(utterance);
     PopupAlert(text+' '+emoji );
 
 },3000)

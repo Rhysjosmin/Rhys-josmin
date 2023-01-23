@@ -13,13 +13,17 @@
 </head>
 <body>
     <section id="Hero">
-        <a id="Back" href="../Notes-For-the-future.html" onclick="Expand(this)"><span class="material-symbols-outlined" style="font-size: .8em; text-align: center;">arrow_back_ios
+        <section id="HeroSecondaryContainer">
+            <a id="Back" href="../Notes-For-the-future.html" onclick="Expand(this)"><span class="material-symbols-outlined" style="font-size: .8em; text-align: center;">arrow_back_ios
             </span>Back</a>
         <h1>How To Flask<span>by Rhys Josmin</span></h1>
 
         <img id="HeroImg" src="" alt="">
    
         <div class="grad"></div>
+
+        </section>
+       
     </section>
     <section id="content">
         <section id="ContentMain">
@@ -66,8 +70,10 @@
             
         </section>
         <section id="ContentSecondary"></section>
-          </section>
+    </section>
+    <footer><Quote id="FooterQuote">Is It The End Or Just The Beginning</Quote></footer>
 </body>
+<script src="./NavOnScroll.js"></script>
 <script src="./PopupAlert.js"></script>
 <script src="./copycode.js"></script>
 <script>
@@ -79,6 +85,6 @@
 const HeroImg =document.getElementById('HeroImg')
 // HeroImg.src='https://upload.wikimedia.org/wikipedia/commons/c/cc/Digital_rain_animation_medium_letters_shine.gif'
 HeroImg.src=Vsrc[Math.round((Math.random())*(Vsrc.length-1))]
-console.log(HeroImg.src)
+
 </script>
 </html>

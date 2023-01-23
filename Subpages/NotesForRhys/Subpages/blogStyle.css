@@ -79,12 +79,11 @@ body {
   pointer-events: none;
   box-sizing: border-box;
   height: 100%;
-  width: 40%;
   position: relative;
   z-index: 4;
   padding: 1rem;
   font-weight: 900;
-  font-size: min(8em, 9.6vw);
+  font-size: 7em;
   color: #ffffff;
   line-height: 1.1em;
 }
@@ -112,6 +111,27 @@ body {
   top: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.NavOnScroll {
+  z-index: 5;
+  position: fixed !important;
+  height: 5rem !important;
+  top: 0;
+  width: 100%;
+}
+.NavOnScroll #Back {
+  display: none !important;
+}
+.NavOnScroll h1 {
+  padding: 0.5rem !important;
+  font-size: 2em !important;
+  display: flex;
+  align-items: baseline;
+  gap: 0.2ch;
+}
+.NavOnScroll h1 span {
+  font-size: 0.5em !important;
 }
 
 #content {
@@ -151,6 +171,7 @@ body {
   background: #20fd32;
 }
 #content code::after {
+  opacity: 0;
   transition: 0.3s;
   font-weight: 700;
   box-sizing: border-box;
@@ -163,8 +184,11 @@ body {
   right: 1rem;
   background-color: #ffffff;
 }
+#content code:hover {
+  border-color: #ccd6ff;
+}
 #content code:hover::after {
-  background-color: #20fd32;
+  opacity: 1;
 }
 #content .Copied::after {
   content: "Copied";
@@ -173,4 +197,136 @@ body {
 
 .Highlight {
   color: #fd20d8;
+}
+
+footer {
+  height: 50vh;
+  position: relative;
+}
+footer Quote {
+  left: 1rem;
+  bottom: 10px;
+  position: absolute;
+  color: white;
+}
+
+@media (max-width: 400px) {
+  #Hero {
+    position: relative;
+    height: 70vh;
+  }
+  #Hero #Back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    margin-inline: 1.3rem;
+    margin-top: 0.3rem;
+    background: #111111;
+    border-radius: 100px;
+    padding-inline: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.2s;
+  }
+  #Hero #Back span {
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 3);
+  }
+  #Hero #Back:hover {
+    translate: -0.6rem 0;
+  }
+  #Hero #Back:hover span {
+    translate: -0.6rem 0;
+  }
+  #Hero h1 {
+    font-size: 20vw;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    padding: 1rem;
+    padding-top: 3rem;
+    font-weight: 900;
+    color: #ffffff;
+  }
+  #Hero h1 span {
+    color: #fff971;
+    display: flex;
+    align-items: center;
+    height: 1rem;
+    padding-left: 0.1em;
+    font-weight: 300;
+    font-size: min(0.2em, 9.6vw);
+  }
+  #Hero .grad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0;
+    background: linear-gradient(90deg, #111111 0%, #111111 35%, rgba(17, 17, 17, 0.8666666667) 70%, rgba(17, 17, 17, 0) 100%);
+  }
+  #Hero img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #content {
+    display: flex;
+    background: #fff971;
+  }
+  #content #ContentMain {
+    padding-top: 1rem;
+    width: 100%;
+    padding-inline: 1rem;
+  }
+  #content #ContentSecondary {
+    width: 30%;
+  }
+  #content code {
+    white-space: pre;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    font-size: 0.7em;
+    color: #ffffff;
+    font-family: "Noto Sans Mono", monospace;
+    background: #111111;
+    padding: 0.6rem;
+    margin: 1rem 0rem 1rem 0rem;
+    display: block;
+    position: relative;
+    transition: 0.2s;
+  }
+  #content code::-moz-selection {
+    color: #111111;
+    background: #20fd32;
+  }
+  #content code::selection {
+    color: #111111;
+    background: #20fd32;
+  }
+  #content code::after {
+    transition: 0.3s;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 2px;
+    border-radius: 3px;
+    color: black;
+    content: "Copy";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #ffffff;
+  }
+  #content code:hover::after {
+    background-color: #20fd32;
+  }
+  #content .Copied::after {
+    content: "Copied";
+    background-color: #2048fd !important;
+  }
 }
