@@ -51,6 +51,7 @@ body {
   height: 70vh;
 }
 #Hero #Back {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,9 +127,6 @@ body {
   top: 0;
   width: 100%;
 }
-.NavOnScroll #Back {
-  display: none !important;
-}
 .NavOnScroll h1 {
   translate: 0 1rem;
   padding: 0.5rem !important;
@@ -158,6 +156,7 @@ body {
   width: 30%;
 }
 #content code {
+  cursor: pointer;
   --selectionBG:rgb(255, 255, 255);
   white-space: pre;
   border: 2px rgb(255, 255, 255) solid;
@@ -180,17 +179,6 @@ body {
   color: #000000;
   background: var(--selectionBG);
 }
-#content code .Highlight::-moz-selection {
-  background: var(--selectionBG);
-  color: #fd20d8;
-}
-#content code .Highlight::selection {
-  background: var(--selectionBG);
-  color: #fd20d8;
-}
-#content code .Highlight {
-  color: inherit;
-}
 #content code::after {
   opacity: 0;
   transition: 0.3s;
@@ -211,6 +199,23 @@ body {
 }
 #content code:hover::after {
   opacity: 1;
+}
+#content ImageRow {
+  display: flex;
+  gap: 0.5rem;
+  margin-block: 2rem;
+  flex-wrap: wrap;
+}
+#content ImageRow img {
+  margin-block: 1rem;
+}
+#content img {
+  margin-block: 2rem;
+  border-radius: 1000px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 300px;
 }
 #content .Copied {
   color: #2048fd !important;

@@ -48,31 +48,53 @@
         <code onclick="copyCode(this)"><span class="ENVNAME"></span>\Scripts\activate.bat</code>
      
         <script defer >
-            const Names=['aReallyCoolApp','FINall_App','SomethingApp','Rhysapp','ImGonnaTakeOverTheTrisateArea_APP']
+            const Names=['aReallyCoolApp','FINall_App','SomethingApp','Rhysapp']
             
             r=Math.round(Math.random()*(Names.length-1))
             for(let i=0;i<document.getElementsByClassName('ENVNAME').length;i++){
             document.getElementsByClassName('ENVNAME')[i].innerText=Names[r]
 
         }
-          console.log(r,Names)
+        //   console.log(r,Names)
         </script>
         </section>
         Now You got the Setup part done
         <br>
-        Now Lets Start with importing flask with
+        create a file <span class="Highlight">app.py</span>
+        <br>and import flask with
         <code onclick="copyCode(this)">from <span class="Highlight">flask</span> import <span class="Highlight">Flask</span></code>
-
+        
         and lets create a App component by using 
         <code onclick="copyCode(this)">from flask import Flask
         
-app = Flask(<span class="Highlight">__name__</span>)</code>
+app = Flask(__name__)</code>
 <br>
-To Understand a bit more
-<br>print out <span class="Highlight">app</span> 
-and <span class="Highlight">__name__</span> 
 
+Now we can define these things called <span class="Highlight">Routes</span> its something sorta like pages in a website each route can hold different data ,and you can go to the route by changing the url<br>
 
+to define a route we use a decorator function ,which we actually initialized in the last codeblock    
+<br><br>
+with:
+<code onclick="copyCode(this)">app = Flask(__name__)</code>
+
+<br>
+A decorator is basically like an Oreo,You have the cream(code) wrapped in a cookie sandwich,you can eat the cream separately,but the cookies give it additional functionality
+<OreoCookie>
+<img src="https://media0.giphy.com/media/H0nSHfg0CcVri/giphy.gif?cid=ecf05e47cyxku5p4veu3rc9b5vkjo1atti1rsmujallorotz&rid=giphy.gif&ct=g" alt="" style="height: 40px; margin-bottom: 0rem;"> <code onclick="copyCode(this)" style="width: 300px;box-sizing: border-box;color: rgb(0, 0, 0);background: white; " >def Home():
+    return <span class="SomeRandomReturnCode"style='color:black;'></span></code>
+<img src="https://media4.giphy.com/media/QoPEMe4drQh7dsrbZp/giphy.gif?cid=ecf05e47dpnqyxdlhbzj34yq6jya0m9dtbdu86konwxpowpo&rid=giphy.gif&ct=g" alt="" style="height: 40px; margin-top: 0rem;">
+</OreoCookie>
+<!-- <ImageRow class="Images">
+    <img src="https://media0.giphy.com/media/3o7TKnJM1WthzTLfa0/giphy.gif?cid=ecf05e47vn839eyg27624k9w8givxy3z07dh6w7k1qbziktw&rid=giphy.gif&ct=g" alt="">
+ 
+   
+
+</ImageRow> -->
+<br>
+to do that use the <span class="Highlight">@app.route('/')</span> decorator 
+<code onclick="copyCode(this)">@app.route('/')
+def Home():
+    return <span class="SomeRandomReturnCode"></span></code>
      
         </section>
         <section id="ContentSecondary"></section>
@@ -93,5 +115,20 @@ const HeroImg =document.getElementById('HeroImg')
 // HeroImg.src='https://upload.wikimedia.org/wikipedia/commons/c/cc/Digital_rain_animation_medium_letters_shine.gif'
 HeroImg.src=Vsrc[Math.round((Math.random())*(Vsrc.length-1))]
 
+</script>
+<script>
+    const RandomCodes=[
+"'Hello Rhys!'",
+"10+5",
+"'Your Amazon Delivery'"
+
+
+    ]
+    i=Math.round(Math.random()*(RandomCodes.length-1))
+ Array.prototype.slice.call(document.getElementsByClassName('SomeRandomReturnCode')).forEach(element => {
+    element.innerText=RandomCodes[i]
+ });
+    
+    
 </script>
 </html>

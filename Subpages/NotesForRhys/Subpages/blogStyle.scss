@@ -31,8 +31,7 @@ body {
 }
 #Hero {
  
-  #Back {
-    display: flex;
+  #Back {cursor: pointer;    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -132,7 +131,7 @@ body {
   top: 0;
   width: 100%;
 #Back{
-  display: none !important;
+  // display: none !important;
 }
   h1{
     translate: 0 1rem;
@@ -173,18 +172,13 @@ body {
 
   background: #fff971;
   code {
+    cursor: pointer;
     --selectionBG:rgb(255, 255, 255);
     &::selection {
       color: #000000;
       background: var(--selectionBG);
-    }
-    .Highlight::selection{
-      background: var(--selectionBG);
-      color: #fd20d8;
-    }
-    .Highlight{
-      color: inherit;
-    }
+   }
+ 
     white-space: pre;
     border: 2px rgb(255, 255, 255) solid;
     border-radius: 10px;
@@ -221,6 +215,23 @@ body {
         opacity: 1;
  
     }
+  }
+  ImageRow{
+    display: flex;
+    gap: .5rem;
+    margin-block: 2rem;
+    flex-wrap: wrap;
+    img{
+      margin-block: 1rem ;
+    }
+  }
+  img{
+    margin-block: 2rem;
+
+    border-radius: 1000px;
+    object-fit: cover;
+    height: 300px;
+    width:  300px;
   }
   .Copied {
    
