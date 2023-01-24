@@ -64,7 +64,7 @@ const Endings=[
 
     randomIndex = Math.floor(Math.random() * Endings.length);
     
-    document.getElementById('FooterQuote').textContent=Endings[randomIndex]
+    document.getElementById('FooterQuote').textContent=Endings[randomIndex]+' - Rhys'
 
 
 
@@ -88,14 +88,6 @@ function truncate(str, n){
     return (str.length > n) ? str.slice(0, n-1) + '....':str;
   };
 
-function Expand(element){
-    // const element2=document.getElementById('')
-    document.getElementById('Hero').children[1].style.opacity=0
-   element.innerText='‎ '
-   element.style.backgroundColor=`#111111`
-    element.style.transform=`scale(10000%)`
-    // element.
-   
-}
+
 
 

@@ -113,7 +113,12 @@ body {
      object-fit: cover;
 }
 
+#HeroSecondaryContainer {
+  transition: 0.6s;
+}
+
 .NavOnScroll {
+  box-shadow: 0rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
   z-index: 5;
   position: fixed !important;
   height: 5rem !important;
@@ -135,6 +140,7 @@ body {
 }
 
 #content {
+  min-height: 100vh;
   display: flex;
   background: #fff971;
 }
@@ -142,8 +148,9 @@ body {
   font-size: 1.2em;
   box-sizing: border-box;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   width: 70%;
-  padding-inline: 1rem;
+  padding-inline: 2rem;
 }
 #content #ContentSecondary {
   width: 30%;
@@ -160,7 +167,7 @@ body {
   margin: 1rem 0rem 1rem 0rem;
   display: block;
   position: relative;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 #content code::-moz-selection {
   color: #111111;
@@ -185,10 +192,14 @@ body {
   background-color: #ffffff;
 }
 #content code:hover {
+  color: #20fd32;
   border-color: #ccd6ff;
 }
 #content code:hover::after {
   opacity: 1;
+}
+#content .Copied {
+  color: #2048fd !important;
 }
 #content .Copied::after {
   content: "Copied";
@@ -197,6 +208,10 @@ body {
 
 .Highlight {
   color: #fd20d8;
+}
+
+.unHighlight {
+  color: rgb(70, 70, 70);
 }
 
 footer {
@@ -329,4 +344,4 @@ footer Quote {
     content: "Copied";
     background-color: #2048fd !important;
   }
-}
+}/*# sourceMappingURL=blogStyle.css.map */

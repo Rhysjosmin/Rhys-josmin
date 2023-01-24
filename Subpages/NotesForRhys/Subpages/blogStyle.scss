@@ -7,6 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
+  
   background-color: #111111;
   animation: fadeIn 1s;
 }
@@ -29,6 +30,7 @@ body {
   }
 }
 #Hero {
+ 
   #Back {
     display: flex;
     align-items: center;
@@ -118,7 +120,11 @@ body {
   }
 
 }
+#HeroSecondaryContainer{
+  transition: .6s;
+}
 .NavOnScroll{
+  box-shadow: 0rem .2rem 1rem rgba(0, 0, 0, 0.5);
   z-index: 5;
   position:fixed !important;
   height: 5rem !important;
@@ -142,18 +148,23 @@ body {
 
 }
 #content {
+  min-height: 100vh;
   display: flex;
   #ContentMain{
     font-size: 1.2em;
     box-sizing: border-box;
     padding-top: 2rem;
+    padding-bottom: 2rem;
     width: 70%;
-    padding-inline: 1rem;
+    padding-inline: 2rem;
     // padding-left: 1rem;
     // padding-right: 1rem;
     // padding-right: min(18rem, 20vw);
   }
+
+
   #ContentSecondary{
+
     width: 30%;
     // background: #2048fd;
   }
@@ -177,7 +188,7 @@ body {
     margin: 1rem 0rem 1rem 0rem;
     display: block;
     position: relative;
-    transition: 0.2s;
+    transition: 0.3s;
     &::after {
       opacity: 0;
       transition: 0.3s;
@@ -193,6 +204,7 @@ body {
       background-color: #ffffff;
     }
     &:hover{
+      color: #20fd32;
       border-color: #ccd6ff;
     }
     &:hover::after{
@@ -202,7 +214,7 @@ body {
   }
   .Copied {
    
-  
+    color: #2048fd !important;
     &::after {
         content: "Copied";
       background-color: #2048fd !important;
@@ -213,7 +225,11 @@ body {
 .Highlight {
   color: #fd20d8;
 }
-
+.unHighlight{
+  
+  color: rgb(70, 70, 70);
+ 
+}
 footer{
   height: 50vh;
   position: relative;
