@@ -69,7 +69,12 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
 }
+#ContentBox .gold:hover {
+  border: solid 4px rgb(255, 255, 255) !important;
+  box-shadow: 0 0 1rem 0.2rem rgb(240, 224, 0) !important;
+}
 #ContentBox .blog {
+  box-sizing: border-box;
   position: relative;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -253,7 +258,7 @@ body {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    border-radius: 10px;
+    border-radius: 20px;
     border: solid 1px rgb(255, 255, 255);
     box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.589);
     width: var(--size);
@@ -383,4 +388,4 @@ body {
     height: 5rem;
     transform: translate(-2.5rem, -2.5rem);
   }
-}
+}/*# sourceMappingURL=style.css.map */
