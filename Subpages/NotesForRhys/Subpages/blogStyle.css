@@ -114,6 +114,7 @@ body {
 }
 
 #HeroSecondaryContainer {
+  opacity: 1;
   transition: 0.6s;
 }
 
@@ -129,6 +130,7 @@ body {
   display: none !important;
 }
 .NavOnScroll h1 {
+  translate: 0 1rem;
   padding: 0.5rem !important;
   font-size: 2em !important;
   display: flex;
@@ -156,6 +158,7 @@ body {
   width: 30%;
 }
 #content code {
+  --selectionBG:rgb(255, 255, 255);
   white-space: pre;
   border: 2px rgb(255, 255, 255) solid;
   border-radius: 10px;
@@ -170,12 +173,23 @@ body {
   transition: 0.3s;
 }
 #content code::-moz-selection {
-  color: #111111;
-  background: #20fd32;
+  color: #000000;
+  background: var(--selectionBG);
 }
 #content code::selection {
-  color: #111111;
-  background: #20fd32;
+  color: #000000;
+  background: var(--selectionBG);
+}
+#content code .Highlight::-moz-selection {
+  background: var(--selectionBG);
+  color: #fd20d8;
+}
+#content code .Highlight::selection {
+  background: var(--selectionBG);
+  color: #fd20d8;
+}
+#content code .Highlight {
+  color: inherit;
 }
 #content code::after {
   opacity: 0;

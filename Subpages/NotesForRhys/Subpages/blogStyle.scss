@@ -121,6 +121,7 @@ body {
 
 }
 #HeroSecondaryContainer{
+  opacity: 1;
   transition: .6s;
 }
 .NavOnScroll{
@@ -134,6 +135,7 @@ body {
   display: none !important;
 }
   h1{
+    translate: 0 1rem;
     padding: .5rem !important ;
     font-size: 2em !important;
     // display: none;
@@ -171,9 +173,17 @@ body {
 
   background: #fff971;
   code {
+    --selectionBG:rgb(255, 255, 255);
     &::selection {
-      color: #111111;
-      background: #20fd32;
+      color: #000000;
+      background: var(--selectionBG);
+    }
+    .Highlight::selection{
+      background: var(--selectionBG);
+      color: #fd20d8;
+    }
+    .Highlight{
+      color: inherit;
     }
     white-space: pre;
     border: 2px rgb(255, 255, 255) solid;
