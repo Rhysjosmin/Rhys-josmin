@@ -222,7 +222,7 @@ body {
 }
 #content img {
   margin-block: 2rem;
-  border-radius: 1000px;
+  border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   height: 300px;
