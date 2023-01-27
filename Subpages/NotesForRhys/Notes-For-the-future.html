@@ -23,10 +23,7 @@
     </section>
     <section id="Content">
     <section id="ContentBox">
-        <a class="blog blank" draggable="false">
-            <img draggable="false" src="https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h2>Just A Blank Card</h2>
-        </a>
+       
         <a href="./Subpages/Pages/How-To-Flask/How-to-flask.html" class="blog" draggable="false">
             <img draggable="false" src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
             <h2>How To <span class="Highlight"> Flask   </span> <span class="unHighlight">[in Python]</span></h2>
@@ -44,14 +41,8 @@
 
   
       
-        <a class="blog blank" draggable="false">
-            <img draggable="false" src="https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h2>Just A Blank Card</h2>
-        </a>
-        <a class="blog blank" draggable="false">
-            <img draggable="false" src="https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h2>Just A Blank Card</h2>
-        </a>
+       
+       
        
         <a href="./Subpages/Pages/How-To-Talk-To-People/How-to-Talk-To-People.html" class="blog" draggable="false">
             <img draggable="false" src="https://media0.giphy.com/media/lp8Wn883PXlf8TLaVs/giphy.gif?cid=ecf05e47k7tn0nyjdzziqfcx63qid2hcy0fxqt77zs00e8om&rid=giphy.gif&ct=g" alt="">
@@ -79,7 +70,8 @@
     <section id="MailingList">
         <div id="MailingCard">
             <h2>FBI! Give Me Your Email 🔫 </h2>
-            <form action="https://formsubmit.co/c190863c2c5915946c6be0715777d686 " method="post" netlify>
+            <form action="https://formsubmit.co/c190863c2c5915946c6be0715777d686 " method="post" netlify >
+            <!-- <form onsubmit="sendFormDataToSlack(); return false;"> -->
               <input type="text" name="name" id="Name" placeholder="Name" autocomplete="off">
             <input type="email" name="Email" id="Email" placeholder="Your Email Thingy" autocomplete="off">
             <input type="hidden" name="_captcha" value="false">
@@ -123,7 +115,7 @@ var Seconds_Between_Dates = Math.round(Math.abs(Seconds_from_T1_to_T2));
    </script>
    <script src="./Subpages/PopupAlert.js"></script>
    <script src="./sticker.js"></script>
-
+<script src="./mlList.Js"></script>
    <script>
     Currenturl=document.location.href
     document.getElementById('ThankUPage').attributes.value.nodeValue=Currenturl
