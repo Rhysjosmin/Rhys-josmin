@@ -1,7 +1,6 @@
 const NavOnScroll=document.getElementById('HeroSecondaryContainer')
 
 document.addEventListener('scroll',e=>{
-    // console.log(window.scrollY)
     if(window.scrollY>100 && window.scrollY<400){
  
         NavOnScroll.style.height=0;

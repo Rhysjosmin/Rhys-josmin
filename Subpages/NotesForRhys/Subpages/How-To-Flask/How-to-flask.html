@@ -45,7 +45,7 @@
             <code onclick="copyCode(this)">python3 -m venv <span class="ENVNAME"></span></code>
         <br>
         Now to activate it use this command 
-        <code onclick="copyCode(this)"><span class="ENVNAME"></span>\Scripts\activate.bat</code>
+        <code onclick="copyCode(this)" id="ACTIVATECODE"><span class="ENVNAME"></span>\Scripts\activate.bat</code>
      
         <script defer >
             const Names=['aReallyCoolApp','FINall_App','SomethingApp','Rhysapp']
@@ -95,9 +95,30 @@ to do that use the <span class="Highlight">@app.route('/')</span> decorator
 <code onclick="copyCode(this)">@app.route('/')
 def Home():
     return <span class="SomeRandomReturnCode"></span></code>
-     
+     Thats it!<br>
+     sorta, this will only get you a one line website, but we dont want that ,i mean at least not now.
+<br>
+     Oh wait!, did i show you how to run it? well okay its really simple,Assuming you have <a href="#ACTIVATECODE">Activated The Environment</a>, named your app component <span class="Highlight">"app"</span> and named the file <span class="Highlight">WhateverUWant.py</span>
+     we can execute the command 
+     <code onclick="copyCode(this)">flask --app <span>WhateverUWant</span> run</code>
+     Okay now that you know that, You basically know the most important part. <br><br>
+     if you want to add more routes use the <span class="Highlight">app.route('<span style="color: rgb(45, 0, 248);">/Path/AnotherPath</span>')</span>
         </section>
         <section id="ContentSecondary"></section>
+    </section>
+    <section id="CertificateSection">
+        <h1>Wohooo!! You Get a Certificate,Unless you're Rhys,Rhys go clean your room</h1>
+        <!-- <a href="" id="Certificate">
+            <h2>Certificate</h2>
+            <h3>Of Completion</h3>
+            <h4>In The Crash Course</h4>
+            <h1>HOW TO FLASK</h1>
+            <h4>Presented to</h4>
+            <span id="CertificateName">Rhys Josmin</span>
+
+        </a> -->
+        <a href="./HowToFlask_Cert_W.svg" download=""><img src="./HowToFlask_Cert_W.svg" alt=""></a>
+  
     </section>
     <footer><Quote id="FooterQuote">Is It The End Or Just The Beginning</Quote></footer>
 </body>
@@ -130,5 +151,21 @@ HeroImg.src=Vsrc[Math.round((Math.random())*(Vsrc.length-1))]
  });
     
     
+</script>
+<script>
+    // const NavOnScroll=document.getElementById('HeroSecondaryContainer')
+
+document.addEventListener('scroll',e=>{
+    // console.log(window.scrollY)
+   
+    if(window.scrollY>2600){
+        // console.log(NavOnScroll)
+        NavOnScroll.style.opacity=0;
+    }else{
+        NavOnScroll.style.opacity=1;
+
+    }
+  
+})
 </script>
 </html>

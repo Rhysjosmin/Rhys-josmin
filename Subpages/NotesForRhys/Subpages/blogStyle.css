@@ -127,6 +127,17 @@ body {
   top: 0;
   width: 100%;
 }
+.NavOnScroll #Back {
+  translate: -12px;
+  border-radius: 0 !important;
+}
+.NavOnScroll #Back:hover {
+  background: rgba(58, 58, 58, 0.368627451) !important;
+  translate: -12px 0 !important;
+}
+.NavOnScroll #Back:hover span {
+  translate: 0px 0;
+}
 .NavOnScroll h1 {
   translate: 0 1rem;
   padding: 0.5rem !important;
@@ -140,6 +151,7 @@ body {
 }
 
 #content {
+  scroll-padding: 4rem;
   min-height: 100vh;
   display: flex;
   background: #fff971;
@@ -363,4 +375,59 @@ footer Quote {
     content: "Copied";
     background-color: #2048fd !important;
   }
+}
+#CertificateSection {
+  background: #111111;
+  position: relative;
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#CertificateSection img {
+  height: 90vh;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+#CertificateSection img:hover {
+  transition: 0.2s;
+  box-shadow: 0rem 0rem 0 0.5rem black;
+  scale: 0.99;
+}
+#CertificateSection h1 {
+  font-size: 2em;
+  margin: 1.3em;
+  color: white;
+}
+#CertificateSection #Certificate {
+  border-radius: 0.1em;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  background: #ffffff;
+  width: 80vw;
+  aspect-ratio: 7/4;
+  text-decoration: none;
+  color: #000000;
+}
+#CertificateSection #Certificate h2 {
+  margin-top: 0.6em;
+  font-size: 4em;
+}
+#CertificateSection #Certificate h3 {
+  font-size: 1.2em;
+}
+#CertificateSection #Certificate h4 {
+  font-size: 1em;
+}
+#CertificateSection #Certificate h1 {
+  color: #2048fd;
+  font-size: 4.3em;
+}
+#CertificateSection #Certificate #CertificateName {
+  font-size: 3em;
+  text-decoration: underline;
 }/*# sourceMappingURL=blogStyle.css.map */
