@@ -8,18 +8,18 @@
 }
 body {
   
-  background-color: #111111;
+  background-color: var(--bg);
   animation: fadeIn 1s;
 }
 ::selection {
   background: #4820fd;
 }
 ::-webkit-scrollbar {
-  background: #111111;
+  background: var(--bg);
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #fff971;
+  background-color: var(--accent);
 }
 @keyframes fadeIn {
   0% {
@@ -39,7 +39,7 @@ body {
     z-index: 3;
     margin-inline: 1.3rem;
     margin-top: 0.3rem;
-    background: #111111;
+    background: var(--bg);
     border-radius: 100px;
     padding-inline: 1rem;
     text-decoration: none;
@@ -85,7 +85,7 @@ body {
     // }
 
     span {
-      color: #fff971;
+      color: var(--accent);
       display: flex;
       align-items: center;
       height: 1rem;
@@ -104,10 +104,10 @@ body {
     // background-color: red;
     background: linear-gradient(
       90deg,
-      #111111 0%,
-      #111111 45%,
-      #111111dd 70%,
-      rgba(17, 17, 17, 0) 100%
+      var(--bg) 0%,
+      var(--bg) 45%,
+      rgba(var(--bgRGB), 0.867) 70%,
+      rgba(var(--bgRGB), 0) 100%
     );
   }
   img {
@@ -135,7 +135,7 @@ body {
   // background: #2048fd !important;
   border-radius: 0 !important;
   &:hover {
-  background: #3a3a3a5e !important;
+  // background: #3a3a3a5e !important;
      
     span {
       translate: 0px 0 ;
@@ -181,7 +181,7 @@ body {
     // background: #2048fd;
   }
 
-  background: #fff971;
+  background: var(--accent);
   code {
     cursor: pointer;
     --selectionBG:rgb(255, 255, 255);
@@ -197,7 +197,7 @@ body {
     color: #ffffff;
     // font-family: 'VT323', monospace;
     font-family: "Noto Sans Mono", monospace;
-    background: #111111;
+    background: var(--bg);
 
     padding: 1rem;
     margin: 1rem 0rem 1rem 0rem;
@@ -255,7 +255,7 @@ body {
 
 }
 .Highlight {
-  color: #fd20d8;
+  color: var(--highlight);
 }
 .unHighlight{
   
@@ -284,7 +284,6 @@ footer{
       z-index: 3;
       margin-inline: 1.3rem;
       margin-top: 0.3rem;
-      background: #111111;
       border-radius: 100px;
       padding-inline: 1rem;
       text-decoration: none;
@@ -319,39 +318,10 @@ footer{
 
 
   
-      span {
-        color: #fff971;
-        display: flex;
-        align-items: center;
-        height: 1rem;
-  
-        padding-left: 0.1em;
-        font-weight: 300;
-        font-size: min(0.2em, 9.6vw);
-      }
+
     }
-    .grad {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0px;
-      right: 0;
-      // background-color: red;
-      background: linear-gradient(
-        90deg,
-        #111111 0%,
-        #111111 35%,
-        #111111dd 70%,
-        rgba(17, 17, 17, 0) 100%
-      );
-    }
-    img {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      object-fit: cover;
-    }
+
+
   }
   #content {
     display: flex;
@@ -359,35 +329,25 @@ footer{
       padding-top: 1rem;
       width: 100%;
       padding-inline: 1rem;
-      // padding-left: 1rem;
-      // padding-right: 1rem;
-      // padding-right: min(18rem, 20vw);
+     
     }
     #ContentSecondary{
       width: 30%;
       // background: #2048fd;
     }
   
-    background: #fff971;
+    background: var(--accent);
     code {
-      &::selection {
-        color: #111111;
-        background: #20fd32;
-      }
-      white-space: pre;
-      border: 2px rgb(255, 255, 255) solid;
-      border-radius: 10px;
-      font-size: 0.7em;
-      color: #ffffff;
-      // font-family: 'VT323', monospace;
-      font-family: "Noto Sans Mono", monospace;
-      background: #111111;
+   
+     
+  
+      font-size: 2.5vw;
+ 
+   border-radius: 5px;
   
       padding: .6rem;
       margin: 1rem 0rem 1rem 0rem;
-      display: block;
-      position: relative;
-      transition: 0.2s;
+  
       &::after {
         transition: 0.3s;
         font-weight: 700;
@@ -420,7 +380,7 @@ footer{
 }
 
 #CertificateSection{
-  background: #111111;
+  background: var(--bg);
   position: relative;
   height: 200vh;
   display: flex;
@@ -428,14 +388,9 @@ footer{
   align-items: center;
   flex-direction: column;
   img{
+    max-width: 90vw;
     height:  90vh;
-    border-radius: 10px;
-    transition: .2s;
-    &:hover{
-    transition: .2s;
-box-shadow: 0rem 0rem 0 .5rem black;
-   scale: .99;
-    }
+ 
   }
   h1{
     font-size: 2em;

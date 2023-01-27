@@ -12,6 +12,10 @@ body {
   background-color: #111111;
 }
 
+.blank {
+  opacity: 0;
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;

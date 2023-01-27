@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #111111;
+  background-color: var(--bg);
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
 }
@@ -21,12 +21,12 @@ body {
 }
 
 ::-webkit-scrollbar {
-  background: #111111;
+  background: var(--bg);
   width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #fff971;
+  background-color: var(--accent);
 }
 
 @-webkit-keyframes fadeIn {
@@ -60,7 +60,7 @@ body {
   z-index: 3;
   margin-inline: 1.3rem;
   margin-top: 0.3rem;
-  background: #111111;
+  background: var(--bg);
   border-radius: 100px;
   padding-inline: 1rem;
   text-decoration: none;
@@ -89,7 +89,7 @@ body {
   line-height: 1.1em;
 }
 #Hero h1 span {
-  color: #fff971;
+  color: var(--accent);
   display: flex;
   align-items: center;
   height: 1rem;
@@ -103,7 +103,7 @@ body {
   height: 100%;
   top: 0px;
   right: 0;
-  background: linear-gradient(90deg, #111111 0%, #111111 45%, rgba(17, 17, 17, 0.8666666667) 70%, rgba(17, 17, 17, 0) 100%);
+  background: linear-gradient(90deg, var(--bg) 0%, var(--bg) 45%, rgba(var(--bgRGB), 0.867) 70%, rgba(var(--bgRGB), 0) 100%);
 }
 #Hero img {
   height: 100%;
@@ -132,7 +132,6 @@ body {
   border-radius: 0 !important;
 }
 .NavOnScroll #Back:hover {
-  background: rgba(58, 58, 58, 0.368627451) !important;
   translate: -12px 0 !important;
 }
 .NavOnScroll #Back:hover span {
@@ -154,7 +153,7 @@ body {
   scroll-padding: 4rem;
   min-height: 100vh;
   display: flex;
-  background: #fff971;
+  background: var(--accent);
 }
 #content #ContentMain {
   font-size: 1.2em;
@@ -176,7 +175,7 @@ body {
   font-size: 0.8em;
   color: #ffffff;
   font-family: "Noto Sans Mono", monospace;
-  background: #111111;
+  background: var(--bg);
   padding: 1rem;
   margin: 1rem 0rem 1rem 0rem;
   display: block;
@@ -238,7 +237,7 @@ body {
 }
 
 .Highlight {
-  color: #fd20d8;
+  color: var(--highlight);
 }
 
 .unHighlight {
@@ -270,7 +269,6 @@ footer Quote {
     z-index: 3;
     margin-inline: 1.3rem;
     margin-top: 0.3rem;
-    background: #111111;
     border-radius: 100px;
     padding-inline: 1rem;
     text-decoration: none;
@@ -296,34 +294,9 @@ footer Quote {
     font-weight: 900;
     color: #ffffff;
   }
-  #Hero h1 span {
-    color: #fff971;
-    display: flex;
-    align-items: center;
-    height: 1rem;
-    padding-left: 0.1em;
-    font-weight: 300;
-    font-size: min(0.2em, 9.6vw);
-  }
-  #Hero .grad {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    right: 0;
-    background: linear-gradient(90deg, #111111 0%, #111111 35%, rgba(17, 17, 17, 0.8666666667) 70%, rgba(17, 17, 17, 0) 100%);
-  }
-  #Hero img {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   #content {
     display: flex;
-    background: #fff971;
+    background: var(--accent);
   }
   #content #ContentMain {
     padding-top: 1rem;
@@ -334,26 +307,10 @@ footer Quote {
     width: 30%;
   }
   #content code {
-    white-space: pre;
-    border: 2px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    font-size: 0.7em;
-    color: #ffffff;
-    font-family: "Noto Sans Mono", monospace;
-    background: #111111;
+    font-size: 2.5vw;
+    border-radius: 5px;
     padding: 0.6rem;
     margin: 1rem 0rem 1rem 0rem;
-    display: block;
-    position: relative;
-    transition: 0.2s;
-  }
-  #content code::-moz-selection {
-    color: #111111;
-    background: #20fd32;
-  }
-  #content code::selection {
-    color: #111111;
-    background: #20fd32;
   }
   #content code::after {
     transition: 0.3s;
@@ -377,7 +334,7 @@ footer Quote {
   }
 }
 #CertificateSection {
-  background: #111111;
+  background: var(--bg);
   position: relative;
   height: 200vh;
   display: flex;
@@ -386,14 +343,8 @@ footer Quote {
   flex-direction: column;
 }
 #CertificateSection img {
+  max-width: 90vw;
   height: 90vh;
-  border-radius: 10px;
-  transition: 0.2s;
-}
-#CertificateSection img:hover {
-  transition: 0.2s;
-  box-shadow: 0rem 0rem 0 0.5rem black;
-  scale: 0.99;
 }
 #CertificateSection h1 {
   font-size: 2em;

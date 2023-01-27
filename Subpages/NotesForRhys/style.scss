@@ -11,7 +11,9 @@ body{
     animation: fadeIn 1s;
     background-color: #111111;
 }
-
+.blank{
+    opacity: 0;
+}
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }

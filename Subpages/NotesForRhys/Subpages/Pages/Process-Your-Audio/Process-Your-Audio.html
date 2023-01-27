@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4445496071195641"
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../blogStyle.css">
+    <link rel="stylesheet" href="../../PopupAlert.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Audio Processing</title>
+</head>
+<style>
+    :root{
+        --bg:#111111;
+        --bgRGB:17, 17, 17;
+        --accent:#6dff91;
+        --highlight:#fd20d8;
+    }
+</style>
+<body>
+    <section id="Hero">
+        <section id="HeroSecondaryContainer">
+            <aCustom id="Back" href="../../../Notes-For-the-future.html" onclick="Expand(this)"><span class="material-symbols-outlined" style="font-size: .8em; text-align: center;">arrow_back_ios
+            </span>Back</aCustom>
+        <h1>Process Your Audio<span>by Rhys Josmin</span></h1>
+
+        <img id="HeroImg" src="" alt="">
+   
+        <div class="grad"></div>
+
+        </section>
+       
+    </section>
+    <section id="content">
+        <section id="ContentMain" >
+             </section>
+        <section id="ContentSecondary"></section>
+    </section>
+    <!-- <section id="CertificateSection">
+        <h1>Wohooo!! You Get a Certificate,Unless you're Rhys,Rhys go clean your room</h1>
+        <a href="" id="Certificate">
+            <h2>Certificate</h2>
+            <h3>Of Completion</h3>
+            <h4>In The Crash Course</h4>
+            <h1>HOW TO FLASK</h1>
+            <h4>Presented to</h4>
+            <span id="CertificateName">Rhys Josmin</span>
+
+        </a>
+        <a href="./HowToFlask_Cert_W.svg" download=""><img src="./HowToFlask_Cert_W.svg" alt=""></a>
+  
+    </section> -->
+    <footer><Quote id="FooterQuote">Is It The End Or Just The Beginning</Quote></footer>
+</body>
+<script src="../../NavOnScroll.js"></script>
+<script src="../../PopupAlert.js"></script>
+<script src="../../copycode.js"></script>
+<script src="../../aCustom.js"></script>
+<script>
+    Vsrc=['https://upload.wikimedia.org/wikipedia/commons/c/cc/Digital_rain_animation_medium_letters_shine.gif',
+    // 'https://media.tenor.com/GVk4jB2u_i8AAAAd/coding.gif',
+    'https://i.gifer.com/origin/0e/0e01e56732d4fae6e63f9fc4beeaded9.gif',
+    // 'https://media2.giphy.com/media/9PrqNHPAdWyJVOXntF/giphy.gif?cid=ecf05e47r5z3yf715e0soo4ci1cgus7o88wao1317ckec0e4&rid=giphy.gif&ct=g'
+];
+const HeroImg =document.getElementById('HeroImg')
+// HeroImg.src='https://upload.wikimedia.org/wikipedia/commons/c/cc/Digital_rain_animation_medium_letters_shine.gif'
+HeroImg.src=Vsrc[Math.round((Math.random())*(Vsrc.length-1))]
+
+</script>
+<script>
+    const RandomCodes=[
+"'Hello Rhys!'",
+"10+5",
+"'Your Amazon Delivery'"
+
+
+    ]
+    i=Math.round(Math.random()*(RandomCodes.length-1))
+ Array.prototype.slice.call(document.getElementsByClassName('SomeRandomReturnCode')).forEach(element => {
+    element.innerText=RandomCodes[i]
+ });
+    
+    
+</script>
+<script>
+    // const NavOnScroll=document.getElementById('HeroSecondaryContainer')
+
+document.addEventListener('scroll',e=>{
+    // console.log(window.scrollY)
+   
+    if(window.scrollY>2600){
+        // console.log(NavOnScroll)
+        NavOnScroll.style.opacity=0;
+    }else{
+        NavOnScroll.style.opacity=1;
+
+    }
+  
+})
+</script>
+</html>
