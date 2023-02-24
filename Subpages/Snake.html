@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+</head>
+<body>
+  <script>
+    // Define some constants
+    const COLS = 20;
+    const ROWS = 20;
+    const CELL_SIZE = 20;
+
+    // Define the snake object
+    let snake = {
+      x: 0,
+      y: 0,
+      xspeed: 1,
+      yspeed: 0,
+      tail: []
+    };
+
+    // Define the food object
+    let food = {
+      x: 0,
+      y: 0
+    };
+
+    // Initialize the canvas
+    function setup() {
+      createCanvas(windowWidth, windowHeight);
+      frameRate(10);
+
+      // Place the snake in the middle of the canvas
+      snake.x = width / 2;
+      snake.y = height / 2;
+
+      // Place the food randomly on the canvas
+      pickLocation();
+
+      // Add touch event listeners
+      document.addEventListener("touchstart", handleTouchStart, false);
+      document.addEventListener("touchend", handleTouchEnd, false);
+    }
+
+    // Update the game state each frame
+    function draw() {
+      background(51);
+
+      // Move the snake
+      snake.x += snake.xspeed * CELL_SIZE;
+      snake.y += snake.yspeed * CELL_SIZE;
+
+      // Constrain the snake to the canvas
+      snake.x = constrain(snake.x, 0, width - CELL_SIZE);
+      snake.y = constrain(snake.y, 0, height - CELL_SIZE);
+
+      // Check if the snake is colliding with the food
+      if (dist(snake.x, snake.y, food.x, food.y) < CELL_SIZE) {
+        pickLocation();
+        snake.tail.push(createVector(snake.x, snake.y));
+      }
+
+      // Draw the food
+      fill(255, 0, 100);
+      rect(food.x, food.y, CELL_SIZE, CELL_SIZE);
+
+      // Draw the snake's tail
+      for (let i = 0; i < snake.tail.length; i++) {
+        fill(255);
+        rect(snake.tail[i].x, snake.tail[i].y, CELL_SIZE, CELL_SIZE);
+      }
+
+      // Draw the snake's head
+      fill(255);
+      rect(snake.x, snake.y, CELL_SIZE, CELL_SIZE);
+
+      // Update the snake's tail
+      snake.tail.unshift(createVector(snake.x, snake.y));
+      snake.tail.pop();
+    }
+
+    // Handle keyboard input
+    function keyPressed() {
+      if ((keyCode === UP_ARROW || key === 'w') && snake.yspeed != 1) {
+        snake.xspeed = 0;
+        snake.yspeed = -1;
+      } else if ((keyCode === DOWN_ARROW || key === 's') && snake.yspeed != -1) {
+        snake.xspeed = 0;
+        snake.yspeed = 1;
+      } else if ((keyCode === LEFT_ARROW || key === 'a') && snake.xspeed != 1) {
+        snake.xspeed = -1;
+        snake.yspeed = 0;
+      } else if ((keyCode === RIGHT_ARROW
