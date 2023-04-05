@@ -28,7 +28,6 @@
   position: absolute;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   pointer-events: none;
   width: 100%;
@@ -92,8 +91,7 @@ nav li {
 }
 
 a, img {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
   -moz-user-select: none;
        user-select: none; /* Standard syntax */
 }
@@ -185,6 +183,8 @@ a, img {
   background: var(--accent);
 }
 #hero #rhero #ProfilePic {
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: auto;
   background-image: url(../Media/Images/RhysVectorBG.png);
   background-position: 50% 60%;
@@ -363,4 +363,4 @@ a, img {
   #contact #message:hover, #contact button:hover, #contact input:hover {
     background: rgb(179, 231, 245) !important;
   }
-}
+}/*# sourceMappingURL=style.css.map */
