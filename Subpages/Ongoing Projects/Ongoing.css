@@ -16,8 +16,7 @@
   border-radius: 2vw;
 }
 #top span {
-  -webkit-animation: blink 2s infinite;
-          animation: blink 2s infinite;
+  animation: blink 2s infinite;
 }
 
 #main {
@@ -146,35 +145,27 @@
   grid-template-rows: 1fr 2fr 1fr;
 }
 
-#footer {
+footer {
+  color: #ffffff;
+  padding: 20px;
   margin-top: 15vw;
   max-width: 100vw;
-  height: 24vw;
   background: #0D0D0D;
-  display: flex;
-  flex-direction: column-reverse;
-  font-size: 2vw;
+  text-align: center;
+  font-size: 1em;
   padding-left: 1vw;
   padding-bottom: 1vw;
   font-family: "MuseoModerno", cursive;
 }
-#footer a {
-  transition: color 0.5s, text-shadow 0.5s;
+footer a {
+  font-size: 1.3em;
+  transition: color 0.3s, text-shadow 0.2s;
   text-decoration: none;
-  color: rgb(0, 255, 240);
+  color: rgb(180, 180, 180);
 }
-#footer a:hover {
-  text-shadow: 0vh 0vh 1vh rgb(0, 255, 240);
+footer a:hover {
+  text-shadow: 0vh 0vh 1vh #0077ff;
   color: #ffffff;
-}
-
-@-webkit-keyframes blink {
-  1%, 100% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 0%;
-  }
 }
 
 @keyframes blink {
@@ -206,4 +197,4 @@
   #cursor {
     opacity: 0;
   }
-}
+}/*# sourceMappingURL=Ongoing.css.map */
