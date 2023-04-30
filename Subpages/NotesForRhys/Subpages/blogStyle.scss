@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+:root{
+  --link:blue;
+}
 * {
   margin: 0;
   padding: 0;
@@ -159,10 +162,11 @@ body {
 
 }
 #content {
-  scroll-padding: 4rem;
+  scroll-padding: 8rem;
   min-height: 100vh;
   display: flex;
   #ContentMain{
+
     font-size: 1.2em;
     box-sizing: border-box;
     padding-top: 2rem;
@@ -172,6 +176,17 @@ body {
     // padding-left: 1rem;
     // padding-right: 1rem;
     // padding-right: min(18rem, 20vw);
+    a{
+      display: block;
+      
+      padding: 10px;
+      text-decoration: none;
+      color: var(--link);
+      &:hover{
+        border-radius: 3px 100px 3px 3px;
+        background: #FFF;
+      }
+    }
   }
 
 

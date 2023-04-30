@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --link:blue;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +12,7 @@
 
 body {
   background-color: var(--bg);
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
 ::-moz-selection {
@@ -27,15 +30,6 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--accent);
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes fadeIn {
@@ -150,7 +144,7 @@ body {
 }
 
 #content {
-  scroll-padding: 4rem;
+  scroll-padding: 8rem;
   min-height: 100vh;
   display: flex;
   background: var(--accent);
@@ -162,6 +156,16 @@ body {
   padding-bottom: 2rem;
   width: 70%;
   padding-inline: 2rem;
+}
+#content #ContentMain a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--link);
+}
+#content #ContentMain a:hover {
+  border-radius: 3px 100px 3px 3px;
+  background: #FFF;
 }
 #content #ContentSecondary {
   width: 30%;
