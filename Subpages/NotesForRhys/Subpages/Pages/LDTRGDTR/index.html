@@ -1,3 +1,171 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4445496071195641"
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../blogStyle.css">
+    <link rel="stylesheet" href="../../PopupAlert.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Blog</title>
+</head>
+<body>
+    <section id="Hero">
+        <section id="HeroSecondaryContainer">
+            <aCustom id="Back" href="../../../Notes-For-the-future.html" onclick="Expand(this)"><span class="material-symbols-outlined" style="font-size: .8em; text-align: center;">arrow_back_ios
+            </span>Back</aCustom>
+        <h1>How To Flask<span>by Rhys Josmin</span></h1>
+
+        <img id="HeroImg" src="" alt="">
+   
+        <div class="grad"></div>
+
+        </section>
+       
+    </section>
+    <section id="content">
+        <section id="ContentMain" >
+            Hi! Rhys, So You forgot how to flask huh! ,well that's okay, i know what you knew on the 24th of Jan 23,and ill walk you thru the basics,and yeah you have your <span class='Highlight'>Computer Organization and Architecture </span> Paper tomorrow so please pass 🤞😗. 
+            <br> 
+            <br> 
+            <section id="PythonBasics">
+            So let's Start
+            <br> 
+            <br> 
+            Starting an project is really easy,depending if you remember what i do,
+            What i do is Create a <span class="Highlight">New Python Environment</span> so i can fiddle with stuff without breaking other projects. 
+            <br> 
+            <br> 
+            In case you forgot the command [which i'm sure you did cause i don't remember it yet]
+            here it is [just click to copy]
+      
+            [Replace <span class="ENVNAME Highlight"></span> with any name]
+            <code onclick="copyCode(this)">python3 -m venv <span class="ENVNAME"></span></code>
+        <br>
+        Now to activate it use this command 
+        <code onclick="copyCode(this)" id="ACTIVATECODE"><span class="ENVNAME"></span>\Scripts\activate.bat</code>
+     
+        <script defer >
+            const Names=['aReallyCoolApp','FINall_App','SomethingApp','Rhysapp']
+            
+            r=Math.round(Math.random()*(Names.length-1))
+            for(let i=0;i<document.getElementsByClassName('ENVNAME').length;i++){
+            document.getElementsByClassName('ENVNAME')[i].innerText=Names[r]
+
+        }
+        //   console.log(r,Names)
+        </script>
+        </section>
+        Now You got the Setup part done
+        <br>
+        create a file <span class="Highlight">app.py</span>
+        <br>and import flask with
+        <code onclick="copyCode(this)">from <span class="Highlight">flask</span> import <span class="Highlight">Flask</span></code>
+        
+        and lets create a App component by using 
+        <code onclick="copyCode(this)">from flask import Flask
+        
+app = Flask(__name__)</code>
+<br>
+
+Now we can define these things called <span class="Highlight">Routes</span> its something sorta like pages in a website each route can hold different data ,and you can go to the route by changing the url<br>
+
+to define a route we use a decorator function ,which we actually initialized in the last codeblock    
+<br><br>
+with:
+<code onclick="copyCode(this)">app = Flask(__name__)</code>
+
+<br>
+A decorator is basically like an Oreo,You have the cream(code) wrapped in a cookie sandwich,you can eat the cream separately,but the cookies give it additional functionality
+<OreoCookie>
+<img src="https://media0.giphy.com/media/H0nSHfg0CcVri/giphy.gif?cid=ecf05e47cyxku5p4veu3rc9b5vkjo1atti1rsmujallorotz&rid=giphy.gif&ct=g" alt="" style="height: 40px; margin-bottom: 0rem;"> <code onclick="copyCode(this)" style="width: 300px;box-sizing: border-box;color: rgb(0, 0, 0);background: white; " >def Home():
+    return <span class="SomeRandomReturnCode"style='color:black;'></span></code>
+<img src="https://media4.giphy.com/media/QoPEMe4drQh7dsrbZp/giphy.gif?cid=ecf05e47dpnqyxdlhbzj34yq6jya0m9dtbdu86konwxpowpo&rid=giphy.gif&ct=g" alt="" style="height: 40px; margin-top: 0rem;">
+</OreoCookie>
+<!-- <ImageRow class="Images">
+    <img src="https://media0.giphy.com/media/3o7TKnJM1WthzTLfa0/giphy.gif?cid=ecf05e47vn839eyg27624k9w8givxy3z07dh6w7k1qbziktw&rid=giphy.gif&ct=g" alt="">
+ 
+   
+
+</ImageRow> -->
+<br>
+to do that use the <span class="Highlight">@app.route('/')</span> decorator 
+<code onclick="copyCode(this)">@app.route('/')
+def Home():
+    return <span class="SomeRandomReturnCode"></span></code>
+     Thats it!<br>
+     sorta, this will only get you a one line website, but we dont want that ,i mean at least not now.
+<br>
+     Oh wait!, did i show you how to run it? well okay its really simple,Assuming you have <a href="#ACTIVATECODE">Activated The Environment</a>, named your app component <span class="Highlight">"app"</span> and named the file <span class="Highlight">WhateverUWant.py</span>
+     we can execute the command 
+     <code onclick="copyCode(this)">flask --app <span>WhateverUWant</span> run</code>
+     Okay now that you know that, You basically know the most important part. <br><br>
+     if you want to add more routes use the <span class="Highlight">app.route('<span style="color: rgb(45, 0, 248);">/Path/AnotherPath</span>')</span>
+        </section>
+        <section id="ContentSecondary"></section>
+    </section>
+    <section id="CertificateSection">
+        <h1>Wohooo!! You Get a Certificate,Unless you're Rhys,Rhys go clean your room</h1>
+        <!-- <a href="" id="Certificate">
+            <h2>Certificate</h2>
+            <h3>Of Completion</h3>
+            <h4>In The Crash Course</h4>
+            <h1>HOW TO FLASK</h1>
+            <h4>Presented to</h4>
+            <span id="CertificateName">Rhys Josmin</span>
+
+        </a> -->
+        <a href="./HowToFlask_Cert_W.svg" download=""><img src="./HowToFlask_Cert_W.svg" alt=""></a>
+  
+    </section>
+    <footer><Quote id="FooterQuote">Is It The End Or Just The Beginning</Quote></footer>
+</body>
+<script src="../../NavOnScroll.js"></script>
+<script src="../../PopupAlert.js"></script>
+<script src="../../copycode.js"></script>
+<script src="../../aCustom.js"></script>
+<script>
+    Vsrc=['https://upload.wikimedia.org/wikipedia/commons/c/cc/Digital_rain_animation_medium_letters_shine.gif',
+    // 'https://media.tenor.com/GVk4jB2u_i8AAAAd/coding.gif',
+    'https://i.gifer.com/origin/0e/0e01e56732d4fae6e63f9fc4beeaded9.gif',
+    // 'https://media2.giphy.com/media/9PrqNHPAdWyJVOXntF/giphy.gif?cid=ecf05e47r5z3yf715e0soo4ci1cgus7o88wao1317ckec0e4&rid=giphy.gif&ct=g'
+];
+const HeroImg =document.getElementById('HeroImg')
+// HeroImg.src='https://upload.wikimedia.org/wikipedia/commons/c/cc/Digital_rain_animation_medium_letters_shine.gif'
+HeroImg.src=Vsrc[Math.round((Math.random())*(Vsrc.length-1))]
+
+</script>
+<script>
+    const RandomCodes=[
+"'Hello Rhys!'",
+"10+5",
+"'Your Amazon Delivery'"
+
+
+    ]
+    i=Math.round(Math.random()*(RandomCodes.length-1))
+ Array.prototype.slice.call(document.getElementsByClassName('SomeRandomReturnCode')).forEach(element => {
+    element.innerText=RandomCodes[i]
+ });
+    
+    
+</script>
+<script>
+    // const NavOnScroll=document.getElementById('HeroSecondaryContainer')
+
+document.addEventListener('scroll',e=>{
+    // console.log(window.scrollY)
+   
+    if(window.scrollY>2600){
+        // console.log(NavOnScroll)
+        NavOnScroll.style.opacity=0;
+    }else{
+        NavOnScroll.style.opacity=1;
+
+    }
+  
+})
+</script>
 </html>
