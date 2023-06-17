@@ -32,6 +32,21 @@
         },
         {
             "Activity":"active",
+            "Name":"DBCE ACM Website",
+            "Description":"The Official Website for DBCE ACM Chapter",
+            "Image":"../../Media/Images/DBCEACM.png", 
+
+            "LinkA":"",
+            "LinkAText":"Github ",
+
+            "LinkB":"https://dbceacm.netlify.app/",
+            "LinkBText":"Website ",
+
+            "LinkC":"",
+            "LinkCText":"Read "
+        },
+        {
+            "Activity":"active",
             "Name":"Chonk",
             "Description":"A Sweet Character that was kidnapped by Rhys and is now working for him..",
             "Image":"../../Media/Images/Troll.jpg", 
@@ -45,22 +60,7 @@
             "LinkC":"",
             "LinkCText":"Read "
         },
-        {
-            "Activity":"inactive",
-            "Name":"NeuralTrader",
-            "Description":"A Neural Network Trained To Detect the best times to buy or sell stocks or other exchanges",
-            "Image":"../../Media/Images/TradingBot.jpg", 
-
-            "LinkA":"https://github.com/Rhys-011003/NeuralTrader",
-            "LinkAText":"Github ",
-
-            "LinkB":"",
-            "LinkBText":"Youtube ",
-
-            "LinkC":"",
-            "LinkCText":"Read "
-        },
-    
+  
         {
             "Activity":"active",
             "Name":"DeathlessDao",
@@ -101,8 +101,8 @@
             "LinkA":"https://github.com/Rhys-011003/Rhys-josmin/tree/main/Subpages/Games/XOX",
             "LinkAText":"Github ",
 
-            "LinkB":"/Subpages/Games/XOX/XOX.html",
-            "LinkBText":"Play ",
+            "LinkB":"",
+            "LinkBText":" ",
 
             "LinkC":"",
             "LinkCText":"Read "

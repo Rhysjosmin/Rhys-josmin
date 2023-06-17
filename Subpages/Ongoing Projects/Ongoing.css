@@ -22,7 +22,7 @@
 #main {
   display: flex;
   flex-direction: column;
-  gap: 10vw;
+  gap: 30px;
   justify-content: center;
 }
 
@@ -70,7 +70,7 @@
   color: white;
   width: 60vw;
   height: 40vw;
-  padding: 2vw;
+  padding: 1vw;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1vw;
