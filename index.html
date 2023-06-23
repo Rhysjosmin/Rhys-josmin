@@ -1,203 +1,163 @@
-<!-- Home page -->
-<h1>Welcome to {artistName}'s website</h1>
-<p>{artistName} is a {artistGenre} artist who creates {artistMedium} pieces.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhys Josmin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Poppins:wght@200;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="graph"></div>
+<div class="main">
+    <div class="text" >
+        <h1>Rhys Josmin Rodrigues</h1>
+        <h7 >3D Artist + Dev</h7>
+        <ul>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="https://github.com/Rhysjosmin">Github</a></li>
+            <li><a href="https://youtube.com/@Rhysjosmin">Youtube</a></li>
+        </ul>
+    </div>
+    <img src="./Media/Images/Rhys-V2.jpg" alt="">
 
-<!-- About page -->
-<h1>About {artistName}</h1>
-<p>{artistName} is a {artistLocation}-based artist with a passion for {artistInfluences}. They have been creating art for {artistExperience} years and are known for their {artistStyle} style.</p>
-
-<!-- Portfolio page -->
-<h1>{artistName}'s Portfolio</h1>
-<h2>{category1}</h2>
-<div>
-  <img src={piece1Image} alt={piece1Title}>
-  <h3>{piece1Title}</h3>
-  <p>{piece1Description}</p>
 </div>
-<h2>{category2}</h2>
-<div>
-  <img src={piece2Image} alt={piece2Title}>
-  <h3>{piece2Title}</h3>
-  <p>{piece2Description}</p>
-</div>
-
-<!-- Contact page -->
-<h1>Contact {artistName}</h1>
-<p>You can reach {artistName} at <a href="mailto:{artistEmail}">{artistEmail}</a> or through their social media accounts:</p>
-<ul>
-  <li><a href={artistInstagram}>Instagram</a></li>
-  <li><a href={artistFacebook}>Facebook</a></li>
-  <li><a href={artistTwitter}>Twitter</a></li>
-</ul>
-<form on:submit|preventDefault={sendMessage}>
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name"><br>
-  <label for="email">Email:</label><br>
-  <input type="email" id="email" name="email"><br>
-  <label for="message">Message:</label><br>
-  <textarea id="message" name="message"></textarea><br>
-  <input type="submit" value="Send">
-</form>
-
-<!-- Blog or news page -->
-<h1>{artistName}'s Blog</h1>
-<h2>{post1Title}</h2>
-<p>{post1Date}</p>
-<p>{post1Content}</p>
-<h2>{post2Title}</h2>
-<p>{post2Date}</p>
-<p>{post2Content}</p>
-
-<script>
-    // Home page
-const artistName = "Vincent van Gogh";
-const artistGenre = "Impressionist";
-const artistMedium = "oil paintings";
-
-document.querySelector("h1").textContent = `Welcome to ${artistName}'s website`;
-document.querySelector("p").textContent = `${artistName} is a ${artistGenre} artist who creates ${artistMedium} pieces.`;
-
-// Portfolio page
-const portfolio = [
-  {
-    category: "Landscapes",
-    pieces: [
-      {
-        title: "The Starry Night",
-        image: "starry_night.jpg",
-        description: "One of van Gogh's most famous paintings, The Starry Night depicts the view from his window at the Saint-Paul-de-Mausole asylum in Saint Rémy de Provence."
-      },
-      {
-        title: "Irises",
-        image: "irises.jpg",
-        description: "Irises is a colorful painting of irises in a garden, painted during van Gogh's stay at the Saint-Paul-de-Mausole asylum."
-      }
-    ]
-  },
-  {
-    category: "Portraits",
-    pieces: [
-      {
-        title: "Self-Portrait with Straw Hat",
-        image: "self_portrait_with_straw_hat.jpg",
-        description: "This self-portrait shows van Gogh with a straw hat, which he often wore while painting outdoors."
-      },
-      {
-        title: "Portrait of Dr. Gachet",
-        image: "portrait_of_dr_gachet.jpg",
-        description: "This portrait of van Gogh's friend and physician, Dr. Paul Gachet, is one of the artist's most famous works."
-      }
-    ]
-  }
-];
-
-let portfolioHTML = "";
-
-portfolio.forEach(category => {
-  portfolioHTML += `<h2>${category.category}</h2>`;
-  category.pieces.forEach(piece => {
-    portfolioHTML += `
-      <div>
-        <img src="${piece.image}" alt="${piece.title}">
-        <h3>${piece.title}</h3>
-        <p>${piece.description}</p>
-      </div>
-    `;
-  });
-});
-
-document.querySelector("#portfolio").innerHTML = portfolioHTML;
-
-// Contact page
-const form = document.querySelector("form");
-form.addEventListener("submit", event => {
-  event.preventDefault();
-  const name = form.elements.name.value;
-  const email = form.elements.email.value;
-  const message = form.elements.message.value;
-  alert(`Thank you for your message, ${name}! We will be in touch shortly.`);
-});
-
-// Blog or news page
-const posts = [
-  {
-    title: "The Importance of Self-Portraiture",
-    date: "May 1, 2021",
-    content: "In this post, we will explore the role of self-portraiture in van Gogh's oeuvre and
-
-</script>
-
-
+</body>
 <style>
-    body {
-  background-color: #FFF8E1; /* Pale yellow color similar to van Gogh's Starry Night */
-  color: #1B1B1B; /* Dark color for text */
-  font-family: sans-serif;
+    /* font-family: 'IBM Plex Mono', monospace;
+font-family: 'Poppins', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+    :root{
+        --background_Color:#000505;
+        --wireColor:white;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-h1, h2, h3 {
-  color: #FFA07A; /* Light orange color */
-  text-align: center;
+        color: white;
+        height:100vh;
+        width: 100vw;
+        background: radial-gradient(159.58% 101.53% at 74.84% 50.00%, #000E0E 0%, #000505 32.91%, #111 100%);    }
+    
+    .graph{
+        --size:30px;
+        width: 100vw;
+        height: 100vh;
+        opacity: .01;
+        filter: blur(.2px);
+        position: fixed;
+        z-index: -1;
+        background-image:  linear-gradient(var(--wireColor) 1px, transparent 1px), linear-gradient(to right, var(--wireColor) 1px, transparent 1px);
+        background-size: var(--size) var(--size);
+    }
+        .main{
+        display: flex;
+        width: 90vw;
+     
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    h7{
+        text-shadow: 0 0 5px rgba(255, 255, 255, .1);
+        font-family: 'Poppins', sans-serif; font-weight: 200;
+        font-size: 3em;
+        background: linear-gradient(45deg, #3333ff, #00ff88);
+        background-size: 200% auto;
+        animation: gradient-animation 3s ease infinite;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h1{
+        white-space: wrap;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        font-size: 5em;
+        line-height: 1.1em;
+        align-self: flex-start;
+    }
+    ul{
+        font-family: 'IBM Plex Mono', monospace; font-weight: 100;
+        position: absolute;
+        bottom: 0;
+        color: #6b6b6b;
+        /* background-color: aqua; */
+        font-size: 1.9em;
+        list-style: none;
+  
+    }
+    li a{
+        text-decoration: none;
+        color: inherit;
+        transition: .2s;
+    }
+    li a:hover{ 
+        color: #ffffff;
+    }
+    img{
+        height: 450px;
+        border-radius: 0 50% 0px 0px;
+
+    }
+    @keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+@media (max-width:900px) and (min-width:600px) {
+    .main{
+        /* flex-direction: column-reverse; */
+        
+        gap: 10px;
+    }
+    img{
+        height: 40vw;
+      
 
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: justify;
+    }
+    h1{
+        font-size: 4em;
+    }
 }
+@media (max-width:600px) {
+    .main{
+        height: 80vh;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    img{
+        height:150px;
+        width: 150px;
+       
 
-a {
-  color: #FFA07A; /* Light orange color */
-  text-decoration: none;
-}
-
-a:hover {
-  color: #FF7F50; /* Darker orange color */
-}
-
-img {
-  width: 100%;
-  height: auto;
-  border: 5px solid #FFA07A; /* Light orange color */
-  border-radius: 5px;
-}
-
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-label, input[type="submit"] {
-  display: block;
-  margin: 20px 0;
-}
-
-label {
-  font-size: 16px;
-}
-
-input[type="text"], input[type="email"], textarea {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #FFA07A; /* Light orange color */
-  border-radius: 5px;
-}
-
-input[type="submit"] {
-  background-color: #FFA07A; /* Light orange color */
-  color: #FFF;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 12px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #FF7F50; /* Darker orange color */
+    }
+    ul{
+        position: relative;
+        bottom: auto;
+    }
+    h1{
+        margin-top: 8px;
+        font-size: 3.8em;
+    }
+    h7{
+        font-size: 2.3em;
+    }
 }
 
 </style>
+</html>
