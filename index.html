@@ -10,15 +10,26 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Poppins:wght@200;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="./Media/Images/rhys-v-21.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./Media/Images/rhys-v-21.png"
+      type="image/x-icon"
+    />
   </head>
+  <div id="cursor"></div>
+  <div class="background">
+    <div class="graph"></div>
+  </div>
 
   <body>
-    <div class="graph"></div>
     <div class="main">
       <div class="text">
         <h1>Rhys Josmin Rodrigues</h1>
-        <h7>Artist + Dev + Cellist</h7>
+        <h7
+          ><span id="Artist" class="talent">Artist</span> +
+          <span id="Dev" class="talent">Dev</span> +
+          <span id="Cellist" class="talent">Cellist</span></h7
+        >
         <ul>
           <li><a href="">Projects</a></li>
           <li><a href="">Blog</a></li>
@@ -26,12 +37,136 @@
           <li><a href="https://youtube.com/@Rhysjosmin">Youtube</a></li>
         </ul>
       </div>
-      <img src="./Media/Images/Rhys-V2.jpg" alt="" />
+      <img src="./Media/Images/Rhys-V2.jpg" alt="" id="Profile" />
     </div>
-    <section id="Images"></section>
+    <section id="ImageGallery"></section>
   </body>
+  <script>
+    IMAGE_FOLDER='Media/Images/'
+  </script>
+  <script>
+    const cursor = document.getElementById("cursor");
+    cursor.style.translate = `0px 0px`;
+    let HoveredElement = document.body;
+    window.addEventListener("mousemove", (e) => {
+      cursor.style.translate = `${e.clientX}px ${e.clientY}px`;
+      bias = 10;
+
+      if (
+        bias > e.clientX ||
+        window.innerWidth - bias < e.clientX ||
+        bias > e.clientY ||
+        window.innerHeight - bias < e.clientY
+      ) {
+        cursor.style.opacity = 0;
+      } else {
+        cursor.style.opacity = 1;
+      }
+    });
+
+   
+  </script>
+  <script>
+    const GalleryImages=[
+      {
+        'src':'GrootEatingCandy',
+        'format':'.jpg',
+        'Name':'Groot Eating Candy',
+        'Tags':[
+          'Art'
+        ]
+      },
+      {
+        'src':'BlueRobot',
+        'format':'.jpg',
+        'Name':'BlueRobot',
+        'Tags':[
+          'Art'
+        ]
+      },
+      {
+        'src':'Troll',
+        'format':'.jpg',
+        'Name':'',
+        'Tags':[
+          'Art'
+        ]
+      },
+      {
+        'src':'TheodoreDarkSide',
+        'format':'.jpg',
+        'Name':'',
+        'Tags':[
+          'Art'
+        ]
+      },
+      {
+        'src':'YDUltra',
+        'format':'.jpg',
+        'Name':'',
+        'Tags':[
+          'Art'
+        ]
+      },
+      {
+        'src':'GrootDancing',
+        'format':'.jpg',
+        'Name':'',
+        'Tags':[
+          'Art'
+        ]
+      },
+      {
+        'src':'MarshmelloOnPlate',
+        'format':'.jpg',
+        'Name':'',
+        'Tags':[
+          'Art'
+        ]
+      },
+      {
+        'src':'MarshmelloManStand',
+        'format':'.jpg',
+        'Name':'',
+        'Tags':[
+          'Art'
+        ]
+      },
+      {
+        'src':'Mushroom',
+        'format':'.jpg',
+        'Name':'',
+        'Tags':[
+          'Art'
+        ]
+      },
+      {
+        'src':'Deathless',
+        'format':'.png',
+        'Name':'',
+        'Tags':[
+          'Art'
+        ]
+      },
+   
+    ]
+      
+    
+
+  </script>
+  <script>
+
+    const ImageGallery = document.getElementById('ImageGallery')
+    GalleryImages.forEach(Element=>{
+      ImgTemp=document.createElement('img')
+      ImgTemp.src=IMAGE_FOLDER+Element.src+Element.format
+      ImageGallery.append(ImgTemp)
+    })
+
+  </script>
   <style>
     * {
+      /* cursor: none; */
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -43,6 +178,7 @@
     }
 
     body {
+      overflow-x: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -50,13 +186,24 @@
       color: white;
       height: 100vh;
       width: 100vw;
-      background: radial-gradient(
-        159.58% 101.53% at 74.84% 50%,
-        #000e0e 0%,
-        #000505 32.91%,
-        #111 100%
-      );
     }
+/* 
+    #cursor {
+      --size: 20px;
+      pointer-events: none;
+      background-color: transparent;
+      top: calc(-1 * var(--size) / 2);
+      left: calc(-1 * var(--size) / 2);
+      width: var(--size);
+      aspect-ratio: 1/1;
+      position: fixed;
+      border-radius: 50%;
+      outline: 1px solid white;
+      transition: 0.1s ease;
+      transition: scale 0.2s ease,
+        background-Color 0.4s ease,
+        outline-Color .2s ease;
+    } */
 
     .graph {
       --size: 30px;
@@ -69,6 +216,22 @@
       background-image: linear-gradient(var(--wireColor) 1px, transparent 1px),
         linear-gradient(to right, var(--wireColor) 1px, transparent 1px);
       background-size: var(--size) var(--size);
+    }
+
+    .background {
+      background: radial-gradient(
+        159.58% 101.53% at 74.84% 50%,
+        #000e0e 0%,
+        #000505 32.91%,
+        #111 100%
+      );
+
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: -1;
     }
 
     .main {
@@ -100,7 +263,7 @@
     }
 
     h1 {
-        width: 80%;
+      width: 80%;
       white-space: wrap;
       font-family: "Poppins", sans-serif;
       font-weight: 900;
@@ -130,7 +293,7 @@
       color: #ffffff;
     }
 
-    img {
+    #Profile {
       height: 450px;
       border-radius: 0 50% 0px 0px;
     }
@@ -156,7 +319,7 @@
         gap: 10px;
       }
 
-      img {
+      #Profile {
         height: 40vw;
       }
 
@@ -166,13 +329,20 @@
     }
 
     @media (max-width: 600px) {
+      *{
+        cursor: default;
+      }
+      #cursor{
+        display: none;
+      }
       .main {
+        
         height: 80vh;
         flex-direction: column-reverse;
         justify-content: space-between;
       }
 
-      img {
+      #Profile {
         height: 150px;
         width: 150px;
       }
@@ -191,14 +361,15 @@
           position: relative;
         }
       }
+
       @media (min-height: 768px) {
         ul {
           position: relative;
         }
-      .main{
-        justify-content: start;
-      }
 
+        .main {
+          justify-content: start;
+        }
       }
     }
 
@@ -215,5 +386,29 @@
         font-size: 1.4em;
       }
     }
+  </style>
+  <style>
+    #ImageGallery{
+      position: absolute;
+      bottom: 0;
+      height: 20px;
+      width: 100vw;
+      column-gap: 2px;
+      /* background: #000e0e; */
+    
+      /* overflow-x: hidden; */
+      display: flex;
+    }
+
+    #ImageGallery Img{
+      border-radius: 10px;
+      position: relative;
+      bottom: 0;
+      height: inherit;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+
+    }
+
   </style>
 </html>
