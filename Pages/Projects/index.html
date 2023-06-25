@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="shortcut icon" href="/Media/Images/rhys-v-21.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="graph"></div>
+    <section id="Hero">
+        <a href="/index.html"><- Home</a>
+        <h1>My Projects</h1>
+        <p>These Are Some Of The Projects Ive Worked On Over The Years</p>
+    </section>
+    <section id="Projects">
+        <div class="project">
+            <h1 class="Name">Inspirus Website</h1>
+            <img src="/Media/Images/InspirusTerminal.png" alt="" loading="lazy">
+        </div>
+    
+        <div class="project">
+            <h1 class="Name">ACM Website</h1>
+            <img src="/Media/Images/Screenshot 2023-06-04 201330.png" alt="" loading="lazy">
+        </div>
+        <div class="project">
+            <h1 class="Name">The Deathless NFT</h1>
+            <img src="/Media/Images/Deathless.png" alt="" loading="lazy">
+        </div>
+        <div class="project">
+            <h1 class="Name">A Portal</h1>
+            <video src="/Media/Videos/portal.mp4" alt="" muted autoplay loop>
+        </div>
+        <div class="project">
+            <h1 class="Name">An Old Man Walking</h1>
+            <img src="/Media/gif/Nft2.webp" alt="" loading="lazy">
+        </div>
+        <div class="project">
+            <h1 class="Name">An Ice cream</h1>
+            <img src="/Media/Images/Icecream.webp" alt="" loading="lazy">
+        </div>
+        <div class="project">
+            <h1 class="Name">The Yellow Duck NFT</h1>
+            <img src="/Media/Images/YDUltra.jpg" alt="" loading="lazy">
+        </div>
+  
+        <div class="project">
+            <h1 class="Name">Chonk</h1>
+
+            <img src="/Media/Images/Troll.jpg" alt="" loading="lazy">
+        </div>
+        <div class="project">
+            <h1 class="Name">Mining Pass NFT</h1>
+            <img src="/Media/Images/Header.jpg" alt="" loading="lazy">
+        </div>
+        <div class="project">
+            <h1 class="Name">Pig</h1>
+            <img src="/Media/Images/Pig.jpg" alt="" loading="lazy">
+        </div>
+        <div class="project">
+            <h1 class="Name">King Whale Kick</h1>
+            <img src="/Media/Images/KingWhale_KickPose-.webp" alt="" loading="lazy">
+        </div>
+        <div class="project">
+            <h1 class="Name">Rat</h1>
+            <img src="/Media/Images/Rat.gif" alt="" loading="lazy">
+        </div>
+        <div class="project">
+            <h1 class="Name">An Ant</h1>
+            <img src="/Media/Images/Ant.jpg" alt="" loading="lazy">
+        </div>
+        <div class="project">
+            <h1 class="Name">A Dragon</h1>
+            <img src="/Media/Images/Dragon.jpg" alt="" loading="lazy">
+        </div>
+        <div class="project">
+            <h1 class="Name">A Gorilla</h1>
+            <img src="/Media/Images/Gorilla.jpg" alt="" loading="lazy">
+        </div>
+  
+        <div class="project">
+            <h1 class="Name">Theodore Turns To The Darkside</h1>
+
+            <img src="/Media/Images/TheodoreDarkSide.jpg" alt="" loading="lazy">
+        </div>
+        <div class="project">
+            <h1 class="Name">Two Marshmallows</h1>
+
+            <img src="/Media/Images/MarshmelloOnPlate.jpg" alt="" loading="lazy">
+        </div>
+        <div class="project">
+            <h1 class="Name"> A miniature Beach </h1>
+            <img src="/Media/Images/MiniBeach.jpg" alt="" loading="lazy">
+        </div>
+    
+    </section>
+</body>
+<style>
+:root{
+    --ProjectSize:30vw;
+
+}
+    #Hero{
+        padding: 30px;
+        /* height: 50vh; */
+        display: flex;
+        flex-direction: column;
+
+    }
+    #Hero p{
+        font-family: poppins;
+    }
+    #Hero a{
+        text-decoration: none;
+        color: inherit;
+        color: var(--linkNormal);
+        font-family: 'ibm plex mono';
+        font-size: 1em;
+        transition: .2s;
+        width: 80px;
+    }
+    #Hero a:hover{
+        color: var(--linkHover);
+    }
+
+    #Projects{
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        min-height: var(--ProjectSize);
+    }
+    .project{
+        overflow: hidden;
+  
+        width: min-content;
+        position: relative;
+        border-radius: 3px;
+
+    }
+    .project .Name{
+        font-family: 'ibm plex mono';
+        opacity:0;
+        width: 100%;
+        background: #010101;
+        font-weight: 300;
+        bottom: -5px;
+        padding: 4px;
+        font-size: .8em;
+        position: absolute;
+        transition: .3s;
+    }
+
+    .project:hover .Name{
+        opacity: 1;
+        bottom: 0;
+
+     
+    }
+    .project img,.project video{
+        border-radius: inherit;
+        height: var(--ProjectSize);
+        
+    }
+    @media (min-width:1000px) {
+        :root{
+    --ProjectSize:18vw;
+}
+    }
+    @media (max-width:600px) {
+        :root{
+    --ProjectSize:90vw;
+}
+.project img,.project video{
+        width: var(--ProjectSize);
+        height: auto;
+    }
+    }
+</style>
+</html>

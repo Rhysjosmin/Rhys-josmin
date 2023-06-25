@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,16 +11,19 @@
   :root {
     --background_Color: #000505;
     --wireColor: white;
+    --linkNormal:#6b6b6b;
+    --linkHover:#ffffff;
+    --accent:#00ffb3;
   }
-
+::-webkit-scrollbar{
+  width: 2px;
+  background: var(--background_Color);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--accent);
+}
   body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     color: white;
-    height: 100vh;
-    width: 100vw;
     background: radial-gradient(
       159.58% 101.53% at 74.84% 50%,
       #000e0e 0%,
@@ -67,13 +74,9 @@
   }
 
   h1 {
-      width: 80%;
-    white-space: wrap;
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-size: 5em;
-    line-height: 1.1em;
-    align-self: flex-start;
   }
 
   ul {
@@ -89,15 +92,15 @@
 
   li a {
     text-decoration: none;
-    color: inherit;
+    color: var(--linkNormal);
     transition: 0.2s;
   }
 
   li a:hover {
-    color: #ffffff;
+    color: var(--linkHover);
   }
 
-  img {
+  #ProfilePic {
     height: 450px;
     border-radius: 0 50% 0px 0px;
   }
@@ -123,7 +126,7 @@
       gap: 10px;
     }
 
-    img {
+    #ProfilePic {
       height: 40vw;
     }
 
@@ -139,7 +142,7 @@
       justify-content: space-between;
     }
 
-    img {
+    #ProfilePic {
       height: 150px;
       width: 150px;
     }
