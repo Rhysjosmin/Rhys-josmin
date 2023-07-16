@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Timeline</title>
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+    <script src="https://cdn.tailwindcss.com/3.3.2"></script>
+</head>
+
+<body class="bg-zinc-950  ">
+
+    <section id="HorizontalScrollContainer" class="overflow-y-hidden ">
+        <section id="ScrollThis" class="h-screen relative w-screen ">
+            <div class="absolute text-white font-black text-8xl  w-min top-40 left-3">
+                Rhys Josmin
+            </div>
+            <!-- <div class="w-[10000000px] h-[1px] bg-zinc-100/20 my-20"></div> -->
+            <div id="markings" class=" "></div>
+            <div id="dates" class=" "></div>
+
+            <div id="Cards" class="images flex gap-4  my-28   ">
+                <!-- <div class="card absolute">
+                <img src="/assets/images/240652288_521067818951520_5632367412787545720_n.jpg" >
+                <div class="info">
+                    <h1>Girl</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolore iste sit laborum illo, possimus modi dolorum praesentium, nihil voluptates minima! Dolores voluptate ipsa reiciendis nemo quam, totam ad temporibus? lo</p>
+                </div>
+            </div> -->
+            </div>
+        </section>
+    </section>
+    
+
+</body>
+
+</html>
+
+<script>
+    let start = 100
+    let YearStart = 2019
+    let gap = 16
+    let offset = 0
+    let noOfYears=new Date().getFullYear()  - YearStart + 1
+    console.log(noOfYears)
+    // let ProjectJSON='Projects.json'
+    let ProjectJSON='Projects.json'
+    let Speed = 200
+    let ImagesFolder = './Media/'
+</script>
+
+<script>
+    const HorizontalScrollContainer = document.getElementById('HorizontalScrollContainer')
+    const HorizontalScroll = document.getElementById('ScrollThis')
+    HorizontalScroll.dataset['ScrollPos'] = 0
+    
+    HorizontalScrollContainer.onwheel = e => {
+        if (e['deltaY'] > 0) {
+            if(HorizontalScroll.dataset['ScrollPos']>(-144)){
+
+                HorizontalScroll.dataset['ScrollPos']--
+            }
+            
+        } else {
+            if (HorizontalScroll.dataset['ScrollPos'] < 0) {
+                HorizontalScroll.dataset['ScrollPos']++
+            }
+        }
+        let ScrollPos = HorizontalScroll.dataset['ScrollPos'] * Speed
+        HorizontalScroll.style.translate = ScrollPos + 'px'
+        // document.getElementById('c1')
+        c1= document.getElementsByClassName('c1')
+        console.log(HorizontalScroll.dataset['ScrollPos'])
+       for (let index = 0; index < c1.length; index++) {
+        const element = c1[index];
+       element.style.translate = -ScrollPos/((index+1)*10)+ 'px'
+       }
+    }
+
+</script>
+<script>
+
+    const Months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ];
+    const daysInMonth = [
+        31, // January
+        28, // February
+        31, // March
+        30, // April
+        31, // May
+        30, // June
+        31, // July
+        31, // August
+        30, // September
+        31, // October
+        30, // November
+        31  // December
+    ];
+    const daysTillMonth = [
+  0,   // January
+  31,  // February
+  59,  // March
+  90,  // April
+  120, // May
+  151, // June
+  181, // July
+  212, // August
+  243, // September
+  273, // October
+  304, // November
+  334  // December
+];
+
+    for (let year = 0; year < noOfYears; year++) {
+        var Mark3 = document.createElement('h1')
+        Mark3.className = "year"
+        Mark3.innerText = year + YearStart
+        Position2 = (offset + 1) * gap + start
+        Mark3.style.left = Position2 + 'px'
+        document.getElementById('markings').appendChild(Mark3)
+
+        for (let month = 0; month < 12; month++) {
+            for (let day = 1; day <= daysInMonth[month]; day++) {
+                let Mark = document.createElement('div')
+                let MarkDate = document.createElement('h1')
+                MarkDate.className = "date"
+                Mark.className = "mark"
+                MarkDate.innerText = day
+                Position = (day + offset) * gap + start
+                Mark.style.left = Position + 'px'
+                MarkDate.style.left = Position + 'px'
+                document.getElementById('markings').appendChild(Mark)
+                document.getElementById('dates').appendChild(MarkDate)
+            }
+
+            let Mark2 = document.createElement('h1')
+            Mark2.className = " month"
+            Mark2.innerText = Months[month]
+            Position2 = (offset + 1) * gap + start
+            Mark2.style.left = Position2 + 'px'
+            document.getElementById('markings').appendChild(Mark2)
+
+            offset += daysInMonth[month]
+        }
+
+
+
+    }
+
+</script>
+
+<script>
+    // Fetch the JSON data
+    fetch(ProjectJSON)
+        .then(response => response.json())
+        .then(data => renderProjects(data.Projects))
+        .catch(error => console.error(error));
+
+    // Render projects in the HTML
+    function renderProjects(projects) {
+
+        const projectsContainer = document.getElementById('Cards');
+
+        projects.forEach(project => {
+            if (project.Display == "False") {
+                return
+            }
+
+   
+
+            const projectContainer = document.createElement('div');
+            projectContainer.className = 'card absolute';
+            const Time = project.Timeline.Start.split('-')
+            
+            let pos = Time[0]*gap + daysTillMonth[Time[1]-1]*gap + (Time[2] - YearStart)*365*gap 
+            
+            projectContainer.style.left = pos+start  + 'px'
+
+
+            const projectName = document.createElement('h1');
+            projectName.classList.add('project-name');
+            projectName.textContent = project.Name+" "+Time;
+
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = today.getFullYear();
+
+            if (project.Timeline.End == 'Present') {
+                EndDate = project.Timeline.End + "(" + yyyy + "-" + mm + "-" + dd + ")"
+            } else {
+                EndDate = project.Timeline.End
+            }
+            
+            const projectDescription = document.createElement('p');
+            projectDescription.classList.add('project-description');
+            projectDescription.innerHTML = project.Description
+
+            const projectTimeline = document.createElement('div')
+            projectTimeline.innerHTML = " <span class='time'>" + project.Timeline.Start + "</span> -" + " <span class='time'>" + EndDate + "</span>";
+            const Image = document.createElement('img')
+            Image.src = ImagesFolder + project.Img
+
+            const ProjectLink=document.createElement('a')
+            ProjectLink.href=project.src
+            ProjectLink.innerText=project.src
+
+
+            projectContainer.appendChild(Image);
+            projectContainer.appendChild(projectName);
+            projectContainer.appendChild(projectDescription);
+            projectContainer.appendChild(ProjectLink);
+
+
+            projectsContainer.appendChild(projectContainer);
+        });
+    }
+</script>
+
+<style>
+    .month {
+        position: absolute;
+        margin-top: 2.5rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        width: 1px;
+        color: rgba(80, 84, 109, 0.6);
+    }
+
+    .year {
+        position: absolute;
+        margin-top: 3.5rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        font-weight: 500;
+        color: rgba(89, 157, 253, 0.6);
+    }
+
+    .mark {
+        background: white;
+        opacity: 10%;
+        width: 1px;
+        height: 1.7rem;
+        position: absolute;
+    }
+
+    .date {
+        margin-top: 1.8rem;
+        position: absolute;
+        color: rgba(255, 255, 255, 0.264);
+        font-size: 8px;
+    }
+
+    #HorizontalScrollContainer::-webkit-scrollbar {
+        height: 0px;
+    }
+    #ScrollThis,.c1{
+        transition: translate 2s cubic-bezier(0.2, 1, 0.320, 1);
+
+    }
+
+    #ScrollThis {
+        display: grid;
+        gap: 10px;
+        grid-auto-flow: column;
+        grid-auto-columns: 30%;
+        width: 100%;
+    }
+    :root{
+        --outline:rgb(0, 110, 165);
+    }
+    .card {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        background: hsl(0, 0%, 6%);
+        color: antiquewhite;
+        width: 20rem;
+        padding: 6px;
+        border: 2px solid var(--outline);
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.533);
+        /* border-radius: 10px; */
+    }
+    .card::before{
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: var(--outline);
+        width: 2px;
+        height: 200px;
+        top: -200px;
+        left: -2px;
+        z-index: -1;
+    }
+    .card:hover img{
+        opacity: 1;
+        height: 50vh;
+    }
+
+    .card img {
+        height: 0;
+        width: 100%;
+        object-fit: cover;
+        opacity: 0;
+
+        transition: opacity .2s ;
+        /* border-radius: 8px; */
+    }
+    
+    .card a{
+        font-size: .65em;
+        color: rgb(12, 102, 206);
+        width: 200px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        display: block;
+    }
+    .card a:hover{
+        color: rgb(97, 158, 228);
+
+    }
+    .card h1 {
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+
+    .card p {
+        font-size: .8em;
+
+    }
+</style>
