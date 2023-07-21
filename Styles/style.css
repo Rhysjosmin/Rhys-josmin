@@ -100,7 +100,11 @@
   }
 
   #ProfilePic {
+    /* overflow: hidden; */
+    filter: url(#noise);
     height: 450px;
+  
+   
     border-radius: 0 50% 0px 0px;
   }
 
