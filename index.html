@@ -20,10 +20,44 @@
           <li><a href="https://youtube.com/@Rhysjosmin">Youtube</a></li>
         </ul>
       </div>
+      <svg style="display: none;">
+        <defs>
+          <filter id="noise">
+            <feTurbulence baseFrequency=".7" 
+            numOctaves="1" 
+            seed="212" 
+            type="fractalNoise"
+            result="static"
+            >
+          <animate
+          attributeName="seed"
+          values="0;100"
+          dur="600ms"
+          repeatCount="1"
+          begin="ProfilePic.mouseenter"
+          />
+       
+    
+          </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" in2="static"  >
+              <animate
+              attributeName="scale"
+              values="0;20;0"
+              dur="600ms"
+              repeatCount="1"
+              begin="ProfilePic.mouseenter"
+              />
+            </feDisplacementMap>
+          </filter>
+        </defs>
+        </svg>
       <img src="./Media/Images/Rhys-V2.jpg" alt="" id="ProfilePic"/>
     </div>
   </body>
   <style>
+    #ProfilePic{
+      filter: url(#noise);
+    }
     body {
     display: flex;
     align-items: center;
