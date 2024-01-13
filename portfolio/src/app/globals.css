@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 0, 0, 0;
+  }
+}
+/* *{
+  outline: 1px solid red;
+} */
+body {
+  background: rgb(var(--background-rgb));
+  color: rgb(var(--foreground-rgb));
+}
+
+::-webkit-scrollbar{
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgba(255, 255, 255, 0.524);
+}
+
+.noise {
+  pointer-events: none;
+  position: absolute;
+  height: 250%;
+  width: 100%;
+  opacity: 0.2;
+  background-image: url("./../../public/noise.png");
+  mix-blend-mode:darken;
+  z-index: -1;
+}
