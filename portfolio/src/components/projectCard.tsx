@@ -20,7 +20,7 @@ export default function ProjectCard({
   return (
     <div className={`relative cursor-pointer group  ${className}`}>
       <h1
-        className={`${dmSerifDisplay.className} group-hover:-translate-y-5 transition-all duration-700 absolute z-10 text-2xl bottom-5 left-5`}
+        className={`${dmSerifDisplay.className} text-white group-hover:-translate-y-5 transition-all duration-700 absolute z-10 text-2xl bottom-5 left-5`}
       >
         {title}
       </h1>
@@ -30,7 +30,6 @@ export default function ProjectCard({
           className={
             "  object-top h-full w-full group-hover:scale-110 group-hover:saturate-100  saturate-50  transition-all duration-700  ease-in-out grayscale-[0.2] group-hover:grayscale-[0.1] brightness-100 group-hover:brightness-[20%] aspect-auto object-cover"
           }
-          unoptimized
           height={800}
           width={800}
           alt=""

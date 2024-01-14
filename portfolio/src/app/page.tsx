@@ -13,15 +13,15 @@ const spGrotesk = Space_Grotesk({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className="">
-      <section className="flex items-center px-40 h-96 ">
+      <section className="flex md:items-center p-8  gap-4  md:px-40 h-96 flex-col items-start md:flex-row ">
         <Image
           alt="A Picture Of Rhys"
           height={500}
           width={500}
           src={"/Rhys.jpg"}
-          className="object-cover w-72"
+          className="object-cover md:w-72 w-56 "
         />
-        <div className="ml-10 h-72">
+        <div className="md:ml-10 h-72">
           <h1 className={`${pf_Display.className} text-4xl capitalize`}>
             rhys Josmin Rodrigues
           </h1>
@@ -137,7 +137,7 @@ export default function Home() {
           />
         </svg>
       </section>
-      <section className="min-h-[150vh] w-full px-8 md:px-20 mt-64">
+      <section className="min-h-[150vh]  w-full px-8 md:px-20 mt-64">
         <div className={spGrotesk.className}>
           <h1 className="text-3xl">My</h1>
           <h1 className="font-black text-8xl">Projects</h1>
@@ -146,11 +146,11 @@ export default function Home() {
           id="work"
           className="grid grid-cols-1 gap-6 mt-12 md:grid-rows-4 md:grid-cols-6 min-w-96 "
         >
-          <ProjectCard
+          {/* <ProjectCard
             className="row-span-2 md:col-span-3"
             title="Marshmallow Lovers"
             src="/MarshmelloOnPlate.jpg"
-          />
+          /> */}
           <ProjectCard
             title="Second City Studio"
             className="md:col-span-3 "
@@ -184,11 +184,11 @@ export default function Home() {
               src="/Hackathon.png"
             />
           </div>
-          <ProjectCard
+          {/* <ProjectCard
             title="Chonk"
             className="row-span-2 md:col-span-2"
             src="/Troll.jpg"
-          />
+          /> */}
         </div>
         <div className="h-56" />
       </section>

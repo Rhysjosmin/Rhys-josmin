@@ -12,6 +12,15 @@
     --foreground-rgb: 255, 255, 255;
     --background-rgb: 0, 0, 0;
   }
+  .noise {
+    opacity: 0.2;
+  }
+}
+@media (prefers-color-scheme: light) {
+
+  .noise {
+    opacity: 0;
+  }
 }
 /* *{
   outline: 1px solid red;
@@ -34,7 +43,7 @@ body {
   position: absolute;
   height: 250%;
   width: 100%;
-  opacity: 0.2;
+
   background-image: url("./../../public/noise.png");
   mix-blend-mode:darken;
   z-index: -1;
