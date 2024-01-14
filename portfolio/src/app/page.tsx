@@ -13,27 +13,28 @@ const spGrotesk = Space_Grotesk({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className="">
-      <section className="px-40 h-96 flex items-center  ">
+      <section className="flex items-center px-40 h-96 ">
         <Image
           alt="A Picture Of Rhys"
           height={500}
           width={500}
           src={"/Rhys.jpg"}
-          className=" w-72 object-cover"
+          className="object-cover w-72"
         />
-        <div className="h-72 ml-10">
+        <div className="ml-10 h-72">
           <h1 className={`${pf_Display.className} text-4xl capitalize`}>
             rhys Josmin Rodrigues
           </h1>
           <p
             className={`${spGrotesk.className}  capitalize text-xl mt-2 font-thin w-96`}
           >
-            is a Web Developer based in Goa, He started his journey making games
-            in scratch, then slowly learning blender, then web development. Rhys
-            loves learning new stuff as long as he doesn’t need to answer an
-            exam bout it
+            Rhys, a web developer based in Goa, started his journey crafting
+            games in Scratch before mastering Blender and web development. He
+            loves learning new things, especially when exams aren&apos;t
+            involved.
           </p>
         </div>
+        {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
         <svg
           width="365"
           height="511"
@@ -68,7 +69,7 @@ export default function Home() {
               id="paint0_linear_0_1"
               x1="110"
               y1="327"
-              x2="437"
+              x2="43"
               y2="2.50771e-07"
               gradientUnits="userSpaceOnUse"
             >
@@ -100,6 +101,7 @@ export default function Home() {
           </defs>
         </svg>
 
+        {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
         <svg
           className="absolute -z-10 left-8 blur-[100px] opacity-60  "
           // width="1000"
@@ -135,15 +137,60 @@ export default function Home() {
           />
         </svg>
       </section>
-      <section className="min-h-[150vh] w-full px-40 mt-64">
+      <section className="min-h-[150vh] w-full px-8 md:px-20 mt-64">
         <div className={spGrotesk.className}>
           <h1 className="text-3xl">My</h1>
-          <h1 className="text-8xl font-black">Projects</h1>
+          <h1 className="font-black text-8xl">Projects</h1>
         </div>
-        <div className="mt-12 flex flex-wrap gap-10">
-          <ProjectCard aspect="1/1" src="/MarshmelloOnPlate.jpg" />
-          <ProjectCard aspect="9/16" src="/ScSweb.png" />
+        <div
+          id="work"
+          className="grid grid-cols-1 gap-6 mt-12 md:grid-rows-4 md:grid-cols-6 min-w-96 "
+        >
+          <ProjectCard
+            className="row-span-2 md:col-span-3"
+            title="Marshmallow Lovers"
+            src="/MarshmelloOnPlate.jpg"
+          />
+          <ProjectCard
+            title="Second City Studio"
+            className="md:col-span-3 "
+            src="/ScSweb.png"
+          />
+          <ProjectCard
+            title="DBCE ACM"
+            className="md:col-span-3 "
+            src="/Acm.png"
+          />
+
+          <div className="grid w-full h-full row-span-2 gap-6 md:grid-rows-2 md:grid-cols-2 md:col-span-4 aspect-square ">
+            <ProjectCard
+              title="An Inventory Management System"
+              className="w-full h-full "
+              src="/Inventory Management.png"
+            />
+            <ProjectCard
+              title="Inspirus 7"
+              className="w-full h-full "
+              src="/Inspirus.png"
+            />
+            <ProjectCard
+              title="Crypto Cloud Expo"
+              className="w-full h-full "
+              src="/CryptoCloudExpo.png"
+            />
+            <ProjectCard
+              title="Recruitment Helper"
+              className="w-full h-full "
+              src="/Hackathon.png"
+            />
+          </div>
+          <ProjectCard
+            title="Chonk"
+            className="row-span-2 md:col-span-2"
+            src="/Troll.jpg"
+          />
         </div>
+        <div className="h-56" />
       </section>
     </main>
   );

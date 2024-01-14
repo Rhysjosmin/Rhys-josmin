@@ -19,7 +19,7 @@ export default function RootLayout({
         <div className="noise" />
         <NavBar />
         {children}
-        <WIP />
+        <WIP inProgress={false} />
       </body>
     </html>
   );
