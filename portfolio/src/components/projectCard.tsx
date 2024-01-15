@@ -12,15 +12,17 @@ export default function ProjectCard({
   src,
   title,
   className,
+  unoptimized = false,
 }: {
   src: string;
   title: string;
   className: string | null;
+  unoptimized?: boolean;
 }) {
   return (
     <div className={`relative cursor-pointer group  ${className}`}>
       <h1
-        className={`${dmSerifDisplay.className} text-white group-hover:-translate-y-5 transition-all duration-700 absolute z-10 text-2xl bottom-5 left-5`}
+        className={`${dmSerifDisplay.className} drop-shadow-md   text-white bg-black right-0  transition-all duration-700 absolute z-10 text-2xl bottom-0 pb-5 p-2 rounded-tl-lg left-5`}
       >
         {title}
       </h1>
@@ -28,20 +30,21 @@ export default function ProjectCard({
         <Image
           src={src}
           className={
-            "  object-top h-full w-full group-hover:scale-110 group-hover:saturate-100  saturate-50  transition-all duration-700  ease-in-out grayscale-[0.2] group-hover:grayscale-[0.1] brightness-100 group-hover:brightness-[20%] aspect-auto object-cover"
+            "  object-top h-full w-full group-hover:scale-110 group-hover:saturate-100  saturate-[10%]  transition-all duration-700  ease-in-out grayscale-[0.7] group-hover:grayscale-[0] brightness-[25%] group-hover:brightness-[100%] aspect-auto object-cover"
           }
-          height={800}
-          width={800}
+          unoptimized={unoptimized}
+          height={2000}
+          width={2000}
           alt=""
         />
       </div>
       <Image
         src={src}
         className={
-          "absolute -z-10 group-hover:opacity-30  transition-all duration-200 blur-[80px] opacity-5 top-0 h-full w-auto aspect-auto object-cover"
+          "absolute -z-10 group-hover:opacity-40  transition-all saturate-200 duration-500 blur-[80px] opacity-5 top-0 h-full w-auto aspect-auto object-cover"
         }
-        height={400}
-        width={400}
+        height={800}
+        width={800}
         alt=""
       />
     </div>

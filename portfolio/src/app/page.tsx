@@ -154,12 +154,13 @@ export default function Home() {
           <ProjectCard
             title="Second City Studio"
             className="md:col-span-3 "
-            src="/ScSweb.png"
+            src="/Second City 2.png"
+            unoptimized
           />
           <ProjectCard
             title="DBCE ACM"
             className="md:col-span-3 "
-            src="/Acm.png"
+            src="/DBCE ACM (2).png"
           />
 
           <div className="grid w-full h-full row-span-2 gap-6 md:grid-rows-2 md:grid-cols-2 md:col-span-4 aspect-square ">
@@ -184,11 +185,12 @@ export default function Home() {
               src="/Hackathon.png"
             />
           </div>
-          {/* <ProjectCard
-            title="Chonk"
+          <ProjectCard
+            title="IRIX"
+            unoptimized
             className="row-span-2 md:col-span-2"
-            src="/Troll.jpg"
-          /> */}
+            src="/Irix2.png"
+          />
         </div>
         <div className="h-56" />
       </section>
