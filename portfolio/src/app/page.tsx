@@ -1,3 +1,4 @@
+"use client";
 import ProjectCard from "@/components/projectCard";
 import { Playfair_Display, Space_Grotesk } from "next/font/google";
 import Image from "next/image";
@@ -13,13 +14,13 @@ const spGrotesk = Space_Grotesk({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className="">
-      <section className="flex md:items-center p-8  gap-4  md:px-40 h-96 flex-col items-start md:flex-row ">
+      <section className="flex flex-col items-start gap-4 p-8 md:items-center md:px-40 h-96 md:flex-row ">
         <Image
           alt="A Picture Of Rhys"
           height={500}
           width={500}
           src={"/Rhys.jpg"}
-          className="object-cover md:w-72 w-56 "
+          className="object-cover w-56 md:w-72 "
         />
         <div className="md:ml-10 h-72">
           <h1 className={`${pf_Display.className} text-4xl capitalize`}>
@@ -34,8 +35,8 @@ export default function Home() {
             involved.
           </p>
         </div>
-        {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
-        <svg
+
+        {/* <svg
           width="365"
           height="511"
           className="absolute right-0"
@@ -99,7 +100,35 @@ export default function Home() {
               <stop offset="1" stop-color="#0066FF" stop-opacity="0" />
             </linearGradient>
           </defs>
-        </svg>
+        </svg> */}
+        {/* <div className="absolute left-0 right-0 w-full h-full overflow-hidden pointer-events-none">
+          <Lottie
+            className="absolute -rotate-45 top-72 -right-52 hue-rotate-[180deg] saturate-[0]"
+            animationData={trail}
+          />
+          <Lottie
+            className="absolute -rotate-45 top-28 -right-72 hue-rotate-[180deg] saturate-[0]"
+            animationData={trail}
+          />
+          <Lottie
+            className="absolute -rotate-45 top-96 translate-y-10 translate-x-16 opacity-50 -right-52 hue-rotate-[-10deg]  saturate-[100]"
+            animationData={trail}
+          />
+        </div>
+        <div className="absolute left-0 right-0 w-full h-full overflow-hidden pointer-events-none blur-3xl">
+          <Lottie
+            className="absolute -rotate-45 top-72 -right-52 hue-rotate-[180deg] saturate-[0]"
+            animationData={trail}
+          />
+          <Lottie
+            className="absolute -rotate-45 top-28 -right-72 hue-rotate-[180deg] saturate-[0]"
+            animationData={trail}
+          />
+          <Lottie
+            className="absolute -rotate-45 top-96 translate-y-10 -right-52 translate-x-16  hue-rotate-[-10deg] saturate-[5000] brightness-200"
+            animationData={trail}
+          />
+        </div> */}
 
         {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
         <svg
