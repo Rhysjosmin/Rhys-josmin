@@ -32,7 +32,7 @@ export default function ProjectCard({
   unoptimized?: boolean;
 }) {
   return (
-    <div className={`w-full   ${className}`}>
+    <div className={`w-full cursor-pointer  ${className}`}>
       <Image
         src={src}
         className="rounded-2xl h-80 md:w-[35rem]  object-cover"

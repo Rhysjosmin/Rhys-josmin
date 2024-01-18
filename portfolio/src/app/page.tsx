@@ -172,27 +172,27 @@ export default function Home() {
           unoptimized
           src="/DBCE ACM (3).png"
           title="DBCE ACM"
-          duration="Jan 23 - Ongoing"
+          duration="Jan 2023 - Ongoing"
           description="Designed and made the website for
           seeing activities and details about the club"
         />
         <ProjectCard
           src="/CRYPTO CLOUD.png"
           title="Crypto Cloud Expo Scam"
-          duration="Aug 23 "
+          duration="Aug 2023 "
           description="Created a website for an Expo in Dubai "
         />
         <ProjectCard
           unoptimized
-          src="/Inspirus.png"
+          src="/Inspirus (2).png"
           title="Inspirus 7"
-          duration="Nov 23 - Oct 23"
+          duration="Nov - Oct 2023"
           description="A Website to see the details of the Inspirus 7 Event"
         />
         <ProjectCard
-          src="/Hackathon.png"
+          src="/Hackathon (1).png"
           title="My First Hackathon"
-          duration="Oct 22 "
+          duration="Oct 2022 "
           description="Participated in my first ever hackathon and won The 2nd place"
         />
 
