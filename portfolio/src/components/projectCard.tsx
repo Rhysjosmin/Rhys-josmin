@@ -46,7 +46,7 @@ export default function ProjectCard({
           className={`${spGrotesk.className} w-full  flex  gap-4 items-center font-light mt-2`}
         >
           <h1 className={`${rubik.className} text-3xl font-bold`}>{title}</h1>
-          <p className="text-orange-400">{duration}</p>
+          <p className="text-orange-400   whitespace-nowrap">{duration}</p>
         </div>
         <p>{description}</p>
       </div>
