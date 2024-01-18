@@ -1,6 +1,6 @@
 "use client";
 import ProjectCard from "@/components/projectCard";
-import { Playfair_Display, Space_Grotesk } from "next/font/google";
+import { Playfair_Display, Rubik, Space_Grotesk } from "next/font/google";
 import Image from "next/image";
 
 const pf_Display = Playfair_Display({
@@ -9,6 +9,7 @@ const pf_Display = Playfair_Display({
   style: ["italic"],
 });
 
+const rubik = Rubik({ subsets: ["latin"] });
 const spGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function Home() {
@@ -132,7 +133,7 @@ export default function Home() {
 
         {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
         <svg
-          className="absolute -z-10 left-8 blur-[100px] opacity-60  "
+          className="absolute -z-10 left-8 blur-[110px] opacity-60  "
           // width="1000"
           // height="795"
           viewBox="-100 0 2129 795"
@@ -166,63 +167,38 @@ export default function Home() {
           />
         </svg>
       </section>
-      <section className="min-h-[150vh]  w-full px-8 md:px-20 mt-64">
-        <div className={spGrotesk.className}>
-          <h1 className="text-3xl">My</h1>
-          <h1 className="font-black text-8xl">Projects</h1>
-        </div>
-        <div
-          id="work"
-          className="grid grid-cols-1 gap-6 mt-12 md:grid-rows-4 md:grid-cols-6 min-w-96 "
-        >
-          {/* <ProjectCard
-            className="row-span-2 md:col-span-3"
-            title="Marshmallow Lovers"
-            src="/MarshmelloOnPlate.jpg"
-          /> */}
-          <ProjectCard
-            title="Second City Studio"
-            className="md:col-span-3 "
-            src="/Second City 2.png"
-            unoptimized
-          />
-          <ProjectCard
-            title="DBCE ACM"
-            className="md:col-span-3 "
-            src="/DBCE ACM (2).png"
-          />
+      <section className=" grid lg:grid-cols-2 lg:px-24 px-8  justify-center gap-12    mt-64">
+        <ProjectCard
+          unoptimized
+          src="/DBCE ACM (3).png"
+          title="DBCE ACM"
+          duration="Jan 23 - Ongoing"
+          description="Designed and made the website for
+          seeing activities and details about the club"
+        />
+        <ProjectCard
+          src="/CryptoCloudExpo.png"
+          title="Crypto Cloud Expo Scam"
+          duration="Aug 23 "
+          description="Created a website for an Expo in Dubai "
+        />
+        <ProjectCard
+          unoptimized
+          src="/Inspirus.png"
+          title="Inspirus 7"
+          duration="Nov 23 - Oct 23"
+          description="A Website to see the details of the Inspirus 7 Event"
+        />
+        <ProjectCard
+          src="/Hackathon.png"
+          title="My First Hackathon"
+          duration="Oct 22 "
+          description="Participated in my first ever hackathon and won The 2nd place"
+        />
 
-          <div className="grid w-full h-full row-span-2 gap-6 md:grid-rows-2 md:grid-cols-2 md:col-span-4 aspect-square ">
-            <ProjectCard
-              title="An Inventory Management System"
-              className="w-full h-full "
-              src="/Inventory Management.png"
-            />
-            <ProjectCard
-              title="Inspirus 7"
-              className="w-full h-full "
-              src="/Inspirus.png"
-            />
-            <ProjectCard
-              title="Crypto Cloud Expo"
-              className="w-full h-full "
-              src="/CryptoCloudExpo.png"
-            />
-            <ProjectCard
-              title="Recruitment Helper"
-              className="w-full h-full "
-              src="/Hackathon.png"
-            />
-          </div>
-          <ProjectCard
-            title="IRIX"
-            unoptimized
-            className="row-span-2 md:col-span-2"
-            src="/Irix2.png"
-          />
-        </div>
         <div className="h-56" />
       </section>
     </main>
   );
 }
+

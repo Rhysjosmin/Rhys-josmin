@@ -2,13 +2,59 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-import { Dai_Banna_SIL, PT_Serif } from "next/font/google";
+import {
+  Dai_Banna_SIL,
+  PT_Serif,
+  Rubik,
+  Space_Grotesk,
+} from "next/font/google";
+const rubik = Rubik({ subsets: ["latin"] });
+const spGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 const dmSerifDisplay = PT_Serif({
   subsets: ["latin"],
   weight: ["700"],
 });
+
 export default function ProjectCard({
+  src,
+  title,
+  duration,
+  description,
+  className,
+  unoptimized = false,
+}: {
+  src: string;
+  title: string;
+  duration: string;
+  description: string;
+  className?: string;
+  unoptimized?: boolean;
+}) {
+  return (
+    <div className={`w-full   ${className}`}>
+      <Image
+        src={src}
+        className="rounded-2xl h-80 md:w-[35rem]  object-cover"
+        height={1000}
+        width={1000}
+        alt="Image"
+        unoptimized={unoptimized}
+      />
+      <div>
+        <div
+          className={`${spGrotesk.className} w-full  flex  gap-4 items-center font-light mt-2`}
+        >
+          <h1 className={`${rubik.className} text-3xl font-bold`}>{title}</h1>
+          <p className="text-orange-400">{duration}</p>
+        </div>
+        <p>{description}</p>
+      </div>
+    </div>
+  );
+}
+
+function _ProjectCard({
   src,
   title,
   className,
