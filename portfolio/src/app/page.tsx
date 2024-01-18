@@ -177,7 +177,7 @@ export default function Home() {
           seeing activities and details about the club"
         />
         <ProjectCard
-          src="/CryptoCloudExpo.png"
+          src="/CRYPTO CLOUD.png"
           title="Crypto Cloud Expo Scam"
           duration="Aug 23 "
           description="Created a website for an Expo in Dubai "
