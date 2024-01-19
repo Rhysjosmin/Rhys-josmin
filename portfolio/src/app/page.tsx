@@ -10,7 +10,7 @@ const pf_Display = Playfair_Display({
 });
 
 const rubik = Rubik({ subsets: ["latin"] });
-const spGrotesk = Space_Grotesk({ subsets: ["latin"] });
+const spGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["300"] });
 
 export default function Home() {
   return (
@@ -183,7 +183,7 @@ export default function Home() {
           description="Created a website for an Expo in Dubai "
         />
         <ProjectCard
-          unoptimized
+
           src="/Inspirus (2).png"
           title="Inspirus 7"
           duration="Nov - Oct 2023"

@@ -8,6 +8,7 @@ import {
   Rubik,
   Space_Grotesk,
 } from "next/font/google";
+import { useState } from "react";
 const rubik = Rubik({ subsets: ["latin"] });
 const spGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -31,16 +32,25 @@ export default function ProjectCard({
   className?: string;
   unoptimized?: boolean;
 }) {
+  const [imageLoaded, setLoadState] = useState(false);
   return (
     <div className={`w-full cursor-pointer  ${className}`}>
       <Image
+        onLoad={() => setLoadState(true)}
         src={src}
-        className="rounded-2xl h-80 md:w-[35rem]  object-cover"
+        className={`${
+          imageLoaded ? "block h-80 opacity-100" : "opacity-0 h-0 translate-y-5"
+        } transition-[opacity,transform] duration-1000 rounded-2xl  md:w-[35rem]  object-cover`}
         height={1000}
         width={1000}
         alt="Image"
         unoptimized={unoptimized}
       />
+      <div
+        className={`${
+          imageLoaded ? "h-0 opacity-0" : "h-80 opacity-100"
+        } transition-opacity duration-1000 rounded-2xl  md:w-[35rem]  object-cover bg-white/20  animate-pulse`}
+      ></div>
       <div>
         <div
           className={`${spGrotesk.className} w-full  flex  gap-4 items-center font-light mt-2`}
