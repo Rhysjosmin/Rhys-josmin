@@ -183,7 +183,6 @@ export default function Home() {
           description="Created a website for an Expo in Dubai "
         />
         <ProjectCard
-
           src="/Inspirus (2).png"
           title="Inspirus 7"
           duration="Nov - Oct 2023"
@@ -194,6 +193,12 @@ export default function Home() {
           title="My First Hackathon"
           duration="Oct 2022 "
           description="Participated in my first ever hackathon and won The 2nd place"
+        />
+        <ProjectCard
+          src="/Second City 2.png"
+          title="Second City Studio"
+          duration="November 2032 - Current "
+          description="Created A Website for users to check out the studio ,and an Admin Dashboard to Send Emails,Edit Content,View Logins etc"
         />
 
         <div className="h-56" />

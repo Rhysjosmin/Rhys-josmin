@@ -57,7 +57,7 @@ const Links = () => {
       {" "}
       <Link
         className={`${dm_Sans.className} hover:text-emerald-500 transition duration-300 p-2 font-light italic`}
-        href={"#work"}
+        href={""}
       >
         Work
       </Link>
