@@ -201,7 +201,7 @@ export default function Home() {
           description="Created A Website for users to check out the studio ,and an Admin Dashboard to Send Emails,Edit Content,View Logins etc"
         />
 
-        <div className="h-56" />
+        <div className="h-96" />
       </section>
     </main>
   );
