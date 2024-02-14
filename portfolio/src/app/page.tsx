@@ -2,6 +2,9 @@
 import ProjectCard from "@/components/projectCard";
 import { Playfair_Display, Rubik, Space_Grotesk } from "next/font/google";
 import Image from "next/image";
+import Lenis from '@studio-freight/lenis'
+import { useEffect } from "react";
+
 
 const pf_Display = Playfair_Display({
   subsets: ["latin"],
@@ -13,6 +16,18 @@ const rubik = Rubik({ subsets: ["latin"] });
 const spGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["300"] });
 
 export default function Home() {
+  useEffect(() => {
+    const lenis = new Lenis()
+
+
+
+    function raf(time: number) {
+      lenis.raf(time * .9)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  }, [])
   return (
     <main className="">
       <section className="flex flex-col items-start gap-4 p-8 md:items-center md:px-40 h-96 md:flex-row ">
@@ -167,7 +182,7 @@ export default function Home() {
           />
         </svg>
       </section>
-      <section className=" grid lg:grid-cols-2 lg:px-24 px-8  justify-center gap-12    mt-64">
+      <section className=" grid lg:grid-cols-2 lg:px-24 px-8  justify-center gap-12    mt-64 mb-64">
         <ProjectCard
           unoptimized
           src="/DBCE ACM (3).png"
@@ -178,7 +193,7 @@ export default function Home() {
         />
         <ProjectCard
           src="/CRYPTO CLOUD.png"
-          title="Crypto Cloud Expo Scam"
+          title="Crypto Cloud Expo"
           duration="Aug 2023 "
           description="Created a website for an Expo in Dubai "
         />

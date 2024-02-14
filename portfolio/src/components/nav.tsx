@@ -19,7 +19,7 @@ export default function NavBar() {
         <div className="md:flex gap-8 hidden">
           <Links />
         </div>
-        <div
+        {/* <div
           onClick={() => setOpen(!open)}
           className=" cursor-pointer md:hidden flex h-8 w-8 relative items-center rounded-full"
         >
@@ -38,15 +38,15 @@ export default function NavBar() {
               open ? "scale-x-0" : ""
             }  left-0 right-0`}
           ></div>
-        </div>
+        </div> */}
       </div>
-      <div
+      {/* <div
         className={`${
           open ? "h-40" : "h-0 hidden"
         }  w-full md:hidden flex flex-col  items-center gap-2`}
       >
         <Links />
-      </div>
+      </div> */}
     </div>
   );
 }

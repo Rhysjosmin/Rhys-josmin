@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.34",
     "lottie-react": "^2.4.0",
     "next": "14.0.4",
     "react": "^18",
