@@ -34,7 +34,7 @@ export default function ProjectCard({
 }) {
   const [imageLoaded, setLoadState] = useState(false);
   return (
-    <div className={`w-full cursor-pointer  ${className}`}>
+    <Link href={'/Project/second-city-studio'} className={`w-full cursor-pointer  ${className}`}>
       <Image
         onLoad={() => setLoadState(true)}
         src={src}
@@ -60,7 +60,7 @@ export default function ProjectCard({
         </div>
         <p>{description}</p>
       </div>
-    </div>
+    </Link>
   );
 }
 
