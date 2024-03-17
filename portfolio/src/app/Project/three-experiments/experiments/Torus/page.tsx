@@ -15,7 +15,7 @@ export default function Page() {
 	return <div></div>;
 }
 
-export function Experience() {
+export function TorusExp() {
 	const full = useRef(null);
   const t1=useRef(null);
 	useFrame(({ clock }) => {

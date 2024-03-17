@@ -21,7 +21,7 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Footer/>
-        {/* <WIP inProgress={true} /> */}
+        <WIP inProgress={true} />
       </body>
     </html>
   );

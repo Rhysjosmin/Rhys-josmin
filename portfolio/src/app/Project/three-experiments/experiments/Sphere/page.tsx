@@ -4,7 +4,7 @@ export default function Page() {
   return <div></div>;
 }
 
-export function Experience() {
+export function SphExp() {
   return (
     <>
       <Environment preset="city" />

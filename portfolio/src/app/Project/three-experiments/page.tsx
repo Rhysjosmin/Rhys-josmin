@@ -1,13 +1,11 @@
 "use client";
 
-import { Environment } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { motion, useDragControls } from "framer-motion";
 import { MotionCanvas, LayoutCamera } from "framer-motion-3d";
 import Link from "next/link";
-import { Experience as SphExp } from "./experiments/Sphere/page";
-import { Experience as TorusExp } from "./experiments/Torus/page";
-import { Scene } from "three";
+import {  SphExp } from "./experiments/Sphere/page";
+import {  TorusExp } from "./experiments/Torus/page";
 import React from "react";
 export default function Page() {
 	const controls = useDragControls();
