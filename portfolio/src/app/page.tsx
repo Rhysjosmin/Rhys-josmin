@@ -4,6 +4,7 @@ import { Playfair_Display, Rubik, Space_Grotesk } from "next/font/google";
 import Image from "next/image";
 import Lenis from '@studio-freight/lenis'
 import { useEffect } from "react";
+import Lottie from "lottie-react";
 
 
 const pf_Display = Playfair_Display({
@@ -22,7 +23,7 @@ export default function Home() {
 
 
     function raf(time: number) {
-      lenis.raf(time * .9)
+      lenis.raf(time * 1.5)
       requestAnimationFrame(raf)
     }
 
@@ -30,6 +31,12 @@ export default function Home() {
   }, [])
   return (
     <main className="">
+      {/* <div className="absolute top-0 w-full h-full">
+      <div className="bg-white/10 h-[1px] w-80 absolute top-20 left-0 -translate-y-2"/>
+      <div className="bg-white/10 h-[1px] w-80 absolute top-20 right-0 -translate-y-2"/>
+      <div className="bg-white/10 h-5/6 w-[1px] absolute top-20 right-16 -translate-y-2"/>
+      <div className="bg-white/10 h-5/6 w-[1px] absolute top-20 left-16 -translate-y-2"/>
+      </div> */}
       <section className="flex flex-col items-start gap-4 p-8 md:items-center md:px-40 h-96 md:flex-row ">
         <Image
           alt="A Picture Of Rhys"
@@ -40,7 +47,7 @@ export default function Home() {
         />
         <div className="md:ml-10 h-72 ">
           <h1 className={`${pf_Display.className} text-4xl capitalize`}>
-            rhys Josmin Rodrigues
+            Rhys Josmin Rodrigues
           </h1>
           <p
             className={`${spGrotesk.className}  capitalize text-base mt-2 font-thin lg:w-96 `}
@@ -52,14 +59,17 @@ export default function Home() {
           </p>
         </div>
 
-        {/* <svg
-          width="365"
+        <svg
+         width="365"
           height="511"
-          className="absolute right-0"
+          className="absolute right-0 md:top-auto top-12 w-40 md:w-72 h-auto"
           viewBox="0 0 365 511"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <title>
+            star trails
+          </title>
           <line
             x1="437.354"
             y1="0.353553"
@@ -116,45 +126,20 @@ export default function Home() {
               <stop offset="1" stop-color="#0066FF" stop-opacity="0" />
             </linearGradient>
           </defs>
-        </svg> */}
-        {/* <div className="absolute left-0 right-0 w-full h-full overflow-hidden pointer-events-none">
-          <Lottie
-            className="absolute -rotate-45 top-72 -right-52 hue-rotate-[180deg] saturate-[0]"
-            animationData={trail}
-          />
-          <Lottie
-            className="absolute -rotate-45 top-28 -right-72 hue-rotate-[180deg] saturate-[0]"
-            animationData={trail}
-          />
-          <Lottie
-            className="absolute -rotate-45 top-96 translate-y-10 translate-x-16 opacity-50 -right-52 hue-rotate-[-10deg]  saturate-[100]"
-            animationData={trail}
-          />
-        </div>
-        <div className="absolute left-0 right-0 w-full h-full overflow-hidden pointer-events-none blur-3xl">
-          <Lottie
-            className="absolute -rotate-45 top-72 -right-52 hue-rotate-[180deg] saturate-[0]"
-            animationData={trail}
-          />
-          <Lottie
-            className="absolute -rotate-45 top-28 -right-72 hue-rotate-[180deg] saturate-[0]"
-            animationData={trail}
-          />
-          <Lottie
-            className="absolute -rotate-45 top-96 translate-y-10 -right-52 translate-x-16  hue-rotate-[-10deg] saturate-[5000] brightness-200"
-            animationData={trail}
-          />
-        </div> */}
+        </svg>
+      
 
-        {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
         <svg
-          className="absolute -z-10 left-8 blur-[110px] opacity-60  "
+          className="absolute -z-10 left-8 blur-[110px] opacity-20  "
           // width="1000"
           // height="795"
           viewBox="-100 0 2129 795"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <title>
+            Blobs
+          </title>
           <rect x="-82" width="530" height="530" rx="265" fill="#7E7C54" />
           <rect
             x="-102"
@@ -184,39 +169,85 @@ export default function Home() {
       </section>
       <section className=" grid lg:grid-cols-2 lg:px-24 px-8  justify-center gap-12    mt-64 mb-64">
         <ProjectCard
+        tags={['Next JS','Tailwind','Shadcn/ui','Firebase','FramerMotion']}
           unoptimized
           src="/DBCE ACM (3).png"
           title="DBCE ACM"
+          href="https://dbce-acm.netlify.app/"
           duration="Jan 2023 - Ongoing"
+          site
           description="Designed and made the website for
           seeing activities and details about the club"
         />
         <ProjectCard
+        tags={['HTML','CSS','JS']}
           src="/CRYPTO CLOUD.png"
           title="Crypto Cloud Expo"
+          href="https://verdant-muffin-de31bf.netlify.app/"
           duration="Aug 2023 "
+          site
           description="Created a website for an Expo in Dubai "
         />
         <ProjectCard
+        tags={['HTML','CSS','JS','Three JS']}
           src="/Inspirus (2).png"
           title="Inspirus 7"
+          href="https://inspirus.dbcegoa.ac.in/"
+          site
           duration="Nov - Oct 2023"
           description="A Website to see the details of the Inspirus 7 Event"
         />
         <ProjectCard
+        tags={['HTML','CSS','JS']}
+          src="/Irix2.png"
+          title="IRIX"
+          site
+          href="https://irix.netlify.app/"
+          duration="March 2023"
+          description="A Placeholder for the main IRIX website "
+        />
+        <ProjectCard
+        tags={['python','flask','deepface','duck-duck-go-image','webscraping','css','twitter-api']}
           src="/Hackathon (1).png"
           title="My First Hackathon"
           duration="Oct 2022 "
           description="Participated in my first ever hackathon and won The 2nd place"
         />
         <ProjectCard
+        tags={['Blender','3D','Next JS','Firebase','Google Cloud','Cloud Functions']}
           src="/Second City 2.png"
           title="Second City Studio"
-          duration="November 2032 - Current "
+          site
+          duration="November 2023 - Current "
+          // href="/Project/second-city-studio"
+          href="secondcitystudio.xyz"
           description="Created A Website for users to check out the studio ,and an Admin Dashboard to Send Emails,Edit Content,View Logins etc"
         />
+        <ProjectCard
+        tags={['Blender','3D']}
+          src="/Croissant.png"
+          title="A Croissant"
+          duration="January 2024 "
+          description="Was Hungry, So Made a Croissant"
+        />
+        {/* <ProjectCard
+        tags={['Three JS','React Three Fiber','Blender','3D']}
+        // href="/Project/three-experiments"  
+        src="/Pig.jpg"
+          title="Three JS Experiments"
+          duration=""
+          description=""
+        /> */}
+        <ProjectCard
+        tags={['Blender','3D','Sculpting']}
+        // href="/Project/three-experiments"  
+        src="/Planets.png"
+          title="Blender Experiments"
+          duration=" "
+          description=""
+        />
 
-        <div className="h-96" />
+        {/* <div className="h-96" /> */}
       </section>
     </main>
   );

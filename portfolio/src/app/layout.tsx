@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/nav";
 import WIP from "@/components/Wip";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Rhys Josmin | Portfolio",
@@ -19,7 +20,8 @@ export default function RootLayout({
         <div className="noise" />
         <NavBar />
         {children}
-        <WIP inProgress={true} />
+        <Footer/>
+        {/* <WIP inProgress={true} /> */}
       </body>
     </html>
   );

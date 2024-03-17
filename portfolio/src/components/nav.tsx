@@ -1,7 +1,8 @@
 "use client";
-import { DM_Sans, Playfair_Display } from "next/font/google";
+import { DM_Sans, Playfair_Display, Italiana } from "next/font/google";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const pf_Display = Playfair_Display({
@@ -10,66 +11,104 @@ const pf_Display = Playfair_Display({
   style: ["italic"],
 });
 const dm_Sans = DM_Sans({ subsets: ["latin"], style: ["italic"] });
-export default function NavBar() {
+const italiana = Italiana({ subsets: ["latin"], weight: ["400"] });
+
+export function VX_NavBar() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="flex items-center flex-col  ">
-      <div className="flex items-center justify-between w-full max-w-screen-xl p-12">
-        <h1 className={`${pf_Display.className} text-3xl`}>R.J.R</h1>
-        <div className="md:flex gap-8 hidden">
-          <Links />
-        </div>
-        {/* <div
-          onClick={() => setOpen(!open)}
-          className=" cursor-pointer md:hidden flex h-8 w-8 relative items-center rounded-full"
+    <div className="flex items-center flex-col p-12 ">
+      <div className="bg-white/5 rounded-full  border border-white/10 backdrop-blur-3xl h-12 w-1/2  flex  items-center px-5 justify-between">
+        <Link className={`${italiana.className} text-2xl`} href={""}>
+          RJR
+        </Link>
+        <div
+          className={`${italiana.className} flex items-center gap-8 text-sm`}
         >
-          <div
-            className={`h-[1px] bg-white/90 absolute duration-300 transition-transform ${
-              open ? "rotate-45" : "-translate-y-2"
-            }  left-0 right-0`}
-          ></div>
-          <div
-            className={`h-[1px] bg-white/90 absolute duration-300 transition-transform ${
-              open ? "-rotate-45" : "translate-y-2"
-            } left-0 right-0`}
-          ></div>
-          <div
-            className={`h-[1px] bg-white/90 absolute duration-300 transition-transform ${
-              open ? "scale-x-0" : ""
-            }  left-0 right-0`}
-          ></div>
-        </div> */}
+          <Link href={""}>Home</Link>
+          <Link href={""}>Projects</Link>
+          <Link href={""}>Contact</Link>
+        </div>
       </div>
-      {/* <div
-        className={`${
-          open ? "h-40" : "h-0 hidden"
-        }  w-full md:hidden flex flex-col  items-center gap-2`}
-      >
-        <Links />
-      </div> */}
+    </div>
+  );
+}
+export default function NavBar() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="flex items-center flex-col print:hidden  ">
+      <div className="flex items-center justify-between w-full max-w-screen-xl p-12">
+        <Link
+          onClick={() => setOpen(false)}
+          className={`${pf_Display.className} font-black text-3xl`}
+          href={"/"}
+        >
+          R.J.R
+        </Link>
+        <div className="md:flex gap-8 hidden">
+          <Links onOpen={()=>setOpen(false)} />
+        </div>
+        <div className="md:hidden gap-8 flex z-20 ">
+          <button
+            type="button"
+            onClick={() => setOpen(!open)}
+            className="relative z-10 h-6 w-7  cursor-pointer"
+          >
+            <div
+              className={`h-[1px] transition-all bg-white w-full absolute top-1/2 ${
+                open ? "scale-x-0" : "scale-x-1"
+              }`}
+            />
+            <div
+              className={`h-[1px] transition-all bg-white w-full absolute ${
+                open ? "top-1/2 -rotate-45" : "top-0 "
+              }`}
+            />
+            <div
+              className={`h-[1px] transition-all bg-white w-full absolute  ${
+                open ? "bottom-1/2 rotate-45" : "bottom-0"
+              }`}
+            />
+          </button>
+        </div>
+        <div
+          className={`z-10 top-0 divide-violet-100 divide-y left-0 flex flex-col text-6xl font-thin italic p-8 pt-24 bg-black w-full transition-all duration-300 delay-200 absolute md:hidden ${
+            open ? "h-screen" : "h-0 opacity-0 pointer-events-none"
+          } `}
+        >
+          <Links onOpen={()=>setOpen(false)} />
+        </div>
+        <div
+          className={`z-[5] top-0 left-0  w-full transition-all duration-500 h-screen pointer-events-none absolute md:hidden ${
+            open ? "bg-black/30 backdrop-blur-lg" : ""
+          } `}
+        />
+      </div>
     </div>
   );
 }
 
-const Links = () => {
+const Links = ({ onOpen }: { onOpen: any }) => {
   return (
     <>
       {" "}
-      <Link
+      {/* <Link
         className={`${dm_Sans.className} hover:text-emerald-500 transition duration-300 p-2 font-light italic`}
         href={""}
       >
         Work
-      </Link>
+      </Link> */}
       <Link
+        onClick={onOpen}
         className={`${dm_Sans.className} hover:text-emerald-500 transition duration-300 p-2 font-light italic`}
-        href={""}
+        href={"/About"}
       >
-        About
+        About Me
       </Link>
       <Link
+        onClick={onOpen}
         className={`${dm_Sans.className} hover:text-emerald-500 transition duration-300 p-2 font-light italic`}
-        href={""}
+        href={"/Resume"}
       >
         Resume
       </Link>

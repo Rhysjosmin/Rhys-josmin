@@ -38,13 +38,4 @@ body {
   background: rgba(255, 255, 255, 0.524);
 }
 
-.noise {
-  pointer-events: none;
-  position: absolute;
-  height: 250%;
-  width: 100%;
 
-  background-image: url("./../../public/noise.png");
-  mix-blend-mode:darken;
-  z-index: -1;
-}

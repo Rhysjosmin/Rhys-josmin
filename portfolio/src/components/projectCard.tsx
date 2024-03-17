@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 import {
   Dai_Banna_SIL,
   PT_Serif,
@@ -9,6 +8,7 @@ import {
   Space_Grotesk,
 } from "next/font/google";
 import { useState } from "react";
+import { MaterialSymbolsLightOpenInNew } from "./icons";
 const rubik = Rubik({ subsets: ["latin"] });
 const spGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -20,27 +20,45 @@ const dmSerifDisplay = PT_Serif({
 export default function ProjectCard({
   src,
   title,
+  href,
   duration,
   description,
   className,
+  tags,
   unoptimized = false,
+  site = false,
 }: {
   src: string;
+  href?: string;
   title: string;
   duration: string;
   description: string;
   className?: string;
+  tags: string[];
   unoptimized?: boolean;
+  site?: boolean;
 }) {
   const [imageLoaded, setLoadState] = useState(false);
   return (
-    <Link href={'/Project/second-city-studio'} className={`w-full cursor-pointer  ${className}`}>
+    <div className={`w-full  group relative ${className}`}>
+      <div className="absolute overflow-hidden w-full h-full border border-white/5  rounded-md z-0 transition-all duration-300 ease-in-out opacity-0 group-hover:scale-105 group-hover:opacity-50">
+        <Image
+          src={src}
+          className={
+            "h-full w-full blur-3xl   group-hover:scale-[150] ease-linear scale-100 transition-all duration-[500s] opacity-30 saturate-200"
+          }
+          height={200}
+          width={200}
+          alt="Image"
+          unoptimized={unoptimized}
+        />
+      </div>
       <Image
         onLoad={() => setLoadState(true)}
         src={src}
         className={`${
           imageLoaded ? "block h-80 opacity-100" : "opacity-0 h-0 translate-y-5"
-        } transition-[opacity,transform] duration-1000 rounded-2xl  md:w-[35rem]  object-cover`}
+        } transition-[opacity,transform] z-10 relative duration-1000 rounded-2xl    object-cover`}
         height={1000}
         width={1000}
         alt="Image"
@@ -49,22 +67,46 @@ export default function ProjectCard({
       <div
         className={`${
           imageLoaded ? "h-0 opacity-0" : "h-80 opacity-100"
-        } transition-opacity duration-1000 rounded-2xl  md:w-[35rem]  object-cover bg-white/20  animate-pulse`}
-      ></div>
-      <div>
+        } transition-opacity relative z-10 duration-1000 rounded-2xl  md:w-[35rem]  object-cover bg-white/20  animate-pulse`}
+      />
+
+      <div className="mb-2 relative z-10">
         <div
           className={`${spGrotesk.className} w-full  flex  gap-4 items-center font-light mt-2`}
         >
           <h1 className={`${rubik.className} text-3xl font-bold`}>{title}</h1>
           <p className="text-orange-400   whitespace-nowrap">{duration}</p>
         </div>
-        <p>{description}</p>
+        <p className="w-3/4">{description}</p>
       </div>
-    </Link>
+      <div className="relative z-10 flex justify-between items-start">
+        <span className=" text-xs text-orange-300  gap-1 flex flex-wrap">
+          {tags.map((i) => (
+            <Link
+              href={"/"}
+              className="bg-neutral-300/5 p-1  rounded-md"
+              key={i}
+            >
+              #{i}
+            </Link>
+          ))}
+        </span>
+        {href ? (
+          <Link
+            className=" items-center  hover:text-sky-600 flex gap-1 text-sm hover:underline"
+            href={href}
+          >
+            {site?"Website":"Read More"} <MaterialSymbolsLightOpenInNew />
+          </Link>
+        ) : (
+          <></>
+        )}
+      </div>
+    </div>
   );
 }
 
-function _ProjectCard({
+export function _ProjectCard({
   src,
   title,
   className,
