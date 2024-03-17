@@ -20,21 +20,21 @@ export default function Footer() {
           Github
         </Link>
         {/* <Link className="text-teal-100/50 hover:underline" href={'https://github.com/Rhysjosmin'}>Youtube</Link> */}
-        <Link
+        {/* <Link
           className="text-teal-100/50 hover:underline"
           href={"https://github.com/Rhysjosmin"}
         >
           Instagram
-        </Link>
+        </Link> */}
         <Link
           className="text-teal-100/50 hover:underline"
-          href={"https://github.com/Rhysjosmin"}
+          href={"https://www.linkedin.com/in/rhys-josmin-rodrigues-1806a3222/"}
         >
           LinkedIn
         </Link>
         <Link
           className="text-teal-100/50 hover:underline"
-          href={"https://github.com/Rhysjosmin"}
+          href={""}
         >
           Tinder
         </Link>
