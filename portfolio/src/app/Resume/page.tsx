@@ -134,10 +134,10 @@ export default function Resume() {
             </div>
             <div>
               <h3 className="font-bold mb-2">AI/ML</h3>
-              <p className="text-sm">Tensorflow, Pytorch, YOLO</p>
+              <p className="text-sm">Tensorflow, Pytorch, YOLO, NLP, Vector Databases (Chroma DB)</p>
             </div>
             <div>
-              <h3 className="font-bold mb-2">3D & Design</h3>
+              <h3 className="font-bold mb-2">3D,Design and Simulation</h3>
               <p className="text-sm">Blender, Houdini, Figma</p>
             </div>
             <div>
