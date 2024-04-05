@@ -169,6 +169,16 @@ export default function Home() {
       </section>
       <section className=" grid lg:grid-cols-2 lg:px-24 px-8  justify-center gap-12    mt-64 mb-64">
         <ProjectCard
+        tags={['Next JS','Python','NLP','Huggingface','AI','ML','Learning']}
+          unoptimized
+          src="/Axon.png"
+          title="Axon"
+          // href="https://dbce-acm.netlify.app/"
+          duration="April 2nd 2024 - April 3rd 2024"
+          site
+          description="Created A Learning App to learn anything"
+        />
+        <ProjectCard
         tags={['Next JS','Tailwind','Shadcn/ui','Firebase','FramerMotion']}
           unoptimized
           src="/DBCE ACM (3).png"
