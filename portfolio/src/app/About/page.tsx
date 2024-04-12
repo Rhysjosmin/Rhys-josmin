@@ -3,6 +3,7 @@ import { Rubik } from "next/font/google";
 const rbk = Rubik({ subsets: ["latin"], weight: ["300", "800"] });
 
 export default function Page() {
+
   return (
     <main className={`${rbk.className} px-12 mb-20 md:px-20`}>
       <h1 className="font-black text-3xl pb-3 mb-2 lg:w-2/3 ">About Me</h1>

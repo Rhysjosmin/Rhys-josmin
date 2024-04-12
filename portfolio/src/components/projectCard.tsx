@@ -9,6 +9,7 @@ import {
 } from "next/font/google";
 import { useState } from "react";
 import { MaterialSymbolsLightOpenInNew } from "./icons";
+import { useSearchParams } from "next/navigation";
 const rubik = Rubik({ subsets: ["latin"] });
 const spGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -38,9 +39,11 @@ export default function ProjectCard({
   unoptimized?: boolean;
   site?: boolean;
 }) {
+
   const [imageLoaded, setLoadState] = useState(false);
   return (
     <div className={`w-full  group relative ${className}`}>
+      
       <div className="absolute overflow-hidden w-full h-full border border-white/5  rounded-md z-0 transition-all duration-300 ease-in-out opacity-0 group-hover:scale-105 group-hover:opacity-50">
         <Image
           src={src}
@@ -83,7 +86,7 @@ export default function ProjectCard({
         <span className=" text-xs text-orange-300  gap-1 flex flex-wrap">
           {tags.map((i) => (
             <Link
-              href={"/"}
+              href={`/?filter=${i}`}
               className="bg-neutral-300/5 p-1  rounded-md"
               key={i}
             >

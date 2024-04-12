@@ -5,6 +5,7 @@ import Image from "next/image";
 import Lenis from '@studio-freight/lenis'
 import { useEffect } from "react";
 import Lottie from "lottie-react";
+import { useSearchParams } from "next/navigation";
 
 
 const pf_Display = Playfair_Display({
@@ -17,6 +18,7 @@ const rubik = Rubik({ subsets: ["latin"] });
 const spGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["300"] });
 
 export default function Home() {
+
   useEffect(() => {
     const lenis = new Lenis()
 
@@ -167,15 +169,20 @@ export default function Home() {
           />
         </svg>
       </section>
-      <section className=" grid lg:grid-cols-2 lg:px-24 px-8  justify-center gap-12    mt-64 mb-64">
+      {/* <div className=" h-32 px-20 py-2 mt-56 mb-4">
+        <div className="h-full  bg-white/[0.01] w-full rounded-xl ">
+      <h1>Filters</h1>
+        </div>
+      </div> */}
+      <section className=" grid lg:grid-cols-2 lg:px-24 px-8  justify-center gap-12   mt-64 mb-64 relative">
         <ProjectCard
         tags={['Next JS','Python','NLP','Huggingface','AI','ML','Learning']}
           unoptimized
           src="/Axon.png"
           title="Axon"
-          // href="https://dbce-acm.netlify.app/"
+          href="/Project/Axon"
           duration="April 2nd 2024 - April 3rd 2024"
-          site
+          // site
           description="Created A Learning App to learn anything"
         />
         <ProjectCard
@@ -225,7 +232,7 @@ export default function Home() {
         />
         <ProjectCard
         tags={['Blender','3D','Next JS','Firebase','Google Cloud','Cloud Functions']}
-          src="/Second City 2.png"
+          src="/SecondCity.png"
           title="Second City Studio"
           site
           duration="November 2023 - Current "

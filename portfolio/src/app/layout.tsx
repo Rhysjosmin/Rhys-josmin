@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "@/components/nav";
 import WIP from "@/components/Wip";
 import Footer from "@/components/footer";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Rhys Josmin | Portfolio",
@@ -17,11 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="noise" />
-        <NavBar />
-        {children}
-        <Footer/>
-        {/* <WIP inProgress={true} /> */}
+      
+          <div className="noise" />
+          <NavBar />
+          {children}
+          <Footer />
+          {/* <WIP inProgress={true} /> */}
+      
       </body>
     </html>
   );
