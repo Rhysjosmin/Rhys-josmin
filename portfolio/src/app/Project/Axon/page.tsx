@@ -17,7 +17,7 @@ export default function Page() {
   const { scrollY } = useScroll();
 
   return (
-    <div className={`${sp_grotesk.className} px-12 md:px-20`}>
+    <div className={`${sp_grotesk.className} px-6 md:px-20 lg:px-40`}>
       <section className="mt-12 ">
         <div className="flex justify-between ">
           <div>
