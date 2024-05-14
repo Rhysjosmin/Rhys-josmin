@@ -21,30 +21,24 @@ export default function Page() {
       <section className="mt-12 ">
         <div className="flex justify-between ">
           <div>
-            <h1 className={`${rbk.className}  text-6xl font-bold `}>
-              AXON
-            </h1>
-            <p className="">
-              The Learning App
-            </p>
+            <h1 className={`${rbk.className}  text-6xl font-bold `}>AXON</h1>
+            <p className="">The Learning App</p>
           </div>
-
-          <div className=" text-neutral-400  text-sm text-end  items-end  flex flex-col justify-end">
+          <div className="flex flex-col items-end justify-end text-sm text-neutral-400 text-end">
             <p className="text-orange-500">Development</p>
             <p>2nd April 2024 - Present</p>
           </div>
         </div>
         <Image
           src={"/Axon.png"}
-          className="rounded-xl mt-4"
+          className="mt-4 rounded-xl"
           alt={""}
           unoptimized
           height={1000}
           width={2000}
         />
       </section>
-      <section className="prose prose-invert py-12 relative">
-    
+      <section className="relative py-12 prose prose-invert">
         <div>
           <h1>
             <span className="text-white/20">(chapter 1) :</span> Why
@@ -77,11 +71,12 @@ export default function Page() {
             words&quot;.
             <br />
             so we had to choose, the work with CNNs seemed very interesting, the
-            statement was to analyze camera footage to find out crime-related information, you
-            know the Detective kinda shit, and i don&apos;t. know bout you, but
-            i feel everyone likes (the thought of) working with CNNs and Images,
-            However, although i have a moderately good understanding of it , i
-            decided against it. luckily my team mates agreed. and we settled on...{" "}
+            statement was to analyze camera footage to find out crime-related
+            information, you know the Detective kinda shit, and i don&apos;t.
+            know bout you, but i feel everyone likes (the thought of) working
+            with CNNs and Images, However, although i have a moderately good
+            understanding of it , i decided against it. luckily my team mates
+            agreed. and we settled on...{" "}
             <blockquote>
               <h3>Artificial Intelligence</h3>Domain specific Learner
               facilitator Assist Software Given a learning resource the
@@ -93,7 +88,6 @@ export default function Page() {
           </p>
         </div>
         <div className="mt-12">
-
           <h1>
             <span className="text-white/20">(chapter 2) :</span> How
           </h1>
@@ -101,17 +95,33 @@ export default function Page() {
             Choosing is Easy, But Knowing How to do it, is easy if you&apos;re a
             nerd - Someone smart
           </blockquote>
-
+          <h3>1) Data Collection</h3>
           <p>
             So here&apos;s where we did 60% of the work. our first goal was to
             do a lot of Research, so we got a shared doc, and started pasting
             anything that seemed relevant, wether it was a link from hugging
             face or some algorithms from sentence transformers or something from
-            ChatGPT
+            ChatGPT.
           </p>
+          <h3>2) Testing & Planning</h3>
           <p>
-           Article in Progress
+            Next we needed to check out what works and what doesn&apos;t, we had
+            amazing ideas of what could be done,but realistically we needed to
+            remove stuff and finalize that, here{" "}
+            <Link href={"https://github.com/ryzxxn"}>@ryzxxn</Link> figured out
+            the llm with mistral was okay at best, and we couldn&apos;t rely on
+            it to give us what we needed every time, so i came up with an nlp
+            pipeline, where we extracted the parts of speech using the POS in
+            NLTK Library and convert it to our desired form the implementation
+            of this was done by{" "}
+            <Link href={"https://github.com/justSammy1604/"}>
+              @justSammy1604
+            </Link>
+            . Another feature we wanted was to find a video explaining the
+            topic, this was done by{" "}
+            <Link href={"https://github.com/Terrence31"}>@Terrence31</Link>
           </p>
+          <p>Work in Progress ...</p>
         </div>
       </section>
     </div>

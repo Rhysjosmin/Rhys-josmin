@@ -5,8 +5,8 @@ import groovyWalkAnimation from "@pub/lottie/Name Animation.json";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <div className="  flex h-96 ">
-      <div className="flex-grow p-8 flex flex-col">
+    <div className="flex  h-96">
+      <div className="flex flex-col flex-grow p-8">
         <Link
           className="text-teal-100/50 hover:underline"
           href={"mailto:rod.rhys20031@gmail.com"}
@@ -32,12 +32,12 @@ export default function Footer() {
         >
           LinkedIn
         </Link>
-        <Link
+        {/* <Link
           className="text-teal-100/50 hover:underline"
           href={""}
         >
           Tinder
-        </Link>
+        </Link> */}
       </div>
       <Lottie
         className="w-56 h-min "
