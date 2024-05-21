@@ -16,8 +16,8 @@ const italiana = Italiana({ subsets: ["latin"], weight: ["400"] });
 export function VX_NavBar() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="flex items-center flex-col p-12 ">
-      <div className="bg-white/5 rounded-full  border border-white/10 backdrop-blur-3xl h-12 w-1/2  flex  items-center px-5 justify-between">
+    <div className="flex flex-col items-center p-12 ">
+      <div className="flex items-center justify-between w-1/2 h-12 px-5 border rounded-full bg-white/5 border-white/10 backdrop-blur-3xl">
         <Link className={`${italiana.className} text-2xl`} href={""}>
           RJR
         </Link>
@@ -36,7 +36,7 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex items-center flex-col print:hidden  ">
+    <div className="flex flex-col items-center print:hidden ">
       <div className="flex items-center justify-between w-full max-w-screen-xl p-12">
         <Link
           onClick={() => setOpen(false)}
@@ -45,14 +45,14 @@ export default function NavBar() {
         >
           R.J.R
         </Link>
-        <div className="md:flex gap-8 hidden">
+        <div className="hidden gap-8 md:flex">
           <Links onOpen={()=>setOpen(false)} />
         </div>
-        <div className="md:hidden gap-8 flex z-20 ">
+        <div className="z-20 flex gap-8 md:hidden ">
           <button
             type="button"
             onClick={() => setOpen(!open)}
-            className="relative z-10 h-6 w-7  cursor-pointer"
+            className="relative z-10 h-6 cursor-pointer w-7"
           >
             <div
               className={`h-[1px] transition-all bg-white w-full absolute top-1/2 ${
@@ -108,7 +108,7 @@ const Links = ({ onOpen }: { onOpen: any }) => {
       <Link
         onClick={onOpen}
         className={`${dm_Sans.className} hover:text-emerald-500 transition duration-300 p-2 font-light italic`}
-        href={"/Resume"}
+        href={"https://flowcv.com/resume/9r20trqjai"}
       >
         Resume
       </Link>
