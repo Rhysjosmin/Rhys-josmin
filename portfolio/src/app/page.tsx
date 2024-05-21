@@ -45,7 +45,7 @@ export default function Home() {
           height={500}
           width={500}
           src={"/Rhys.jpg"}
-          className="object-cover w-56 md:w-72  "
+          className="object-cover w-56 md:w-72 "
         />
         <div className="md:ml-10 h-72 ">
           <h1 className={`${pf_Display.className} text-4xl capitalize`}>
@@ -64,7 +64,7 @@ export default function Home() {
         <svg
          width="365"
           height="511"
-          className="absolute right-0 md:top-auto top-12 w-40 md:w-72 h-auto"
+          className="absolute right-0 w-40 h-auto md:top-auto top-12 md:w-72"
           viewBox="0 0 365 511"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -169,12 +169,12 @@ export default function Home() {
           />
         </svg>
       </section>
-      {/* <div className=" h-32 px-20 py-2 mt-56 mb-4">
+      {/* <div className="h-32 px-20 py-2 mt-56 mb-4 ">
         <div className="h-full  bg-white/[0.01] w-full rounded-xl ">
       <h1>Filters</h1>
         </div>
       </div> */}
-      <section className=" grid lg:grid-cols-2 lg:px-24 px-8  justify-center gap-12   mt-64 mb-64 relative">
+      <section className="relative grid justify-center gap-12 px-8 mt-64 mb-64  lg:grid-cols-2 lg:px-24">
         <ProjectCard
         tags={['Next JS','Python','NLP','Huggingface','AI','ML','Learning']}
           unoptimized
@@ -237,7 +237,7 @@ export default function Home() {
           site
           duration="November 2023 - Current "
           // href="/Project/second-city-studio"
-          href="secondcitystudio.xyz"
+          href="https://secondcitystudio.xyz"
           description="Created A Website for users to check out the studio ,and an Admin Dashboard to Send Emails,Edit Content,View Logins etc"
         />
         <ProjectCard
