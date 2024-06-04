@@ -2,11 +2,10 @@
 import ProjectCard from "@/components/projectCard";
 import { Playfair_Display, Rubik, Space_Grotesk } from "next/font/google";
 import Image from "next/image";
-import Lenis from '@studio-freight/lenis'
+import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
 import Lottie from "lottie-react";
 import { useSearchParams } from "next/navigation";
-
 
 const pf_Display = Playfair_Display({
   subsets: ["latin"],
@@ -18,19 +17,16 @@ const rubik = Rubik({ subsets: ["latin"] });
 const spGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["300"] });
 
 export default function Home() {
-
   useEffect(() => {
-    const lenis = new Lenis()
-
-
+    const lenis = new Lenis();
 
     function raf(time: number) {
-      lenis.raf(time * 1.5)
-      requestAnimationFrame(raf)
+      lenis.raf(time * 1.5);
+      requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf)
-  }, [])
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <main className="">
       {/* <div className="absolute top-0 w-full h-full">
@@ -62,16 +58,14 @@ export default function Home() {
         </div>
 
         <svg
-         width="365"
+          width="365"
           height="511"
           className="absolute right-0 w-40 h-auto md:top-auto top-12 md:w-72"
           viewBox="0 0 365 511"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <title>
-            star trails
-          </title>
+          <title>star trails</title>
           <line
             x1="437.354"
             y1="0.353553"
@@ -129,7 +123,6 @@ export default function Home() {
             </linearGradient>
           </defs>
         </svg>
-      
 
         <svg
           className="absolute -z-10 left-8 blur-[110px] opacity-20  "
@@ -139,9 +132,7 @@ export default function Home() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <title>
-            Blobs
-          </title>
+          <title>Blobs</title>
           <rect x="-82" width="530" height="530" rx="265" fill="#7E7C54" />
           <rect
             x="-102"
@@ -176,7 +167,15 @@ export default function Home() {
       </div> */}
       <section className="relative grid justify-center gap-12 px-8 mt-64 mb-64  lg:grid-cols-2 lg:px-24">
         <ProjectCard
-        tags={['Next JS','Python','NLP','Huggingface','AI','ML','Learning']}
+          tags={[
+            "Next JS",
+            "Python",
+            "NLP",
+            "Huggingface",
+            "AI",
+            "ML",
+            "Learning",
+          ]}
           unoptimized
           src="/Axon.png"
           title="Axon"
@@ -186,7 +185,13 @@ export default function Home() {
           description="Created A Learning App to learn anything"
         />
         <ProjectCard
-        tags={['Next JS','Tailwind','Shadcn/ui','Firebase','FramerMotion']}
+          tags={[
+            "Next JS",
+            "Tailwind",
+            "Shadcn/ui",
+            "Firebase",
+            "FramerMotion",
+          ]}
           unoptimized
           src="/DBCE ACM (3).png"
           title="DBCE ACM"
@@ -197,7 +202,7 @@ export default function Home() {
           seeing activities and details about the club"
         />
         <ProjectCard
-        tags={['HTML','CSS','JS']}
+          tags={["HTML", "CSS", "JS"]}
           src="/CRYPTO CLOUD.png"
           title="Crypto Cloud Expo"
           href="https://verdant-muffin-de31bf.netlify.app/"
@@ -206,7 +211,7 @@ export default function Home() {
           description="Created a website for an Expo in Dubai "
         />
         <ProjectCard
-        tags={['HTML','CSS','JS','Three JS']}
+          tags={["HTML", "CSS", "JS", "Three JS"]}
           src="/Inspirus (2).png"
           title="Inspirus 7"
           href="https://inspirus.dbcegoa.ac.in/"
@@ -215,7 +220,7 @@ export default function Home() {
           description="A Website to see the details of the Inspirus 7 Event"
         />
         <ProjectCard
-        tags={['HTML','CSS','JS']}
+          tags={["HTML", "CSS", "JS"]}
           src="/Irix2.png"
           title="IRIX"
           site
@@ -224,14 +229,29 @@ export default function Home() {
           description="A Placeholder for the main IRIX website "
         />
         <ProjectCard
-        tags={['python','flask','deepface','duck-duck-go-image','webscraping','css','twitter-api']}
+          tags={[
+            "python",
+            "flask",
+            "deepface",
+            "duck-duck-go-image",
+            "webscraping",
+            "css",
+            "twitter-api",
+          ]}
           src="/Hackathon (1).png"
           title="My First Hackathon"
           duration="Oct 2022 "
           description="Participated in my first ever hackathon and won The 2nd place"
         />
         <ProjectCard
-        tags={['Blender','3D','Next JS','Firebase','Google Cloud','Cloud Functions']}
+          tags={[
+            "Blender",
+            "3D",
+            "Next JS",
+            "Firebase",
+            "Google Cloud",
+            "Cloud Functions",
+          ]}
           src="/SecondCity.png"
           title="Second City Studio"
           site
@@ -241,7 +261,7 @@ export default function Home() {
           description="Created A Website for users to check out the studio ,and an Admin Dashboard to Send Emails,Edit Content,View Logins etc"
         />
         <ProjectCard
-        tags={['Blender','3D']}
+          tags={["Blender", "3D"]}
           src="/Croissant.png"
           title="A Croissant"
           duration="January 2024 "
@@ -256,12 +276,12 @@ export default function Home() {
           description=""
         /> */}
         <ProjectCard
-        tags={['Blender','3D','Sculpting']}
-        // href="/Project/three-experiments"  
-        src="/Planets.png"
-          title="Blender Experiments"
+          tags={["Blender", "3D", "Sculpting"]}
+          src="/Planets.png"
+          title=" Experiments"
           duration=" "
           description=""
+          href="/Project/3D"
         />
 
         {/* <div className="h-96" /> */}
@@ -269,4 +289,3 @@ export default function Home() {
     </main>
   );
 }
-

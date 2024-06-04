@@ -98,13 +98,13 @@ const Links = ({ onOpen }: { onOpen: any }) => {
       >
         Work
       </Link> */}
-      <Link
+      {/* <Link
         onClick={onOpen}
         className={`${dm_Sans.className} hover:text-emerald-500 transition duration-300 p-2 font-light italic`}
         href={"/About"}
       >
         About Me
-      </Link>
+      </Link> */}
       <Link
         onClick={onOpen}
         className={`${dm_Sans.className} hover:text-emerald-500 transition duration-300 p-2 font-light italic`}
