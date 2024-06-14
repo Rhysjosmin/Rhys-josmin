@@ -14,7 +14,7 @@ const spGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["300"] });
 
 export default function Page() {
   return (
-    <div className="p-12 min-h-screen flex flex-col items-center justify-center ">
+    <div className="flex flex-col items-center justify-center min-h-screen p-12 ">
       <div className="md:w-5/6">
         <div className="w-full mb-12 md:mb-32">
           <h1 className={`${rubik.className} font-black text-4xl font-serif`}>
@@ -26,10 +26,10 @@ export default function Page() {
             too
           </p>
         </div>
-        <div className="grid  md:grid-cols-2  gap-2 w-full ">
+        <div className="grid w-full gap-2 md:grid-cols-2 ">
           <ParallaxImage
             title="Chonk Sploby"
-            className="  row-span-1  col-span-2"
+            className="col-span-2 row-span-1 "
             alt=""
             src={"/Chonk.png"}
             height={500}
@@ -37,7 +37,7 @@ export default function Page() {
           />
           <ParallaxImage
             title="A Marshmallow"
-            className="  row-span-2 "
+            className="row-span-2 "
             alt=""
             src={"/MarshmelloOnPlate.jpg"}
             height={500}
@@ -45,7 +45,7 @@ export default function Page() {
           />
           <ParallaxImage
             title="A Pig"
-            className="  row-span-2 "
+            className="row-span-2 "
             alt=""
             src={"/Pig.jpg"}
             height={500}
@@ -53,7 +53,7 @@ export default function Page() {
           />
           <ParallaxImage
             title="Alvin The Chipmunk"
-            className="  row-span-2 "
+            className="row-span-2 "
             alt=""
             src={"/Alvin.png"}
             height={500}
@@ -77,20 +77,29 @@ export default function Page() {
           />
           <ParallaxImage
             title="Planets"
-            className="row-span-1 col-span-2 "
+            className="col-span-2 row-span-1 "
             alt=""
             src={"/Planets.png"}
             height={500}
             width={500}
           />
           <ParallaxImage
-            title="Planets"
-            className="row-span-1 col-span-2 "
+            title="Yellow Duck Collection"
+            className="col-span-1 row-span-1 "
             alt=""
-            src={"/Planets.png"}
+            src={"/YD Special.png"}
             height={500}
             width={500}
           />
+          <ParallaxImage
+            title="Deathless Dao Collection"
+            className="col-span-1 row-span-1 "
+            alt=""
+            src={"/Deathless.png"}
+            height={500}
+            width={500}
+          />
+        
         </div>
       </div>
     </div>
