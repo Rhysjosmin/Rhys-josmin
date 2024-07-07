@@ -283,6 +283,15 @@ export default function Home() {
           description=""
           href="/Project/3D"
         />
+        <ProjectCard
+        site
+          tags={["Next js", "API", "pokemon"]}
+          src="/pookiedex.png"
+          title="The Pookidex Collection"
+          duration="July 2024 "
+          description="A pokedex explorer made with framer motion and next js"
+          href="https://pookiemon-delta.vercel.app/"
+        />
 
         {/* <div className="h-96" /> */}
       </section>
