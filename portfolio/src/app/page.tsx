@@ -269,7 +269,7 @@ export default function Home() {
         />
         {/* <ProjectCard
         tags={['Three JS','React Three Fiber','Blender','3D']}
-        // href="/Project/three-experiments"  
+        // href="/Project/three-experiments"
         src="/Pig.jpg"
           title="Three JS Experiments"
           duration=""
@@ -284,13 +284,21 @@ export default function Home() {
           href="/Project/3D"
         />
         <ProjectCard
-        site
+          site
           tags={["Next js", "API", "pokemon"]}
           src="/pookiedex.png"
           title="The Pookidex Collection"
           duration="July 2024 "
           description="A pokedex explorer made with framer motion and next js"
           href="https://pookiemon-delta.vercel.app/"
+        />
+        <ProjectCard
+          tags={["Next js", "API", "pokemon"]}
+          src="/TheIndustryIndights.png"
+          title="The Industry Insights"
+          duration="July 2024 "
+          description="A CMS for NEWS?"
+          // href="https://pookiemon-delta.vercel.app/"
         />
 
         {/* <div className="h-96" /> */}
