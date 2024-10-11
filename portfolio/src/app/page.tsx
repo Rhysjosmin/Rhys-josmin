@@ -165,7 +165,10 @@ export default function Home() {
       <h1>Filters</h1>
         </div>
       </div> */}
-      <section className="relative grid justify-center gap-12 px-8 mt-64 mb-64  lg:grid-cols-2 lg:px-24">
+      <h1 className="mt-64 pb-4 font-bold italic px-8 lg:px-24 text-3xl">
+        Web Development
+      </h1>
+      <section className="relative grid justify-center gap-12 px-8  mb-24  lg:grid-cols-2 lg:px-24">
         <ProjectCard
           tags={[
             "Next JS",
@@ -260,29 +263,7 @@ export default function Home() {
           href="https://secondcitystudio.xyz"
           description="Created A Website for users to check out the studio ,and an Admin Dashboard to Send Emails,Edit Content,View Logins etc"
         />
-        <ProjectCard
-          tags={["Blender", "3D"]}
-          src="/Croissant.png"
-          title="A Croissant"
-          duration="January 2024 "
-          description="Was Hungry, So Made a Croissant"
-        />
-        {/* <ProjectCard
-        tags={['Three JS','React Three Fiber','Blender','3D']}
-        // href="/Project/three-experiments"
-        src="/Pig.jpg"
-          title="Three JS Experiments"
-          duration=""
-          description=""
-        /> */}
-        <ProjectCard
-          tags={["Blender", "3D", "Sculpting"]}
-          src="/Planets.png"
-          title=" Experiments"
-          duration=" "
-          description=""
-          href="/Project/3D"
-        />
+
         <ProjectCard
           site
           tags={["Next js", "API", "pokemon"]}
@@ -315,8 +296,111 @@ export default function Home() {
           description="Was Experimenting with SvelteKit and Blenders new EEVEE Raytracing"
           href="http://yizz.vercel.app/"
         />
+      </section>
 
-        {/* <div className="h-96" /> */}
+      <h1 className="mt-12 pb-4 font-bold italic px-8 lg:px-24 text-3xl">
+        3D / Art
+      </h1>
+      <section className="relative grid justify-center gap-12 px-8  mb-64  lg:grid-cols-2 lg:px-24">
+        <ProjectCard
+          tags={["Blender", "3D"]}
+          src="/Croissant.png"
+          title="A Croissant"
+          duration="January 2024 "
+          description="Was Hungry, So Made a Croissant"
+        />
+        <ProjectCard
+          tags={["Blender", "3D", "Sculpting"]}
+          src="/Planets.png"
+          title="Space"
+          duration=" "
+          description=""
+        />
+        <ProjectCard
+          tags={["Blender", "3D", "Physics"]}
+          src="/onetap.png"
+          title="OneTap 3D Logo"
+          duration=" "
+          description=""
+        />
+        <ProjectCard
+          tags={["Blender", "3D", "Hardsurface"]}
+          src="/eComSpaceMockup.png
+"
+          title="Animated 3D Mockup"
+          duration=""
+          description=""
+        />
+        <ProjectCard
+          tags={["Blender", "3D", "Hardsurface"]}
+          src="/Dwark.png
+"
+          title="A Dwark"
+          duration=""
+          description=""
+        />
+        <ProjectCard
+          tags={["Blender", "3D", "Sculpting", "Animation"]}
+          src="/Dominik PFP.png
+"
+          title="A 3D PFP"
+          duration=""
+          description=""
+        />
+        <ProjectCard
+          tags={["Blender", "3D", "Sculpting", "Animals"]}
+          src="/Charizad.png
+"
+          title="Charizard"
+          duration=""
+          description=""
+        />
+        <ProjectCard
+          tags={[
+            "Blender",
+            "3D",
+            "Animation",
+            "Sculpting",
+            "Character Creation",
+          ]}
+          src="/Miner.png
+"
+          title="Bitcoin Miner"
+          duration=""
+          description=""
+        />
+        <ProjectCard
+          tags={["Blender", "3D", "Sculpting"]}
+          src="/Tom Elis.png
+"
+          title="Tom Elis Bust"
+          duration=""
+          description=""
+        />{" "}
+        <ProjectCard
+          tags={["Blender", "3D", "Sculpting", "PBR", "Photoreal"]}
+          src="/Nose.png
+"
+          title="The Nose"
+          duration=""
+          description=""
+        />{" "}
+        <ProjectCard
+          tags={["Blender", "3D", "Sculpting", "Rigging"]}
+          src="/Groot M.png
+"
+          title="Groot"
+          duration=""
+          description=""
+        />{" "}
+        <ProjectCard
+          tags={["Blender", "3D", "Sculpting"]}
+          src="/Dino.png
+"
+          title="A Dino"
+          duration=""
+          description=""
+        />
       </section>
     </main>
   );
