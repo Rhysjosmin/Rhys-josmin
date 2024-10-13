@@ -325,32 +325,28 @@ export default function Home() {
         />
         <ProjectCard
           tags={["Blender", "3D", "Hardsurface"]}
-          src="/ecom-space.png
-"
+          src="/ecom-space.png"
           title="Animated 3D Mockup"
           duration=""
           description=""
         />
         <ProjectCard
           tags={["Blender", "3D", "Hardsurface"]}
-          src="/Dwark.png
-"
+          src="/Dwark.png"
           title="A Dwark"
           duration=""
           description=""
         />
         <ProjectCard
           tags={["Blender", "3D", "Sculpting", "Animation"]}
-          src="/Dominik PFP.png
-"
+          src="/Dominik PFP.png"
           title="A 3D PFP"
           duration=""
           description=""
         />
         <ProjectCard
           tags={["Blender", "3D", "Sculpting", "Animals"]}
-          src="/Charizad.png
-"
+          src="/Charizad.png"
           title="Charizard"
           duration=""
           description=""
@@ -363,32 +359,29 @@ export default function Home() {
             "Sculpting",
             "Character Creation",
           ]}
-          src="/Miner.png
-"
+          src="/Miner.png"
           title="Bitcoin Miner"
           duration=""
           description=""
         />
         <ProjectCard
           tags={["Blender", "3D", "Sculpting"]}
-          src="/Tom Elis.png
-"
+          src="/Tom Elis.png"
           title="Tom Elis Bust"
           duration=""
           description=""
         />{" "}
         <ProjectCard
           tags={["Blender", "3D", "Sculpting", "PBR", "Photoreal"]}
-          src="/Nose.png
-"
+          src="/Nose.png"
           title="The Nose"
           duration=""
           description=""
         />{" "}
         <ProjectCard
           tags={["Blender", "3D", "Sculpting", "Rigging"]}
-          src="/Groot M.png
-"
+          src="/Groot M.png"
+          unoptimized
           title="Groot"
           duration=""
           description=""
