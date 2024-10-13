@@ -325,7 +325,7 @@ export default function Home() {
         />
         <ProjectCard
           tags={["Blender", "3D", "Hardsurface"]}
-          src="/eComSpaceMockup.png
+          src="/ecom-space.png
 "
           title="Animated 3D Mockup"
           duration=""
@@ -395,8 +395,7 @@ export default function Home() {
         />{" "}
         <ProjectCard
           tags={["Blender", "3D", "Sculpting"]}
-          src="/Dino.png
-"
+          src="/Dino.png"
           title="A Dino"
           duration=""
           description=""
