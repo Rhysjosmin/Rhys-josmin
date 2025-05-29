@@ -10,6 +10,7 @@ import {
 import { useState } from "react";
 import { MaterialSymbolsLightOpenInNew } from "./icons";
 import { useSearchParams } from "next/navigation";
+import ParallaxImage from "./ParallaxImage";
 const rubik = Rubik({ subsets: ["latin"] });
 const spGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -39,11 +40,9 @@ export default function ProjectCard({
   unoptimized?: boolean;
   site?: boolean;
 }) {
-
   const [imageLoaded, setLoadState] = useState(false);
   return (
     <div className={`w-full  group relative ${className}`}>
-      
       <div className="absolute overflow-hidden w-full h-full border border-white/5  rounded-md z-0 transition-all duration-300 ease-in-out opacity-0 group-hover:scale-105 group-hover:opacity-50">
         <Image
           src={src}
@@ -56,7 +55,19 @@ export default function ProjectCard({
           unoptimized={unoptimized}
         />
       </div>
-      <Image
+      {/* <Image
+        onLoad={() => setLoadState(true)}
+        src={src}
+        className={`${
+          imageLoaded ? "block h-80 opacity-100" : "opacity-0 h-0 translate-y-5"
+        } transition-[opacity,transform] z-10 relative duration-1000 rounded-2xl    object-cover`}
+        height={1000}
+        width={1000}
+        alt="Image"
+        unoptimized={unoptimized}
+      /> */}
+      <ParallaxImage
+        title="xx"
         onLoad={() => setLoadState(true)}
         src={src}
         className={`${
@@ -99,7 +110,7 @@ export default function ProjectCard({
             className=" items-center  hover:text-sky-600 flex gap-1 text-sm hover:underline"
             href={href}
           >
-            {site?"Website":"Read More"} <MaterialSymbolsLightOpenInNew />
+            {site ? "Website" : "Read More"} <MaterialSymbolsLightOpenInNew />
           </Link>
         ) : (
           <></>

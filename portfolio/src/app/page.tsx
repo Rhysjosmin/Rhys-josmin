@@ -21,7 +21,7 @@ export default function Home() {
     const lenis = new Lenis();
 
     function raf(time: number) {
-      lenis.raf(time * 1.5);
+      lenis.raf(time);
       requestAnimationFrame(raf);
     }
 
