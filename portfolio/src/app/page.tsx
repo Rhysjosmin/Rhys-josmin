@@ -167,7 +167,7 @@ export default function Home() {
       <h1 className="mt-64 pb-4 font-bold italic px-8 lg:px-24 text-3xl">
         Web Development
       </h1>
-      <section className="relative grid justify-center gap-12 px-8  mb-24  lg:grid-cols-2 lg:px-24">
+      <section className="relative grid justify-center gap-12 px-8  mb-24  lg:grid-cols-3 md:grid-cols-2 lg:px-24">
         <ProjectCard
           tags={[
             "Next JS",
@@ -300,7 +300,7 @@ export default function Home() {
       <h1 className="mt-12 pb-4 font-bold italic px-8 lg:px-24 text-3xl">
         3D / Art
       </h1>
-      <section className="relative grid justify-center gap-12 px-8  mb-64  lg:grid-cols-2 lg:px-24">
+      <section className="relative grid justify-center gap-12 px-8  mb-64  lg:grid-cols-3 md:grid-cols-2 lg:px-24">
         <ProjectCard
           tags={["Blender", "3D"]}
           src="/Croissant.png"

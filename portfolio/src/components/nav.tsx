@@ -37,7 +37,7 @@ export default function NavBar() {
 
   return (
     <div className="flex flex-col items-center print:hidden ">
-      <div className="flex items-center justify-between w-full max-w-screen-xl p-12">
+      <div className="flex items-center justify-between w-full md:px-40 px-8 p-12">
         <Link
           onClick={() => setOpen(false)}
           className={`${pf_Display.className} font-black text-3xl`}
@@ -45,8 +45,8 @@ export default function NavBar() {
         >
           R.J.R
         </Link>
-        <div className="hidden gap-8 md:flex">
-          <Links onOpen={()=>setOpen(false)} />
+        {/* <div className="hidden gap-8 md:flex">
+          <Links onOpen={() => setOpen(false)} />
         </div>
         <div className="z-20 flex gap-8 md:hidden ">
           <button
@@ -76,13 +76,13 @@ export default function NavBar() {
             open ? "h-screen" : "h-0 opacity-0 pointer-events-none"
           } `}
         >
-          <Links onOpen={()=>setOpen(false)} />
+          <Links onOpen={() => setOpen(false)} />
         </div>
         <div
           className={`z-[5] top-0 left-0  w-full transition-all duration-500 h-screen pointer-events-none absolute md:hidden ${
             open ? "bg-black/30 backdrop-blur-lg" : ""
           } `}
-        />
+        /> */}
       </div>
     </div>
   );
@@ -105,13 +105,13 @@ const Links = ({ onOpen }: { onOpen: any }) => {
       >
         About Me
       </Link> */}
-      <Link
+      {/* <Link
         onClick={onOpen}
         className={`${dm_Sans.className} hover:text-emerald-500 transition duration-300 p-2 font-light italic`}
         href={"https://flowcv.com/resume/9r20trqjai"}
       >
         Resume
-      </Link>
+      </Link> */}
     </>
   );
 };
