@@ -41,7 +41,7 @@ export default function Home() {
           height={500}
           width={500}
           src={"/Rhys.jpg"}
-          className="object-cover w-56 md:w-72 "
+          className="object-cover w-56 md:w-72 rounded-lg "
         />
         <div className="md:ml-10 h-72 ">
           <h1 className={`${pf_Display.className} text-4xl capitalize`}>
@@ -50,10 +50,9 @@ export default function Home() {
           <p
             className={`${spGrotesk.className}  capitalize text-base mt-2 font-thin lg:w-96 `}
           >
-            Rhys, a web developer based in Goa, started his journey crafting
-            games in Scratch before mastering Blender and web development. He
-            loves learning new things, especially when exams aren&apos;t
-            involved.
+            Rhys, a developer and designer, started his journey crafting games
+            in Scratch before mastering Blender and web development. He loves
+            learning new things, especially when exams aren&apos;t involved.
           </p>
         </div>
 
